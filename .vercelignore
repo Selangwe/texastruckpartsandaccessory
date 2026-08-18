@@ -1,0 +1,15 @@
+# The site is pure static HTML + assets/. Everything below is local tooling or
+# source data that the deployed pages never request at runtime, so keep it out
+# of the deployment bundle.
+
+# Content-generation scripts (Python/Node) — run these locally, not on Vercel.
+build/
+
+# Source + intermediate data. The pages read assets/products.js, which is
+# generated from these and committed, so the originals are not needed at runtime.
+data/
+*.csv
+
+# Docs and machine-specific editor state.
+*.md
+.claude/
