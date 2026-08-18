@@ -1,0 +1,1575 @@
+{
+ "generated": "2026-08-18T01:42:31.243Z",
+ "source": "mcp-claude_ai_Google_Drive-read_file_content-1787010197561.txt",
+ "note": "Image filenames map into assets/img/_facebook/. Facebook CDN URLs in the export expire 2026-08-19T10:18Z; the files were downloaded before then.",
+ "counts": {
+  "posts": 115,
+  "products": 45,
+  "duplicates": 35,
+  "notProducts": 35
+ },
+ "products": [
+  {
+   "fbid": "pfbid0teUDR78LNYcA4RMVdSf46t4DiewpScpwTUQR6kVPvvNgpKagT1KCgpMpWPFcEYCml",
+   "name": "MULTIPLE BRANDS & SIZES Need more secure storage for your work truck? We have new and quality t",
+   "cat": "tool-boxes",
+   "brand": "Weather Guard",
+   "makes": [],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "774148947_122135484117188965_1848677423274863177_n.jpg",
+    "772707950_122135484285188965_8047882616843141707_n.jpg",
+    "772699371_122135484207188965_217099216068165850_n.jpg",
+    "770955692_122135484375188965_8074283362357543756_n.jpg",
+    "772725934_122135484201188965_5922892675308154609_n.jpg",
+    "773613001_122135481105188965_4492618380715589504_n.jpg",
+    "775201610_122135481183188965_333407705532993577_n.jpg",
+    "773687025_122135481249188965_3039769704343758302_n.jpg",
+    "776163825_122135481189188965_4761947551996489268_n.jpg",
+    "772889446_122135481363188965_1862223690168874327_n.jpg"
+   ],
+   "text": "MULTIPLE BRANDS & SIZES Need more secure storage for your work truck? We have new and quality truck tool boxes from several top brands: Weather Guard CamLocker UWS RKI Different sizes and styles available with different prices. · Great for contractors, welders, mechanics & work trucks · Prices vary by box Send us your truck year, make, model, and the size/style you · ll let you know what we have available.",
+   "status": "ok",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": true,
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0aNUbv1fockFdoXedzmxMTq9dQCvv98URVp3QXsL2p88QS8nBhcELgKjfnCxtAZv7l",
+   "name": "FORD F250 / F350 Estribos disponibles para Ford F250 / F350 Super Duty 2017 en adelante.",
+   "cat": "running-boards",
+   "brand": null,
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F250",
+    "F350",
+    "Super Duty"
+   ],
+   "years": [
+    2017
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "776163814_122135482347188965_1379723284038376935_n.jpg",
+    "769154593_122135482461188965_7591487130075175142_n.jpg",
+    "772725935_122135482431188965_5130988612588447523_n.jpg",
+    "773249389_122135482383188965_8851840869188350710_n.jpg",
+    "770884249_122135482509188965_78440490802509345_n.jpg"
+   ],
+   "text": "FORD F250 / F350 Estribos disponibles para Ford F250 / F350 Super Duty 2017 en adelante. · Excelente upgrade para trabajo o uso diario · o exacto, cabina (Regular/Crew Cab) y modelo de tu Ford para confirmar disponibilidad y compatibilidad.",
+   "status": "ok",
+   "yearFrom": 2017,
+   "yearTo": 2017,
+   "universalFit": true
+  },
+  {
+   "fbid": "pfbid02Coh5kQ9jj6Lua5YzCXN4UbFBCHJC9nvCG1pDufBZe2gsHs1Vfz1wKRiUMfiEgQE5l",
+   "name": "TRUCK BUMPERS & GRILLE GUARDS AVAILABLE Looking for a heavy-duty upgrade for your Chevy, Ford, ",
+   "cat": "grill-guards",
+   "brand": null,
+   "makes": [
+    "Ford",
+    "Chevrolet",
+    "GMC",
+    "Ram"
+   ],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "773379081_122135478909188965_7477688553899363618_n.jpg",
+    "772868622_122135479065188965_3810241073157080077_n.jpg",
+    "770759061_122135478915188965_1204219138097624601_n.jpg",
+    "773339321_122135479257188965_8066666059172040971_n.jpg",
+    "771795770_122135478999188965_3595962107208281555_n.jpg"
+   ],
+   "text": "TRUCK BUMPERS & GRILLE GUARDS AVAILABLE Looking for a heavy-duty upgrade for your Chevy, Ford, Dodge Ram, or GMC Sierra? We have several options available. FRONT REPLACEMENT BUMPERS · Multiple truck applications available. Send us your year, make, and model and we · ll check what we have that fits. Message us for availability, fitment, pictures, and shipping options.",
+   "status": "needs-review",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false,
+   "reviewReason": "window may span two posts — verify fitment and photos"
+  },
+  {
+   "fbid": "pfbid0txGfNuWVrhUsr4QT9p3igbctTzgbcFA9aEfXjPfJCQtXf74K4re7Jf66aJUBKgX7l",
+   "name": "CUSTOM / FAB PROJECT Front replacement bumper available. Fitment is unknown, and it does not in",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "770678402_122135478489188965_735781067769990443_n.jpg",
+    "769375455_122135478495188965_2818916516156074535_n.jpg"
+   ],
+   "text": "May be an image of all-terain vehicle, snowplow and text · CUSTOM / FAB PROJECT Front replacement bumper available. Fitment is unknown, and it does not include mounting brackets. · Great option for a custom build · If you can weld/fabricate, you can make it work on the right truck · Please verify dimensions and mounting points before buying. Sold as-is due to unknown fitment. Message for more details, measurements, or additional pictures.",
+   "status": "needs-review",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false,
+   "reviewReason": "no make detected in copy"
+  },
+  {
+   "fbid": "pfbid0dddPVoEMiDWdaGysfvFwwMF2b7vdqa1yeHE8weBTuFEh8WJgF3T3umaeSkyiAe9Vl",
+   "name": "FORD F250 / F350 SUPER DUTY",
+   "cat": null,
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F250",
+    "F350",
+    "SUPER DUTY",
+    "Super Duty"
+   ],
+   "years": [
+    2021
+   ],
+   "price": 1200,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "772973455_122135478147188965_8093091090303634053_n.jpg",
+    "772697280_122135478165188965_5957955439422833107_n.jpg",
+    "776163812_122135477601188965_6861112279012254688_n.jpg",
+    "775213666_122135477607188965_374860490537007601_n.jpg",
+    "774512844_122135477667188965_4195866034919603792_n.jpg"
+   ],
+   "text": "FORD F250 / F350 SUPER DUTY Brand new Ranch Hand bumper · never installed on a truck. Fits 2021 · Ford F250 / F350 Super Duty. · Only a couple small scratches from shipping · Ready to install $1,200 If you · ve been looking for a Ranch Hand bumper without paying full retail, this is a solid opportunity. Message for details or pickup information.",
+   "status": "needs-review",
+   "yearFrom": 2021,
+   "yearTo": 2021,
+   "universalFit": false,
+   "reviewReason": "could not categorise",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0oZvtZGy4iigeJLL5ckZadnwqoCtpANCpsxx9a6ZV9gpTxyYQMG4kxbBh5U8QXSdal",
+   "name": "Front Bumper Brush Grille Guard for Dodge/Ford I have a brand new never installed Dodge/Ford fr",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ford",
+    "Chevrolet",
+    "Ram",
+    "Toyota"
+   ],
+   "models": [
+    "F150",
+    "Ram 1500",
+    "Tundra",
+    "Silverado 2500",
+    "Ram 2500",
+    "F250",
+    "F350",
+    "F450",
+    "Super Duty"
+   ],
+   "years": [
+    2001,
+    2011,
+    2019,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "price": 500,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "725689541_923759640736617_7498395038182006097_n.jpg",
+    "725689541_923759640736617_7498395038182006097_n.jpg",
+    "725689541_923759640736617_7498395038182006097_n.jpg",
+    "725592737_2241428446687190_9081059552381033961_n.jpg",
+    "725592737_2241428446687190_9081059552381033961_n.jpg",
+    "725592737_2241428446687190_9081059552381033961_n.jpg",
+    "726399682_1406941971262590_8906198439400139725_n.jpg",
+    "726399682_1406941971262590_8906198439400139725_n.jpg",
+    "726399682_1406941971262590_8906198439400139725_n.jpg",
+    "725318571_992586463525964_4642550042761585673_n.jpg",
+    "725318571_992586463525964_4642550042761585673_n.jpg",
+    "725318571_992586463525964_4642550042761585673_n.jpg",
+    "725361126_1544208624029483_2154426342487519827_n.jpg",
+    "725361126_1544208624029483_2154426342487519827_n.jpg",
+    "725361126_1544208624029483_2154426342487519827_n.jpg",
+    "727083305_2073331843221221_300186486977203070_n.jpg",
+    "727083305_2073331843221221_300186486977203070_n.jpg",
+    "727083305_2073331843221221_300186486977203070_n.jpg",
+    "727834743_2021763138709169_391929449479184201_n.jpg",
+    "727834743_2021763138709169_391929449479184201_n.jpg",
+    "727834743_2021763138709169_391929449479184201_n.jpg",
+    "727276066_895518203563523_5127229425032085623_n.jpg",
+    "727276066_895518203563523_5127229425032085623_n.jpg",
+    "727276066_895518203563523_5127229425032085623_n.jpg",
+    "728527907_1299358889043969_1315584755719053290_n.jpg",
+    "728527907_1299358889043969_1315584755719053290_n.jpg",
+    "728527907_1299358889043969_1315584755719053290_n.jpg",
+    "726231180_1270938221547643_2437412627617926987_n.jpg",
+    "726231180_1270938221547643_2437412627617926987_n.jpg",
+    "726231180_1270938221547643_2437412627617926987_n.jpg",
+    "727258451_1386601273330000_6371561579930304307_n.jpg",
+    "727258451_1386601273330000_6371561579930304307_n.jpg",
+    "727258451_1386601273330000_6371561579930304307_n.jpg",
+    "726954182_1057034163415829_5041704548896455312_n.jpg",
+    "726954182_1057034163415829_5041704548896455312_n.jpg",
+    "726954182_1057034163415829_5041704548896455312_n.jpg",
+    "724869558_1322790906054623_408802152022980430_n.jpg",
+    "725806515_122129218491188965_6248892141974974674_n.jpg"
+   ],
+   "text": "wwXIfr,true,,Video,FF93897D,,AVAILABLE,,all · Vu4bsvFu8mQ8PYTUijX4SBegJNupM.mp4?strext · JnY0yxeOc94tFUub4sZEHDKA1UzRs7liGtitXz-RkwVcwSeo6LqcIIcRvoVlrij8UkzxxC8I70NXVfYxzXwzEffGug.mp4? · urn:mpeg:dash:schema:mpd:2011 · http://www.w3.org/2001/XMLSchema-instance · urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd · urn:mpeg:dash:profile:isoff-on-demand:2011 · FzC1Wp5dmzOk-3LArD-BKcbNNfdsq1yIcL-GzvBGLSdX6fU0qMAJtwMNL-rEn80Lqefo433RY1pnSxCwX-g.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxMzE4NDc2NzQzODE2MDI0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjMxNDQwODY1NjI1NjMzLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo3LCJiaXRyYXRlIjoxMTI0MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxMzE4NDc2NzQzODE2MDI0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjMxNDQwODY1NjI1NjMzLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo3LCJiaXRyYXRlIjozMDY0MTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · AZTwHRpa1U0mtZ71a2wtQdNcj4SeJZk2J335BLDDwXMnqw.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxMzE4NDc2NzQzODE2MDI0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjMxNDQwODY1NjI1NjMzLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo3LCJiaXRyYXRlIjo2MzQxMjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · AudioChannelConfiguration schemeIdUri · uOkJQ9hrRZVuPtVwv3Wmj8kdmR40ouXZPB4xhC5mOY8ZJ2LvGQI2b74mnM8tFKt2sZcs.mp4? · ATTACHMENT,,,VideoPlayerScrubberDefaultPreview.react,VideoPlayerScrubberDefaultPreview · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1318476743816024,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,VideoPlayerShakaPerformanceLoggerBuilder,useVideoPlayerShakaPerformanceLoggerBuilder · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,,false,OK,default · wwXIfr,true,,Video,FF234B77,,AVAILABLE,,all · ROne3k9krud77n7Ml0nwUgKi9CVW2ysjzt4aQyixwRnFyWx4.mp4?strext · FgAYDmdlbjJod2Jhc2ljdnA5GUaY2IeZq77OBerts/Ssvs4F6Mf4/ay · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoyNzQ2MzE5MTMyOTk4MTc0NCwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTU3OTk2OTQ0NzAxNTQ1NiwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6OSwiYml0cmF0ZSI6MTY1NTgwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · mResad4HJLRA0v0U8C4YqPIBLuu5I8IOw34B3QbjFwXAjcNc40snbmBpQ.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoyNzQ2MzE5MTMyOTk4MTc0NCwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTU3OTk2OTQ0NzAxNTQ1NiwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6OSwiYml0cmF0ZSI6NTMwNjEzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · IFN4d8Ir-oy9pjvN2z73LEv1BBlGHzPc8wzJCakmV-HK1W9OUcWiTlY.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoyNzQ2MzE5MTMyOTk4MTc0NCwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTU3OTk2OTQ0NzAxNTQ1NiwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6OSwiYml0cmF0ZSI6NjYxNjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,27463191329981744,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Front Bumper Brush Grille Guard for Dodge/Ford I have a brand new never installed Dodge/Ford front Bumper Brush Grille Guard. Can be universal. I have all nuts, bolts, and parts that go to it · No bends, cracks, or anything abnormal with it · These usually run for around $500 new and this is brand new so im trying to help cut someone a good deal · Its been kept inside. If youre interested pm me · I can deliver depending on where you are located · If its further then 25 miles I will deliver for a small fee · wwXIfr,true,,Video,FF5A6B36,,AVAILABLE,,all · A857C35,ABgqvUvNNDpzuYDHbufpmi4uIocDOc56f1quZE2FopiTo4OByBnuee3T9elFHMg5WULhBnPftT47tkBXp9ecfnxUcwYj5cEg/wCce9QmN3 · W9A5lQw4p54vXpFZnXvJgYWdaO4LgL9ty1rDwtI.mp4?strext · DAtTErmwGLAQMwSuBcxGfquAoIr-Q.mp4? · SYCzn9k4vYYKn6u2oZpkaBraVt9soO6fWQDY9EqP1k-4Ste6se89wuwxdLA1ygW9oxfzGM1SiD1up0WO41dBr8itrw.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxMDI1NDkxOTA2NTk3NjY4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5OTgyMDQ2MTI5MjY1ODMsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJiaXRyYXRlIjoxMzYwNzcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxMDI1NDkxOTA2NTk3NjY4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5OTgyMDQ2MTI5MjY1ODMsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJiaXRyYXRlIjo0MDA3NDAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxMDI1NDkxOTA2NTk3NjY4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5OTgyMDQ2MTI5MjY1ODMsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJiaXRyYXRlIjo4Mzc2NTQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · vLqVFBetayIRBNqLYu1FUq7WV9pyr9iFFyG8b4JQ.mp4? · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1025491906597668,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · HEAVY-DUTY RANCH HAND BUMPERS AVAILABLE Looking to upgrade your truck with a Ranch Hand bumper built for real protection and a bold, rugged look? We · ve got you covered. At Huntsville Auto & Truck Salvage, we carry a range of heavy-duty options including: · Grille Guards / Brush Guards Available for most truck brands, including: Ford · Toyota These bumpers are built tough and made to handle work trucks, ranch trucks, and off-road builds. Send us your truck · s year, make, and model and we · ll help you find the right fit. Message us today for availability and pricing. · wwXIfr,true,,Video,FF8E954C,,AVAILABLE,,all · A857452,ABgq2NppOaQyr6/oab5gP · dV3nJHp/8AqHeo5my2eT8pBx7kHn8qrySDbgNjJ79qySNLlu3lJY5 · M2H-X7vG0NhD-XXPhSzSvC4WqFxzBSM.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTM1NTM0NDAxNjY4OTQ5MSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTM1NTM0NDAxNjY4OTQ5MSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · FgAYDmdlbjJod2Jhc2ljdnA5GUa69tjWtKvoBMTwiJS3o/wEmNe2mrej/ATCys2dt6P8BCIYEGF1ZGlvX2FhY19sbl92YnIiNnAUABJYDk5PVF9DTEFTU0lGSUVEAA · ILTGpOrGbLxZ5Skips0e2v1-G33qg4pzBzfXZ5E1foLHBdPI3SMytIpBRDEWA.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxNzMzMTg0NjIxMDQxNzU0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU1MzQ0MDE2Njg5NDkxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMiwiYml0cmF0ZSI6MTUzNTY1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxNzMzMTg0NjIxMDQxNzU0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU1MzQ0MDE2Njg5NDkxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMiwiYml0cmF0ZSI6NDU4NTI2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxNzMzMTg0NjIxMDQxNzU0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU1MzQ0MDE2Njg5NDkxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMiwiYml0cmF0ZSI6ODgxMjg3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoxNzMzMTg0NjIxMDQxNzU0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU1MzQ0MDE2Njg5NDkxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMiwiYml0cmF0ZSI6NjcxNTQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1733184621041754,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · wwXIfr,true,,Video,FFA57B4B,,AVAILABLE,,all · ilh6ioVugTggjH4/pis7AWqKZ5i0UAaEaoOAdv15FOlOxTtIZuAPT3B6du9VkfacnmmSfNIXHGf6f1960uBWuHjdishKkdwOPfqD9KKnwDweaKVwHUUtFACUUtFAH/9k · RZhneQ47irWsMcAUagUWSggs.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTczMjQ0MDEyNDQ0MDg1NSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTczMjQ0MDEyNDQ0MDg1NSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoyNzY5OTQ4NDUwNjM1NTM3MSwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTczMjQ0MDEyNDQ0MDg1NSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjEsImJpdHJhdGUiOjk0NjAxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · y4mGGA6ZTG7j4BTB2IHnaCZXbr3aovhdJV4j58bd2VsImJUFoX4Bww.mp4? · L3uFZVd1pnyhyGBPEzEClm0jj4eys67k1L5aK8UcLVQ.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoyNzY5OTQ4NDUwNjM1NTM3MSwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTczMjQ0MDEyNDQ0MDg1NSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjEsImJpdHJhdGUiOjY5MTQwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,27699484506355371,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · WEATHER GUARD & UWS Truck Tool Boxes · Multiple Options Upgrade your truck with high-quality tool boxes · Heavy-duty aluminum construction · Secure storage for tools, gear & equipment · Perfect for work trucks, contractors & daily use · Shipping available Message for size, condition & availability · Weather Guard toolbox, UWS toolbox, truck bed toolbox, crossover toolbox, aluminum tool box pickup, contractor truck storage, pickup truck accessories · wwXIfr,true,,Video,FF2062AC,,AVAILABLE,,all · ccFpG2LCkUxy6AwewYPofpsuI.mp4?strext · Gh0Wub76pBqsB9KX-Q73Ju2yjEjsxBBBw2FU2xAvO256nXmVyvYbOgfWOzqDCOJsDwKv0z2zjh8q5GOTuofqjVSYW9ug.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxMDM5NzE1NzYyMDc0MTkzLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyOTAyOTIxMDUwMDQ0ODUxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4LCJiaXRyYXRlIjoxMDExNzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxMDM5NzE1NzYyMDc0MTkzLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyOTAyOTIxMDUwMDQ0ODUxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4LCJiaXRyYXRlIjoyOTM3MTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxMDM5NzE1NzYyMDc0MTkzLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyOTAyOTIxMDUwMDQ0ODUxLCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4LCJiaXRyYXRlIjo2NzQ1ODMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · rWefXyubyoDJFsPCNUSQvnhXwWBUfD6SZRsPnLsuPMG2VSf0GfaIGPjNAVPYxRAklkeI07RfQcp-qQ.mp4? · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1039715762074193,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Work-Ready Semi-new, Includes 2 keys ,Resistant aluminum construction, Secure closing system, Ideal for work, tools and equipment Perfect to keep your tools safe and organized. $475 shipped · wwXIfr,true,,Video,FF8B2F3B,,AVAILABLE,,all · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjcyMDUxMTYxOTU4MzY0OTUsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjQ5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · tjEEQgJnpOWgvTZBEqjgOkFaKcYDzgTb6luJw.mp4? · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjcyMDUxMTYxOTU4MzY0OTUsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjQ5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · FgAYDmdlbjJod2Jhc2ljdnA5GUaQvNDYpbrTYN7/k5XEutNg3NnYnsS602CEp7SrxLrTYCIYEGF1ZGlvX2FhY19sbl92YnIiNnAUABJYDk5PVF9DTEFTU0lGSUVEAA · IGbuu1pQL0lvivSqVq2LJBzpy6XQsFrqxNGL25Lh0Hfgm9lzFwubevC5noQXXVIh8.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoxMDEwMDMyMjc4NDk4NDE0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyNzIwNTExNjE5NTgzNjQ5NSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NDksImJpdHJhdGUiOjY4NTc1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1010032278498414,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · ve been looking for a real bumper not the thin factory stuff · ve got a fresh load of Ranch Hand style bumpers for half-ton trucks, ready to move WHY THESE SELL FAST · Full replacement (not just a grille guard) · Protects headlights, grille & front end · Clean, aggressive look that actually adds value Multiple years available · message with your year/make/model · t sit. Once your fitment is gone, it · s gone. Serious buyers are already picking through them. Ranch hand bumper F150, Silverado 1500 bumper heavy duty, Ram 1500 steel bumper, Tundra bumper upgrade, truck brush guard full replacement · wwXIfr,true,,Video,FF647E90,,AVAILABLE,,all · tKc5S2qJLTY2cAkV4hjYcSONkPJxZUhL2oPYwZzuBXEBouparj48e-qoMdo.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjA3Njc0NDIwNjU1MjM5NywiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjA3Njc0NDIwNjU1MjM5NywiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · FgAYDmdlbjJod2Jhc2ljdnA5GUbGo9DQt7KwB7CBxLm4srAH2vTavLiysAeE6PG/uLKwByIYEGF1ZGlvX2FhY19sbl92YnIiNnAUABJYDk5PVF9DTEFTU0lGSUVEAA · WI6Bzp4WsQjoaqiyyd-1ONdtt3O4Z3WlB9SUNXhcJpUK9wwWSWAevgSwy9TSbjKETOzC8sVEAImQ.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxNzI0ODg0NTcyMTkyMTY0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMDc2NzQ0MjA2NTUyMzk3LCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMSwiYml0cmF0ZSI6MTI4ODU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxNzI0ODg0NTcyMTkyMTY0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMDc2NzQ0MjA2NTUyMzk3LCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMSwiYml0cmF0ZSI6MzY1OTM2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · kDG69Vlir9EnaXsU50es2Ojb9eLldw2LA.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxNzI0ODg0NTcyMTkyMTY0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMDc2NzQ0MjA2NTUyMzk3LCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMSwiYml0cmF0ZSI6Nzk0NjQ2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · HKdwi619nPgJY5zpxUyQSZItB7j6kDbuvOo7SlY.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoxNzI0ODg0NTcyMTkyMTY0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMDc2NzQ0MjA2NTUyMzk3LCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMSwiYml0cmF0ZSI6NjkxNDAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1724884572192164,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Chevy Silverado 2500 3500 Tough Country Traditional Front Replacement Bumper WE FINANCE Tough Country Traditional Front Replacement Bumper for the 2024 & 2025 Chevy Silverado 2500 3500 Bumper works with fog lights, camera, sensors, tow hooks and has receiver hitch Scratch / blemish bumper Expect some flaws Have 2 of these available, flaws vary Scuffs / scratches No warps or bends We offer financing and shipping Message for more information · wwXIfr,true,,Video,FF8B8072,,AVAILABLE,,all · Orw8Nc0yfzESY6TlnEm9PlDLFOoVsFTduw1Rwo0WmYwquuLAus9UShfSWtS9k1JnBLnRRcQowHeUYZHJM.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTUzMDcyNjkwMTkzMjg2NywiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · v53pbvTThyWBG9uix63UEQLHg.mp4? · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTUzMDcyNjkwMTkzMjg2NywiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · aZCS18rh94JBCES7kszSyvB0WExHY2nVYQ0MnxCtQg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjo5MDIzNjAyMzk1NDU1MjEsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE1MzA3MjY5MDE5MzI4NjcsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE1LCJiaXRyYXRlIjoxMzIzMDIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · LPHiwWTLEkJu7fIYdHnmfnm4vg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjo5MDIzNjAyMzk1NDU1MjEsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE1MzA3MjY5MDE5MzI4NjcsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE1LCJiaXRyYXRlIjozODAzNTYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · cvhUmF0TSSXERdlG8q7TBTxhHWStr142jKFVV4As809qqgsA.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjo5MDIzNjAyMzk1NDU1MjEsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE1MzA3MjY5MDE5MzI4NjcsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE1LCJiaXRyYXRlIjo3MDQ5MzMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,902360239545521,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Ram 2500 3500 HD One Source Rear Replacement Bumper Ranch Hand Style WE FINANCE One Source Rear replacement bumper for the 2019-2026 Ram 2500 3500 Bumper works with sensors & retain factory tow hitch Comes with reverse lights New with hardware Have matching fronts in stock as well · wwXIfr,true,,Video,FF6486A5,,AVAILABLE,,all · A85874D,ABgqkpCcVErbT149zUgAMQbqc4/nWiknqZuLRXe9jjYoc5HtRWNdHMrfWip5mVyo3khOcvj6Dn8zxUixtjZxtznj8 · RzO0fK9D/AJzSJdZOWAx0/HtWS0NHqJcWsT/eG0jkkcUVMFzknqev · FFO4BJGJBg5H0qvFa7G3E5x0q5RSASilooA/9k · FgAYDmdlbjJod2Jhc2ljdnA5GUbE3Yrj/5XYBM7w7P6AltgE · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoyMzE4ODA4NDg1MzMwMjUwLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzE5NzkxNzY2Nzk5MTI4LCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4LCJiaXRyYXRlIjoyNjI0MjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · GLUrbDweN9BXRoarkXtTw6xPpDxXkzkg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoyMzE4ODA4NDg1MzMwMjUwLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzE5NzkxNzY2Nzk5MTI4LCJhc3NldF9hZ2VfZGF5cyI6NTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4LCJiaXRyYXRlIjo1Njg2NzQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · EzYgve4i9eeUejhdzUwIAbil4kV3KS5r4mTa-I92jhKS-82kxH3Daz2GgTH3a0AAOSEk-Xi7bjqE.mp4? · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,2318808485330250,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Ford F150 Ranch Hand Summit Front Replacement Bumper WE FINANCE Brand new Ranch Hand Summit for the 2024 2025 Ford F150 Bumper comes complete with hardware Works with camera, sensors, fog lights and tow hooks Ranch Hand brush guard F150, Ford F150 grille guard 2024 - 2026 heavy duty truck guard, F150 front protection, Ranch Hand bumper accessory · wwXIfr,true,,Video,FF698136,,AVAILABLE,,all · E5My2YcgAsIeBoWYOzXtB6SI-GEx1lAB55K3spGSKqDyfK2Hs.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTcxMzYxODMwNjMwNjg3MywiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTcxMzYxODMwNjMwNjg3MywiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjo5OTUxOTY4ODAxMDE2NzAsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE3MTM2MTgzMDYzMDY4NzMsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE5LCJiaXRyYXRlIjoxMDMwODUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · xlVnNe8SwdkIOaswlcXINc6pp95KBnO9SWofAtp-Y19egs97zaU8y-2AZg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjo5OTUxOTY4ODAxMDE2NzAsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE3MTM2MTgzMDYzMDY4NzMsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE5LCJiaXRyYXRlIjoyOTM4MjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjo5OTUxOTY4ODAxMDE2NzAsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE3MTM2MTgzMDYzMDY4NzMsImFzc2V0X2FnZV9kYXlzIjo1NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE5LCJiaXRyYXRlIjo2NTE4ODEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,995196880101670,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Ford F250 F350 Tough Country Traditional Front Replacement Bumper We FINANCE Tough Country Traditional front replacement bumper for the 2023-2026 Ford F250 F350 F450 Will work with ACC, Front Camera, fog lights, tow hooks & has receiver hitch Has hardware Factory 2nd / overstock expect some scuffs & scratches Ranch Hand brush guard 2023-2026 Ford F250 F350 F450 , heavy duty truck guard, 2023-2026 Ford F250 F350 F450 front protection, Ranch Hand bumper accessory · wwXIfr,true,,Video,FF2D343E,,AVAILABLE,,all · A8590F6,ABgqsZozVGK88w42kcZ69untVjze · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTMzMDk2NzU0ODQyOTI0MSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTMzMDk2NzU0ODQyOTI0MSwiYXNzZXRfYWdlX2RheXMiOjU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · A858DED,176,100,1,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · FORD F250 / F350 Heavy-Duty Protection · Brand New Brand new Ranch Hand grille guard for Ford F250 / F350 Super Duty. · Heavy-duty steel construction · Built for real front-end protection · Perfect for ranch, work, and daily-driven trucks Built to handle deer strikes, rough roads, and jobsite abuse while giving your Super Duty that clean Texas truck look Pickup / shipping available Message for pricing, year fitment & availability · We just got this installed Visit us now if interested in getting any bumper for your truck",
+   "status": "needs-review",
+   "yearFrom": 2001,
+   "yearTo": 2026,
+   "universalFit": false,
+   "reviewReason": "window may span two posts — verify fitment and photos"
+  },
+  {
+   "fbid": "pfbid0N2PKRtEUTSRjpGDx1bHshtdeWKUsuuaRFHwmKMCn2WkRdRRhZ8jrjDxkTYxEpb9bl",
+   "name": "NEW CHEVY HD 2500 3500 REPLACEMENT BUMPER (2024) Heavy-Duty",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [
+    "Silverado HD 2500"
+   ],
+   "years": [
+    2024
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "692054936_122125088391188965_3675464862925842781_n.jpg",
+    "692895039_122125088649188965_967356064536892954_n.jpg",
+    "690652996_122125088427188965_5053252290719697970_n.jpg",
+    "692538659_122125088475188965_3262042473696418837_n.jpg",
+    "689288612_122125088619188965_8198065291272652492_n.jpg"
+   ],
+   "text": "NEW CHEVY HD 2500 3500 REPLACEMENT BUMPER (2024) Heavy-Duty · Aggressive Look Brand new front replacement bumper for 2024 Chevrolet Silverado HD 2500. · Heavy-duty steel construction · Built for work trucks & off-road setups · Bolt-on fitment Perfect upgrade for added protection and a tougher front-end look. Pickup / shipping available Message for pricing & availability",
+   "status": "needs-review",
+   "yearFrom": 2024,
+   "yearTo": 2024,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid02ipHNKkkqvXtF4YfC48BAjWQTRy5PK62qXp2oQ4iELuhwGunchdeY6SfVSkWgvUzzl",
+   "name": "Brand New",
+   "cat": "grill-guards",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford",
+    "Ram"
+   ],
+   "models": [
+    "RAM 2500",
+    "Super Duty"
+   ],
+   "years": [
+    2019
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "689477394_122125089267188965_4742587766101421102_n.jpg",
+    "690653578_122125089315188965_422903593242251259_n.jpg",
+    "690638738_122125089357188965_2582047058439127111_n.jpg",
+    "689473627_122125089489188965_8619765137336791772_n.jpg",
+    "690474126_122125089441188965_8996754118768161148_n.jpg",
+    "692470491_122125084215188965_3732789080918741736_n.jpg",
+    "689839885_122125084557188965_1422321786210830412_n.jpg",
+    "690362960_122125084467188965_7138471901453968737_n.jpg",
+    "692512497_122125084383188965_2833659696993810608_n.jpg",
+    "694751989_122125084299188965_8350088597260848766_n.jpg",
+    "690737369_122125081815188965_3441097808337929353_n.jpg",
+    "690772814_122125081983188965_4840848378463270639_n.jpg",
+    "692807362_122125081899188965_3382591334564155816_n.jpg",
+    "689297672_122125081845188965_270827114127730459_n.jpg",
+    "690556179_122125081935188965_5420360783253839335_n.jpg",
+    "684168160_122123683737188965_2046487243374639528_n.jpg",
+    "684344330_122123683719188965_8721902244390028271_n.jpg",
+    "683992799_122123683899188965_3839262566451581692_n.jpg",
+    "683624831_122123683965188965_1514310901853307275_n.jpg",
+    "683216665_122123683797188965_3768388990108957117_n.jpg",
+    "682644668_122123682717188965_2082661066408683608_n.jpg",
+    "683179700_122123682723188965_3414529101879430575_n.jpg",
+    "682975943_122123682819188965_3021759828763723124_n.jpg",
+    "682547265_122123682897188965_7068651595821751982_n.jpg",
+    "684900575_122123682789188965_406972156734087518_n.jpg"
+   ],
+   "text": "DODGE RAM 2500 / 3500 Heavy-Duty Protection · Brand New Brand new Ranch Hand grille guard for 2019 · Heavy-duty steel construction · Built for real front-end protection · Perfect for ranch trucks, work trucks, and daily drivers Protect your Super Duty from deer strikes, road debris, and jobsite abuse while giving it the clean Texas truck look Pickup / shipping available Message for pricing & availability",
+   "status": "needs-review",
+   "yearFrom": 2019,
+   "yearTo": 2019,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 6
+  },
+  {
+   "fbid": "pfbid031SPYHfv9jHNrEJd34pSPSLjVhbEE2a25Ncrn3qZJeGRcAua6BpGtf5qqYEzAcrk1l",
+   "name": "TRUCK RACKS Work Truck Setup Ready Weather Guard tool boxes available great setup for work truc",
+   "cat": "tool-boxes",
+   "brand": "Weather Guard",
+   "makes": [],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "689473179_122125079589188965_7378727766621659509_n.jpg",
+    "690768054_122125079679188965_1827541111360187359_n.jpg",
+    "692754812_122125079769188965_7785498496223058957_n.jpg",
+    "692816243_122125079673188965_1866187601501575607_n.jpg",
+    "692553652_122125079595188965_1336814562212136867_n.jpg"
+   ],
+   "text": "TRUCK RACKS Work Truck Setup Ready Weather Guard tool boxes available great setup for work trucks, contractors, welders, and construction crews. Weather Guard Tool Boxes 71x20 size · Truck Racks Perfect setup for keeping tools secure while adding extra hauling capacity. Pickup available Message for availability or package deals",
+   "status": "needs-review",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": true,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0388xbjzuNhx1xT7bVjbX7sEjPVDrFjZX5Vt9DRcMBAx5bHUmZpBbYskcWqg7aYgKGl",
+   "name": "Ford Super Duty F150 Tough Country EVOS Bumper OLD STOCK",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "Super Duty",
+    "F150"
+   ],
+   "years": [
+    2015
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "690686096_122125077333188965_5485111387062202894_n.jpg",
+    "693599106_122125077375188965_2589870674507948137_n.jpg",
+    "698179433_122125077507188965_4609896945908905421_n.jpg",
+    "690455887_122125077627188965_4881997667146600708_n.jpg",
+    "692789531_122125077597188965_1781982032071823270_n.jpg"
+   ],
+   "text": "Ford Super Duty F150 Tough Country EVOS Bumper OLD STOCK · Hardware Included Brand new old-stock Tough Country EVOS bumper for 2015 · Heavy-duty full replacement setup · Has some scratches/dents from storage & handling priced accordingly. Perfect setup for someone wanting a heavy-duty bumper at a fraction of retail. Message for details, pics, or pickup info.",
+   "status": "needs-review",
+   "yearFrom": 2015,
+   "yearTo": 2015,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0386EDjhPuf6Mm6WdLc5u5PYXBfhLaGUWtL1XNuwuWS5xfEQYvwvkrrxhoo49qGuutl",
+   "name": "Ford Super Duty F250 / F350 Tough Country EVOS Bumper OLD STOCK",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "Super Duty",
+    "F250",
+    "F350"
+   ],
+   "years": [
+    2017
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "690761362_122125075521188965_6282148825460898110_n.jpg",
+    "690760222_122125075695188965_4387213391650455654_n.jpg",
+    "692656060_122125075605188965_6620721619397485926_n.jpg",
+    "689034064_122125075713188965_4268814073090140499_n.jpg",
+    "690773462_122125075635188965_1179920368125824341_n.jpg",
+    "689849002_990645683403933_2174215717137077671_n.jpg",
+    "685673821_983719420844600_7356142260986935755_n.jpg",
+    "688301821_902077122856385_9119794102237088844_n.jpg",
+    "690493714_26969120172721168_3333810434229234235_n.jpg",
+    "692063732_1663421401454469_2503954678108869222_n.jpg",
+    "696345173_2027810994611744_8018933207345837848_n.jpg"
+   ],
+   "text": "Ford Super Duty F250 / F350 Tough Country EVOS Bumper OLD STOCK · Hardware Included Brand new old-stock Tough Country EVOS bumper for 2017 · Heavy-duty full replacement setup · Has some scratches/dents from storage & handling · priced accordingly. Perfect setup for someone wanting a heavy-duty bumper at a fraction of retail. Message for details, pics, or pickup info.",
+   "status": "needs-review",
+   "yearFrom": 2017,
+   "yearTo": 2017,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid029xto6aFppSb3BVoD3jRbY3YqfQ8Q1cBYPMU2rveNrz8sHPeKP2ECSEmEK3MHustVl",
+   "name": "Ford F250 F350 Tough Country Traditional Front Replacement Bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F250",
+    "F350",
+    "F450"
+   ],
+   "years": [
+    2023,
+    2026
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "691192508_122124852969188965_295199729136955342_n.jpg",
+    "691241508_122124853149188965_4914906048721477878_n.jpg",
+    "691929939_122124853071188965_8286464390443252381_n.jpg",
+    "691265113_122124853293188965_8775589039042919399_n.jpg",
+    "691206161_122124852975188965_740979976381323599_n.jpg"
+   ],
+   "text": "Ford F250 F350 Tough Country Traditional Front Replacement Bumper We FINANCE Tough Country Traditional front replacement bumper for the 2023-2026 Ford F250 F350 F450 Will work with ACC, Front Camera, fog lights, tow hooks & has receiver hitch Has hardware Factory 2nd / overstock expect some scuffs & scratches Ranch Hand brush guard 2023-2026 Ford F250 F350 F450 , heavy duty truck guard, 2023-2026 Ford F250 F350 F450 front protection, Ranch Hand bumper accessory",
+   "status": "needs-review",
+   "yearFrom": 2023,
+   "yearTo": 2026,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid02zSqRYsAvUj9fnrpqDNdvMbmYJBRcSyzQrwa86NSuXjuA2ebnRCTzch9ZdCDYzNrcl",
+   "name": "Ford F250 F350 Tough Country Traditional Winch Ready Front Replacement Bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F250",
+    "F350",
+    "F450"
+   ],
+   "years": [
+    2023,
+    2025
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "690630714_122124779811188965_2757050757311411474_n.jpg",
+    "690630608_122124779901188965_3102612799698715426_n.jpg",
+    "691544893_122124780069188965_8001565919922702000_n.jpg",
+    "690857534_122124780153188965_1343641381602126048_n.jpg",
+    "689495658_122124779835188965_290669456820800841_n.jpg"
+   ],
+   "text": "Ford F250 F350 Tough Country Traditional Winch Ready Front Replacement Bumper WE FINANCE Tough Country Traditional front replacement WINCH READY bumper for the 2023-2025 Ford F250 F350 F450 Bumper works with fog lights, camera, sensors, tow hooks and has receiver hitch Scratch / blemish bumper Expect some flaws Scuffs / scratches No warps or bends We offer financing and shipping",
+   "status": "needs-review",
+   "yearFrom": 2023,
+   "yearTo": 2025,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 2
+  },
+  {
+   "fbid": "pfbid0b7HaYDtMhUaaFCVtEbysJdJAqTguwLMkFvtXUWhj3f1kibSWXoX5eMGyeWujb6c9l",
+   "name": "Chevy Silverado 2500 3500 Tough Country Traditional Front Replacement Bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [
+    "Silverado 2500"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "691188475_122124851115188965_3786303861490784485_n.jpg",
+    "691453004_122124851367188965_2173865358888430090_n.jpg",
+    "691510580_122124851685188965_5699522966652329687_n.jpg",
+    "690825676_122124851415188965_4423372396541843862_n.jpg",
+    "691415491_122124851319188965_8948058723578864440_n.jpg",
+    "690066191_122124782103188965_6807181607184259050_n.jpg",
+    "689406362_122124782469188965_422780531821436742_n.jpg",
+    "687027247_122124782301188965_8081467105959859757_n.jpg",
+    "689944794_122124782439188965_1892367382550556557_n.jpg",
+    "691828882_122124782385188965_9062901289873497345_n.jpg"
+   ],
+   "text": "Chevy Silverado 2500 3500 Tough Country Traditional Front Replacement Bumper WE FINANCE Tough Country Traditional Front Replacement Bumper for the 2024 & 2025 Chevy Silverado 2500 3500 Bumper works with fog lights, camera, sensors, tow hooks and has receiver hitch Scratch / blemish bumper Expect some flaws Have 2 of these available, flaws vary Scuffs / scratches No warps or bends We offer financing and shipping Message for more information",
+   "status": "needs-review",
+   "yearFrom": 2024,
+   "yearTo": 2025,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 2
+  },
+  {
+   "fbid": "pfbid02atWSiXKfVAs7mKEpmnfrvfcaLpFgyvSywfr29oLuochocLrjxXCgywWaVLrovybKl",
+   "name": "Ram 2500 3500 Tough Country Evolution Front Replacement Bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 2500"
+   ],
+   "years": [
+    2019,
+    2024
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "690606386_122124783561188965_4998974466139707431_n.jpg",
+    "695729008_122124783753188965_2276816023131019537_n.jpg",
+    "690634123_122124783675188965_1498847512046487488_n.jpg",
+    "692755048_122124783729188965_1691890075803731342_n.jpg",
+    "693441203_122124783645188965_2193089237833044655_n.jpg"
+   ],
+   "text": "Ram 2500 3500 Tough Country Evolution Front Replacement Bumper WE FINANCE Tough Country Evolution front replacement bumper for the 2019-2024 Ram 2500 3500 Will work with Front Camera, fog lights, tow hooks & sensors Winch Ready Has hardware Factory 2nd / overstock expect some scuffs & scratches",
+   "status": "needs-review",
+   "yearFrom": 2019,
+   "yearTo": 2024,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0fnM2fF8yumxKYoi9A4pmLRiihHaprnmhf9H6jqinQgdenU7qFrepJ2mw4WxVycp1l",
+   "name": "Ford F150 Ranch Hand Summit Front Replacement Bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F150"
+   ],
+   "years": [
+    2024,
+    2025,
+    2026
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "687698422_122124784995188965_357403445357504232_n.jpg",
+    "686395690_122124785025188965_1609213277428247930_n.jpg",
+    "690391891_122124785097188965_2772774234909534997_n.jpg",
+    "690630694_122124785103188965_573346224435228199_n.jpg"
+   ],
+   "text": "Ford F150 Ranch Hand Summit Front Replacement Bumper WE FINANCE Brand new Ranch Hand Summit for the 2024 2025 Ford F150 Bumper comes complete with hardware Works with camera, sensors, fog lights and tow hooks Ranch Hand brush guard F150, Ford F150 grille guard 2024 - 2026 heavy duty truck guard, F150 front protection, Ranch Hand bumper accessory",
+   "status": "needs-review",
+   "yearFrom": 2024,
+   "yearTo": 2026,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0D5XdAF8Kcb7GkGt7TqffiQJK1fFMSacKQ8PJWap3YPDjsMt4yFW2z2WmzdNbHkvfl",
+   "name": "Ram 2500 3500 HD One Source Rear Replacement Bumper Ranch Hand Style",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 2500"
+   ],
+   "years": [
+    2019,
+    2026
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "690630621_122124785913188965_6060110612072656560_n.jpg",
+    "691341355_122124786123188965_4996907831548763038_n.jpg",
+    "689850228_122124785931188965_5197031309543282170_n.jpg",
+    "694789722_122124786045188965_272795123712032087_n.jpg",
+    "690493249_122124786177188965_5784701601031487636_n.jpg"
+   ],
+   "text": "Ram 2500 3500 HD One Source Rear Replacement Bumper Ranch Hand Style WE FINANCE One Source Rear replacement bumper for the 2019-2026 Ram 2500 3500 Bumper works with sensors & retain factory tow hitch Comes with reverse lights New with hardware Have matching fronts in stock as well",
+   "status": "needs-review",
+   "yearFrom": 2019,
+   "yearTo": 2026,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid02i2XLvqXGwGYd596GVwpHwWWnS1g1UdV7DucrE3VrYvDpSyt8Jx9WyCtVbipB3h19l",
+   "name": "Aggressive Look",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F-150",
+    "F150"
+   ],
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "691328422_122124841239188965_4410567618809689579_n.jpg",
+    "690768023_122124841431188965_7608880474146836028_n.jpg",
+    "688294824_122124841347188965_3383750651092148839_n.jpg",
+    "690767612_122124841407188965_6572689939696073353_n.jpg",
+    "690647893_122124841263188965_279748600093467712_n.jpg",
+    "690661359_122124838815188965_7283996644274960281_n.jpg",
+    "690664663_122124838989188965_3502052868654623734_n.jpg",
+    "690685874_122124838941188965_6990506178248569451_n.jpg",
+    "689495381_122124838845188965_5338532517822518054_n.jpg",
+    "690678760_122124838905188965_1086919006553417796_n.jpg",
+    "691264049_122124837213188965_2338972605752112020_n.jpg",
+    "690768023_122124837393188965_4429964222759626596_n.jpg",
+    "690733557_122124837447188965_5272062342410921478_n.jpg",
+    "695832701_122124837363188965_3066639097234674788_n.jpg",
+    "688838311_122124837279188965_3384860234900875487_n.jpg"
+   ],
+   "text": "Aggressive Look Brand new front replacement bumper for 2015 · Ford F-150 NEW / unused Full replacement bumper Heavy-duty steel construction Clean aggressive style Perfect for work trucks & off-road builds Bolt-on setup Upgrade your F-150 with better protection and a tougher look. Ford F150 bumper 2015 2016 2017, F150 replacement bumper, aftermarket steel bumper Ford, truck bumper upgrade, F150 front bumper",
+   "status": "needs-review",
+   "yearFrom": 2015,
+   "yearTo": 2017,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 4
+  },
+  {
+   "fbid": "pfbid038GiJV9rGnNT6XkR1ttj3icKUBTqxRws8c4m1PRjLUPpRXnT16eDCTVnuP9iWSmjul",
+   "name": "ve got a fresh load of Ranch Hand style bumpers for half-ton trucks, ready to move",
+   "cat": null,
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 1500"
+   ],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "688961226_122124779115188965_7194781406432186609_n.jpg",
+    "692412336_122124779139188965_5658505399115831994_n.jpg",
+    "693675499_122124779205188965_1871399173597915283_n.jpg",
+    "693406224_960142800337123_3700560451290584770_n.jpg",
+    "686284541_122123938239188965_108686660056323651_n.jpg",
+    "687828808_122123938665188965_8242891762030763921_n.jpg",
+    "687044347_122123939079188965_3510986766354867268_n.jpg",
+    "687046736_122123938323188965_1412906582155881836_n.jpg",
+    "686480062_122123938749188965_9201812860862100248_n.jpg",
+    "685658197_954991210470517_887484496378450029_n.jpg",
+    "684484750_2090078171917733_3741925015300000456_n.jpg",
+    "682705868_1692179925249312_6716944819798128724_n.jpg",
+    "688432658_858876053902801_1656797880674101397_n.jpg"
+   ],
+   "text": "HALF TON TRUCKS Dodge Ram 1500 · ve been looking for a real bumper · ve got a fresh load of Ranch Hand style bumpers for half-ton trucks, ready to move",
+   "status": "needs-review",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 2
+  },
+  {
+   "fbid": "pfbid0M6eu6AuMhYjKWXhLDR8MBAUvKYRUSeZKTTtsgJfMuc2JJCkomtFdDKQtmFJoH8Prl",
+   "name": "Clean Fresh powder coat Includes all brackets & bolts No dents No rust Practically brand new co",
+   "cat": "grill-guards",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F-150",
+    "F150"
+   ],
+   "years": [
+    2009,
+    2014
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "689684560_122124775179188965_3162690447310829084_n.jpg",
+    "694272378_122124775329188965_1771250616192540134_n.jpg",
+    "688442343_122124775269188965_8304453879110621426_n.jpg",
+    "689718127_122124775185188965_7220898226471467280_n.jpg",
+    "689016640_122124775263188965_1543909182214498479_n.jpg",
+    "687955758_951161347541480_4495569396745760484_n.jpg"
+   ],
+   "text": "FORD F-150 Fresh Powder Coat · Clean Fresh powder coat Includes all brackets & bolts No dents No rust Practically brand new condition Perfect upgrade for added front-end protection and that aggressive Ranch Hand look Ranch Hand brush guard F150, Ford F150 grille guard 2009-2014, heavy duty truck guard, F150 front protection, Ranch Hand bumper accessory",
+   "status": "needs-review",
+   "yearFrom": 2009,
+   "yearTo": 2014,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid02pgah9GWaiophLpf6SmBx6zd98qb4xmCFzs8rZEQKvzMbpr12FsdCgKzNgFcMgp4rl",
+   "name": "Bolt-On Upgrade Full replacement bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "684187888_122123906103188965_8648110771948803604_n.jpg",
+    "686346148_122123906319188965_3669591887430737603_n.jpg",
+    "687311257_122123906187188965_8726341343395731759_n.jpg",
+    "686938792_122123906271188965_4682449774258734147_n.jpg",
+    "686201005_122123906229188965_5197539954375148676_n.jpg"
+   ],
+   "text": "Bolt-On Upgrade Full replacement bumper · Heavy-duty steel construction · Protects grille, headlights & front end · Bolt-on installation (hardware may vary) · Perfect for work trucks, daily use & off-road builds Upgrade your Silverado with strength, protection, and style.",
+   "status": "needs-review",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid02doZjs21gm6ZGifWga9o98hm8PAZaSvtdEk5TvCcE4fXXTHimLgtU9C1MfUq6F7ydl",
+   "name": "Chevy Silverado 3500 rear bumper(2015-2019) Ranch Hand",
+   "cat": "rear-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Chevrolet",
+    "Ram"
+   ],
+   "models": [
+    "Silverado 3500",
+    "Ram 1500"
+   ],
+   "years": [
+    2010,
+    2015,
+    2018,
+    2019
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "683208690_122123839827188965_4007911196036611103_n.jpg",
+    "686074881_122123839833188965_1964938198559148827_n.jpg",
+    "686090503_122123839929188965_3285722916072227233_n.jpg",
+    "685623004_992019893514459_554493500586382829_n.jpg"
+   ],
+   "text": "Chevy Silverado 3500 rear bumper(2015-2019) Ranch Hand · Full Replacement rear bumper Brand new rear replacement bumper for Chevy Silverado 3500(2015-2019) · Heavy-duty steel construction · Direct rear bumper replacement · Perfect for work trucks, towing & off-road use Upgrade your Ram with a tough rear bumper that · Shipping available nationwide Message for price & availability · Ram 1500 rear bumper 2010-2018, Dodge Ram rear bumper heavy duty, ranch hand style rear bumper Ram, aftermarket steel rear bumper Ram 1500",
+   "status": "needs-review",
+   "yearFrom": 2010,
+   "yearTo": 2019,
+   "universalFit": false,
+   "reviewReason": "no photos found",
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0vDYuEtwGnyPPFGQkrqwaSqUEAWxFKc1yfGxJRDo22MdjC1mSZGwm4xAxrPM43g2Gl",
+   "name": "Ranch Hand Bumper done in pearl White",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford",
+    "Chevrolet",
+    "Ram"
+   ],
+   "models": [
+    "RAM 2500",
+    "Super Duty",
+    "Silverado HD 2500"
+   ],
+   "years": [
+    2001,
+    2011,
+    2019,
+    2024
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "696063884_1335283565153164_3107880871947034517_n.jpg",
+    "696063884_1335283565153164_3107880871947034517_n.jpg",
+    "696063884_1335283565153164_3107880871947034517_n.jpg",
+    "690783256_1302303572006652_1500945226418228959_n.jpg",
+    "690783256_1302303572006652_1500945226418228959_n.jpg",
+    "690783256_1302303572006652_1500945226418228959_n.jpg",
+    "693281257_878257268612079_123753496244447530_n.jpg",
+    "693281257_878257268612079_123753496244447530_n.jpg",
+    "693281257_878257268612079_123753496244447530_n.jpg",
+    "690406721_2376179576226773_7307226040740322853_n.jpg",
+    "690406721_2376179576226773_7307226040740322853_n.jpg",
+    "690406721_2376179576226773_7307226040740322853_n.jpg",
+    "692861185_1525260395630658_6375797553829051286_n.jpg",
+    "692861185_1525260395630658_6375797553829051286_n.jpg",
+    "692861185_1525260395630658_6375797553829051286_n.jpg",
+    "696043001_992090470138094_6599850663579328709_n.jpg",
+    "696043001_992090470138094_6599850663579328709_n.jpg",
+    "696043001_992090470138094_6599850663579328709_n.jpg"
+   ],
+   "text": "wwXIfr,true,,Video,FF687E92,,AVAILABLE,,all · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjE5MzYxODE0Nzg0MzIxNSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjE5MzYxODE0Nzg0MzIxNSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · urn:mpeg:dash:schema:mpd:2011 · http://www.w3.org/2001/XMLSchema-instance · urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd · urn:mpeg:dash:profile:isoff-on-demand:2011 · FgAYDmdlbjJod2Jhc2ljdnA5GVaK9vvGscXlB9i/sbWzxeUHgrPIuLPF5Qespt · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjo5NjEwNDU5OTAwMDc3MjcsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjIxOTM2MTgxNDc4NDMyMTUsImFzc2V0X2FnZV9kYXlzIjo5NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJiaXRyYXRlIjo2MzA1NTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjo5NjEwNDU5OTAwMDc3MjcsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjIxOTM2MTgxNDc4NDMyMTUsImFzc2V0X2FnZV9kYXlzIjo5NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJiaXRyYXRlIjoyMzE0ODQ1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · x72Nb26jxpdQNDSzRyh6-lHDpyEpS7WpQ.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjo5NjEwNDU5OTAwMDc3MjcsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjIxOTM2MTgxNDc4NDMyMTUsImFzc2V0X2FnZV9kYXlzIjo5NiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJiaXRyYXRlIjo1MjQxNDMzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · AudioChannelConfiguration schemeIdUri · ATTACHMENT,,,VideoPlayerScrubberDefaultPreview.react,VideoPlayerScrubberDefaultPreview · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,961045990007727,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,VideoPlayerShakaPerformanceLoggerBuilder,useVideoPlayerShakaPerformanceLoggerBuilder · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,,false,OK,default · wwXIfr,true,,Video,FF6296CA,,AVAILABLE,,all · iYQpcaUFtn4Vr9kUU9l4nvmDN2CKNY9-ZlcmI1zIg.mp4? · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTY4ODQ5NjMyNTYxNzI4MSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,831943216629873,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · wwXIfr,true,,Video,FF7596C8,,AVAILABLE,,all · qH3y0IxFHtGVCGH9Hp5dLITNG7pr8fyr-c.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNTc2LmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTQzNjg4Mjc0NDc5MjY0NSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · na5DMREeRfuQog8M1tvhjUpnBV2IoJwmGmHSaVWd59mwnvx3aiAkenAJG571Kmof9pdajQ.mp4? · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTQzNjg4Mjc0NDc5MjY0NSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1281320594193024,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · wwXIfr,true,,Video,FF4483C8,,AVAILABLE,,all · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTM1Njk5NzM5NjI3NjU4NywiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTM1Njk5NzM5NjI3NjU4NywiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6MjA0NjQ2NzI0OTI3MTUyMSwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTM1Njk5NzM5NjI3NjU4NywiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTMsImJpdHJhdGUiOjE3NjU0NjksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoyMDQ2NDY3MjQ5MjcxNTIxLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU2OTk3Mzk2Mjc2NTg3LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMywiYml0cmF0ZSI6MjM5MDI4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · osq5m1BNRuCSIfUXL5w43LqYuJOj6AGvjEN1XP3fXlTrUOBJx5flP2UkpjhI8MiYg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoyMDQ2NDY3MjQ5MjcxNTIxLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU2OTk3Mzk2Mjc2NTg3LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMywiYml0cmF0ZSI6Njg4MzQ3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoyMDQ2NDY3MjQ5MjcxNTIxLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMzU2OTk3Mzk2Mjc2NTg3LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMywiYml0cmF0ZSI6NjM4OTYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,2046467249271521,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · Ranch Hand Bumper done in pearl White · wwXIfr,true,,Video,FF415B7C,,AVAILABLE,,all · rg7t-eynp3L0hqXLDxlYzOy4xPY2ru2cpxlfBS7Eg.mp4? · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,2500935787067680,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · DODGE RAM 2500 / 3500 Heavy-Duty Protection · Brand New Brand new Ranch Hand grille guard for 2019 · Heavy-duty steel construction · Built for real front-end protection · Perfect for ranch trucks, work trucks, and daily drivers Protect your Super Duty from deer strikes, road debris, and jobsite abuse while giving it the clean Texas truck look Pickup / shipping available Message for pricing & availability · wwXIfr,true,,Video,FF295B7E,,AVAILABLE,,all · KPOxjbE99fvZBpKVsxDRyQ.mp4?strext · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTUwNTE5NjIyNDUyMDc4OSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTUwNTE5NjIyNDUyMDc4OSwiYXNzZXRfYWdlX2RheXMiOjk2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxMDEwNDg1OTI4MjQzMjA4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxNTA1MTk2MjI0NTIwNzg5LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMCwiYml0cmF0ZSI6MTE1Mjg5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · J6QaT8l82IykiQCwhSy5eate5bbaAYu37Dxpah2LRXExu7WVZ14jbQ5ApCxbIr1bmPTq-hw.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxMDEwNDg1OTI4MjQzMjA4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxNTA1MTk2MjI0NTIwNzg5LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMCwiYml0cmF0ZSI6MzMxNzA2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxMDEwNDg1OTI4MjQzMjA4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxNTA1MTk2MjI0NTIwNzg5LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMCwiYml0cmF0ZSI6NjE5Njc3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoxMDEwNDg1OTI4MjQzMjA4LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxNTA1MTk2MjI0NTIwNzg5LCJhc3NldF9hZ2VfZGF5cyI6OTYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMCwiYml0cmF0ZSI6ODA3MjQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1010485928243208,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · NEW CHEVY HD 2500 3500 REPLACEMENT BUMPER (2024) Heavy-Duty · Aggressive Look Brand new front replacement bumper for 2024 Chevrolet Silverado HD 2500. · Built for work trucks & off-road setups · Bolt-on fitment Perfect upgrade for added protection and a tougher front-end look. Pickup / shipping available Message for pricing & availability",
+   "status": "needs-review",
+   "yearFrom": 2001,
+   "yearTo": 2024,
+   "universalFit": false,
+   "reviewReason": "window may span two posts — verify fitment and photos"
+  },
+  {
+   "fbid": "pfbid0Eog5C6Devog991VDdyJE7eauD2sefbVYnxgGrFDoPFaPzGyQSfMZY2yPJMvBJ9Dkl",
+   "name": "NEW GMC SIERRA 1500 REPLACEMENT BUMPER 2014 - 2015 Heavy-Duty",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "GMC"
+   ],
+   "models": [],
+   "years": [
+    2014,
+    2015
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": true,
+   "images": [
+    "690813309_122125086999188965_3827260033605947375_n.jpg",
+    "690689276_122125087179188965_5587289775654787365_n.jpg",
+    "690689292_122125087089188965_3624579561504087308_n.jpg",
+    "692069769_122125087299188965_7420899796236985881_n.jpg",
+    "692632823_122125087263188965_5347977648451447027_n.jpg"
+   ],
+   "text": "NEW GMC SIERRA 1500 REPLACEMENT BUMPER 2014 - 2015 Heavy-Duty · Aggressive Look Brand new Replasement bumper Gmc sierra 1500 2014 2015 brand frontier nuevo new · Heavy-duty steel construction · Built for work trucks & off-road setups · Bolt-on fitment Perfect upgrade for added protection and a tougher front-end look. Pickup / shipping available Message for pricing & availability",
+   "status": "ok",
+   "yearFrom": 2014,
+   "yearTo": 2015,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0JmTBBGYNNrb5t52fMXHUuSprbm6vu529r8eJJb9911kQAgKrKiRCDfm5MDLuFUhul",
+   "name": "NEW CHEVY HD 2500 REPLACEMENT BUMPER (2024) Heavy-Duty",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [
+    "Silverado HD 2500"
+   ],
+   "years": [
+    2024
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "689497085_122125085529188965_4878591289979426494_n.jpg",
+    "690743137_122125085739188965_6356612272687758507_n.jpg",
+    "692906354_122125085613188965_237308454505792983_n.jpg",
+    "690821160_122125085637188965_7737396761748354885_n.jpg",
+    "689050157_122125085553188965_6734878645192198978_n.jpg"
+   ],
+   "text": "NEW CHEVY HD 2500 REPLACEMENT BUMPER (2024) Heavy-Duty · Aggressive Look Brand new front replacement bumper for 2024 Chevrolet Silverado HD 2500. · Heavy-duty steel construction · Built for work trucks & off-road setups · Bolt-on fitment Perfect upgrade for added protection and a tougher front-end look. Pickup / shipping available Message for pricing & availability",
+   "status": "ok",
+   "yearFrom": 2024,
+   "yearTo": 2024,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid02jPvJEBDRrqJnFhKWG5ohwyEnG1DpbEHsiAsEJBZrDkLhi6edHfES5Hvv98qdvsH2l",
+   "name": "Dodge Ram 2500/3500 Tough Country EVOS Bumper OLD STOCK",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 2500",
+    "ram 2500"
+   ],
+   "years": [
+    2019,
+    2025
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "691730564_122125080651188965_7074496675928533888_n.jpg",
+    "690859289_122125080735188965_7972801438785906579_n.jpg",
+    "692252553_122125080801188965_3325682784005363774_n.jpg",
+    "692251815_122125080645188965_6953850454103019404_n.jpg",
+    "690401536_122125080825188965_2939556420146413495_n.jpg"
+   ],
+   "text": "Dodge Ram 2500/3500 Tough Country EVOS Bumper OLD STOCK · Hardware Included Remplasement bumper dodge ram 2500 3500 2019 2025 · Heavy-duty full replacement setup · Has some scratches/dents from storage & handling Perfect setup for someone wanting a heavy-duty bumper at a fraction of retail. Message for details, pics, or pickup info.",
+   "status": "ok",
+   "yearFrom": 2019,
+   "yearTo": 2025,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0B1izngYTMHeydwyQEn6xzC7BYUJEcxKUjxZnLQmkjcY9BkjaRwaBWdZ8jnzwtWS7l",
+   "name": "GMC Sierra 2500 3500 Tough Country Traditional Front Replacement Bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "GMC"
+   ],
+   "models": [
+    "Sierra 2500"
+   ],
+   "years": [
+    2024,
+    2026
+   ],
+   "price": 1000,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "690634536_122124848859188965_409061762186484324_n.jpg",
+    "690777767_122124849069188965_1412002656836417757_n.jpg",
+    "691249316_122124848937188965_2325213854677644990_n.jpg",
+    "692122336_122124849027188965_4732839091455757944_n.jpg",
+    "692075581_122124848973188965_15261223195268588_n.jpg"
+   ],
+   "text": "GMC Sierra 2500 3500 Tough Country Traditional Front Replacement Bumper WE FINANCE Tough Country Traditional front replacement bumper for the GMC Sierra 2500 3500 Will work with Front Camera, fog lights, sensors, tow hooks & has receiver hitch Has hardware Factory 2nd / overstock expect some scuffs & scratches $1000 · tax Ranch Hand brush guard 2024-2026 GMC Sierra 2500 3500, heavy duty truck guard, 2500 3500 front protection, Ranch Hand bumper accessory",
+   "status": "ok",
+   "yearFrom": 2024,
+   "yearTo": 2026,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid02XnChhvFkkMW12V4UUG6wWBTT4iNyNBXSneZmLM9TeZ2qTBF2Gnu9BUUCHcMgGrKdl",
+   "name": "Chevy Silverado 2500 3500 Tough Country Traditional Winch Ready Front Replacement Tough Country",
+   "cat": "front-replacement-bumpers",
+   "brand": "Tough Country",
+   "makes": [
+    "Ford",
+    "Chevrolet"
+   ],
+   "models": [
+    "Silverado 2500",
+    "F150"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "691255596_122124847575188965_3597926573305544186_n.jpg",
+    "692171337_122124847611188965_8586485439118198561_n.jpg",
+    "690767016_122124847665188965_2578576732962163948_n.jpg",
+    "691482377_122124847779188965_6804844269228271328_n.jpg",
+    "692068240_122124847863188965_682231413956959841_n.jpg",
+    "692077627_122124846195188965_3215182158403498496_n.jpg",
+    "690777767_122124846279188965_5844586891755480262_n.jpg",
+    "692066774_122124846309188965_6913324312538227120_n.jpg",
+    "691393726_122124846369188965_6225116709727746933_n.jpg",
+    "688846358_122124846447188965_494397442336676899_n.jpg"
+   ],
+   "text": "Chevy Silverado 2500 3500 Tough Country Traditional Winch Ready Front Replacement Tough Country Traditional front replacement bumper for the 2024 & 2025 Chevy Silverado 2500 3500 Bumper is winch ready, has winch plate Bumper works with fog lights, camera, sensors, tow hooks and has receiver hitch Scratch / dent / blemish bumper Expect some flaws Have 2 of these available, flaws vary Scuffs / scratches No warps or bends We offer financing and shipping Message for more information Ranch Hand brush guard 2024 & 2025 Chevy Silverado 2500 3500, heavy duty truck guard, F150 front protection, Ranch Hand bumper accessory",
+   "status": "ok",
+   "yearFrom": 2024,
+   "yearTo": 2025,
+   "universalFit": false,
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid02Y6DpS89U68j5QCSxY5ZXzXwBKv74MnSL37HCxx7P1BxvxtyddTeqc85F1Gca9ibml",
+   "name": "Ram 2500 3500 Ranch Hand Legend Front Replacement Bumper W/ Camera",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 2500"
+   ],
+   "years": [
+    2019,
+    2025
+   ],
+   "price": null,
+   "financed": true,
+   "spanish": false,
+   "images": [
+    "695254923_122124787113188965_1107149784067678960_n.jpg",
+    "690631585_122124787107188965_5904472098947568522_n.jpg",
+    "690640283_122124787173188965_6163607652372199493_n.jpg"
+   ],
+   "text": "Ram 2500 3500 Ranch Hand Legend Front Replacement Bumper W/ Camera WE FINANCE Have 2 brand new Ranch Hand Legend front replacement bumpers for the 2019-2025 Ram 2500 3500 Bumpers come complete with hardware Have fog lights, camera cut out and work with sensors FBD191BLRC",
+   "status": "ok",
+   "yearFrom": 2019,
+   "yearTo": 2025,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0DbEXHNR28Ru5eVquSoXobk3QUNCQ9PRftiNQxinbUXs8g9HHACEicYTAoowJ4Hm7l",
+   "name": "Clean Includes all brackets & bolts No dents No rust Practically brand new condition Perfect up",
+   "cat": "grill-guards",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford",
+    "Chevrolet"
+   ],
+   "models": [
+    "F150"
+   ],
+   "years": [
+    2001,
+    2009,
+    2011,
+    2014,
+    2020
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "687049701_122124776157188965_653015752781007996_n.jpg",
+    "690661002_122124776163188965_8685385431670904614_n.jpg",
+    "688914110_122124776223188965_9208056746152822574_n.jpg",
+    "690816588_1319947016734581_2402382112366147037_n.jpg",
+    "690816588_1319947016734581_2402382112366147037_n.jpg",
+    "690816588_1319947016734581_2402382112366147037_n.jpg"
+   ],
+   "text": "RANCH HAND 2020 SILVERADO Fresh Powder Coat · Clean Includes all brackets & bolts No dents No rust Practically brand new condition Perfect upgrade for added front-end protection and that aggressive Ranch Hand look Ranch Hand brush guard F150, Ford F150 grille guard 2009-2014, heavy duty truck guard, F150 front protection, Ranch Hand bumper accessory · wwXIfr,true,,Video,FF4C5B29,,AVAILABLE · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjkzODY4OTg1NTgzNjE4NiwiYXNzZXRfYWdlX2RheXMiOjk4LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzM2MHAiLCJ4cHZfYXNzZXRfaWQiOjkzODY4OTg1NTgzNjE4NiwiYXNzZXRfYWdlX2RheXMiOjk4LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · urn:mpeg:dash:schema:mpd:2011 · http://www.w3.org/2001/XMLSchema-instance · urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd · urn:mpeg:dash:profile:isoff-on-demand:2011 · FgAYDmdlbjJod2Jhc2ljdnA5GTbox5WYv4bRA5K7rJu/htEDvK7Dnr · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxMjgzMTg3NzUwMDg1MjEwLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5Mzg2ODk4NTU4MzYxODYsImFzc2V0X2FnZV9kYXlzIjo5OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE3LCJiaXRyYXRlIjoxNjM4MzEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · QNiAfmBvBxRmVNMJWdDEsydxHOg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxMjgzMTg3NzUwMDg1MjEwLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5Mzg2ODk4NTU4MzYxODYsImFzc2V0X2FnZV9kYXlzIjo5OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE3LCJiaXRyYXRlIjo0NTM2MzEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxMjgzMTg3NzUwMDg1MjEwLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5Mzg2ODk4NTU4MzYxODYsImFzc2V0X2FnZV9kYXlzIjo5OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE3LCJiaXRyYXRlIjo3NjY0NzcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · ATTACHMENT,,,VideoPlayerScrubberDefaultPreview.react,VideoPlayerScrubberDefaultPreview · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1283187750085210,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,VideoPlayerShakaPerformanceLoggerBuilder,useVideoPlayerShakaPerformanceLoggerBuilder · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,,false,OK,default",
+   "status": "needs-review",
+   "yearFrom": 2001,
+   "yearTo": 2020,
+   "universalFit": false,
+   "reviewReason": "window may span two posts — verify fitment and photos"
+  },
+  {
+   "fbid": "pfbid0xXfJm1Pcfhi5B7sJ69Q2CmXtaqLE1pWbkLWtVm98apa5yEWA4VC9YmnTW9HyYpjyl",
+   "name": "A Ranch Hand bumper adds serious front-end protection, handling impacts, brush, and tough jobsi",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "686077080_122123908245188965_6924479179083883753_n.jpg",
+    "686965472_122123908281188965_4305028493877260131_n.jpg"
+   ],
+   "text": "A Ranch Hand bumper adds serious front-end protection, handling impacts, brush, and tough jobsite conditions with ease. Pair it with a Weather Guard toolbox to keep your tools secure, organized, and weather-protected. Together, they upgrade your truck · s durability, functionality, and professional look · perfect for work, off-road use, and everyday reliability.",
+   "status": "needs-review",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false,
+   "reviewReason": "no make detected in copy"
+  },
+  {
+   "fbid": "pfbid03rqRWkJeUgcF8hy4FdREfmabbP6GBmKB2Fz82uZfrDn2rRWAJeBzazNRxRMkA7HCl",
+   "name": "Remplasement bumper chevy HD 2500 3500 2023 2024 nuevo new replacement bumper",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [],
+   "years": [
+    2023,
+    2024
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": true,
+   "images": [
+    "686313716_122123904441188965_2845207019377504678_n.jpg",
+    "683701607_122123904507188965_4787061049296099418_n.jpg",
+    "686480062_122123904447188965_5983911004456433476_n.jpg",
+    "683586146_122123904537188965_7161524412335166945_n.jpg"
+   ],
+   "text": "Remplasement bumper chevy HD 2500 3500 2023 2024 nuevo new replacement bumper · not just a guard Heavy-duty steel construction · Bolt-on installation (hardware may vary) · Perfect for work trucks, daily use & off-road builds",
+   "status": "ok",
+   "yearFrom": 2023,
+   "yearTo": 2024,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0bbnoT7sY19gWF2u7QxDFgLrf5BSB5XWWDTdJuprG9jn2gGLJqNpDtptRKtamCKsZl",
+   "name": "Full Replacement",
+   "cat": "rear-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 1500"
+   ],
+   "years": [
+    2010,
+    2018
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "686183050_122123830839188965_14447695425502398_n.jpg",
+    "685546034_122123830899188965_1100561538891296528_n.jpg",
+    "686210052_122123830935188965_345644587763443522_n.jpg",
+    "686197395_122123830833188965_4786855605148255480_n.jpg"
+   ],
+   "text": "Full Replacement Brand new rear replacement bumper for Dodge Ram 1500 (2010 · Heavy-duty steel construction · Direct rear bumper replacement · Perfect for work trucks, towing & off-road use Upgrade your Ram with a tough rear bumper that · s built to last. Ram 1500 rear bumper 2010-2018, Dodge Ram rear bumper heavy duty, ranch hand style rear bumper Ram, aftermarket steel rear bumper Ram 1500",
+   "status": "ok",
+   "yearFrom": 2010,
+   "yearTo": 2018,
+   "universalFit": false,
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0wJM5nfYnSjV6mD7yim4gyTBcucdKbs4Tj2CYQN8evRcMqZc4qq35TC4pz8h6UnNFl",
+   "name": "Heavy-Duty Steel",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F-250",
+    "F-350",
+    "Super Duty",
+    "F250",
+    "F350"
+   ],
+   "years": [
+    2011,
+    2016
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "683472105_122123829663188965_5120706064598479715_n.jpg",
+    "686104108_122123829669188965_6733460439311946685_n.jpg",
+    "686417973_122123829735188965_8435040135659152860_n.jpg",
+    "686417953_122123829753188965_173475654221118443_n.jpg",
+    "683756086_122123829813188965_4930165270106021024_n.jpg",
+    "686178903_122123828835188965_7941705283607803357_n.jpg",
+    "684950511_122123828913188965_1786715595402114952_n.jpg",
+    "686187817_122123828919188965_6113860619171745095_n.jpg",
+    "685754809_122123828985188965_7896836192567229413_n.jpg",
+    "685009854_122123828841188965_4433344637178924627_n.jpg",
+    "686515201_122123824581188965_828180696851867887_n.jpg",
+    "684802242_122123824731188965_2759394360212234062_n.jpg",
+    "684265457_122123824665188965_4359200174568495332_n.jpg",
+    "684570107_122123824575188965_628935765952881749_n.jpg",
+    "684950511_122123824641188965_1613994949904816959_n.jpg",
+    "685492474_122123684661188965_5902321358774834203_n.jpg",
+    "682008759_122123684853188965_986827044504893223_n.jpg",
+    "686086963_122123684745188965_1127405398998043517_n.jpg",
+    "683350492_122123684907188965_3281607807490497159_n.jpg",
+    "686100472_122123684679188965_2173565212529701081_n.jpg"
+   ],
+   "text": "Heavy-Duty Steel Brand new full replacement front bumper for Ford F-250 / F-350 Super Duty (2011 · Full replacement (not just a grille guard) · Heavy-duty steel construction · Protects grille, headlights & front end · Ideal for work trucks, towing & off-road use Upgrade your Super Duty with serious durability and a clean, aggressive stance Ford F250 bumper 2011-2016, F350 heavy duty bumper, Super Duty ranch hand style bumper, aftermarket steel bumper Ford truck, grille guard replacement bumper",
+   "status": "ok",
+   "yearFrom": 2011,
+   "yearTo": 2016,
+   "universalFit": false,
+   "reposts": 3
+  },
+  {
+   "fbid": "pfbid09dZhovZsvu6gTVResFot6ydG4FimZ19L9wQkcidsi5W6ytD1FGQaRZ56tpzuzozWl",
+   "name": "Heavy-Duty Steel full replacement front bumper for Chevrolet Silverado 2500HD / 3500HD (2015",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [
+    "Silverado 2500"
+   ],
+   "years": [
+    2015,
+    2019
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "683637895_122123827737188965_8858149949174529610_n.jpg",
+    "685834436_122123827887188965_3562656783623388285_n.jpg",
+    "686215497_122123827827188965_5460787290264091720_n.jpg",
+    "686179952_122123827743188965_3158694129752652155_n.jpg",
+    "686090491_122123827809188965_2051377598492767745_n.jpg"
+   ],
+   "text": "Heavy-Duty Steel full replacement front bumper for Chevrolet Silverado 2500HD / 3500HD (2015 · Full replacement (not just a grille guard) · Heavy-duty steel construction · Protects grille, headlights & front end · Perfect for work trucks, towing & off-road use · SHIPPED Silverado 2500HD bumper 2015-2019, Chevy 3500HD heavy duty bumper, ranch hand style bumper Silverado HD, aftermarket steel bumper Chevy HD",
+   "status": "ok",
+   "yearFrom": 2015,
+   "yearTo": 2019,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid033dQDvcK9GAs9Lf1qjV8i7UNK6tsP9NyfqpSmb5dzmgkUSUyKJtQMuZSzqBQYGxRjl",
+   "name": "Heavy-Duty Steel full replacement front bumper for Dodge Ram 2500 / 3500 (2006",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ram"
+   ],
+   "models": [
+    "Ram 2500",
+    "Ram 3500"
+   ],
+   "years": [
+    2006,
+    2007,
+    2008,
+    2009
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "686064712_122123826843188965_137492585460066542_n.jpg",
+    "684271517_122123826945188965_7332745209015348906_n.jpg",
+    "686226898_122123826909188965_2425502985298719617_n.jpg",
+    "686102542_122123826993188965_3444011784611040634_n.jpg",
+    "683659561_122123826849188965_1560349974645663293_n.jpg",
+    "686211490_122123825223188965_8383980074706154099_n.jpg",
+    "686083246_122123825349188965_2295174544644368822_n.jpg",
+    "683594181_122123825307188965_5579296817134905452_n.jpg",
+    "686187834_122123825373188965_19267967401386388_n.jpg",
+    "684624520_122123825247188965_9180930318961422954_n.jpg"
+   ],
+   "text": "Heavy-Duty Steel full replacement front bumper for Dodge Ram 2500 / 3500 (2006 · Ranch Hand style (tough look · Heavy-duty steel construction · Protects grille, headlights & front end · Perfect for work trucks, towing & off-road use Upgrade your 3rd gen Ram with serious durability and presence. · Shipping available nationwide Message for price & details · Ram 2500 bumper 2006 2007 2008 2009, Ram 3500 heavy duty bumper, Dodge Ram ranch hand style bumper, 3rd gen Ram bumper, aftermarket steel bumper Ram HD",
+   "status": "ok",
+   "yearFrom": 2006,
+   "yearTo": 2009,
+   "universalFit": false,
+   "reposts": 1
+  },
+  {
+   "fbid": "pfbid0vFxFfMYKDVEZt9pMDjj3Bu9kHLCVtH9En6qT4aHZpycsF6qdrosx5JGDzUzfpogDl",
+   "name": "s front and rear Ltz ranch hand full replacement bumpers no rust with fog lights, light bar inc",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [],
+   "years": [
+    2001,
+    2011,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "686375802_122123823105188965_2164325469616735294_n.jpg",
+    "686139302_122123823189188965_3965924358137791506_n.jpg",
+    "684286196_122123823141188965_34837750789216286_n.jpg",
+    "682689760_1374606574467084_2595565700400240342_n.jpg",
+    "682689760_1374606574467084_2595565700400240342_n.jpg",
+    "682689760_1374606574467084_2595565700400240342_n.jpg"
+   ],
+   "text": "s front and rear Ltz ranch hand full replacement bumpers no rust with fog lights, light bar included, parking sensor holes, and led reverse lights · led running lights. 3200 cash or 2400 · stock bumpers. If you have a double cab I have the bed step, back door step, and front door step matching running boards. OBO. · wwXIfr,true,,Video,FF206949,,AVAILABLE,,all · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjEzNDg3NzM4Mzc1Mzk1NCwiYXNzZXRfYWdlX2RheXMiOjEwNywidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjEzNDg3NzM4Mzc1Mzk1NCwiYXNzZXRfYWdlX2RheXMiOjEwNywidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · urn:mpeg:dash:schema:mpd:2011 · http://www.w3.org/2001/XMLSchema-instance · urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd · urn:mpeg:dash:profile:isoff-on-demand:2011 · d4iPRbpT0WUAqncEvzSdHRaTfxmx5fo6BtWp90xaxLrybnWDZscgyz02rSGH5eJIngg.mp4? · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjozMjEwODYzOTI1NzcwMjEyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMTM0ODc3MzgzNzUzOTU0LCJhc3NldF9hZ2VfZGF5cyI6MTA3LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjQsImJpdHJhdGUiOjg2NzU5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · AudioChannelConfiguration schemeIdUri · eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjozMjEwODYzOTI1NzcwMjEyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMTM0ODc3MzgzNzUzOTU0LCJhc3NldF9hZ2VfZGF5cyI6MTA3LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjQsImJpdHJhdGUiOjgwODQyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D · ATTACHMENT,,,VideoPlayerScrubberDefaultPreview.react,VideoPlayerScrubberDefaultPreview · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,3210863925770212,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,VideoPlayerShakaPerformanceLoggerBuilder,useVideoPlayerShakaPerformanceLoggerBuilder · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,,false,OK,default · Bolt-On Upgrade Brand new replacement front bumper for Chevrolet Silverado 1500 (2014 · Heavy-duty steel construction for maximum protection · Bolt-on installation (hardware may vary) · Perfect for work trucks, off-road builds, or daily drivers Upgrade your Silverado with strength, protection, and style. · Shipping available Message for price & details · Chevy Silverado 1500 bumper 2014 2015 2016 2017 2018, Silverado replacement bumper, aftermarket steel bumper Chevy, truck front bumper upgrade, Silverado accessories",
+   "status": "needs-review",
+   "yearFrom": 2001,
+   "yearTo": 2018,
+   "universalFit": false,
+   "reviewReason": "window may span two posts — verify fitment and photos"
+  },
+  {
+   "fbid": "pfbid0fkP1mbZ3CdqCdbsfAjHL4zcimdXw9448g1QVsyYBFjyUXa6gTMGV1h78VgGdTH5Yl",
+   "name": "TRUCK BUMPERS & GRILLE GUARDS AVAILABLE Aftermarket",
+   "cat": "grill-guards",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Chevrolet",
+    "GMC"
+   ],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "686149684_122123707839188965_4563412958680181475_n.jpg",
+    "683495712_122123707869188965_5493842891779250575_n.jpg",
+    "683803711_122123708445188965_7788107233522009235_n.jpg",
+    "684120128_122123708541188965_7270033889754338231_n.jpg",
+    "684206169_122123708547188965_686794134864726150_n.jpg",
+    "685577313_996767119591764_4737354354324715788_n.jpg",
+    "685577313_996767119591764_4737354354324715788_n.jpg",
+    "685577313_996767119591764_4737354354324715788_n.jpg"
+   ],
+   "text": "TRUCK BUMPERS & GRILLE GUARDS AVAILABLE Aftermarket · Ready to Go We carry a wide selection of truck bumpers, grills and grille guards for all major brands · Aftermarket Heavy-Duty Bumpers · Ranch Hand Bumpers & Grille Guards · OEM & Custom Options Available · Winch bumpers, brush guards, full replacements Fits Multiple Trucks: · Chevy / GMC (1500, 2500HD, 3500HD) · wwXIfr,true,,Video,FF2C251F,,AVAILABLE,,all · eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTM4NzgzNDExOTgyNjU3MCwiYXNzZXRfYWdlX2RheXMiOjEwNywidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D · ATTACHMENT,,,VideoPlayerScrubberDefaultPreview.react,VideoPlayerScrubberDefaultPreview · video$normalization.graphql,XFBVideoPlayerScrubberDefaultPreviewRenderer,1393169445899870,false,0,0,,0,0,0,VideoPlayerShakaPerformanceLogger,useVideoPlayerShakaPerformanceLoggerRelayImpl · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,VideoPlayerShakaPerformanceLoggerBuilder,useVideoPlayerShakaPerformanceLoggerBuilder · init$normalization.graphql,VideoPlayerShakaPerformanceLoggerInit,,false,OK,default · Silver colored Ranch Hand Bumper doesn",
+   "status": "ok",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0Nn51zBmRePj9eAEK5qfvdPE1VKUn1NjjBtrSks5uf1dr7WLiMYkrJa9pyuRHnj1Ll",
+   "name": "Bolt-On Upgrade",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [],
+   "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "684819219_122123687931188965_3948431822929638761_n.jpg",
+    "683271043_122123688015188965_7850664912307739870_n.jpg",
+    "682959065_122123688039188965_8824027971385642421_n.jpg",
+    "684415378_122123688189188965_6415005945651622288_n.jpg",
+    "682706880_122123687955188965_7171535885536974592_n.jpg"
+   ],
+   "text": "Bolt-On Upgrade Brand new replacement front bumper for Chevrolet Silverado 1500 (2014 · Heavy-duty steel construction for maximum protection · Bolt-on installation (hardware may vary) · Perfect for work trucks, off-road builds, or daily drivers Upgrade your Silverado with strength, protection, and style. · Shipping available Message for price & details · Chevy Silverado 1500 bumper 2014 2015 2016 2017 2018, Silverado replacement bumper, aftermarket steel bumper Chevy, truck front bumper upgrade, Silverado accessories",
+   "status": "ok",
+   "yearFrom": 2014,
+   "yearTo": 2018,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0fNsBMfsSK5nRCKnd1916KMzeg6CZctrdQkFhecRnuWsLFjZYhr4xUDe3sBaPJC7el",
+   "name": "WEATHER GUARD & UWS Truck Tool Boxes",
+   "cat": "tool-boxes",
+   "brand": "Weather Guard",
+   "makes": [],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "683723797_122123686017188965_8580624833347086078_n.jpg",
+    "686487002_122123686191188965_6721148325940865068_n.jpg",
+    "686115194_122123686359188965_8141807827514599639_n.jpg",
+    "682572832_122123686275188965_7226300674246695871_n.jpg",
+    "684832360_122123686389188965_3042107495002234038_n.jpg"
+   ],
+   "text": "WEATHER GUARD & UWS Truck Tool Boxes · Multiple Options Upgrade your truck with high-quality tool boxes · Heavy-duty aluminum construction · Secure storage for tools, gear & equipment · Perfect for work trucks, contractors & daily use · Shipping available Message for size, condition & availability · Weather Guard toolbox, UWS toolbox, truck bed toolbox, crossover toolbox, aluminum tool box pickup, contractor truck storage, pickup truck accessories",
+   "status": "ok",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": true
+  },
+  {
+   "fbid": "pfbid0SRAyWi2gLyzYrBUb4Pf7fyAmqa7ULJydEHf1FaS8rWthpyL1FtS1BggaPfkCkN5ul",
+   "name": "Frontier truck rack, Ford F250 rack, F350 ladder rack, Super Duty bed rack, headache rack Ford ",
+   "cat": "truck-racks",
+   "brand": null,
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F250",
+    "F350",
+    "SUPER DUTY",
+    "F-250",
+    "F-350",
+    "Super Duty"
+   ],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "684646258_122123681025188965_8368472642588977241_n.jpg",
+    "683167628_122123681103188965_6320940319318275833_n.jpg",
+    "683750102_122123681109188965_5315108687221543518_n.jpg",
+    "685251694_122123681019188965_8419294394694695386_n.jpg",
+    "683557621_122123681169188965_7587031640492645_n.jpg"
+   ],
+   "text": "FORD F250 / F350 SUPER DUTY (NEW) Heavy-Duty Bed Rack · Brand New Brand new Frontier rack for Ford F-250 / F-350 Super Duty · Heavy-duty steel construction · Perfect for ladders, tools, equipment, and work use · Clean, professional look for any work truck Built to handle tough jobs and daily use · Shipping available Message for price & details · Frontier truck rack, Ford F250 rack, F350 ladder rack, Super Duty bed rack, headache rack Ford truck, work truck rack, pickup ladder rack heavy duty",
+   "status": "ok",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": true
+  },
+  {
+   "fbid": "pfbid0kgQGmcqtSZkrf5YveXggW352oTv8Au4AeihvjRw96ubBCq921Zp9vfkxq6zGXxrol",
+   "name": "Built Ford Tough",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "F-150",
+    "F150"
+   ],
+   "years": [
+    2018,
+    2019,
+    2020
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "683626640_122123680191188965_8243579480864594503_n.jpg",
+    "683388362_122123680197188965_6441205161103516011_n.jpg",
+    "686100946_122123680257188965_1200156986192851657_n.jpg",
+    "682445552_122123680287188965_7734049104245194308_n.jpg",
+    "686132253_122123680341188965_1058359385214719438_n.jpg"
+   ],
+   "text": "Built Ford Tough Brand new Ranch Hand replacement bumper for Ford F-150 (2018 · Heavy-duty steel construction (Ranch Hand quality) · Full replacement front bumper · Built for maximum front-end protection · Perfect for work trucks, off-road, and ranch use Upgrade your F-150 with one of the toughest bumpers on the market · Shipping available Message for price & details · Ranch Hand bumper F150, Ford F150 replacement bumper 2018 2019 2020, heavy duty steel bumper, truck front bumper upgrade, grille guard bumper F150, aftermarket F150 bumper",
+   "status": "ok",
+   "yearFrom": 2018,
+   "yearTo": 2020,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid0poa97TiKZyxLy7yxcype6EQHQvtzK4ycNzjJ3Xuzc8DMVLHqv6pjdsrF7rC88p5xl",
+   "name": "Truck Ready Solid grille guard / brush guard for Ford Super Duty F-250 & F-350 (2017",
+   "cat": "grill-guards",
+   "brand": null,
+   "makes": [
+    "Ford"
+   ],
+   "models": [
+    "Super Duty",
+    "F-250",
+    "F-350",
+    "F250",
+    "F350"
+   ],
+   "years": [
+    2017,
+    2022
+   ],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "684834379_122123679555188965_2518383666814594832_n.jpg",
+    "683533714_122123679597188965_7076299615029499309_n.jpg",
+    "682462968_122123679663188965_4024082784861507263_n.jpg",
+    "682689164_122123679639188965_8758168173642950103_n.jpg"
+   ],
+   "text": "Truck Ready Solid grille guard / brush guard for Ford Super Duty F-250 & F-350 (2017 · Heavy-duty steel construction · Protects grille, headlights & front end · perfect for work trucks or off-road builds · Bolt-on setup (hardware may vary) · Great upgrade for durability · Shipping available Message for price & details · Ford F250 grille guard, F350 brush guard, Super Duty front guard, 2017-2022 F250 accessories, truck grille protector, heavy duty brush guard, Ford truck parts",
+   "status": "ok",
+   "yearFrom": 2017,
+   "yearTo": 2022,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid02Ks7yKSHv2VWz6rVxAXNTCR9REoPVpQPcZLbCqccATXDLVnQCH5eyVs5BF6VnApaVl",
+   "name": "Style Front Bumper (Chevy Silverado 2020",
+   "cat": "front-replacement-bumpers",
+   "brand": null,
+   "makes": [
+    "Chevrolet"
+   ],
+   "models": [],
+   "years": [
+    2020
+   ],
+   "price": 900,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "652227092_122118003759188965_860524995065118766_n.jpg",
+    "652881692_122118003729188965_1311660680599359300_n.jpg",
+    "652689720_122118003831188965_6847881565645699855_n.jpg",
+    "652266360_122118003819188965_3099125039960755868_n.jpg",
+    "654277282_122118003615188965_978490487180074398_n.jpg"
+   ],
+   "text": "Style Front Bumper (Chevy Silverado 2020 · Built tough and ready to install · style bumper is designed to fit 2020 · Chevy Silverado models perfectly. Canadian-made in Red Deer, Alberta · this one is available now All mounting hardware included for quick, hassle-free installation Last photo shows the exact fitment on the truck Approx. $900 CAD (includes tax & shipping) Serious inquiries only, please.",
+   "status": "ok",
+   "yearFrom": 2020,
+   "yearTo": 2020,
+   "universalFit": false
+  },
+  {
+   "fbid": "pfbid02pzVUVGeX8s4QDZYKdfbBkVnMC6RswYi7gKTgLgkfWsZpq2ZP5B2tFhDVcmDp7WCHl",
+   "name": "HEAVY-DUTY RANCH HAND BUMPERS AVAILABLE Looking to upgrade your truck with a Ranch Hand bumper ",
+   "cat": "front-replacement-bumpers",
+   "brand": "Ranch Hand",
+   "makes": [
+    "Ford",
+    "Toyota"
+   ],
+   "models": [],
+   "years": [],
+   "price": null,
+   "financed": false,
+   "spanish": false,
+   "images": [
+    "651407913_122117286603188965_5516210205119476248_n.jpg",
+    "649823103_122117286675188965_1716355935036483979_n.jpg",
+    "649820390_122117286519188965_1132540900971009807_n.jpg",
+    "650364769_122117286609188965_5026022031013343413_n.jpg",
+    "649816520_122117286645188965_3449409030869510617_n.jpg"
+   ],
+   "text": "HEAVY-DUTY RANCH HAND BUMPERS AVAILABLE Looking to upgrade your truck with a Ranch Hand bumper built for real protection and a bold, rugged look? We · ve got you covered. At Huntsville Auto & Truck Salvage, we carry a range of heavy-duty options including: · Grille Guards / Brush Guards Available for most truck brands, including: Ford · Toyota These bumpers are built tough and made to handle work trucks, ranch trucks, and off-road builds. Send us your truck · s year, make, and model and we · ll help you find the right fit. Message us today for availability and pricing.",
+   "status": "ok",
+   "yearFrom": null,
+   "yearTo": null,
+   "universalFit": false
+  }
+ ]
+}

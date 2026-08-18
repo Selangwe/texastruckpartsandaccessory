@@ -1,0 +1,15 @@
+{
+  "name": "texas-truck-parts-v2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Texas Truck Parts V2 — front-end templates (homepage, category, PDP) built from the 80-product catalogue. Ports into a WooCommerce child theme.",
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "sync": "python build/sync_store.py 6",
+    "data": "python build/generate_products.py",
+    "build": "npm run sync && npm run fb:parse && npm run data",
+    "fb:parse": "node build/parse_facebook.js",
+    "fb:images": "node build/fetch_facebook_images.js"
+  },
+  "license": "UNLICENSED"
+}

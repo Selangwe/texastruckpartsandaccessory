@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Facebook catalogue review — Texas Truck Parts</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  body{padding:0 0 80px}
+  .rv-head{padding:28px 0 22px;border-bottom:1px solid var(--line);margin-bottom:24px}
+  .rv-head h1{font-family:var(--disp);font-weight:900;font-size:clamp(2rem,5vw,3.4rem);
+    line-height:.88;text-transform:uppercase;letter-spacing:-.015em}
+  .rv-head p{color:#a9b0b6;max-width:70ch;margin-top:12px;line-height:1.6}
+  .counts{display:flex;gap:26px;flex-wrap:wrap;margin-top:20px}
+  .counts div b{font-family:var(--disp);font-weight:900;font-size:2rem;line-height:.9;display:block}
+  .counts div span{font-family:var(--mono);font-size:.48rem;letter-spacing:.16em;color:var(--zinc);text-transform:uppercase}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+  .tabs button{border:1px solid var(--line-hard);padding:9px 16px;font-family:var(--mono);
+    font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:#c4c9ce;background:none}
+  .tabs button.on{background:var(--oxide);color:#0b0c0d;border-color:var(--oxide)}
+  .item{border:1px solid var(--line-hard);background:var(--panel);margin-bottom:16px;padding:20px 22px}
+  .item.review{border-left:3px solid var(--hazard)}
+  .item.ok{border-left:3px solid var(--weld)}
+  .item h2{font-family:var(--disp);font-weight:800;font-size:1.35rem;text-transform:uppercase;
+    line-height:1.05;letter-spacing:.01em;margin-bottom:8px}
+  .tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+  .tags span{font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid var(--line-hard);padding:5px 9px;color:#b7bdc3}
+  .tags .warn{border-color:var(--hazard);color:var(--hazard)}
+  .tags .good{border-color:var(--weld);color:var(--weld)}
+  .shots{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+  .shots img{width:104px;height:78px;object-fit:cover;border:1px solid var(--line);background:var(--plate)}
+  .shots img.missing{opacity:.25}
+  .copy{color:#9aa1a8;font-size:.82rem;line-height:1.55;max-height:76px;overflow:hidden;
+    border-top:1px solid var(--line);padding-top:10px;margin-top:6px}
+  .copy.open{max-height:none}
+  .more{font-family:var(--mono);font-size:.5rem;letter-spacing:.14em;color:var(--oxide);
+    text-transform:uppercase;background:none;margin-top:8px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="rv-head">
+    <div class="mono" style="color:var(--oxide)">// Internal — not part of the site</div>
+    <h1>Facebook catalogue<br>review</h1>
+    <p>Products extracted from the Facebook posts export. Facebook posts are not a product
+       feed — reposts, promos and bilingual copy are mixed in — so anything the parser was
+       not confident about is flagged rather than guessed. Check the flagged ones against
+       their photos, then correct <code>data/facebook-products.json</code>.</p>
+    <div class="counts" id="counts"></div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div id="list"></div>
+</main>
+
+<script>
+fetch('data/facebook-products.json').then(r=>r.json()).then(function(d){
+  var P = d.products;
+  var esc = function(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');};
+
+  document.getElementById('counts').innerHTML =
+    [['Products', P.length],
+     ['Ready', P.filter(function(p){return p.status==='ok';}).length],
+     ['Need review', P.filter(function(p){return p.status==='needs-review';}).length],
+     ['Reposts merged', d.counts.duplicates],
+     ['Non-product posts', d.counts.notProducts],
+     ['Photos', [].concat.apply([],P.map(function(p){return p.images;})).length]]
+    .map(function(r){return '<div><b>'+r[1]+'</b><span>'+r[0]+'</span></div>';}).join('');
+
+  var filter = 'needs-review';
+  var FILTERS = [['needs-review','Need review'],['ok','Ready'],['all','All']];
+  document.getElementById('tabs').innerHTML = FILTERS.map(function(f){
+    return '<button data-f="'+f[0]+'">'+f[1]+'</button>';
+  }).join('');
+
+  function render(){
+    document.querySelectorAll('.tabs button').forEach(function(b){
+      b.classList.toggle('on', b.dataset.f===filter);
+    });
+    var rows = P.filter(function(p){return filter==='all'||p.status===filter;});
+    document.getElementById('list').innerHTML = rows.map(function(p){
+      var tags = [];
+      tags.push('<span class="'+(p.status==='ok'?'good':'warn')+'">'+p.status+'</span>');
+      if (p.reviewReason) tags.push('<span class="warn">'+esc(p.reviewReason)+'</span>');
+      tags.push('<span>'+esc(p.cat||'no category')+'</span>');
+      tags.push('<span>'+(p.makes.length?esc(p.makes.join(' / ')):'no make')+'</span>');
+      if (p.yearFrom) tags.push('<span>'+p.yearFrom+'–'+p.yearTo+'</span>');
+      if (p.brand) tags.push('<span>'+esc(p.brand)+'</span>');
+      if (p.models.length) tags.push('<span>'+esc(p.models.join(', '))+'</span>');
+      if (p.price) tags.push('<span class="good">$'+p.price+'</span>');
+      if (p.financed) tags.push('<span>financing offered</span>');
+      if (p.spanish) tags.push('<span>bilingual copy</span>');
+      if (p.reposts) tags.push('<span>'+p.reposts+' repost(s) merged</span>');
+      tags.push('<span>'+p.images.length+' photos</span>');
+
+      return '<div class="item '+(p.status==='ok'?'ok':'review')+'">'+
+        '<h2>'+esc(p.name||'(no title found)')+'</h2>'+
+        '<div class="tags">'+tags.join('')+'</div>'+
+        '<div class="shots">'+p.images.map(function(f){
+          return '<img loading="lazy" src="assets/img/_facebook/'+esc(f)+'" alt="" '+
+                 'onerror="this.classList.add(\'missing\')">';
+        }).join('')+'</div>'+
+        '<div class="copy">'+esc(p.text)+'</div>'+
+        '<button class="more">Show full copy</button>'+
+      '</div>';
+    }).join('') || '<p style="color:var(--zinc)">Nothing in this bucket.</p>';
+  }
+
+  document.getElementById('tabs').addEventListener('click', function(e){
+    if (e.target.dataset.f){ filter = e.target.dataset.f; render(); }
+  });
+  document.getElementById('list').addEventListener('click', function(e){
+    if (e.target.classList.contains('more')){
+      var c = e.target.previousElementSibling;
+      c.classList.toggle('open');
+      e.target.textContent = c.classList.contains('open') ? 'Collapse' : 'Show full copy';
+    }
+  });
+
+  render();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texas Truck Parts — V2 Production Site Plan</title>
+<style>
+  :root {
+    --black: #0A0A0A;
+    --graphite: #1C1C1E;
+    --steel: #2C2C2E;
+    --mid: #3A3A3C;
+    --muted: #636366;
+    --border: #3A3A3C;
+    --accent: #D4410A;       /* rust/orange — truck parts feel */
+    --accent2: #E8A020;      /* amber — warning/highlight */
+    --green: #30D158;
+    --blue: #0A84FF;
+    --text: #F2F2F7;
+    --subtext: #AEAEB2;
+    --card: #1C1C1E;
+    --font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* ── HEADER ── */
+  .hero {
+    background: linear-gradient(135deg, #0A0A0A 0%, #1C0804 60%, #2B0F00 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 56px 48px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(212,65,10,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(212,65,10,0.15);
+    border: 1px solid rgba(212,65,10,0.4);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--accent); text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 38px; font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.15; margin-bottom: 12px;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero-sub {
+    font-size: 16px; color: var(--subtext); max-width: 680px;
+    margin-bottom: 32px;
+  }
+  .hero-meta {
+    display: flex; gap: 32px; flex-wrap: wrap;
+  }
+  .hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .hero-meta-item .label {
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600;
+  }
+  .hero-meta-item .val {
+    font-size: 14px; font-weight: 700; color: var(--text);
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 48px 80px; }
+  .toc {
+    background: var(--graphite);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin: 40px 0 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px;
+  }
+  .toc-title {
+    grid-column: 1/-1;
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin-bottom: 12px;
+  }
+  .toc a {
+    color: var(--subtext); text-decoration: none; font-size: 13px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 3px 0;
+    transition: color .15s;
+  }
+  .toc a:hover { color: var(--accent); }
+  .toc a .num {
+    color: var(--accent); font-weight: 700; font-size: 11px;
+    min-width: 18px;
+  }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 56px; }
+  .section-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sec-num {
+    background: var(--accent);
+    color: #fff; font-weight: 800; font-size: 13px;
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-size: 22px; font-weight: 700; letter-spacing: -0.01em;
+  }
+  .section-header .sec-tag {
+    margin-left: auto;
+    background: rgba(212,65,10,0.12);
+    border: 1px solid rgba(212,65,10,0.3);
+    color: var(--accent); font-size: 10px; font-weight: 700;
+    padding: 3px 10px; border-radius: 20px; letter-spacing: 0.08em;
+    text-transform: uppercase; white-space: nowrap;
+  }
+
+  /* ── CARDS ── */
+  .card-grid {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .card {
+    background: var(--graphite);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 24px;
+  }
+  .card.accent-border { border-color: var(--accent); }
+  .card.green-border { border-color: var(--green); }
+  .card.blue-border { border-color: var(--blue); }
+  .card h3 {
+    font-size: 14px; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card h3 .icon { font-size: 16px; }
+  .card p, .card li {
+    font-size: 13px; color: var(--subtext); line-height: 1.6;
+  }
+  .card ul { padding-left: 16px; margin-top: 8px; }
+  .card li { margin-bottom: 4px; }
+
+  /* ── PHASE TIMELINE ── */
+  .phases { display: flex; flex-direction: column; gap: 0; }
+  .phase {
+    display: grid; grid-template-columns: 140px 1fr;
+    gap: 0 32px;
+    position: relative;
+  }
+  .phase:not(:last-child) .phase-line {
+    position: absolute; left: 70px; top: 48px; bottom: 0;
+    width: 2px; background: var(--border);
+  }
+  .phase-left {
+    display: flex; flex-direction: column; align-items: center;
+    padding-top: 20px;
+  }
+  .phase-dot {
+    width: 40px; height: 40px;
+    border-radius: 50%; background: var(--steel);
+    border: 2px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 13px; color: var(--text);
+    flex-shrink: 0; z-index: 1;
+  }
+  .phase-dot.active { background: var(--accent); border-color: var(--accent); }
+  .phase-dur {
+    font-size: 11px; color: var(--muted); margin-top: 8px;
+    text-align: center; font-weight: 600;
+  }
+  .phase-body {
+    background: var(--graphite); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px 24px; margin-bottom: 20px;
+  }
+  .phase-body h3 { font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+  .phase-body p, .phase-body li {
+    font-size: 13px; color: var(--subtext); line-height: 1.6;
+  }
+  .phase-body ul { padding-left: 16px; margin-top: 6px; }
+  .phase-body li { margin-bottom: 4px; }
+
+  /* ── TABLE ── */
+  table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    background: var(--steel);
+    padding: 10px 14px;
+    text-align: left; font-weight: 700;
+    color: var(--subtext); font-size: 11px;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+  tbody td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--subtext);
+  }
+  tbody tr:hover td { background: rgba(255,255,255,0.02); }
+  .tbl-wrap {
+    background: var(--graphite); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+  }
+  td .tag {
+    display: inline-block;
+    padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
+  }
+  .tag.must { background: rgba(212,65,10,0.2); color: #FF8A60; }
+  .tag.should { background: rgba(232,160,32,0.15); color: #E8A020; }
+  .tag.nice { background: rgba(30,200,100,0.12); color: var(--green); }
+  .tag.wk1 { background: rgba(10,132,255,0.15); color: #5AC8FA; }
+  .tag.wk2 { background: rgba(100,100,200,0.15); color: #BF5AF2; }
+  .tag.wk3 { background: rgba(232,160,32,0.15); color: #E8A020; }
+  .tag.wk4 { background: rgba(212,65,10,0.15); color: #FF8A60; }
+  .tag.ongoing { background: rgba(80,80,80,0.3); color: var(--muted); }
+  td strong { color: var(--text); font-weight: 600; }
+
+  /* ── KPI TILES ── */
+  .kpi-row {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px; margin-top: 4px;
+  }
+  .kpi {
+    background: var(--graphite); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .kpi .k-label { font-size: 11px; color: var(--muted); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.07em; }
+  .kpi .k-val { font-size: 26px; font-weight: 800; color: var(--text); line-height: 1; }
+  .kpi .k-sub { font-size: 12px; color: var(--subtext); }
+  .kpi.accent { border-color: rgba(212,65,10,0.4); }
+  .kpi.accent .k-val { color: var(--accent); }
+  .kpi.green { border-color: rgba(48,209,88,0.3); }
+  .kpi.green .k-val { color: var(--green); }
+  .kpi.blue { border-color: rgba(10,132,255,0.3); }
+  .kpi.blue .k-val { color: var(--blue); }
+
+  /* ── RISK TABLE ── */
+  .risk-label { display: flex; align-items: center; gap: 6px; }
+  .risk-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .risk-dot.h { background: #FF3B30; }
+  .risk-dot.m { background: #E8A020; }
+  .risk-dot.l { background: var(--green); }
+
+  /* ── STACK PILLS ── */
+  .stack-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .pill {
+    background: var(--steel); border: 1px solid var(--border);
+    border-radius: 6px; padding: 5px 12px;
+    font-size: 12px; font-weight: 600; color: var(--text);
+  }
+  .pill.rec { border-color: var(--accent); color: var(--accent);
+    background: rgba(212,65,10,0.08); }
+
+  /* ── CALLOUT ── */
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: rgba(212,65,10,0.07);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px; margin: 20px 0;
+    font-size: 13px; color: var(--subtext);
+  }
+  .callout strong { color: var(--text); }
+
+  p.body { color: var(--subtext); font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+
+  /* ── CHECKLIST ── */
+  .checklist { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+  .chk {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 13px; color: var(--subtext);
+  }
+  .chk-box {
+    width: 16px; height: 16px; border-radius: 4px;
+    border: 1.5px solid var(--border); flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center; padding: 32px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 12px;
+  }
+
+  @media (max-width: 700px) {
+    .hero { padding: 36px 24px 32px; }
+    .container { padding: 0 24px 60px; }
+    .toc { grid-template-columns: 1fr; }
+    .card-grid { grid-template-columns: 1fr; }
+    .phase { grid-template-columns: 64px 1fr; gap: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<div class="hero">
+  <div class="hero-badge">🛻 Production Brief</div>
+  <h1>Texas Truck Parts<br><span>V2 Site Rebuild Plan</span></h1>
+  <p class="hero-sub">
+    A production-level blueprint for rebuilding texastruckparts.shop — covering tech stack, UX, e-commerce, SEO, content strategy, and launch campaign. Built from a live scrape of all 80 current products across 10 categories.
+  </p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="label">Current Products</span><span class="val">80 SKUs</span></div>
+    <div class="hero-meta-item"><span class="label">Categories</span><span class="val">10</span></div>
+    <div class="hero-meta-item"><span class="label">Market</span><span class="val">OEM Take-Off Parts</span></div>
+    <div class="hero-meta-item"><span class="label">Location</span><span class="val">Sugar Land, TX</span></div>
+    <div class="hero-meta-item"><span class="label">Avg Discount</span><span class="val">40–60% below dealer</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ── TABLE OF CONTENTS ── -->
+  <div class="toc">
+    <div class="toc-title">📋 Table of Contents</div>
+    <a href="#s1"><span class="num">01</span> Why V2 — Gap Analysis</a>
+    <a href="#s6"><span class="num">06</span> SEO & Performance</a>
+    <a href="#s2"><span class="num">02</span> Tech Stack Recommendation</a>
+    <a href="#s7"><span class="num">07</span> Content & Listings Strategy</a>
+    <a href="#s3"><span class="num">03</span> Site Architecture & IA</a>
+    <a href="#s8"><span class="num">08</span> Launch Campaign Plan</a>
+    <a href="#s4"><span class="num">04</span> UX & Design Requirements</a>
+    <a href="#s9"><span class="num">09</span> Success Metrics & KPIs</a>
+    <a href="#s5"><span class="num">05</span> E-commerce Features</a>
+    <a href="#s10"><span class="num">10</span> Risks & Mitigations</a>
+  </div>
+
+  <!-- ══════════════════ SECTION 1 ══════════════════ -->
+  <div class="section" id="s1">
+    <div class="section-header">
+      <div class="sec-num">01</div>
+      <h2>Why V2 — Gap Analysis</h2>
+      <span class="sec-tag">Foundation</span>
+    </div>
+    <p class="body">Based on the live scrape of texastruckparts.shop, the current site runs on a base WooCommerce/WordPress install with minimal customization. Here's what V2 needs to fix to compete at a production level:</p>
+
+    <div class="card-grid">
+      <div class="card accent-border">
+        <h3><span class="icon">⚠️</span> Critical Gaps</h3>
+        <ul>
+          <li>No vehicle fitment filter (year/make/model)</li>
+          <li>No structured product data (missing schema markup)</li>
+          <li>No customer review/trust signals</li>
+          <li>No saved searches or wishlists</li>
+          <li>Financing buried — not front-and-center</li>
+          <li>No comparison tool across similar SKUs</li>
+          <li>Missing photo galleries (multi-angle, detail shots)</li>
+          <li>No live inventory counter ("Only 1 left!")</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">📈</span> Conversion Opportunities</h3>
+        <ul>
+          <li>OEM provenance story untold (low-mileage fleet history)</li>
+          <li>No upsell / related parts logic</li>
+          <li>No abandoned cart recovery</li>
+          <li>No local pickup option (Sugar Land, TX)</li>
+          <li>Shipping ETA not shown on product page</li>
+          <li>No "Request a part" form for unlisted inventory</li>
+          <li>No loyalty / repeat buyer incentive</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🔍</span> SEO Gaps</h3>
+        <ul>
+          <li>Generic meta titles / descriptions</li>
+          <li>No breadcrumb schema</li>
+          <li>No LocalBusiness or Product schema</li>
+          <li>Thin category page content</li>
+          <li>No blog/content hub to capture long-tail searches</li>
+          <li>Image alt text missing or generic</li>
+          <li>Slow page load (unoptimized WP stack)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 2 ══════════════════ -->
+  <div class="section" id="s2">
+    <div class="section-header">
+      <div class="sec-num">02</div>
+      <h2>Tech Stack Recommendation</h2>
+      <span class="sec-tag">Technical</span>
+    </div>
+    <p class="body">Two viable paths depending on budget and in-house dev capacity. The Recommended path gives the best performance and long-term control. The Pragmatic path gets V2 live fastest on an existing comfort zone.</p>
+
+    <div class="card-grid">
+      <div class="card accent-border">
+        <h3><span class="icon">🚀</span> Recommended Stack (Best Performance)</h3>
+        <p style="margin-bottom:12px">Ideal for 1,000+ SKUs, speed-first UX, and maximum SEO control.</p>
+        <div class="stack-row">
+          <span class="pill rec">Next.js 14 (App Router)</span>
+          <span class="pill rec">Medusa.js (Headless Commerce)</span>
+          <span class="pill rec">PostgreSQL</span>
+          <span class="pill rec">Vercel (CDN/Hosting)</span>
+          <span class="pill rec">Stripe + Snap Finance</span>
+          <span class="pill rec">Algolia (Search)</span>
+          <span class="pill rec">Cloudinary (Image CDN)</span>
+          <span class="pill rec">Klaviyo (Email)</span>
+        </div>
+        <div class="checklist" style="margin-top:14px">
+          <div class="chk"><div class="chk-box"></div>Sub-1s page loads</div>
+          <div class="chk"><div class="chk-box"></div>Instant search with filters</div>
+          <div class="chk"><div class="chk-box"></div>Full control over product schema</div>
+          <div class="chk"><div class="chk-box"></div>API-first — easy to extend</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3><span class="icon">⚡</span> Pragmatic Stack (Fastest to Launch)</h3>
+        <p style="margin-bottom:12px">Stay on WordPress but modernize with a premium WooCommerce build.</p>
+        <div class="stack-row">
+          <span class="pill">WordPress + WooCommerce</span>
+          <span class="pill">Flatsome or Blocksy Theme</span>
+          <span class="pill">WP Rocket (Cache)</span>
+          <span class="pill">FiboSearch Pro</span>
+          <span class="pill">YITH Wishlist</span>
+          <span class="pill">WP VIN Lookup (Fitment)</span>
+          <span class="pill">Cloudflare CDN</span>
+          <span class="pill">FluentCRM (Email)</span>
+        </div>
+        <div class="checklist" style="margin-top:14px">
+          <div class="chk"><div class="chk-box"></div>2–3 week launch timeline</div>
+          <div class="chk"><div class="chk-box"></div>Familiar admin for client</div>
+          <div class="chk"><div class="chk-box"></div>Lower dev cost upfront</div>
+          <div class="chk"><div class="chk-box"></div>Large plugin ecosystem</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:20px">
+      <strong>Key non-negotiable on both stacks:</strong> Vehicle fitment lookup (Year → Make → Model) is the #1 trust-builder for truck part buyers. Every search and category page should filter by fitment. This is what separates production-level auto parts sites from basic e-commerce stores.
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 3 ══════════════════ -->
+  <div class="section" id="s3">
+    <div class="section-header">
+      <div class="sec-num">03</div>
+      <h2>Site Architecture & Information Architecture</h2>
+      <span class="sec-tag">Structure</span>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Page / Section</th>
+            <th>Purpose</th>
+            <th>Priority</th>
+            <th>Key Elements</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Homepage</strong></td>
+            <td>Trust + discovery entry point</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Hero with fitment search, featured categories, trust badges, financing CTA, recent arrivals, customer reviews</td>
+          </tr>
+          <tr>
+            <td><strong>YMM Fitment Search</strong></td>
+            <td>Guide buyers to right parts instantly</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Year → Make → Model dropdowns → filtered results; persistent in header after selection</td>
+          </tr>
+          <tr>
+            <td><strong>Category Pages (10)</strong></td>
+            <td>SEO landing + browse</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Filter sidebar (price, color, fitment, stock), sort, product grid with quick-view, category description for SEO</td>
+          </tr>
+          <tr>
+            <td><strong>Product Detail Page</strong></td>
+            <td>Convert — primary revenue page</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Multi-photo gallery, OEM badge, fitment table, price + savings callout, stock countdown, financing options, shipping ETA, related parts, reviews, FAQ accordion</td>
+          </tr>
+          <tr>
+            <td><strong>Cart + Checkout</strong></td>
+            <td>Frictionless purchase</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Guest checkout, address autocomplete, Stripe + PayPal + Snap/Acima financing, order summary with photos, local pickup option</td>
+          </tr>
+          <tr>
+            <td><strong>Request a Part</strong></td>
+            <td>Capture unlisted inventory demand</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Simple form: year/make/model, part needed, contact info → auto-notify team via email/SMS</td>
+          </tr>
+          <tr>
+            <td><strong>About / Our Story</strong></td>
+            <td>Build trust + OEM provenance</td>
+            <td><span class="tag should">Should</span></td>
+            <td>OEM take-off story, fleet vehicle sourcing, Sugar Land location, team photo, BBB badge</td>
+          </tr>
+          <tr>
+            <td><strong>Financing Page</strong></td>
+            <td>Overcome price objection</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Snap/Acima/Progressive explainer, monthly payment calculator, instant approval CTA, FAQs</td>
+          </tr>
+          <tr>
+            <td><strong>Blog / Guides</strong></td>
+            <td>SEO + authority content</td>
+            <td><span class="tag should">Should</span></td>
+            <td>"OEM vs Aftermarket", install guides per part type, fitment guides by truck model, cost comparison articles</td>
+          </tr>
+          <tr>
+            <td><strong>Shipping & Returns</strong></td>
+            <td>Reduce pre-purchase hesitation</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Ship timeline (1–2 business days from Sugar Land), freight rules for large parts, return policy, packaging photos</td>
+          </tr>
+          <tr>
+            <td><strong>Account / Order Tracking</strong></td>
+            <td>Repeat buyer retention</td>
+            <td><span class="tag nice">Nice</span></td>
+            <td>Order history, saved vehicles, wishlist, re-order CTA, loyalty points</td>
+          </tr>
+          <tr>
+            <td><strong>Inventory Alert Signup</strong></td>
+            <td>Capture out-of-stock demand</td>
+            <td><span class="tag nice">Nice</span></td>
+            <td>Email/SMS notify when a specific part restocks; integrates with Klaviyo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 4 ══════════════════ -->
+  <div class="section" id="s4">
+    <div class="section-header">
+      <div class="sec-num">04</div>
+      <h2>UX & Design Requirements</h2>
+      <span class="sec-tag">Design</span>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3><span class="icon">🎨</span> Visual Identity</h3>
+        <ul>
+          <li>Dark / steel color palette (builds trust with truck buyers)</li>
+          <li>Bold red/orange accent — urgency, American truck feel</li>
+          <li>High-contrast product photography on white or dark backgrounds</li>
+          <li>Industrial typography — bold headlines, clean body text</li>
+          <li>No generic stock photos — real OEM parts, real warehouse shots</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">📱</span> Mobile-First Design</h3>
+        <ul>
+          <li>Thumb-friendly filter panel (bottom drawer on mobile)</li>
+          <li>Swipeable photo gallery on PDP</li>
+          <li>Sticky "Add to Cart" bar on scroll</li>
+          <li>Click-to-call phone number in header</li>
+          <li>Tap-to-text for quick questions</li>
+          <li>Fast Checkout (Apple Pay / Google Pay)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🛒</span> Product Detail Page (PDP)</h3>
+        <ul>
+          <li>5–8 photos minimum per product (all angles, close-up, installed)</li>
+          <li>Fitment table: which trucks this fits</li>
+          <li>Savings badge: "Save $X vs. dealer" prominently displayed</li>
+          <li>OEM badge + fleet provenance badge</li>
+          <li>Urgency: "Only 1 in stock" + "Ships in 1–2 business days"</li>
+          <li>Financing: "As low as $X/mo" inline near price</li>
+          <li>FAQ accordion for common questions</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🔒</span> Trust Architecture</h3>
+        <ul>
+          <li>SSL badge + secure checkout in footer/header</li>
+          <li>Google Reviews widget (pull live star rating)</li>
+          <li>BBB Accreditation badge (if applicable)</li>
+          <li>Return policy guarantee badge</li>
+          <li>Financing partner logos (Snap, Acima, Progressive)</li>
+          <li>Real customer photos with reviews</li>
+          <li>Texas address + phone clearly visible</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">⚙️</span> Search & Filter</h3>
+        <ul>
+          <li>YMM (Year/Make/Model) fitment lookup — always accessible</li>
+          <li>Filter: Category, Price Range, Color, In Stock Only</li>
+          <li>Sort: Newest, Price Low–High, Biggest Discount</li>
+          <li>Autocomplete search with product thumbnails</li>
+          <li>Search result count and active filter pills</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">💳</span> Checkout UX</h3>
+        <ul>
+          <li>Progress bar (Cart → Shipping → Payment → Confirm)</li>
+          <li>Guest checkout (no forced account creation)</li>
+          <li>Address autocomplete (Google Places API)</li>
+          <li>Financing option inline at payment step</li>
+          <li>Order confirmation with tracking link</li>
+          <li>SMS opt-in for shipping updates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 5 ══════════════════ -->
+  <div class="section" id="s5">
+    <div class="section-header">
+      <div class="sec-num">05</div>
+      <h2>E-Commerce Features (Priority List)</h2>
+      <span class="sec-tag">Features</span>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Why It Matters</th>
+            <th>Priority</th>
+            <th>Complexity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Vehicle Fitment Lookup (YMM)</strong></td>
+            <td>Eliminates "will this fit my truck?" hesitation — #1 conversion driver for auto parts</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><strong>Buy Now, Pay Later (Snap/Acima)</strong></td>
+            <td>Already offered; needs to be featured prominently at price display, not buried</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Real-Time Inventory Counter</strong></td>
+            <td>"Only 1 left!" scarcity drives urgency on single-quantity OEM parts</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Multi-Photo Gallery per Product</strong></td>
+            <td>OEM buyers need to see condition, angles, and any imperfections before purchasing</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Abandoned Cart Email/SMS</strong></td>
+            <td>Industry average 15–20% recovery rate on abandoned carts worth $500–$1,500</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Request a Part Form</strong></td>
+            <td>Captures demand for unlisted inventory — direct revenue from otherwise lost traffic</td>
+            <td><span class="tag must">Must</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Related / Compatible Parts Upsell</strong></td>
+            <td>AOV lift — bumper buyer may also need sensors, brackets, or trim pieces</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><strong>Shipping Estimate on PDP</strong></td>
+            <td>Reduce pre-purchase questions — show estimated delivery date based on zip code</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><strong>Customer Reviews</strong></td>
+            <td>Social proof; even 5–10 reviews per product doubles conversion vs. zero reviews</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Local Pickup Option</strong></td>
+            <td>Sugar Land buyers save shipping on large bumpers; builds local trust</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Back-in-Stock Alerts</strong></td>
+            <td>Captures email/SMS when OOS; converts demand signal to future sale</td>
+            <td><span class="tag should">Should</span></td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td><strong>Product Comparison Tool</strong></td>
+            <td>Compare 2–3 bumpers side-by-side (price, condition, color, fitment)</td>
+            <td><span class="tag nice">Nice</span></td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><strong>Loyalty Program</strong></td>
+            <td>Repeat buyers (fleet owners, resellers) get points per purchase</td>
+            <td><span class="tag nice">Nice</span></td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td><strong>Wholesale / Trade Account</strong></td>
+            <td>Body shops, dealers, resellers buy at volume — separate pricing tier</td>
+            <td><span class="tag nice">Nice</span></td>
+            <td>High</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 6 ══════════════════ -->
+  <div class="section" id="s6">
+    <div class="section-header">
+      <div class="sec-num">06</div>
+      <h2>SEO & Performance</h2>
+      <span class="sec-tag">Growth</span>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3><span class="icon">🏗️</span> Technical SEO (Day 1)</h3>
+        <ul>
+          <li>Product schema (name, price, availability, image, review)</li>
+          <li>BreadcrumbList schema on all pages</li>
+          <li>LocalBusiness schema with Sugar Land address + hours</li>
+          <li>Canonical URLs to prevent duplicate content</li>
+          <li>XML sitemap auto-generated and submitted</li>
+          <li>Core Web Vitals: LCP &lt;2.5s, CLS &lt;0.1, FID &lt;100ms</li>
+          <li>Image WebP format + lazy loading</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🔑</span> Target Keyword Strategy</h3>
+        <ul>
+          <li>"2019-2025 Ram 2500 OEM front bumper" (high intent)</li>
+          <li>"Chevy Silverado factory tailgate take-off" (transactional)</li>
+          <li>"OEM truck parts Sugar Land Texas" (local)</li>
+          <li>"Ram 2500 bumper replacement cost" (informational → blog)</li>
+          <li>"OEM vs aftermarket truck bumper" (top of funnel)</li>
+          <li>"Ram 3500 tail light replacement" (repair intent)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">📝</span> Content SEO (Ongoing)</h3>
+        <ul>
+          <li>Category pages: 200–400 word intro with target keywords</li>
+          <li>Product names: include year, make, model, color, OEM</li>
+          <li>Blog: 2 posts/month targeting long-tail install + fitment queries</li>
+          <li>FAQ schema on every product and category page</li>
+          <li>Google Business Profile fully optimized with product photos</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">⚡</span> Performance Targets</h3>
+        <ul>
+          <li>PageSpeed Score: 90+ mobile, 95+ desktop</li>
+          <li>TTFB: &lt;200ms (CDN + edge caching)</li>
+          <li>Image CDN: Cloudinary or Imgix for automatic optimization</li>
+          <li>Lazy load below-fold images and components</li>
+          <li>Prefetch adjacent product pages on hover</li>
+          <li>Service worker for offline shell + asset caching</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 7 ══════════════════ -->
+  <div class="section" id="s7">
+    <div class="section-header">
+      <div class="sec-num">07</div>
+      <h2>Content & Listings Strategy</h2>
+      <span class="sec-tag">Content</span>
+    </div>
+
+    <p class="body">Every product listing is a landing page. The current site has thin descriptions. V2 listings should be structured like this for every SKU:</p>
+
+    <div class="tbl-wrap" style="margin-bottom:24px">
+      <table>
+        <thead>
+          <tr>
+            <th>Listing Element</th>
+            <th>Current State</th>
+            <th>V2 Standard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Title</strong></td>
+            <td>Basic product name</td>
+            <td>[Year Range] [Make] [Model] [Part] OEM [Color] [Qualifier] — SEO-optimized, 60–80 chars</td>
+          </tr>
+          <tr>
+            <td><strong>Photos</strong></td>
+            <td>1–2 images</td>
+            <td>5–8 images: front, rear, side, close-up detail, installed on vehicle, any imperfections called out</td>
+          </tr>
+          <tr>
+            <td><strong>Description</strong></td>
+            <td>Short paragraph (already scraped)</td>
+            <td>Structured: Condition → Fitment → Specs → Install notes → Shipping → Financing → FAQ</td>
+          </tr>
+          <tr>
+            <td><strong>Fitment Table</strong></td>
+            <td>Missing</td>
+            <td>Table: Year / Make / Model / Trim / Notes (e.g., "with sensor holes", "without tow package")</td>
+          </tr>
+          <tr>
+            <td><strong>Savings Callout</strong></td>
+            <td>Regular vs. sale price shown</td>
+            <td>Bold "Save $X vs. dealer MSRP" badge next to price</td>
+          </tr>
+          <tr>
+            <td><strong>Reviews</strong></td>
+            <td>None</td>
+            <td>Star rating + 3–5 verified buyer reviews; post-purchase email sequence to collect</td>
+          </tr>
+          <tr>
+            <td><strong>Questions / FAQ</strong></td>
+            <td>None</td>
+            <td>5 common questions per product: fitment, shipping, install time, returns, financing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <strong>Content Quick Win:</strong> The 80 product descriptions already scraped are a strong foundation. V2 should expand each into a structured template (above) — approximately 400–600 words per PDP. With the existing data + AI-assisted expansion, this is a 2–3 day content production task, not weeks.
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 8 ══════════════════ -->
+  <div class="section" id="s8">
+    <div class="section-header">
+      <div class="sec-num">08</div>
+      <h2>Launch Campaign Plan</h2>
+      <span class="sec-tag">Marketing</span>
+    </div>
+
+    <p class="body"><strong>Campaign Name:</strong> "Built Different. Priced Right." — V2 Launch<br>
+    <strong>Objective:</strong> Drive 300+ sessions on launch week; capture 50+ email subscribers; generate $10K+ in sales within the first 30 days of V2 launch.</p>
+
+    <div class="tbl-wrap" style="margin-bottom:28px">
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Content / Action</th>
+            <th>Channel</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag wk1">Pre-Launch -2wk</span></td>
+            <td><strong>Tease new site on social</strong> — "Something's coming" behind-the-scenes</td>
+            <td>Instagram / Facebook</td>
+            <td>Photos of parts laid out, warehouse shots</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk1">Pre-Launch -2wk</span></td>
+            <td><strong>Email list warm-up</strong> — announce V2 to existing customer list</td>
+            <td>Email (Klaviyo)</td>
+            <td>"Get early access + launch promo code"</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk2">Pre-Launch -1wk</span></td>
+            <td><strong>Launch promo setup</strong> — 10% off sitewide for first 72 hours</td>
+            <td>Site + Email</td>
+            <td>Countdown timer on homepage</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk2">Pre-Launch -1wk</span></td>
+            <td><strong>Google Business Profile update</strong> — new site URL, photos, hours</td>
+            <td>Google</td>
+            <td>Post "New website live" announcement</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk3">Launch Week</span></td>
+            <td><strong>Site goes live</strong> — announce across all channels</td>
+            <td>Email + Social + SMS</td>
+            <td>Same-day send to full list</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk3">Launch Week</span></td>
+            <td><strong>Google Ads — Search</strong> — "Ram 2500 OEM bumper", "OEM truck parts TX"</td>
+            <td>Paid Search</td>
+            <td>$500–$1,000 launch budget; high-intent keywords only</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk3">Launch Week</span></td>
+            <td><strong>Facebook/IG Ads</strong> — retarget past visitors + lookalike audience</td>
+            <td>Meta Ads</td>
+            <td>Carousel of top 6 products; financing CTA</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk4">Post-Launch W2</span></td>
+            <td><strong>First blog post live</strong> — "OEM vs Aftermarket: Why Take-Offs Win"</td>
+            <td>Blog + Social share</td>
+            <td>Targets informational keyword; drives trust + SEO</td>
+          </tr>
+          <tr>
+            <td><span class="tag wk4">Post-Launch W2</span></td>
+            <td><strong>Review request email</strong> — ask recent buyers for reviews</td>
+            <td>Email</td>
+            <td>Offer $10 off next purchase for leaving a review</td>
+          </tr>
+          <tr>
+            <td><span class="tag ongoing">Ongoing</span></td>
+            <td><strong>Weekly Instagram Reels</strong> — parts showcase, install tips, before/after</td>
+            <td>Instagram</td>
+            <td>Short-form video; highest organic reach format</td>
+          </tr>
+          <tr>
+            <td><span class="tag ongoing">Ongoing</span></td>
+            <td><strong>Monthly email newsletter</strong> — new arrivals, deals, truck tips</td>
+            <td>Email</td>
+            <td>Segmented by truck make (Ram vs. Chevy)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3><span class="icon">📣</span> Channel Priority (Launch Month)</h3>
+        <ul>
+          <li><strong>Google Search Ads</strong> — highest intent, best ROI for auto parts</li>
+          <li><strong>Instagram Reels</strong> — show OEM parts visually, build organic following</li>
+          <li><strong>Email / SMS</strong> — existing customer base is gold; re-engage immediately</li>
+          <li><strong>Google Business Profile</strong> — local SEO, free, drives calls and maps traffic</li>
+          <li><strong>Facebook Marketplace</strong> — auto parts sell extremely well here; list top SKUs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="icon">💬</span> Messaging Pillars</h3>
+        <ul>
+          <li><strong>"OEM means quality"</strong> — factory parts from low-mileage fleet vehicles</li>
+          <li><strong>"40–60% below dealer"</strong> — specific savings claim, not vague "cheap"</li>
+          <li><strong>"Ships from Sugar Land, TX"</strong> — local trust + fast delivery</li>
+          <li><strong>"Finance your repair"</strong> — Snap/Acima removes price barrier</li>
+          <li><strong>"Fits your truck guaranteed"</strong> — fitment lookup removes doubt</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 9 ══════════════════ -->
+  <div class="section" id="s9">
+    <div class="section-header">
+      <div class="sec-num">09</div>
+      <h2>Success Metrics & KPIs</h2>
+      <span class="sec-tag">Measurement</span>
+    </div>
+
+    <p class="body">Targets for 90 days post V2 launch, assuming current baseline is approximately 500–1,000 monthly sessions and $15–$40K monthly revenue on the existing site.</p>
+
+    <div class="kpi-row" style="margin-bottom:28px">
+      <div class="kpi accent">
+        <div class="k-label">Conversion Rate</div>
+        <div class="k-val">3.5%</div>
+        <div class="k-sub">V1 est. ~1–1.5% → V2 target</div>
+      </div>
+      <div class="kpi green">
+        <div class="k-label">Avg Order Value</div>
+        <div class="k-val">$650</div>
+        <div class="k-sub">Upsells + bundles driving AOV up</div>
+      </div>
+      <div class="kpi blue">
+        <div class="k-label">Page Load (Mobile)</div>
+        <div class="k-val">&lt;2s</div>
+        <div class="k-sub">Core Web Vitals target</div>
+      </div>
+      <div class="kpi">
+        <div class="k-label">Cart Recovery Rate</div>
+        <div class="k-val">18%</div>
+        <div class="k-sub">Industry avg with email + SMS</div>
+      </div>
+      <div class="kpi">
+        <div class="k-label">Organic Traffic</div>
+        <div class="k-val">+60%</div>
+        <div class="k-sub">90-day YoY from SEO improvements</div>
+      </div>
+      <div class="kpi">
+        <div class="k-label">Email List Growth</div>
+        <div class="k-val">200+</div>
+        <div class="k-sub">New subscribers in 30 days</div>
+      </div>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Target (30 days)</th>
+            <th>Target (90 days)</th>
+            <th>Tracking Tool</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monthly Revenue</strong></td>
+            <td>+25% vs. V1</td>
+            <td>+60% vs. V1</td>
+            <td>WooCommerce / Stripe dashboard</td>
+          </tr>
+          <tr>
+            <td><strong>Organic Sessions</strong></td>
+            <td>+20%</td>
+            <td>+60%</td>
+            <td>Google Analytics 4</td>
+          </tr>
+          <tr>
+            <td><strong>Google Ranking (top 10 KWs)</strong></td>
+            <td>3 KWs on page 1</td>
+            <td>10+ KWs on page 1</td>
+            <td>Google Search Console</td>
+          </tr>
+          <tr>
+            <td><strong>Conversion Rate</strong></td>
+            <td>2.5%</td>
+            <td>3.5%</td>
+            <td>GA4 + Hotjar</td>
+          </tr>
+          <tr>
+            <td><strong>Cart Abandonment Rate</strong></td>
+            <td>&lt;68%</td>
+            <td>&lt;60%</td>
+            <td>WooCommerce + Klaviyo</td>
+          </tr>
+          <tr>
+            <td><strong>Review Count (Google)</strong></td>
+            <td>10 new reviews</td>
+            <td>30+ reviews</td>
+            <td>Google Business Profile</td>
+          </tr>
+          <tr>
+            <td><strong>Customer Inquiries (Request a Part)</strong></td>
+            <td>5+ form submissions</td>
+            <td>20+/month</td>
+            <td>CRM / Email</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SECTION 10 ══════════════════ -->
+  <div class="section" id="s10">
+    <div class="section-header">
+      <div class="sec-num">10</div>
+      <h2>Risks & Mitigations</h2>
+      <span class="sec-tag">Planning</span>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Risk</th>
+            <th>Severity</th>
+            <th>Mitigation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SEO rankings drop during migration</strong></td>
+            <td><div class="risk-label"><div class="risk-dot h"></div> High</div></td>
+            <td>301 redirect map for every URL; submit new sitemap immediately; monitor Search Console daily for 4 weeks post-launch</td>
+          </tr>
+          <tr>
+            <td><strong>Photo library missing for new product pages</strong></td>
+            <td><div class="risk-label"><div class="risk-dot h"></div> High</div></td>
+            <td>Photo shoot all current inventory before launch; minimum 5 photos per SKU; use placeholder "coming soon" for anything un-shot rather than removing the product</td>
+          </tr>
+          <tr>
+            <td><strong>Fitment data incomplete at launch</strong></td>
+            <td><div class="risk-label"><div class="risk-dot m"></div> Medium</div></td>
+            <td>Launch YMM filter with best-effort data; flag any incomplete fitment on PDP; add "request fitment verification" contact link</td>
+          </tr>
+          <tr>
+            <td><strong>Client unfamiliar with new CMS/admin</strong></td>
+            <td><div class="risk-label"><div class="risk-dot m"></div> Medium</div></td>
+            <td>Record Loom walkthroughs for all admin tasks; create a simple SOPs doc for adding new products and updating inventory</td>
+          </tr>
+          <tr>
+            <td><strong>Financing integration delays checkout</strong></td>
+            <td><div class="risk-label"><div class="risk-dot m"></div> Medium</div></td>
+            <td>Launch with Stripe + PayPal as primary payment; add Snap/Acima in Phase 2 (2–4 weeks post-launch) so it doesn't block the release</td>
+          </tr>
+          <tr>
+            <td><strong>Low launch traffic / no paid budget</strong></td>
+            <td><div class="risk-label"><div class="risk-dot l"></div> Low</div></td>
+            <td>Facebook Marketplace listings are free and drive immediate traffic; Google Business Profile posts are free; email list is free to send — organic channels first</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TIMELINE -->
+    <h3 style="font-size:18px;font-weight:700;margin:40px 0 24px;letter-spacing:-0.01em">Recommended Build Timeline</h3>
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-line"></div>
+        <div class="phase-left">
+          <div class="phase-dot active">1</div>
+          <div class="phase-dur">Wk 1–2</div>
+        </div>
+        <div class="phase-body">
+          <h3>Discovery & Setup</h3>
+          <ul>
+            <li>Finalize tech stack decision with client</li>
+            <li>Set up dev environment, domain, hosting, staging</li>
+            <li>301 redirect map from V1 URLs</li>
+            <li>Photo shoot of all 80 current products (5 photos minimum each)</li>
+            <li>Compile fitment data for all 80 SKUs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-line"></div>
+        <div class="phase-left">
+          <div class="phase-dot active">2</div>
+          <div class="phase-dur">Wk 3–4</div>
+        </div>
+        <div class="phase-body">
+          <h3>Core Build</h3>
+          <ul>
+            <li>Homepage, category pages, PDP template</li>
+            <li>YMM fitment lookup integration</li>
+            <li>Checkout: Stripe, PayPal, local pickup</li>
+            <li>All 80 products migrated with new descriptions + photos</li>
+            <li>Mobile-first responsive QA across devices</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-line"></div>
+        <div class="phase-left">
+          <div class="phase-dot active">3</div>
+          <div class="phase-dur">Wk 5</div>
+        </div>
+        <div class="phase-body">
+          <h3>SEO, Speed & Trust Layer</h3>
+          <ul>
+            <li>Schema markup on all product + category pages</li>
+            <li>PageSpeed optimization (image CDN, caching, lazy load)</li>
+            <li>Google Analytics 4, Search Console, Hotjar installed</li>
+            <li>Trust badges, financing logos, reviews widget</li>
+            <li>Request a Part form + email notification setup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-line"></div>
+        <div class="phase-left">
+          <div class="phase-dot">4</div>
+          <div class="phase-dur">Wk 6</div>
+        </div>
+        <div class="phase-body">
+          <h3>QA, UAT & Pre-Launch</h3>
+          <ul>
+            <li>Full checkout flow test (all payment methods)</li>
+            <li>Cross-browser + cross-device QA</li>
+            <li>Client UAT sign-off</li>
+            <li>Pre-launch email + social tease campaign</li>
+            <li>301 redirects verified; sitemap submitted to Google</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-left">
+          <div class="phase-dot">5</div>
+          <div class="phase-dur">Wk 7+</div>
+        </div>
+        <div class="phase-body">
+          <h3>Launch & Post-Launch Growth</h3>
+          <ul>
+            <li>🚀 Site goes live — email + social + SMS blast</li>
+            <li>Google Ads + Meta Ads campaigns activated</li>
+            <li>Facebook Marketplace listings for top SKUs</li>
+            <li>Abandoned cart sequences activated in Klaviyo</li>
+            <li>Weekly analytics review; optimize ads based on data</li>
+            <li>Phase 2: Financing integration, reviews, blog launch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Texas Truck Parts — V2 Production Site Plan &nbsp;·&nbsp; Built by CoreFlare Agency &nbsp;·&nbsp; August 2026<br>
+  Based on a live scrape of 80 products across 10 categories from texastruckparts.shop
+</div>
+
+</body>
+</html>
