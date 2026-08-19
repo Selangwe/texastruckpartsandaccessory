@@ -418,6 +418,12 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
   .fcols,.trustgrid{grid-template-columns:1fr}
   form.rfp .row2{grid-template-columns:1fr}
   .pricerow .now{font-size:2.6rem}
+  /* the ticker copy is one fixed-width nowrap loop, so 40s reads the same px/sec at
+     every viewport — across a phone-width screen that scans far too fast. */
+  .ticker-track{animation-duration:70s}
+  /* "Find My Part" sits beside the burger once the menu collapses; at desktop scale
+     it crowds the row. 48px tall keeps the tap target well over the 44px floor. */
+  .nav-right .btn{font-size:.92rem;padding:11px 16px}
 }
 @media(max-width:420px){
   .grid,.grid.g3{grid-template-columns:1fr}
