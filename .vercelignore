@@ -13,3 +13,11 @@ data/
 # Docs and machine-specific editor state.
 *.md
 .claude/
+
+# Internal-only pages. Neither is linked from the site, and both were reachable
+# by anyone who guessed the URL — and indexable.
+#   plan   — the V2 planning document: budgets, revenue targets, risk register
+#   review — the Facebook parse QA tool, which fetches data/ (excluded above),
+#            so it deployed as a broken page that still exposed internal notes
+texas_truck_parts_v2_plan.html
+fb-review.html
