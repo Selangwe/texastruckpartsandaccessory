@@ -17,11 +17,23 @@
   "trailingSlash": true,
   "rewrites": [
     {
+      "source": "/product/:slug/",
+      "destination": "/product.html"
+    },
+    {
       "source": "/product/:slug",
       "destination": "/product.html"
     },
     {
+      "source": "/product-category/:slug/",
+      "destination": "/category.html"
+    },
+    {
       "source": "/product-category/:slug",
+      "destination": "/category.html"
+    },
+    {
+      "source": "/shop/",
       "destination": "/category.html"
     },
     {
