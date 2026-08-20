@@ -264,7 +264,7 @@
      actually came here to do, which is check what's in the order. */
   var state = "review";
 
-  var draft = { name: "", phone: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
+  var draft = { name: "", phone: "", email: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
   /* A returning buyer gets their details back rather than retyping them. Notes are
      not restored — see TTP.buyer in cart.js. */
   var savedBuyer = TTP.buyer.load();
@@ -397,6 +397,10 @@
         '<div class="field no-caret"><label for="ordPhone">Phone *</label><input id="ordPhone" type="tel" autocomplete="tel" value="' + esc(draft.phone) + '"></div>' +
       "</div>" +
 
+      '<div class="field no-caret"><label for="ordEmail">Email *</label>' +
+        '<input id="ordEmail" type="email" autocomplete="email" inputmode="email" ' +
+        'spellcheck="false" value="' + esc(draft.email) + '"></div>' +
+
       '<span class="mono co-label">Ship or pick up?</span>' +
       '<div class="shiptiles" id="shipTiles">' +
         tileHTML("ship", "Ship to me", "Free ground · lower 48 (freight quoted on large items)") +
@@ -443,6 +447,7 @@
     return {
       name: val("ordName").trim(),
       phone: val("ordPhone").trim(),
+      email: val("ordEmail").trim(),
       /* Keep a typed ZIP even while pickup is selected. Blanking it here meant
          glancing at the pickup tile and back wiped what they had entered, since
          the step re-renders from the draft. TTP.orderText already branches on
@@ -462,7 +467,10 @@
     var pre = document.getElementById("coPreview");
     if (pre) pre.textContent = text;
 
-    var ok = !!(draft.name && draft.phone);
+    /* An order can arrive over WhatsApp, where there is no From address to reply
+       to — so the email is collected here rather than inferred from the channel. */
+    var emailOk = TTP.looksLikeEmail(draft.email);
+    var ok = !!(draft.name && draft.phone && emailOk);
     var wa = document.getElementById("btnWa"), em = document.getElementById("btnEmail"), note = document.getElementById("coReqNote");
     if (wa) {
       wa.href = TTP.waUrl(text);
@@ -474,7 +482,14 @@
       em.classList.toggle("is-disabled", !ok);
       em.setAttribute("aria-disabled", ok ? "false" : "true");
     }
-    if (note) note.hidden = ok;
+    if (note) {
+      note.hidden = ok;
+      note.textContent = (!draft.name || !draft.phone)
+        ? "Enter your name, phone number and email to send your order."
+        : (draft.email
+            ? "That email address does not look right — check it and try again."
+            : "Enter your email so we can send your order confirmation.");
+    }
     return ok;
   }
 
@@ -493,7 +508,7 @@
     if (forget) forget.addEventListener("click", function () {
       TTP.buyer.clear();
       savedBuyer = null;
-      draft = { name: "", phone: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
+      draft = { name: "", phone: "", email: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
       renderApp();
     });
 
@@ -504,7 +519,7 @@
       });
     });
 
-    ["ordName", "ordPhone", "ordZip", "ordVin", "ordNotes"].forEach(function (id) {
+    ["ordName", "ordPhone", "ordEmail", "ordZip", "ordVin", "ordNotes"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) el.addEventListener("input", updatePreview);
     });
@@ -520,8 +535,9 @@
           e.preventDefault();
           var note = document.getElementById("coReqNote");
           if (note) note.hidden = false;
-          var nameEl = document.getElementById("ordName");
-          if (nameEl) nameEl.focus();
+          var first = document.getElementById(
+            !draft.name ? "ordName" : (!draft.phone ? "ordPhone" : "ordEmail"));
+          if (first) first.focus();
           return;
         }
         /* Do NOT clear the cart here — a static page can't confirm the message
@@ -595,7 +611,7 @@
     var nw = document.getElementById("coNew");
     if (nw) nw.addEventListener("click", function () {
       TTP.cart.clear();
-      draft = { name: "", phone: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
+      draft = { name: "", phone: "", email: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
       state = "review";
       renderApp();
       window.scrollTo(0, 0);

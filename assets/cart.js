@@ -205,13 +205,20 @@
     return key;
   };
 
+  /* Loose on purpose: this catches a missing @ or a trailing comma, which is what
+     buyers actually get wrong. Strict address validation rejects real addresses and
+     the yard is going to reply to this by hand anyway. */
+  TTP.looksLikeEmail = function (v) {
+    return /^[^\s@]+@[^\s@.]+\.[^\s@]{2,}$/.test(String(v || "").trim());
+  };
+
   /* ---------- saved buyer details ----------
      A returning customer should not retype their name, number and truck. Kept in
      this browser only — it is never uploaded anywhere, because there is nowhere
      to upload it to. Notes are deliberately NOT saved: a note about one bumper
      reappearing on an unrelated order later is confusing, not helpful. */
   var BUYER_KEY = "ttp_buyer";
-  var BUYER_FIELDS = ["name", "phone", "zip", "method", "vin", "payment"];
+  var BUYER_FIELDS = ["name", "phone", "email", "zip", "method", "vin", "payment"];
 
   TTP.buyer = {
     load: function () {
@@ -242,7 +249,7 @@
 
   /* ---------- the message ----------
      One builder for both channels so WhatsApp and email can never drift apart.
-     order = {name, phone, zip, method, vin, payment, financing, notes} — all optional. */
+     order = {name, phone, email, zip, method, vin, payment, financing, notes} — all optional. */
   TTP.orderText = function (order, opts) {
     order = order || {};
     opts = opts || {};
@@ -293,6 +300,7 @@
     var who = [];
     if (order.name) who.push(order.name);
     if (order.phone) who.push(order.phone);
+    if (order.email) who.push(order.email);
     if (who.length) body.push("From: " + who.join(" · "));
     if (order.notes) body.push("Notes: " + order.notes);
 
