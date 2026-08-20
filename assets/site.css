@@ -471,6 +471,14 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
 }
 .cartn[hidden]{display:none} /* cart.js toggles the hidden attribute at zero — pin the rule so the badge never reserves space */
 
+/* ---------- footer social ---------- */
+.social{display:flex;gap:9px;margin-top:16px}
+.social a{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line-hard);
+  transition:background .25s var(--ease),border-color .25s var(--ease)}
+.social a svg{width:18px;height:18px;fill:var(--zinc);transition:fill .25s var(--ease)}
+.social a:hover{background:var(--oxide);border-color:var(--oxide)}
+.social a:hover svg{fill:#0b0c0d}
+
 /* ---------- cart scrim + drawer ----------
    Scrim mirrors category.html's .scrim exactly — one interaction vocabulary
    for every slide-over on the site. z-index 96 keeps the drawer above the
