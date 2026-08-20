@@ -395,7 +395,27 @@ onto its queries. The natural port is Woo's own cart/checkout with the message h
 *secondary* CTA — "send this order on WhatsApp" beside "pay now" — since a good share of this
 customer base would rather message than fill in a card form.
 
-## 14. Still not built
+## 14. Pre-launch: the site is deliberately not indexable
+
+`vercel.json` serves **`X-Robots-Tag: noindex, nofollow` on every route**, and `robots.txt`
+explains why. The site currently runs on `texastruckpartsandaccessory.vercel.app` with no custom
+domain, and `index.html` publishes LocalBusiness structured data with a street address still
+inherited from the scraped store (§11). Being indexed in that state puts ranking signals on a host
+that gets abandoned, under an address that may be wrong.
+
+Note the crawl is **allowed**. `Disallow: /` would stop crawlers fetching the pages and therefore
+stop them reading the noindex header, which is how URLs end up indexed as bare titles that are then
+awkward to remove. Allow the crawl, serve noindex.
+
+**Launch checklist — all three, in order:**
+
+1. Point the custom domain at the Vercel project
+2. Set `TTP.SITE` in `assets/config.js` to that domain — canonicals, `og:url` and JSON-LD `@id`
+   all derive from it and currently fall back to whatever origin serves the page
+3. Verify the street address against the Google Business Profile, then delete the `headers` block
+   from `vercel.json` and replace `robots.txt` with a real one plus a sitemap
+
+## 15. Still not built
 
 Payment capture, accounts & order tracking, abandoned-cart recovery, back-in-stock alerts,
 product comparison, wholesale tier, blog — all Woo plugin or Phase-2 work per the plan's own
