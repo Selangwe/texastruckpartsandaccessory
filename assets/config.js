@@ -16,12 +16,22 @@
 window.TTP = window.TTP || {};
 
 /* ---------------------------------------------------------------------------
-   SET THIS to the production origin, no trailing slash. e.g.
-     TTP.SITE = "https://www.yourdomain.com";
-   Left empty, the templates fall back to whatever origin they are served from,
-   which is right for local dev and staging and wrong for production.
+   The production origin, no trailing slash. Canonicals, og:url, og:image and
+   every JSON-LD @id / offers.url / breadcrumb derive from this one value.
+
+   Set explicitly rather than left empty: the empty fallback uses whatever origin
+   served the page, so the same page reachable at a preview deployment URL would
+   declare that preview URL canonical and compete with production for its own
+   ranking. A fixed value means every copy points at one address.
+
+   TEMPORARY — this is the Vercel-assigned host. Change it to the custom domain
+   the moment there is one; see the launch checklist in WOO-MAPPING.md §14.
+
+   Local dev note: served from 127.0.0.1:8777, canonicals and og:url will read
+   as the vercel.app domain. That is correct — a canonical is a statement about
+   where the page truly lives, not about where you happen to be viewing it.
    --------------------------------------------------------------------------- */
-TTP.SITE = "";
+TTP.SITE = "https://texastruckpartsandaccessory.vercel.app";
 
 /* TODO — NAP audit, still open on the ADDRESS only.
    The phone and email below are confirmed and now used sitewide. The street address

@@ -407,12 +407,44 @@ Note the crawl is **allowed**. `Disallow: /` would stop crawlers fetching the pa
 stop them reading the noindex header, which is how URLs end up indexed as bare titles that are then
 awkward to remove. Allow the crawl, serve noindex.
 
-**Launch checklist — all three, in order:**
+`TTP.SITE` is now set to `https://texastruckpartsandaccessory.vercel.app` rather than left empty,
+so a page reachable at a preview deployment URL still declares the production URL canonical instead
+of competing with itself.
+
+### ⚠ Canonicals currently point at URLs that do not exist
+
+`TTP.PATHS` describes the **WooCommerce** permalink structure — `/product/<slug>/`,
+`/product-category/<slug>/`, `/shop/`. The static site does not serve those; it serves
+`product.html?id=…` and `category.html?cat=…`. So every canonical, `og:url`, JSON-LD `@id`,
+`offers.url` and breadcrumb currently names a URL that returns **404**:
+
+| Emitted as canonical | Actually serves |
+|---|---|
+| `/product/2020-2022-ford-f250…/` → 404 | `/product.html?id=10452` → 200 |
+| `/product-category/truck-bed/` → 404 | `/category.html?cat=truck-bed` → 200 |
+| `/shop/` → 404 | `/category.html` → 200 |
+
+This is **inert while the site is noindex** — nothing is crawling to believe it. It becomes
+actively destructive the moment indexing is switched on without the Woo port, because every page
+would be telling Google its real version lives somewhere that 404s, and Google drops pages whose
+canonical target does not resolve.
+
+Two ways out, and the choice depends on whether this static site or WooCommerce is the real
+destination:
+
+- **Static site is the destination** — either point `TTP.PATHS` at the real URLs
+  (`product.html?id=`), which makes canonicals truthful immediately but leaves query-string URLs,
+  or add Vercel rewrites so `/product/<slug>/` genuinely serves `product.html` and the page reads
+  the slug instead of an id. The rewrite route gives clean URLs *and* correct canonicals.
+- **WooCommerce is the destination** — leave `TTP.PATHS` alone; the paths become real when the
+  templates land in the child theme. Just do not lift the noindex before that happens.
+
+**Launch checklist — in order:**
 
 1. Point the custom domain at the Vercel project
-2. Set `TTP.SITE` in `assets/config.js` to that domain — canonicals, `og:url` and JSON-LD `@id`
-   all derive from it and currently fall back to whatever origin serves the page
-3. Verify the street address against the Google Business Profile, then delete the `headers` block
+2. Update `TTP.SITE` in `assets/config.js` to that domain
+3. **Resolve the canonical/permalink mismatch above** — canonicals must resolve to live URLs
+4. Verify the street address against the Google Business Profile, then delete the `headers` block
    from `vercel.json` and replace `robots.txt` with a real one plus a sitemap
 
 ## 15. Still not built
