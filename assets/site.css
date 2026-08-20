@@ -75,11 +75,13 @@ img,svg{display:block;max-width:100%}
 
 /* ---------- top ticker ---------- */
 .ticker{background:var(--oxide);color:#0b0c0d;overflow:hidden;border-bottom:2px solid #000;position:relative;z-index:60}
-.ticker-track{display:flex;width:max-content;animation:tick 40s linear infinite}
-.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track{display:flex;width:max-content;animation:tick 40s linear infinite;
+  will-change:transform;backface-visibility:hidden}
+/* pause on hover, and on touch where there is no hover to pause with */
+.ticker:hover .ticker-track,.ticker:active .ticker-track{animation-play-state:paused}
 .ticker p{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:7px 0;white-space:nowrap;font-weight:600}
 .ticker p i{font-style:normal;opacity:.5;padding:0 20px}
-@keyframes tick{to{transform:translateX(-50%)}}
+@keyframes tick{to{transform:translate3d(-50%,0,0)}}
 
 /* ---------- header ---------- */
 header{position:sticky;top:0;z-index:80;background:rgba(11,12,13,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
@@ -418,9 +420,10 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
   .fcols,.trustgrid{grid-template-columns:1fr}
   form.rfp .row2{grid-template-columns:1fr}
   .pricerow .now{font-size:2.6rem}
-  /* the ticker copy is one fixed-width nowrap loop, so 40s reads the same px/sec at
-     every viewport — across a phone-width screen that scans far too fast. */
-  .ticker-track{animation-duration:70s}
+  /* Ticker duration is no longer set here. A fixed duration means a fixed px/sec,
+     which crosses a narrow screen far sooner than a wide one and reads as much
+     faster on a phone. site.js measures the strip and sets a duration that keeps
+     the on-screen pace constant at every width. */
   /* "Find My Part" sits beside the burger once the menu collapses; at desktop scale
      it crowds the row. 48px tall keeps the tap target well over the 44px floor. */
   .nav-right .btn{font-size:.92rem;padding:11px 16px}
@@ -431,6 +434,11 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
 @media(prefers-reduced-motion:reduce){
   *{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .rv{opacity:1;transform:none}
+  /* The blanket rule above would snap the marquee to its end offset and park it
+     there mid-word. Stop it at the start instead and let the strip be read as a
+     static line, scrollable if it overflows. */
+  .ticker-track{animation:none!important;transform:none!important}
+  .ticker{overflow-x:auto}
 }
 
 /* ==========================================================================

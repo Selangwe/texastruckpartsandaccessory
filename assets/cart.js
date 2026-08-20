@@ -40,6 +40,13 @@
      the cart and the product page can never disagree about how a bed ships. */
   var FREIGHT_OVER = 1500;
 
+  /* Every product publishes as in stock, so quantity is no longer clamped to the
+     catalogue's per-unit count. This is a sanity ceiling on the stepper, not a
+     stock statement — the yard confirms real availability when it confirms the
+     order. Anyone needing more than this is a fleet order and should talk to us. */
+  var MAX_QTY = 10;
+  TTP.MAX_QTY = MAX_QTY;
+
   /* wa.me carries the message in the URL. Long URLs get truncated by WhatsApp
      and by some mobile browsers, and a truncated order is worse than a short
      one, so past this many characters the line list is trimmed and the full
@@ -82,14 +89,14 @@
       state.items.forEach(function (it) {
         var p = find(it.id);
         if (!p) { pruned = true; return; }
-        var qty = Math.max(1, Math.min(p.qty || 1, it.qty || 1));
+        var qty = Math.max(1, Math.min(MAX_QTY, it.qty || 1));
         if (qty !== it.qty) { it.qty = qty; pruned = true; }
         out.push({
           p: p,
           qty: qty,
           priced: TTP.hasPrice(p),
           freight: TTP.hasPrice(p) && p.price >= FREIGHT_OVER,
-          atCap: qty >= (p.qty || 1),
+          atCap: qty >= MAX_QTY,
           /* null when no vehicle is saved — "unknown", not "does not fit". */
           fits: (v && v.year) ? TTP.fits(p, v) : null
         });
@@ -127,7 +134,7 @@
       var p = find(id);
       if (!p) return false;
       var state = read();
-      var cap = p.qty || 1;
+      var cap = MAX_QTY;
       var existing = null;
       state.items.forEach(function (it) { if (it.id === id) existing = it; });
 
@@ -141,7 +148,7 @@
 
     setQty: function (id, qty) {
       var p = find(id), state = read();
-      var cap = p ? (p.qty || 1) : 1;
+      var cap = MAX_QTY;
       state.items = state.items.filter(function (it) {
         if (it.id !== id) return true;
         it.qty = Math.max(1, Math.min(cap, qty));
@@ -176,6 +183,57 @@
     return "TTP-" + s;
   }
 
+  /* ---------- payment preference ----------
+     Preference only. No money moves on this site and no account details live in
+     this repo — the yard sends them over WhatsApp or email once there is a real
+     buyer to send them to. "applepay" is a label here, not Apple's payment sheet;
+     the checkout copy is careful to say so rather than imply a card charge. */
+  TTP.PAYMENTS = [
+    ["zelle",    "Zelle",         "Bank-to-bank, usually instant"],
+    ["venmo",    "Venmo",         "Pay from your Venmo balance"],
+    ["applepay", "Apple Pay",     "We send a request to your number"],
+    ["crypto",   "Crypto",        "BTC, ETH or USDT — we confirm the network"],
+    ["bank",     "Bank transfer", "ACH or wire from your bank"],
+    ["unsure",   "Not sure yet",  "Send me the options"]
+  ];
+
+  TTP.paymentLabel = function (key) {
+    if (key === "unsure") return "not sure — send options";
+    for (var i = 0; i < TTP.PAYMENTS.length; i++) {
+      if (TTP.PAYMENTS[i][0] === key) return TTP.PAYMENTS[i][1];
+    }
+    return key;
+  };
+
+  /* ---------- saved buyer details ----------
+     A returning customer should not retype their name, number and truck. Kept in
+     this browser only — it is never uploaded anywhere, because there is nowhere
+     to upload it to. Notes are deliberately NOT saved: a note about one bumper
+     reappearing on an unrelated order later is confusing, not helpful. */
+  var BUYER_KEY = "ttp_buyer";
+  var BUYER_FIELDS = ["name", "phone", "zip", "method", "vin", "payment"];
+
+  TTP.buyer = {
+    load: function () {
+      try {
+        var raw = JSON.parse(localStorage.getItem(BUYER_KEY) || "null");
+        if (!raw || typeof raw !== "object") return null;
+        var out = {}, any = false;
+        BUYER_FIELDS.forEach(function (k) {
+          if (typeof raw[k] === "string" && raw[k]) { out[k] = raw[k]; any = true; }
+        });
+        return any ? out : null;
+      } catch (e) { return null; }
+    },
+    save: function (order) {
+      if (!order) return;
+      var out = {};
+      BUYER_FIELDS.forEach(function (k) { if (order[k]) out[k] = String(order[k]); });
+      try { localStorage.setItem(BUYER_KEY, JSON.stringify(out)); } catch (e) {}
+    },
+    clear: function () { try { localStorage.removeItem(BUYER_KEY); } catch (e) {} }
+  };
+
   /* ---------- shipping copy, one source ---------- */
   TTP.shipNote = function (line) {
     if (!line.priced) return "Shipping quoted with price";
@@ -184,7 +242,7 @@
 
   /* ---------- the message ----------
      One builder for both channels so WhatsApp and email can never drift apart.
-     order = {name, phone, zip, method, vin, financing, notes} — all optional. */
+     order = {name, phone, zip, method, vin, payment, financing, notes} — all optional. */
   TTP.orderText = function (order, opts) {
     order = order || {};
     opts = opts || {};
@@ -227,6 +285,9 @@
     else if (order.method === "ship") body.push("Ship to: (ZIP not given)");
 
     if (order.vin) body.push("VIN: " + order.vin);
+    /* A preference only — nothing is charged on the site. The parts desk reads
+       this to know which payment details to send back in the reply. */
+    if (order.payment) body.push("Payment: " + TTP.paymentLabel(order.payment));
     if (order.financing) body.push("Financing: interested");
 
     var who = [];
@@ -311,7 +372,6 @@
               : '<a class="askbtn" href="tel:' + TTP.pricingTel() + '">Call for price</a>') +
           '</div>' +
         '</div>' +
-        (l.atCap ? '<div class="cl-cap">Only ' + p.qty + ' in stock</div>' : '') +
         '<button class="cl-rm" type="button" data-crm="' + p.id + '">Remove</button>' +
       '</div>' +
     '</div>';
@@ -350,8 +410,12 @@
                ' not fit your saved truck.</p>' : '') +
       '</div>' +
       '<a class="btn block" href="cart.html"><span>Review &amp; send order</span></a>' +
-      '<a class="btn ghost block wa" href="' + esc(TTP.waUrl(TTP.orderText({}))) +
-        '" target="_blank" rel="noopener"><span>' + waIcon() + 'Send on WhatsApp</span></a>';
+      /* Deliberately NOT a wa.me link. Sending straight from the drawer produced a
+         message with no name, phone, delivery address or payment preference — the
+         yard then had to ask for all of it before it could quote freight. This
+         routes to the details form and opens it on the form step. */
+      '<a class="btn ghost block wa" href="cart.html?send=wa"><span>' + waIcon() +
+        'Send on WhatsApp</span></a>';
   }
 
   function waIcon() {
@@ -420,7 +484,11 @@
       ctx.hidden = false;
       ctx.innerHTML = '<span class="mono">Your order</span><b>' + cart.ref() + ' · ' +
         cart.count() + ' item' + (cart.count() > 1 ? 's' : '') + '</b>';
-      wa.href = TTP.waUrl(TTP.orderText({}));
+      /* Opens a conversation, it does not submit the order — the full summary only
+         ever goes out through the details form, so it arrives with contact and
+         delivery information attached. */
+      wa.href = TTP.waUrl("Hi — I have order " + cart.ref() + " in my cart (" +
+        cart.count() + " item" + (cart.count() > 1 ? "s" : "") + "). Can you help?");
       return;
     }
     ctx.hidden = true;

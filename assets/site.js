@@ -128,12 +128,13 @@
     if (p.savePct >= 5) b.push('<span class="badge save">Save ' + money(p.save) + "</span>");
     if (p.side) b.push('<span class="badge">' + p.side + "</span>");
 
-    var low = p.qty <= 2;
     return '<article class="card">' +
       '<div class="thumb">' +
         '<div class="badges">' + b.join("") + "</div>" +
-        '<div class="stock-pill' + (low ? " low" : "") + '"><span class="dot"></span>' +
-          (low ? "Only " + p.qty + " left" : p.qty + " in stock") + "</div>" +
+        /* Everything publishes as in stock and no unit count is shown — the yard
+           confirms availability on the order. Counts read as scarcity pressure
+           and go stale the moment a part sells. */
+        '<div class="stock-pill"><span class="dot"></span>In stock</div>' +
         '<a class="thumblink" href="product.html?id=' + p.id + '" tabindex="-1" aria-hidden="true">' +
           TTP.shot(p, "thumb", 0) + "</a>" +
         '<button class="cardadd" type="button" data-add="' + p.id + '" aria-label="Add ' + esc(p.name) + ' to order">' +
@@ -236,8 +237,42 @@
     });
   };
 
+  /* ---------- ticker pacing ----------
+     The strip is one fixed-width nowrap copy duplicated once, so a fixed CSS
+     duration means a fixed px/sec — and a fixed px/sec crosses a 390px phone
+     screen in a third of the time it takes to cross a 1170px desktop one, which
+     is why it read as far too fast on mobile. Derive the duration from the
+     measured copy width instead, holding the time for one screen-width of text
+     to pass constant at every viewport. */
+  var SECONDS_PER_SCREEN = 26;
+
+  function paceTicker() {
+    var track = document.querySelector(".ticker-track");
+    if (!track) return;
+    var copy = track.querySelector("p");
+    if (!copy) return;
+    var copyW = copy.getBoundingClientRect().width;
+    var view = window.innerWidth || document.documentElement.clientWidth;
+    if (!copyW || !view) return;
+
+    /* copyW / (view / SECONDS_PER_SCREEN) — seconds for one full copy to pass. */
+    var secs = (copyW * SECONDS_PER_SCREEN) / view;
+    secs = Math.max(30, Math.min(180, secs));   /* never frantic, never stalled */
+    track.style.animationDuration = secs.toFixed(1) + "s";
+  }
+  TTP.paceTicker = paceTicker;
+
   /* ---------- chrome: menu, reveals, counters ---------- */
   function chrome() {
+    paceTicker();
+    /* Fonts land after first paint and change the strip's width, so re-measure. */
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(paceTicker);
+    var rt;
+    window.addEventListener("resize", function () {
+      clearTimeout(rt);
+      rt = setTimeout(paceTicker, 200);
+    });
+
     var burger = document.getElementById("burger"), menu = document.getElementById("menu");
     if (burger && menu) {
       burger.addEventListener("click", function () { menu.classList.toggle("open"); });

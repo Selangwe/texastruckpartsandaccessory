@@ -108,7 +108,7 @@
       <div class="fbrand">
         <h4>Texas Truck Parts</h4>
         <p>OEM factory take-offs and heavy-duty aftermarket steel for Ford, Chevy, GMC, Ram and Toyota trucks. Family-run out of Sugar Land, Texas.</p>
-        <div class="paylogos"><span>Snap</span><span>Acima</span><span>Progressive</span><span>Visa</span><span>PayPal</span></div>
+        <div class="paylogos"><span>Zelle</span><span>Venmo</span><span>Apple Pay</span><span>Crypto</span><span>Bank</span><span>Snap</span><span>Acima</span><span>Progressive</span></div>
       </div>
       <div><h4>Departments</h4><ul id="fcats"></ul></div>
       <div>
@@ -219,7 +219,7 @@
     ['Part features', p.features.length ? p.features.map(function(f){return f.label;}).join(' · ') : '—'],
     ['Brand',        p.brand || 'OEM factory'],
     ['SKU',          TTP.sku(p)],
-    ['Stock',        p.qty + ' available · ships from Sugar Land, TX']
+    ['Stock',        'In stock · ships from Sugar Land, TX']
   ].map(function(r){ return '<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>'; }).join('');
 
   /* ---------- structured description (plan §07 V2 standard) ---------- */
@@ -295,9 +295,7 @@
           ? '<div class="finline">As low as <b>'+money(p.mo)+'/mo</b> with Snap · Acima · Progressive</div>'
           : '<div class="finline">Financing available through Snap · Acima · Progressive — '+
             '<a href="tel:'+TTP.pricingTel()+'">call for a quote</a></div>') +
-        '<div class="stockline"><span class="dot"></span>'+
-          (p.qty <= 2 ? 'Only '+p.qty+' left — 1-of-1 take-off' : p.qty+' in stock')+
-          ' · Ships in 1–2 business days</div>' +
+        '<div class="stockline"><span class="dot"></span>In stock · Ships in 1–2 business days</div>' +
         '<div class="buyrow">' +
           '<div class="qty"><button type="button" data-q="-1" aria-label="Decrease">−</button>'+
             '<span id="qv">1</span><button type="button" data-q="1" aria-label="Increase">+</button></div>' +
@@ -372,7 +370,7 @@
   var q = 1;
   document.querySelectorAll('[data-q]').forEach(function(b){
     b.addEventListener('click', function(){
-      q = Math.min(p.qty, Math.max(1, q + (+b.dataset.q)));
+      q = Math.min(TTP.MAX_QTY, Math.max(1, q + (+b.dataset.q)));
       document.getElementById('qv').textContent = q;
       document.getElementById('addBtn').dataset.qty = q;
       document.getElementById('sbBtn').dataset.qty = q;

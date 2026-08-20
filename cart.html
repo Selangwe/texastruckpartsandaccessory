@@ -105,6 +105,23 @@
   .shiptile .st-s{font-size:.76rem;color:var(--zinc)}
   .co-pickupaddr{font-size:.78rem;color:var(--weld);margin:0 0 14px}
 
+  /* six payment tiles do not fit the two-up ship/pickup grid */
+  .paytiles{grid-template-columns:repeat(3,1fr)}
+  .paytiles .shiptile{min-height:74px}
+  .co-saved{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border-left:3px solid var(--weld);
+    background:rgba(57,201,184,.07);padding:9px 13px;margin-bottom:16px;font-size:.82rem;color:#c7ccd1}
+  .co-saved button{font-family:var(--mono);font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--oxide);border-bottom:1px solid currentColor}
+  .co-paynote{font-size:.8rem;color:var(--zinc);margin-top:10px;line-height:1.5;max-width:62ch}
+  .co-paynote b{color:var(--chalk)}
+  /* confirmation: what they chose, and where details will come from */
+  .co-payback{border:1px solid var(--line-hard);background:var(--panel);padding:14px 16px;margin-bottom:12px}
+  .co-payback .mono{color:var(--zinc);display:block;margin-bottom:3px}
+  .co-payback b{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:1.3rem;letter-spacing:.02em;display:block}
+  .co-payback p{font-size:.82rem;color:var(--zinc);margin-top:5px}
+  .co-paywarn{border-left:3px solid var(--hazard);background:rgba(242,194,0,.06);padding:11px 14px;
+    font-size:.81rem;color:#c7ccd1;line-height:1.5;margin-bottom:22px;max-width:64ch}
+  .co-paywarn b{color:var(--hazard)}
   .co-check{display:flex;align-items:flex-start;gap:10px;font-size:.87rem;color:#c7ccd1;margin:20px 0 4px;cursor:pointer}
   .co-check input{width:16px;height:16px;margin-top:2px;accent-color:var(--oxide);flex-shrink:0}
 
@@ -133,6 +150,7 @@
     .co-summary{position:static}
     .co-formgrid{grid-template-columns:1fr}
     .shiptiles{grid-template-columns:1fr}
+    .paytiles{grid-template-columns:1fr 1fr}
     .cart-wrap{padding-bottom:60px}
   }
   @media(max-width:480px){
@@ -199,7 +217,7 @@
       <div class="fbrand">
         <h4>Texas Truck Parts</h4>
         <p>OEM factory take-offs and heavy-duty aftermarket steel for Ford, Chevy, GMC, Ram and Toyota trucks. Family-run out of Sugar Land, Texas.</p>
-        <div class="paylogos"><span>Snap</span><span>Acima</span><span>Progressive</span><span>Visa</span><span>PayPal</span></div>
+        <div class="paylogos"><span>Zelle</span><span>Venmo</span><span>Apple Pay</span><span>Crypto</span><span>Bank</span><span>Snap</span><span>Acima</span><span>Progressive</span></div>
       </div>
       <div><h4>Departments</h4><ul id="fcats"></ul></div>
       <div>
@@ -245,7 +263,21 @@
      page that opened straight to a form would skip the one thing the customer
      actually came here to do, which is check what's in the order. */
   var state = "review";
-  var draft = { name: "", phone: "", zip: "", method: "ship", vin: "", financing: false, notes: "" };
+
+  var draft = { name: "", phone: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
+  /* A returning buyer gets their details back rather than retyping them. Notes are
+     not restored — see TTP.buyer in cart.js. */
+  var savedBuyer = TTP.buyer.load();
+  if (savedBuyer) {
+    Object.keys(savedBuyer).forEach(function (k) { draft[k] = savedBuyer[k]; });
+  }
+
+  /* The cart drawer's "Send on WhatsApp" links here with ?send=wa rather than
+     opening wa.me directly, so the order cannot be sent before the form is filled.
+     Honour that by opening straight on the details step. */
+  if (new URLSearchParams(location.search).get("send") === "wa" && TTP.cart.count()) {
+    state = "details";
+  }
 
   function vehicleLabel(v) {
     if (!v || !v.year) return "";
@@ -279,7 +311,7 @@
             "<span>" + l.qty + "</span>" +
             '<button type="button" data-cq="1" data-id="' + p.id + '"' + (l.atCap ? " disabled" : "") + ' aria-label="Increase quantity">+</button>' +
           "</div>" +
-          (l.atCap ? '<span class="ol-cap">Only ' + p.qty + " in stock</span>" : "") +
+          (l.atCap ? '<span class="ol-cap">Max ' + TTP.MAX_QTY + " per order — call for a fleet quote</span>" : "") +
           '<div class="ol-price">' +
             (l.priced
               ? "<b>" + money(p.price * l.qty) + "</b>"
@@ -339,11 +371,25 @@
     "</label>";
   }
 
+  /* Same radio-tile pattern as the ship/pickup choice, driven off TTP.PAYMENTS in
+     cart.js so the tiles and the order message can never name methods differently. */
+  function payTileHTML(row) {
+    var checked = draft.payment === row[0];
+    return '<label class="shiptile">' +
+      '<input type="radio" name="payment" value="' + row[0] + '"' + (checked ? " checked" : "") + ">" +
+      '<span class="st-t">' + esc(row[1]) + '</span><span class="st-s">' + esc(row[2]) + "</span>" +
+    "</label>";
+  }
+
   function detailsHTML() {
     var pickup = draft.method === "pickup";
     return '<div class="co-details">' +
       '<button type="button" class="co-back" id="coBack">← Back to order</button>' +
       "<h1>Your details</h1>" +
+      (savedBuyer
+        ? '<p class="co-saved"><span>Filled in from your last order on this device.</span>' +
+          '<button type="button" id="coForget">Not you? Clear</button></p>'
+        : "") +
       '<p class="co-sub">We text or email you back to confirm price, fitment and freight. Nothing is charged here — this just sends the order to our parts desk.</p>' +
 
       '<div class="co-formgrid">' +
@@ -365,6 +411,13 @@
         '<div class="field no-caret"><label for="ordVin">VIN <span class="opt">optional</span></label><input id="ordVin" type="text" maxlength="17" value="' + esc(draft.vin) + '"></div>' +
       "</div>" +
       (pickup ? '<p class="co-pickupaddr">Pickup — 13618 Florence Rd, Ste D1, Sugar Land, TX 77498</p>' : "") +
+
+      '<span class="mono co-label">How would you like to pay? <span class="opt">optional</span></span>' +
+      '<div class="shiptiles paytiles" id="payTiles">' +
+        TTP.PAYMENTS.map(payTileHTML).join("") +
+      "</div>" +
+      '<p class="co-paynote"><b>No payment is taken on this site.</b> Pick how you&rsquo;d like to pay and ' +
+        "we&rsquo;ll send the details for that method when we confirm your order.</p>" +
 
       '<div class="field no-caret"><label for="ordNotes">Notes <span class="opt">optional</span></label><textarea id="ordNotes" rows="3">' + esc(draft.notes) + "</textarea></div>" +
 
@@ -390,9 +443,14 @@
     return {
       name: val("ordName").trim(),
       phone: val("ordPhone").trim(),
-      zip: draft.method === "pickup" ? "" : val("ordZip").trim(),
+      /* Keep a typed ZIP even while pickup is selected. Blanking it here meant
+         glancing at the pickup tile and back wiped what they had entered, since
+         the step re-renders from the draft. TTP.orderText already branches on
+         method, so a retained ZIP never shows up on a pickup order. */
+      zip: val("ordZip").trim() || draft.zip,
       method: draft.method,
       vin: val("ordVin").trim(),
+      payment: draft.payment,
       financing: !!(document.getElementById("ordFinancing") && document.getElementById("ordFinancing").checked),
       notes: val("ordNotes").trim()
     };
@@ -431,6 +489,21 @@
       });
     });
 
+    var forget = document.getElementById("coForget");
+    if (forget) forget.addEventListener("click", function () {
+      TTP.buyer.clear();
+      savedBuyer = null;
+      draft = { name: "", phone: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
+      renderApp();
+    });
+
+    document.querySelectorAll('#payTiles input[name=payment]').forEach(function (r) {
+      r.addEventListener("change", function () {
+        draft.payment = r.value;
+        updatePreview();
+      });
+    });
+
     ["ordName", "ordPhone", "ordZip", "ordVin", "ordNotes"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) el.addEventListener("input", updatePreview);
@@ -455,6 +528,7 @@
            actually sent. Only the explicit "Start a new order" button in state 3
            clears it. Give the browser a moment to open WhatsApp/mail before we
            swap the DOM out from under the link that was just clicked. */
+        TTP.buyer.save(draft);   /* only on a real send, not on every keystroke */
         setTimeout(function () { state = "sent"; renderApp(); window.scrollTo(0, 0); }, 150);
       });
     });
@@ -469,6 +543,19 @@
       '<span class="mono co-kicker">Order sent</span>' +
       "<h1>" + esc(TTP.cart.ref()) + "</h1>" +
       '<p class="co-sub">We\'ve kept your order here in case the message didn\'t go through — nothing is charged and nothing is cleared until you start a new order.</p>' +
+      /* Name the choice back to them so the next step is unambiguous, and say
+         plainly where the details will come from. Zelle, crypto and bank
+         transfers are irreversible, and businesses that take orders over
+         WhatsApp get impersonated — this is the moment a customer is primed to
+         accept payment instructions, so it is where the warning belongs. */
+      (draft.payment && draft.payment !== "unsure"
+        ? '<div class="co-payback"><span class="mono">Paying by</span><b>' +
+            esc(TTP.paymentLabel(draft.payment)) + "</b>" +
+            "<p>We&rsquo;ll send the details for this when we confirm your order.</p></div>"
+        : '<div class="co-payback"><span class="mono">Payment</span><b>We&rsquo;ll send your options</b>' +
+            "<p>Tell us which you prefer and we&rsquo;ll send the details.</p></div>") +
+      '<p class="co-paywarn">Payment details will only ever come from <b>' + esc(TTP.CONTACT.phoneDisplay) +
+        '</b> or <b>' + esc(TTP.CONTACT.emails[0]) + "</b>. If anyone else sends you an address, it isn&rsquo;t us.</p>" +
       '<div class="co-preview"><pre id="coSentPreview">' + esc(text) + "</pre></div>" +
       '<div class="co-sendrow">' +
         '<button type="button" class="btn ghost" id="coCopy"><span>Copy summary</span></button>' +
@@ -508,7 +595,7 @@
     var nw = document.getElementById("coNew");
     if (nw) nw.addEventListener("click", function () {
       TTP.cart.clear();
-      draft = { name: "", phone: "", zip: "", method: "ship", vin: "", financing: false, notes: "" };
+      draft = { name: "", phone: "", zip: "", method: "ship", vin: "", payment: "", financing: false, notes: "" };
       state = "review";
       renderApp();
       window.scrollTo(0, 0);
