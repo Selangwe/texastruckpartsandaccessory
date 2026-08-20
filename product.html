@@ -42,11 +42,6 @@
   .fitcheck.no .hd{color:var(--oxide)} .fitcheck.no .hd svg{stroke:var(--oxide)}
   .fitcheck p{font-size:.86rem;color:#a9b0b6;margin-top:6px}
   .fitcheck a{color:var(--oxide);border-bottom:1px solid currentColor}
-  .qty{display:flex;align-items:center;border:2px solid var(--line-hard)}
-  .qty button{width:44px;height:100%;min-height:48px;font-family:var(--disp);font-size:1.5rem;
-    line-height:1;color:var(--chalk);transition:background .2s}
-  .qty button:hover{background:var(--steel)}
-  .qty span{min-width:44px;text-align:center;font-family:var(--disp);font-weight:800;font-size:1.4rem}
   .shipbox{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:14px}
   .shipbox div{background:var(--plate);padding:14px 16px}
   .shipbox .mono{color:var(--zinc);display:block;margin-bottom:4px}
@@ -80,8 +75,12 @@
       <a href="index.html#request">Request a Part</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+18327068091"><b>(832) 706-8091</b><span>Parts desk · Mon–Sat</span></a>
+      <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
       <a class="btn" href="category.html"><span>Find My Part</span></a>
+      <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
+        <span class="cartn" data-cartcount hidden>0</span>
+      </button>
       <button class="burger" id="burger" aria-label="Open menu"><i></i></button>
     </div>
   </div>
@@ -100,7 +99,7 @@
 
 <div class="stickybuy" id="stickybuy">
   <div class="p"><b id="sbPrice">$0</b><span id="sbFin"></span></div>
-  <a class="btn" href="#buy" id="sbBtn"><span>Add to Cart</span></a>
+  <button class="btn" type="button" id="sbBtn" data-qty="1"><span>Add to Order</span></button>
 </div>
 
 <footer>
@@ -140,10 +139,12 @@
 
 <script src="assets/products.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
 <script>
 (function(){
   var id = +(new URLSearchParams(location.search).get('id') || 1);
   var p  = TTP.products.filter(function(x){return x.id===id;})[0] || TTP.products[0];
+  TTP.currentProduct = p;
   var cat = TTP.categories.filter(function(c){return c.slug===p.cat;})[0] || {name:p.catName,slug:p.cat};
   var money = TTP.money;
 
@@ -225,7 +226,7 @@
   var big = p.price >= 1500;
   var faqs = [
     ['Will this fit my truck?',
-     'This unit is listed for '+TTP.fitLine(p)+'. Fitment on '+(p.catName||'this part')+' also depends on trim, cab configuration and sensor package, so send your VIN to (832) 706-8091 before you order and we will confirm it against the factory build sheet. Every order is covered by our 30-day fitment guarantee.'],
+     'This unit is listed for '+TTP.fitLine(p)+'. Fitment on '+(p.catName||'this part')+' also depends on trim, cab configuration and sensor package, so send your VIN to '+TTP.CONTACT.phoneDisplay+' before you order and we will confirm it against the factory build sheet. Every order is covered by our 30-day fitment guarantee.'],
     ['What condition is it in?',
      p.condition === 'OEM Take-Off'
        ? 'This is a genuine OEM take-off — removed from a low-mileage truck, not remanufactured and not aftermarket. It is inspected on our floor and photographed as-is, with any blemish called out in the listing and the photos.'
@@ -239,7 +240,7 @@
     ['Can I finance it?',
      'Yes. Snap, Acima and Progressive all offer lease-to-own with no credit needed and approval in minutes'+
      (priced ? ' — roughly '+money(p.mo)+'/month on this part over 12 payments.'
-             : '. Call (832) 706-8091 for pricing on this part and we will quote the monthly alongside it.')+
+             : '. Call '+TTP.pricingTelDisplay()+' for pricing on this part and we will quote the monthly alongside it.')+
      ' There is a 90-day early buyout, and you can also finance in person at the Sugar Land counter.'],
     ['Can I pick it up instead?',
      'Absolutely. We are at 13618 Florence Rd, Ste D1, Sugar Land, TX 77498 — Monday to Friday 8–6 and Saturday 9–3. Call ahead and we will have it pulled and waiting at the counter. Local pickup saves the freight entirely.'],
@@ -293,14 +294,14 @@
         (priced
           ? '<div class="finline">As low as <b>'+money(p.mo)+'/mo</b> with Snap · Acima · Progressive</div>'
           : '<div class="finline">Financing available through Snap · Acima · Progressive — '+
-            '<a href="tel:+18327068091">call for a quote</a></div>') +
+            '<a href="tel:'+TTP.pricingTel()+'">call for a quote</a></div>') +
         '<div class="stockline"><span class="dot"></span>'+
           (p.qty <= 2 ? 'Only '+p.qty+' left — 1-of-1 take-off' : p.qty+' in stock')+
           ' · Ships in 1–2 business days</div>' +
         '<div class="buyrow">' +
           '<div class="qty"><button type="button" data-q="-1" aria-label="Decrease">−</button>'+
             '<span id="qv">1</span><button type="button" data-q="1" aria-label="Increase">+</button></div>' +
-          '<a class="btn" href="tel:+18327068091"><span>Add to Cart</span></a>' +
+          '<button class="btn" type="button" data-add="'+p.id+'" data-qty="1" id="addBtn"><span>Add to Order</span></button>' +
           '<a class="btn ghost" href="index.html#request"><span>Check My VIN</span></a>' +
         '</div>' +
         '<div class="shipbox">' +
@@ -373,6 +374,8 @@
     b.addEventListener('click', function(){
       q = Math.min(p.qty, Math.max(1, q + (+b.dataset.q)));
       document.getElementById('qv').textContent = q;
+      document.getElementById('addBtn').dataset.qty = q;
+      document.getElementById('sbBtn').dataset.qty = q;
     });
   });
 
@@ -380,6 +383,7 @@
   document.getElementById('sbPrice').textContent = money(p.price);
   document.getElementById('sbFin').textContent = priced ? money(p.mo) + '/mo financed'
                                                         : 'call for a quote';
+  document.getElementById('sbBtn').dataset.add = p.id;
   var buy = document.getElementById('buy');
   new IntersectionObserver(function(es){
     sb.classList.toggle('on', !es[0].isIntersecting && es[0].boundingClientRect.top < 0);

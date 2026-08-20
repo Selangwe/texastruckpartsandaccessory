@@ -110,7 +110,11 @@
     if (!v || !v.year) return true;
     var y = +v.year;
     if (p.yearFrom && (y < p.yearFrom || y > p.yearTo)) return false;
-    if (v.make && p.makes.indexOf(v.make) === -1) return false;
+    /* No make recorded means universal fit, not wrong fit. Tool boxes, racks and
+       steps are sold by bed width and cab configuration rather than by make (see
+       WOO-MAPPING §12), so testing them against a make would have the cart telling
+       a customer their tool box does not fit — the one answer that is never true. */
+    if (v.make && p.makes.length && p.makes.indexOf(v.make) === -1) return false;
     if (v.model && v.model !== "All models" && p.models.length && p.models.indexOf(v.model) === -1) return false;
     return true;
   };
@@ -132,6 +136,9 @@
           (low ? "Only " + p.qty + " left" : p.qty + " in stock") + "</div>" +
         '<a class="thumblink" href="product.html?id=' + p.id + '" tabindex="-1" aria-hidden="true">' +
           TTP.shot(p, "thumb", 0) + "</a>" +
+        '<button class="cardadd" type="button" data-add="' + p.id + '" aria-label="Add ' + esc(p.name) + ' to order">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>' +
+        '</button>' +
       "</div>" +
       '<div class="meta">' +
         '<div class="sku">' + TTP.sku(p) + "</div>" +
@@ -266,14 +273,9 @@
     }, { threshold: .5 });
     document.querySelectorAll("[data-count]").forEach(function (el) { cio.observe(el); });
 
-    document.querySelectorAll("form[data-demo]").forEach(function (f) {
-      f.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var n = f.querySelector("[data-note]");
-        if (n) n.innerHTML = "✓ Sent — we answer part requests the same day. (Demo form: wire to Woo/FluentCRM at build.)";
-        f.reset();
-      });
-    });
+    /* The only form on the site used the demo handler this replaced (index.html's
+       part-request form — see its inline script, data-partreq). Nothing else to
+       wire here; re-add a form[data-demo] handler if a future page needs one. */
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", chrome);

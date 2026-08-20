@@ -23,12 +23,61 @@ window.TTP = window.TTP || {};
    --------------------------------------------------------------------------- */
 TTP.SITE = "";
 
-/* TODO — NAP audit, blocks launch.
-   The address, both phone numbers and the info@texastruckparts.shop email hardcoded
-   in index.html came from the same third-party source as the product data. Name,
-   Address and Phone must match the Google Business Profile exactly or the
-   LocalBusiness schema actively damages local ranking. Confirm all four
-   (business name, street address, phone, email) before this goes live. */
+/* TODO — NAP audit, still open on the ADDRESS only.
+   The phone and email below are confirmed and now used sitewide. The street address
+   (13618 Florence Rd, Ste D1, Sugar Land, TX 77498) and the "Est. 2019" badge still
+   come from the same third-party source as the product data, and Name/Address/Phone
+   must match the Google Business Profile exactly or the LocalBusiness schema in
+   index.html actively damages local ranking. Confirm the address before launch. */
+
+/* ---------------------------------------------------------------------------
+   CONTACT — every phone number, WhatsApp link and email on the site resolves
+   from here. Nothing else hardcodes them.
+   --------------------------------------------------------------------------- */
+TTP.CONTACT = {
+  /* Order handoff. Digits only, country code first, no "+".
+     ONLY this wa.me/<number>?text= form carries a prefilled message. */
+  whatsapp: "14244128976",
+  /* WhatsApp Business short link. Opens the same inbox but silently DROPS any
+     ?text=, so it is used only where there is nothing to prefill (the bare
+     chat bubble). Never use it for the order handoff. */
+  waInvite: "https://wa.me/message/ASKUCPHXUHX6A1",
+
+  phone: "+14244128976",
+  phoneDisplay: "(424) 412-8976",
+
+  /* First address is the default button; add a second to render an alternate. */
+  emails: ["Support.ranchhand@gmail.com"],
+
+  /* TODO — dedicated pricing line, number pending.
+     The 17 "Call for price" products dial THIS, not the main line. While it is
+     empty every pricing CTA falls back to the number above, so the flow works
+     today and switching over is one string. */
+  pricingPhone: "",
+  pricingPhoneDisplay: ""
+};
+
+/* Resolves the pricing line, falling back to the main number until one is set.
+   Every "Call for price" CTA on the site reads from this one function. */
+TTP.pricingTel = function () {
+  return TTP.CONTACT.pricingPhone || TTP.CONTACT.phone;
+};
+TTP.pricingTelDisplay = function () {
+  return TTP.CONTACT.pricingPhoneDisplay || TTP.CONTACT.phoneDisplay;
+};
+
+/* Both channels compose the same plain text; these just wrap it in a URL.
+   encodeURIComponent, not encodeURI — the body contains &, # and + which would
+   otherwise be read as URL syntax and truncate the message. */
+TTP.waUrl = function (text) {
+  return "https://wa.me/" + TTP.CONTACT.whatsapp +
+         (text ? "?text=" + encodeURIComponent(text) : "");
+};
+TTP.mailUrl = function (subject, body, to) {
+  return "mailto:" + (to || TTP.CONTACT.emails[0]) +
+         "?subject=" + encodeURIComponent(subject) +
+         "&body=" + encodeURIComponent(body);
+};
 
 /* Path prefixes — change these if the Woo permalink structure differs. */
 TTP.PATHS = {

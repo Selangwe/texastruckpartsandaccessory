@@ -150,8 +150,7 @@ permalinks, photography, and fitment from the store's own attribute.
   all 238 products**, so the plan's social-proof gap is real. Do not ship these; collect
   real ones via the post-purchase email sequence
 - Stat rail: parts count is live; 48 states / 60% / $55 come from the plan's copy
-- `Add to Cart` links to the phone number — there is no cart in a static build
-- The request-a-part form is `data-demo` and submits nowhere
+- The **street address and "Est. 2019"** still come from the scraped store — see §11
 
 **Corrected during the build:** the brand lockup read "Est. 2007"; the store's own badge alt
 text says *"Texas Truck Parts Established 2019"*, so it now reads **Est. 2019**.
@@ -231,13 +230,17 @@ seeded from its public Store API, so the scraped data still carries it:
 |---|---|---|
 | `data/store-products.json` | ~14,900 | Prototype data, not deployed. Leave |
 | `assets/products.js` — `p.url` | 238 | Never emitted. `TTP.productUrl()` rebuilds from `p.slug` on our own origin |
-| `index.html` — `info@…` email | 3 | **Unresolved.** Body copy ×2 and LocalBusiness `email` ×1 |
+| `index.html` — `info@…` email | 0 | **Resolved.** Replaced with `Support.ranchhand@gmail.com` |
+| Phone `(832) 706-8091` / `(281) 905-1053` | 0 | **Resolved.** Both replaced with `(424) 412-8976` |
 | Templates — canonical / OG / schema | 0 | Cleared; all derive from `TTP.SITE` |
 
-The street address, both phone numbers, business name and hours in `index.html` came
-from that same source. **Name, Address and Phone must match the Google Business
-Profile exactly** or the LocalBusiness schema damages local ranking rather than
-helping it. Confirm all of it before launch.
+Phone and email are now confirmed values and live in **one place** — `TTP.CONTACT` in
+`assets/config.js`. Nothing else hardcodes them.
+
+**Still unresolved:** the street address (13618 Florence Rd, Ste D1, Sugar Land, TX 77498),
+the business hours and the "Est. 2019" badge all came from the scraped store. **Name,
+Address and Phone must match the Google Business Profile exactly** or the LocalBusiness
+schema damages local ranking rather than helping it. Confirm the address before launch.
 
 ## 12. The Facebook catalogue (your own inventory)
 
@@ -350,8 +353,50 @@ bumper-led with no tailgates, tail lights, wheels or truck beds — categories t
 up much of the 238-product store-API set. Merging them is a presentation decision; it
 does not make the scraped products yours.
 
-## 13. Not built yet
+## 13. The cart — order-by-message, not order-by-payment
 
-Cart/checkout, account & order tracking, abandoned-cart recovery, back-in-stock alerts,
+`assets/cart.js` + `cart.html` add a real order path that fits a static site: a localStorage
+cart whose checkout **composes the order as plain text and hands it to WhatsApp or email as a
+draft the customer sends.** No payment is taken and no total is invented.
+
+That is not a compromise so much as a match for the inventory. 17 of 257 products carry no
+price at all, freight on a $3,500 truck bed depends on a residential-vs-commercial address and
+a liftgate, and every take-off wants a VIN check before it ships. All three need a human in the
+loop, so the flow ends in a conversation rather than a card form.
+
+| Piece | Where |
+|---|---|
+| Cart state, message builder, drawer, chat widget | `assets/cart.js` |
+| Review → details → sent | `cart.html` |
+| Phone / WhatsApp / email / pricing line | `TTP.CONTACT` in `assets/config.js` |
+| Drawer, widget, cart-line, quick-add styles | `assets/site.css` |
+
+**Rules the catalogue forced:**
+- Only `id` + `qty` are persisted; every price, name and stock figure is re-read from
+  `TTP.products` on access, so a week-old cart can never quote a stale price
+- Quantities clamp to `p.qty` — the whole catalogue is 1-of-1 and 2-of-2 take-offs
+- Unpriced items are orderable but excluded from the subtotal, which is labelled with its
+  own item count; `$0` is never rendered
+- Freight (≥ $1,500) is marked per line and never totalled
+- Cart money is exact to the cent, unlike `TTP.money`'s whole-dollar browse rounding —
+  `TTP.money2()` in `cart.js`
+- The cart is **not** cleared when the handoff fires. A static page cannot confirm delivery,
+  so only an explicit "Start a new order" clears it
+
+**WhatsApp link forms — they are not interchangeable.** `wa.me/<number>?text=…` carries a
+prefilled message; the Business short link `wa.me/message/<CODE>` opens the same inbox but
+silently drops `?text=`. The order handoff must always use the number form. The short link is
+used only for the bare chat bubble, where there is nothing to prefill.
+
+### Porting to WooCommerce
+
+`TTP.cart` reads only `TTP.products`, so it maps onto Woo's cart the same way the templates map
+onto its queries. The natural port is Woo's own cart/checkout with the message handoff kept as a
+*secondary* CTA — "send this order on WhatsApp" beside "pay now" — since a good share of this
+customer base would rather message than fill in a card form.
+
+## 14. Still not built
+
+Payment capture, accounts & order tracking, abandoned-cart recovery, back-in-stock alerts,
 product comparison, wholesale tier, blog — all Woo plugin or Phase-2 work per the plan's own
 priority list, none of which affects the design system above.

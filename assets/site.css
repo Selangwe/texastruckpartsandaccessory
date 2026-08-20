@@ -432,3 +432,171 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
   *{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .rv{opacity:1;transform:none}
 }
+
+/* ==========================================================================
+   CART + CHAT WIDGET
+   Depends on assets/cart.js for markup/behaviour. Shared by every template.
+   ========================================================================== */
+
+/* ---------- qty stepper ----------
+   Moved here from product.html — the cart drawer now uses it on every page. */
+.qty{display:flex;align-items:center;border:2px solid var(--line-hard)}
+.qty button{width:44px;height:100%;min-height:48px;font-family:var(--disp);font-size:1.5rem;
+  line-height:1;color:var(--chalk);transition:background .2s}
+.qty button:hover{background:var(--steel)}
+.qty span{min-width:44px;text-align:center;font-family:var(--disp);font-weight:800;font-size:1.4rem}
+.qty button[disabled]{opacity:.3;cursor:not-allowed} /* marks "you've hit the stock cap" */
+.qty button[disabled]:hover{background:none}
+/* compact variant for cart lines, where the full-size stepper would crowd the row */
+.qty.sm button{width:36px;min-height:36px;font-size:1.1rem}
+.qty.sm span{min-width:36px;font-size:1.1rem}
+
+/* ---------- header cart button ---------- */
+.cartbtn{position:relative;width:44px;height:44px;border:1px solid var(--line-hard);display:grid;place-items:center;flex-shrink:0;transition:border-color .2s}
+.cartbtn:hover{border-color:var(--chalk)}
+.cartbtn svg{width:20px;height:20px;fill:none;stroke:var(--chalk);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cartbtn.has{border-color:var(--oxide)} /* signals a non-empty cart */
+.cartn{
+  position:absolute;top:-7px;right:-7px;min-width:18px;height:18px;padding:0 3px;
+  display:grid;place-items:center;background:var(--oxide);color:#0b0c0d;
+  font-family:var(--mono);font-size:.55rem;font-weight:600;line-height:1;
+}
+.cartn[hidden]{display:none} /* cart.js toggles the hidden attribute at zero — pin the rule so the badge never reserves space */
+
+/* ---------- cart scrim + drawer ----------
+   Scrim mirrors category.html's .scrim exactly — one interaction vocabulary
+   for every slide-over on the site. z-index 96 keeps the drawer above the
+   category filter drawer (95), since opening the cart should always win. */
+.cartscrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:94;opacity:0;pointer-events:none;transition:opacity .3s}
+.cartscrim.on{opacity:1;pointer-events:auto}
+
+.cartdrawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(420px,100vw);z-index:96;
+  background:var(--plate);border-left:1px solid var(--line-hard);
+  display:flex;flex-direction:column;
+  transform:translateX(100%);transition:transform .35s var(--ease);
+}
+.cartdrawer.on{transform:translateX(0)}
+.cd-head{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.cd-head .mono{color:var(--zinc);display:block;margin-bottom:2px}
+.cd-head b{font-family:var(--disp);font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;display:block}
+#cdClose{min-width:44px;min-height:44px;display:grid;place-items:center;font-size:1.6rem;line-height:1;color:var(--zinc);transition:color .2s}
+#cdClose:hover{color:var(--chalk)}
+.cd-body{flex:1;overflow-y:auto;padding:0 18px}
+.cd-foot{flex-shrink:0;padding:16px 18px;background:var(--panel);border-top:1px solid var(--line-hard)}
+
+/* ---------- cart line ---------- */
+.cline{display:grid;grid-template-columns:76px 1fr;gap:13px;padding:16px 0;border-bottom:1px solid var(--line)}
+.cl-img{display:block;background:var(--asphalt);border:1px solid var(--line);aspect-ratio:4/3;overflow:hidden}
+.cl-img img.shot{width:100%;height:100%;object-fit:contain}
+.cl-meta{min-width:0}
+.cl-meta .sku{font-family:var(--mono);font-size:.5rem;letter-spacing:.14em;color:var(--zinc)}
+.cl-meta h4{
+  font-family:var(--body);font-weight:600;font-size:.92rem;line-height:1.3;margin-top:2px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.cl-meta h4 a{color:inherit}
+.cl-meta h4 a:hover{color:var(--oxide)}
+.cl-ship{font-family:var(--mono);font-size:.5rem;letter-spacing:.1em;color:var(--weld);text-transform:uppercase;margin-top:5px}
+/* the fitment failure — most important warning in the cart, so it gets a red
+   card of its own, but stays a notice rather than an error-page red */
+.cl-warn{
+  margin-top:7px;border:1px solid rgba(232,67,26,.5);background:rgba(232,67,26,.07);
+  padding:6px 9px;font-size:.74rem;color:var(--oxide);line-height:1.4;
+}
+.cl-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px}
+.cl-price b{font-family:var(--disp);font-weight:800;font-size:1.3rem;letter-spacing:.01em}
+.askbtn{border:1px solid var(--line-hard);padding:6px 11px;font-family:var(--mono);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hazard);transition:.2s}
+.askbtn:hover{background:var(--hazard);color:#0b0c0d;border-color:var(--hazard)}
+.cl-cap{font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hazard);margin-top:6px}
+.cl-rm{display:block;margin-top:8px;font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--zinc-dim);transition:color .2s}
+.cl-rm:hover{color:var(--oxide);text-decoration:underline}
+
+/* ---------- drawer footer / order summary ---------- */
+.cd-sum{margin-bottom:12px}
+.cd-sum .row{display:flex;align-items:center;justify-content:space-between;padding:5px 0}
+.cd-sum .row b{font-family:var(--disp);font-weight:800;font-size:1.25rem}
+.cd-sum .row.muted{color:var(--zinc)}
+.cd-note{font-size:.72rem;color:var(--zinc-dim);line-height:1.45;margin:8px 0}
+.cd-bad{font-size:.72rem;color:var(--oxide);line-height:1.45;margin:8px 0}
+.cd-foot .btn+.btn{margin-top:8px}
+
+.cd-empty{text-align:center;padding:40px 0;color:var(--zinc)}
+.cd-empty p{margin-bottom:16px}
+
+/* ---------- WhatsApp button variants ----------
+   .btn::after slides a solid fill up on hover and .btn>* sits at z-index 1
+   above it — the wa tint only needs to sit on the base colours, the icon's
+   fill:currentColor already inherits the existing hover-fill colour swap. */
+.waico{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+.btn.wa{border-color:#25D366;background:#25D366;color:#06230f}
+.btn.wa::after{background:var(--chalk)}
+.btn.ghost.wa{background:transparent;color:#25D366;border-color:rgba(37,211,102,.5)}
+.btn.ghost.wa:hover{border-color:#25D366}
+
+/* ---------- chat widget ----------
+   z-index 85: above .stickybuy (70) so the bubble is never hidden behind the
+   mobile buy bar, but below the filter drawer (95) so it never floats over
+   an open sheet. */
+.chatw{position:fixed;right:20px;bottom:20px;z-index:85}
+.chatbub{
+  position:relative;height:56px;display:inline-flex;align-items:center;gap:9px;padding:0 20px;
+  background:#25D366;color:#06230f;font-family:var(--disp);font-weight:800;font-size:1.05rem;
+  letter-spacing:.05em;text-transform:uppercase;box-shadow:0 12px 30px -10px rgba(0,0,0,.8);
+  transition:transform .25s var(--ease);
+}
+.chatbub:hover{transform:translateY(-2px)}
+.chatbub .waico{width:24px;height:24px}
+.chatpanel{
+  position:absolute;bottom:calc(100% + 12px);right:0;width:min(320px,calc(100vw - 40px));
+  background:var(--panel);border:1px solid var(--line-hard);box-shadow:0 34px 70px -34px #000;
+  opacity:0;transform:translateY(10px);pointer-events:none;visibility:hidden;
+  transition:opacity .3s var(--ease),transform .3s var(--ease);
+}
+.chatpanel.on{opacity:1;transform:translateY(0);pointer-events:auto;visibility:visible}
+.cp-head{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.cp-head b{font-family:var(--disp);font-weight:800;font-size:1.15rem;text-transform:uppercase;display:block}
+.cp-head .mono{color:var(--zinc);display:block;margin-top:2px}
+#cpClose{min-width:44px;min-height:44px;display:grid;place-items:center;font-size:1.5rem;line-height:1;color:var(--zinc);transition:color .2s}
+#cpClose:hover{color:var(--chalk)}
+.cp-body{padding:15px 16px;display:grid;gap:11px}
+.cp-hi{font-size:.82rem;color:var(--zinc);line-height:1.5}
+.cp-ctx{background:var(--steel);padding:9px 11px}
+.cp-ctx[hidden]{display:none} /* cart.js sets/clears the hidden attribute directly — pin the rule so nothing later can override it */
+.cp-ctx .mono{color:var(--zinc);display:block;margin-bottom:3px}
+.cp-ctx b{
+  font-family:var(--body);font-weight:600;font-size:.84rem;line-height:1.3;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.cp-alt{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cp-alt a{font-family:var(--mono);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--zinc);transition:color .2s}
+.cp-alt a:hover{color:var(--oxide)}
+
+/* ---------- misc: scroll lock + card quick-add ---------- */
+body.noscroll{overflow:hidden}
+
+/* compact add-to-order button inside product cards; sits opposite the
+   badges/stock-pill, which already own the top corners at z-index 2 */
+.cardadd{
+  position:absolute;right:9px;bottom:9px;z-index:2;width:40px;height:40px;
+  display:grid;place-items:center;background:var(--oxide);color:#0b0c0d;
+  opacity:0;transform:translateY(6px);transition:opacity .25s var(--ease),transform .25s var(--ease),background .2s;
+}
+.cardadd svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.card:hover .cardadd,.card:focus-within .cardadd{opacity:1;transform:none}
+.cardadd.added{background:var(--weld)}
+
+/* ---------- responsive: cart + chat ---------- */
+@media(max-width:900px){
+  /* keeps the chat bubble clear of the mobile sticky-buy bar on product pages */
+  body.has-stickybuy .chatw{bottom:86px}
+}
+@media(max-width:560px){
+  .cartdrawer{width:100vw}
+  .chatbub{width:56px;height:56px;padding:0;justify-content:center}
+  .chatbub span{display:none}
+  .chatbub .waico{width:26px;height:26px}
+}
+@media(hover:none){
+  .cardadd{opacity:1;transform:none} /* no hover state on touch, so the add button is always reachable */
+}

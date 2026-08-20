@@ -172,11 +172,15 @@
       <a href="#yard">Contact</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+18327068091">
-        <b>(832) 706-8091</b>
+      <a class="tel" href="tel:+14244128976">
+        <b>(424) 412-8976</b>
         <span>Parts desk · Mon–Sat</span>
       </a>
       <a class="btn" href="#finder"><span>Find My Part</span></a>
+      <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
+        <span class="cartn" data-cartcount hidden>0</span>
+      </button>
       <button class="burger" id="burger" aria-label="Open menu"><i></i></button>
     </div>
   </div>
@@ -204,7 +208,7 @@
       <p class="hero-sub">Genuine OEM bumpers, beds, tailgates and lights pulled from low-mileage trucks — <b>40–60% below dealer pricing</b>, inspected on our floor, and matched to your VIN before we ship.</p>
       <div class="hero-cta">
         <a class="btn" href="category.html"><span>Browse All Parts</span></a>
-        <a class="btn ghost" href="tel:+18327068091"><span>Talk to a Parts Guy</span></a>
+        <a class="btn ghost" href="tel:+14244128976"><span>Talk to a Parts Guy</span></a>
       </div>
     </div>
 
@@ -372,7 +376,7 @@
         </div>
       </div>
       <div class="fin-r" style="background:none">
-        <form class="rfp" data-demo>
+        <form class="rfp" data-partreq>
           <div class="row2">
             <input type="text" name="year" placeholder="Year *" required />
             <input type="text" name="make" placeholder="Make *" required />
@@ -388,7 +392,7 @@
           </div>
           <textarea name="notes" placeholder="Color, trim, sensor package, anything else we should know"></textarea>
           <button class="btn block" type="submit"><span>Send Part Request</span></button>
-          <p class="formnote" data-note>We reply the same business day · (832) 706-8091</p>
+          <p class="formnote" data-note>We reply the same business day · (424) 412-8976</p>
         </form>
       </div>
     </div>
@@ -420,11 +424,11 @@
         </div>
         <div class="irow">
           <span class="mono">Parts desk</span>
-          <p><a href="tel:+18327068091">(832) 706-8091</a><br><a href="tel:+12819051053">(281) 905-1053</a></p>
+          <p><a href="tel:+14244128976">(424) 412-8976</a></p>
         </div>
         <div class="irow">
           <span class="mono">Email</span>
-          <p><a href="mailto:info@texastruckparts.shop">info@texastruckparts.shop</a></p>
+          <p><a href="mailto:Support.ranchhand@gmail.com">Support.ranchhand@gmail.com</a></p>
         </div>
         <div class="irow hours">
           <div><span class="mono">Mon – Fri</span><p>8:00A — 6:00P</p></div>
@@ -444,7 +448,7 @@
         <h2>Got a VIN? We'll find the part.</h2>
         <p>Same-day quotes · Free freight · 30-day fitment guarantee</p>
       </div>
-      <a class="btn lg" href="tel:+18327068091"><span>Call (832) 706-8091</span></a>
+      <a class="btn lg" href="tel:+14244128976"><span>Call (424) 412-8976</span></a>
     </div>
   </div>
 </section>
@@ -512,8 +516,8 @@
   "url":"__SITE__/",
   "logo":"__SITE__/assets/img/logo.png",
   "image":"__SITE__/assets/img/og-default.jpg",
-  "telephone":"+1-832-706-8091",
-  "email":"info@texastruckparts.shop",
+  "telephone":"+1-424-412-8976",
+  "email":"Support.ranchhand@gmail.com",
   "priceRange":"$$",
   "currenciesAccepted":"USD",
   "paymentAccepted":"Cash, Credit Card, PayPal, Snap Finance, Acima, Progressive Leasing",
@@ -550,6 +554,7 @@
 
 <script src="assets/products.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
 <script>
 (function(){
   /* live counts — the catalogue grows, so nothing here is hardcoded */
@@ -592,6 +597,41 @@
   });
 
   TTP.initFinder(document.getElementById('finder'));
+
+  /* part-request form — composes a plain-text message and hands it to the
+     customer's own mail client. There is no server here to receive a POST, so
+     mailto (with a WhatsApp fallback in the note, since mailto silently does
+     nothing if no mail client is configured) is the honest way to "send" this. */
+  var rfp = document.querySelector('form[data-partreq]');
+  if (rfp) {
+    rfp.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = rfp.elements;
+      var ymm = [f.year.value, f.make.value, f.model.value].filter(Boolean).join(' ');
+      var subject = 'Part request — ' + ymm + (f.part.value ? ' · ' + f.part.value : '');
+
+      var pad = function (s) { s = s + ''; while (s.length < 20) s += ' '; return s; };
+      var rows = [
+        ['Year / Make / Model', ymm],
+        ['Part needed', f.part.value],
+        ['VIN', f.vin.value],
+        ['Phone', f.phone.value],
+        ['Email', f.email.value],
+        ['Notes', f.notes.value]
+      ].filter(function (r) { return r[1]; });
+
+      var body = 'Subject: ' + subject + '\n\n' +
+        rows.map(function (r) { return pad(r[0]) + ': ' + r[1]; }).join('\n');
+
+      var note = rfp.querySelector('[data-note]');
+      if (note) {
+        note.innerHTML = 'Opening your email app… if nothing happens, ' +
+          '<a href="' + TTP.esc(TTP.waUrl(body)) + '" target="_blank" rel="noopener">send it on WhatsApp instead</a>.';
+      }
+
+      window.location.href = TTP.mailUrl(subject, body);
+    });
+  }
 })();
 </script>
 </body>

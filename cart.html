@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Your Order | Texas Truck Parts</title>
+<meta name="description" content="Review your order, confirm fitment and send the details to our parts desk. Nothing is charged on this page." />
+<link rel="canonical" href="__SITE__/cart/" />
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Order | Texas Truck Parts">
+<meta property="og:description" content="Review your order, confirm fitment and send the details to our parts desk. Nothing is charged on this page.">
+<meta property="og:url" content="__SITE__/cart/">
+<meta property="og:site_name" content="Texas Truck Parts">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="__SITE__/assets/img/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
+<script src="assets/config.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* Page-specific only — the cart drawer and chat widget get their CSS from
+     site.css (another agent's pass). Nothing here touches .cartbtn, .cartn,
+     .cartdrawer, .cline/.cl-*, .cd-*, .chatw/.chatbub/.chatpanel, or .qty —
+     this page's own order lines use their own ol-* classes so there is zero
+     overlap to fight over. */
+  .cart-wrap{padding-bottom:80px}
+
+  /* ---------- state 1: review ---------- */
+  .co-grid{display:grid;grid-template-columns:1fr 380px;gap:40px;align-items:start}
+  .co-main{min-width:0}
+  .co-kicker{color:var(--zinc);display:block;margin-bottom:6px}
+  .co-main h1,.co-details h1,.co-sent h1{
+    font-family:var(--disp);font-weight:900;text-transform:uppercase;
+    font-size:clamp(2.1rem,5vw,3.2rem);line-height:.92;letter-spacing:-.01em;margin-bottom:22px;
+  }
+  .co-lines{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .oline{display:flex;gap:16px;background:var(--plate);padding:16px}
+  .ol-img{width:88px;height:88px;flex-shrink:0;border:1px solid var(--line-hard);overflow:hidden;display:block;background:var(--panel)}
+  .ol-img img{width:100%;height:100%;object-fit:cover}
+  .ol-meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+  .ol-sku{color:var(--zinc-dim)}
+  .ol-meta h3{font-family:var(--disp);font-weight:800;font-size:1.14rem;text-transform:uppercase;line-height:1.08}
+  .ol-meta h3 a:hover{color:var(--oxide)}
+  .ol-ship{font-size:.78rem;color:var(--zinc)}
+  .ol-warn{border:1px solid rgba(232,67,26,.5);background:rgba(232,67,26,.09);padding:9px 11px;font-size:.78rem;color:#f3c9ba;margin-top:2px}
+  .ol-warn b{display:block;color:var(--oxide-hot);font-family:var(--disp);text-transform:uppercase;letter-spacing:.02em;font-size:.92rem;font-weight:800}
+  .ol-warn a{color:var(--oxide-hot);border-bottom:1px solid currentColor}
+  .ol-row{display:flex;align-items:center;gap:14px;margin-top:5px;flex-wrap:wrap}
+  .ol-cap{color:var(--hazard);font-family:var(--mono);font-size:.5rem;letter-spacing:.1em;text-transform:uppercase}
+  .ol-price{margin-left:auto;font-family:var(--disp);font-weight:800;font-size:1.2rem;white-space:nowrap}
+  .ol-ask{color:var(--hazard);font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid currentColor}
+  .ol-rm{align-self:flex-start;font-family:var(--mono);font-size:.5rem;letter-spacing:.14em;text-transform:uppercase;color:var(--zinc-dim);border-bottom:1px solid transparent;margin-top:2px}
+  .ol-rm:hover{color:var(--oxide);border-color:currentColor}
+
+  .co-summary{position:sticky;top:calc(var(--nav-h) + 16px)}
+  .co-sumcard{border:1px solid var(--line-hard);background:var(--panel);padding:22px}
+  .co-sumhead{color:var(--zinc);display:block;margin-bottom:14px}
+  .co-sumrow{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-top:1px dashed var(--line-hard);font-size:.92rem}
+  .co-sumrow:first-of-type{border-top:none;padding-top:0}
+  .co-sumrow b{font-family:var(--disp);font-size:1.35rem}
+  .co-sumrow.muted{color:var(--zinc)}
+  .co-badnote{color:var(--oxide-hot);font-size:.78rem;margin-top:4px;line-height:1.4}
+  .co-note{color:var(--zinc);font-size:.76rem;line-height:1.55;margin:16px 0;padding-top:14px;border-top:1px solid var(--line)}
+  .co-backlink{display:block;text-align:center;margin-top:14px;color:var(--zinc)}
+  .co-backlink:hover{color:var(--oxide)}
+
+  .co-empty{max-width:440px;margin:70px auto;text-align:center;border:1px dashed var(--line-hard);padding:60px 30px}
+  .co-empty h1{font-family:var(--disp);font-weight:800;font-size:2rem;text-transform:uppercase;margin-bottom:10px}
+  .co-empty p{color:var(--zinc);margin-bottom:24px}
+
+  /* ---------- state 2: details ---------- */
+  .co-details{max-width:660px;padding-bottom:40px}
+  .co-back{color:var(--zinc);letter-spacing:.14em;margin-bottom:18px;font-family:var(--mono);font-size:.56rem;text-transform:uppercase}
+  .co-back:hover{color:var(--oxide)}
+  .co-sub{color:var(--zinc);margin-bottom:26px;max-width:54ch;font-size:.92rem}
+  .co-formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+  .field textarea{
+    appearance:none;width:100%;background:var(--plate);border:1px solid var(--line-hard);color:var(--chalk);
+    font-family:var(--body);font-size:.94rem;padding:24px 13px 10px;resize:vertical;min-height:76px;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .field textarea:focus{outline:none;border-color:var(--oxide);box-shadow:0 0 0 3px rgba(232,67,26,.18)}
+  .field .opt{opacity:.6;text-transform:none;letter-spacing:0;font-size:.95em}
+  .co-label{color:var(--zinc);display:block;margin:22px 0 10px}
+  .is-hidden{display:none !important}
+
+  .shiptiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:6px}
+  .shiptile{
+    position:relative;display:flex;flex-direction:column;gap:4px;border:2px solid var(--line-hard);
+    background:var(--plate);padding:15px 17px;cursor:pointer;transition:border-color .2s,background .2s;
+  }
+  .shiptile input{position:absolute;opacity:0;pointer-events:none}
+  .shiptile:hover{border-color:var(--zinc-dim)}
+  .shiptile:has(input:checked){border-color:var(--oxide);background:rgba(232,67,26,.08)}
+  .shiptile .st-t{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:1.06rem;letter-spacing:.01em}
+  .shiptile .st-s{font-size:.76rem;color:var(--zinc)}
+  .co-pickupaddr{font-size:.78rem;color:var(--weld);margin:0 0 14px}
+
+  .co-check{display:flex;align-items:flex-start;gap:10px;font-size:.87rem;color:#c7ccd1;margin:20px 0 4px;cursor:pointer}
+  .co-check input{width:16px;height:16px;margin-top:2px;accent-color:var(--oxide);flex-shrink:0}
+
+  .co-preview{margin:26px 0}
+  .co-preview pre{
+    background:var(--plate);border:1px solid var(--line-hard);padding:16px;font-family:var(--mono);
+    font-size:.72rem;line-height:1.65;white-space:pre-wrap;word-break:break-word;color:#c7ccd1;
+    max-height:340px;overflow-y:auto;
+  }
+  .co-reqnote{color:var(--oxide-hot);margin-bottom:12px;letter-spacing:.1em}
+  .co-sendrow{display:flex;gap:12px;flex-wrap:wrap}
+  .co-sendrow .btn{flex:1;min-width:220px}
+  .co-sendrow .btn.is-disabled{opacity:.4;pointer-events:none}
+
+  /* ---------- state 3: sent ---------- */
+  .co-sent{max-width:620px;padding-bottom:60px}
+  .co-sent .co-kicker{color:var(--weld)}
+  .co-sent h1{letter-spacing:.03em;margin-bottom:14px}
+  .co-sent .co-sub{color:var(--zinc);max-width:56ch;margin-bottom:22px;font-size:.92rem}
+  .co-phoneline{font-size:.85rem;color:var(--zinc);margin:20px 0}
+  .co-phoneline a{color:var(--oxide);border-bottom:1px solid currentColor}
+  .co-newbtn{margin-top:22px}
+
+  @media(max-width:900px){
+    .co-grid{grid-template-columns:1fr}
+    .co-summary{position:static}
+    .co-formgrid{grid-template-columns:1fr}
+    .shiptiles{grid-template-columns:1fr}
+    .cart-wrap{padding-bottom:60px}
+  }
+  @media(max-width:480px){
+    .oline{flex-direction:column}
+    .ol-img{width:100%;height:150px}
+    .ol-price{margin-left:0}
+    .co-sendrow .btn{min-width:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <p>Free shipping · lower 48<i>◆</i>OEM factory take-offs — 40–60% below dealer<i>◆</i>Financing from $55/mo<i>◆</i>VIN fitment check before you buy<i>◆</i>Local pickup · Sugar Land, TX<i>◆</i></p>
+    <p>Free shipping · lower 48<i>◆</i>OEM factory take-offs — 40–60% below dealer<i>◆</i>Financing from $55/mo<i>◆</i>VIN fitment check before you buy<i>◆</i>Local pickup · Sugar Land, TX<i>◆</i></p>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
+      <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="category.html">Shop All</a>
+      <a href="category.html?cat=front-bumper">Bumpers</a>
+      <a href="category.html?cat=truck-bed">Beds</a>
+      <a href="category.html?cat=tail-lights">Lighting</a>
+      <a href="index.html#financing">Financing</a>
+      <a href="index.html#request">Request a Part</a>
+    </nav>
+    <div class="nav-right">
+      <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
+      <a class="btn" href="category.html"><span>Find My Part</span></a>
+      <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
+        <span class="cartn" data-cartcount hidden>0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Open menu"><i></i></button>
+    </div>
+  </div>
+  <div class="fitbar" id="fitbar">
+    <div class="wrap">
+      <span class="mono">Shopping for</span><b data-veh></b><span class="mono" data-n></span>
+      <button data-clearveh type="button">Change vehicle</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap cart-wrap">
+  <nav class="crumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a><span>/</span>
+    <a href="category.html">Shop</a><span>/</span>
+    <em style="font-style:normal;color:var(--chalk)">Your order</em>
+  </nav>
+  <div id="cartApp"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div class="fbrand">
+        <h4>Texas Truck Parts</h4>
+        <p>OEM factory take-offs and heavy-duty aftermarket steel for Ford, Chevy, GMC, Ram and Toyota trucks. Family-run out of Sugar Land, Texas.</p>
+        <div class="paylogos"><span>Snap</span><span>Acima</span><span>Progressive</span><span>Visa</span><span>PayPal</span></div>
+      </div>
+      <div><h4>Departments</h4><ul id="fcats"></ul></div>
+      <div>
+        <h4>Shop by truck</h4>
+        <ul>
+          <li><a href="category.html?make=Ford">Ford Super Duty</a></li>
+          <li><a href="category.html?make=Chevrolet">Chevy Silverado HD</a></li>
+          <li><a href="category.html?make=GMC">GMC Sierra HD</a></li>
+          <li><a href="category.html?make=Ram">Ram 2500 / 3500</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="index.html#financing">Financing &amp; Approval</a></li>
+          <li><a href="index.html#request">Request a Part</a></li>
+          <li><a href="index.html#yard">Contact the Yard</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wordmark" aria-hidden="true">TEXAS TRUCK PARTS</div>
+    <div class="legal">
+      <p>© 2026 Texas Truck Parts · Sugar Land, TX</p>
+      <p>Financing via Snap · Acima · Progressive · subject to approval</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/products.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  /* TTP.money2, not TTP.money — the browse formatter rounds to whole dollars,
+     which would print $1,050 on screen while the message the customer sends
+     says $1,049.99. What they see and what they send must be the same number. */
+  var esc = TTP.esc, money = TTP.money2;
+  var root = document.getElementById("cartApp");
+
+  /* state = 'review' | 'details' | 'sent'. 'review' is the default — a cart
+     page that opened straight to a form would skip the one thing the customer
+     actually came here to do, which is check what's in the order. */
+  var state = "review";
+  var draft = { name: "", phone: "", zip: "", method: "ship", vin: "", financing: false, notes: "" };
+
+  function vehicleLabel(v) {
+    if (!v || !v.year) return "";
+    return v.year + " " + v.make + (v.model && v.model !== "All models" ? " " + v.model : "");
+  }
+
+  /* ================= EMPTY ================= */
+  function emptyHTML() {
+    return '<div class="co-empty"><h1>Your order is empty</h1>' +
+      "<p>Add a part from the shop and it will show up here, ready to send to the parts desk.</p>" +
+      '<a class="btn" href="category.html"><span>Browse parts</span></a></div>';
+  }
+
+  /* ================= STATE 1 — REVIEW ================= */
+  function lineHTML(l) {
+    var p = l.p, v = TTP.getVehicle();
+    return '<div class="oline">' +
+      '<a class="ol-img" href="product.html?id=' + p.id + '" tabindex="-1" aria-hidden="true">' + TTP.shot(p, "thumb", 0) + "</a>" +
+      '<div class="ol-meta">' +
+        '<div class="mono ol-sku">' + esc(TTP.sku(p)) + "</div>" +
+        "<h3><a href=\"product.html?id=" + p.id + '">' + esc(p.name) + "</a></h3>" +
+        '<div class="ol-ship">' + esc(TTP.shipNote(l)) + "</div>" +
+        (l.fits === false
+          ? '<div class="ol-warn"><b>Does not fit your ' + esc(vehicleLabel(v)) + "</b>" +
+            "<span>This part is listed for " + esc(TTP.fitLine(p)) + ". </span>" +
+            '<a href="category.html?fit=1">See parts that fit your truck instead</a></div>'
+          : "") +
+        '<div class="ol-row">' +
+          '<div class="qty sm">' +
+            '<button type="button" data-cq="-1" data-id="' + p.id + '" aria-label="Decrease quantity">−</button>' +
+            "<span>" + l.qty + "</span>" +
+            '<button type="button" data-cq="1" data-id="' + p.id + '"' + (l.atCap ? " disabled" : "") + ' aria-label="Increase quantity">+</button>' +
+          "</div>" +
+          (l.atCap ? '<span class="ol-cap">Only ' + p.qty + " in stock</span>" : "") +
+          '<div class="ol-price">' +
+            (l.priced
+              ? "<b>" + money(p.price * l.qty) + "</b>"
+              : '<a class="ol-ask" href="tel:' + esc(TTP.pricingTel()) + '">Call for price</a>') +
+          "</div>" +
+        "</div>" +
+        '<button class="ol-rm mono" type="button" data-crm="' + p.id + '">Remove</button>' +
+      "</div>" +
+    "</div>";
+  }
+
+  function reviewHTML(lines) {
+    var nUn = TTP.cart.unpriced().length, nPriced = lines.length - nUn;
+    var bad = lines.filter(function (l) { return l.fits === false; }).length;
+    var sub = TTP.cart.subtotal();
+
+    return '<div class="co-grid">' +
+      '<div class="co-main">' +
+        '<span class="mono co-kicker">// ' + esc(TTP.cart.ref()) + "</span>" +
+        "<h1>Your order</h1>" +
+        '<div class="co-lines">' + lines.map(lineHTML).join("") + "</div>" +
+      "</div>" +
+      '<aside class="co-summary">' +
+        '<div class="co-sumcard">' +
+          '<span class="mono co-sumhead">Order summary</span>' +
+          (nPriced
+            ? '<div class="co-sumrow"><span>Subtotal (' + nPriced + " priced item" + (nPriced > 1 ? "s" : "") +
+              ")</span><b>" + money(sub) + "</b></div>"
+            : "") +
+          (nUn
+            ? '<div class="co-sumrow muted"><span>' + nUn + " item" + (nUn > 1 ? "s" : "") +
+              " quoted by phone</span><b>—</b></div>"
+            : "") +
+          (bad
+            ? '<p class="co-badnote">' + bad + " item" + (bad > 1 ? "s do" : " does") +
+              " not fit your saved truck.</p>"
+            : "") +
+          '<p class="co-note">Freight and tax are confirmed by our parts desk before you pay — nothing is charged on this page. Continuing just sends your order details to a real person.</p>' +
+          '<button class="btn block" type="button" id="coContinue"><span>Continue</span></button>' +
+          '<a class="co-backlink mono" href="category.html">+ Add another part</a>' +
+        "</div>" +
+      "</aside>" +
+    "</div>";
+  }
+
+  function wireReview() {
+    var btn = document.getElementById("coContinue");
+    if (btn) btn.addEventListener("click", function () { state = "details"; renderApp(); window.scrollTo(0, 0); });
+  }
+
+  /* ================= STATE 2 — DETAILS ================= */
+  function tileHTML(val, label, sub) {
+    var checked = draft.method === val;
+    return '<label class="shiptile">' +
+      '<input type="radio" name="method" value="' + val + '"' + (checked ? " checked" : "") + ">" +
+      '<span class="st-t">' + label + '</span><span class="st-s">' + sub + "</span>" +
+    "</label>";
+  }
+
+  function detailsHTML() {
+    var pickup = draft.method === "pickup";
+    return '<div class="co-details">' +
+      '<button type="button" class="co-back" id="coBack">← Back to order</button>' +
+      "<h1>Your details</h1>" +
+      '<p class="co-sub">We text or email you back to confirm price, fitment and freight. Nothing is charged here — this just sends the order to our parts desk.</p>' +
+
+      '<div class="co-formgrid">' +
+        '<div class="field no-caret"><label for="ordName">Name *</label><input id="ordName" type="text" autocomplete="name" value="' + esc(draft.name) + '"></div>' +
+        '<div class="field no-caret"><label for="ordPhone">Phone *</label><input id="ordPhone" type="tel" autocomplete="tel" value="' + esc(draft.phone) + '"></div>' +
+      "</div>" +
+
+      '<span class="mono co-label">Ship or pick up?</span>' +
+      '<div class="shiptiles" id="shipTiles">' +
+        tileHTML("ship", "Ship to me", "Free ground · lower 48 (freight quoted on large items)") +
+        tileHTML("pickup", "Pick up in Sugar Land", "Ready same day at the counter") +
+      "</div>" +
+
+      '<div class="co-formgrid">' +
+        '<div class="field no-caret' + (pickup ? " is-hidden" : "") + '" id="zipField">' +
+          '<label for="ordZip">ZIP code</label>' +
+          '<input id="ordZip" type="text" inputmode="numeric" maxlength="10" value="' + esc(draft.zip) + '"' + (pickup ? " disabled" : "") + ">" +
+        "</div>" +
+        '<div class="field no-caret"><label for="ordVin">VIN <span class="opt">optional</span></label><input id="ordVin" type="text" maxlength="17" value="' + esc(draft.vin) + '"></div>' +
+      "</div>" +
+      (pickup ? '<p class="co-pickupaddr">Pickup — 13618 Florence Rd, Ste D1, Sugar Land, TX 77498</p>' : "") +
+
+      '<div class="field no-caret"><label for="ordNotes">Notes <span class="opt">optional</span></label><textarea id="ordNotes" rows="3">' + esc(draft.notes) + "</textarea></div>" +
+
+      '<label class="co-check"><input type="checkbox" id="ordFinancing"' + (draft.financing ? " checked" : "") + ">" +
+        "<span>I'm interested in financing (Snap · Acima · Progressive)</span></label>" +
+
+      '<div class="co-preview">' +
+        '<span class="mono co-label">Message preview — this is exactly what gets sent</span>' +
+        '<pre id="coPreview" aria-live="polite"></pre>' +
+      "</div>" +
+
+      '<div class="co-reqnote mono" id="coReqNote" hidden>Enter your name and phone number to send your order.</div>' +
+      '<div class="co-sendrow">' +
+        '<a class="btn block" id="btnWa" href="#" target="_blank" rel="noopener" aria-disabled="true"><span>Send on WhatsApp</span></a>' +
+        '<a class="btn ghost block" id="btnEmail" href="#" aria-disabled="true"><span>Send by email</span></a>' +
+      "</div>" +
+    "</div>";
+  }
+
+  function val(id) { var el = document.getElementById(id); return el ? el.value : ""; }
+
+  function collect() {
+    return {
+      name: val("ordName").trim(),
+      phone: val("ordPhone").trim(),
+      zip: draft.method === "pickup" ? "" : val("ordZip").trim(),
+      method: draft.method,
+      vin: val("ordVin").trim(),
+      financing: !!(document.getElementById("ordFinancing") && document.getElementById("ordFinancing").checked),
+      notes: val("ordNotes").trim()
+    };
+  }
+
+  function updatePreview() {
+    draft = collect();
+    var text = TTP.orderText(draft);
+    var pre = document.getElementById("coPreview");
+    if (pre) pre.textContent = text;
+
+    var ok = !!(draft.name && draft.phone);
+    var wa = document.getElementById("btnWa"), em = document.getElementById("btnEmail"), note = document.getElementById("coReqNote");
+    if (wa) {
+      wa.href = TTP.waUrl(text);
+      wa.classList.toggle("is-disabled", !ok);
+      wa.setAttribute("aria-disabled", ok ? "false" : "true");
+    }
+    if (em) {
+      em.href = TTP.mailUrl(TTP.orderSubject(), text);
+      em.classList.toggle("is-disabled", !ok);
+      em.setAttribute("aria-disabled", ok ? "false" : "true");
+    }
+    if (note) note.hidden = ok;
+    return ok;
+  }
+
+  function wireDetails() {
+    var back = document.getElementById("coBack");
+    if (back) back.addEventListener("click", function () { state = "review"; renderApp(); window.scrollTo(0, 0); });
+
+    document.querySelectorAll('#shipTiles input[name=method]').forEach(function (r) {
+      r.addEventListener("change", function () {
+        draft.method = r.value;
+        renderApp(); /* re-render so the ZIP field / pickup address swap */
+      });
+    });
+
+    ["ordName", "ordPhone", "ordZip", "ordVin", "ordNotes"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener("input", updatePreview);
+    });
+    var fin = document.getElementById("ordFinancing");
+    if (fin) fin.addEventListener("change", updatePreview);
+
+    ["btnWa", "btnEmail"].forEach(function (id) {
+      var a = document.getElementById(id);
+      if (!a) return;
+      a.addEventListener("click", function (e) {
+        var ok = updatePreview(); /* rebuild the href immediately before the click's default action fires */
+        if (!ok) {
+          e.preventDefault();
+          var note = document.getElementById("coReqNote");
+          if (note) note.hidden = false;
+          var nameEl = document.getElementById("ordName");
+          if (nameEl) nameEl.focus();
+          return;
+        }
+        /* Do NOT clear the cart here — a static page can't confirm the message
+           actually sent. Only the explicit "Start a new order" button in state 3
+           clears it. Give the browser a moment to open WhatsApp/mail before we
+           swap the DOM out from under the link that was just clicked. */
+        setTimeout(function () { state = "sent"; renderApp(); window.scrollTo(0, 0); }, 150);
+      });
+    });
+
+    updatePreview();
+  }
+
+  /* ================= STATE 3 — SENT ================= */
+  function sentHTML() {
+    var text = TTP.orderText(draft);
+    return '<div class="co-sent">' +
+      '<span class="mono co-kicker">Order sent</span>' +
+      "<h1>" + esc(TTP.cart.ref()) + "</h1>" +
+      '<p class="co-sub">We\'ve kept your order here in case the message didn\'t go through — nothing is charged and nothing is cleared until you start a new order.</p>' +
+      '<div class="co-preview"><pre id="coSentPreview">' + esc(text) + "</pre></div>" +
+      '<div class="co-sendrow">' +
+        '<button type="button" class="btn ghost" id="coCopy"><span>Copy summary</span></button>' +
+        '<a class="btn" id="coResendWa" href="' + esc(TTP.waUrl(text)) + '" target="_blank" rel="noopener"><span>Resend on WhatsApp</span></a>' +
+        '<a class="btn ghost" id="coResendEmail" href="' + esc(TTP.mailUrl(TTP.orderSubject(), text)) + '"><span>Send by email instead</span></a>' +
+      "</div>" +
+      '<p class="co-phoneline">Or call us direct — <a href="tel:' + esc(TTP.CONTACT.phone) + '">' + esc(TTP.CONTACT.phoneDisplay) + "</a></p>" +
+      '<button type="button" class="btn ghost block co-newbtn" id="coNew"><span>Start a new order</span></button>' +
+    "</div>";
+  }
+
+  function fallbackCopy(text, done) {
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", "");
+    ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  function wireSent() {
+    var copy = document.getElementById("coCopy");
+    if (copy) copy.addEventListener("click", function () {
+      var text = document.getElementById("coSentPreview").textContent;
+      var span = copy.querySelector("span");
+      var done = function () {
+        span.textContent = "Copied";
+        setTimeout(function () { span.textContent = "Copy summary"; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text, done); });
+      } else {
+        fallbackCopy(text, done);
+      }
+    });
+
+    var nw = document.getElementById("coNew");
+    if (nw) nw.addEventListener("click", function () {
+      TTP.cart.clear();
+      draft = { name: "", phone: "", zip: "", method: "ship", vin: "", financing: false, notes: "" };
+      state = "review";
+      renderApp();
+      window.scrollTo(0, 0);
+    });
+  }
+
+  /* ================= boot / render ================= */
+  function renderApp() {
+    var lines = TTP.cart.lines();
+    if (!lines.length && state !== "sent") {
+      root.innerHTML = emptyHTML();
+      return;
+    }
+    if (state === "details") { root.innerHTML = detailsHTML(); wireDetails(); }
+    else if (state === "sent") { root.innerHTML = sentHTML(); wireSent(); }
+    else { root.innerHTML = reviewHTML(lines); wireReview(); }
+  }
+
+  /* cart.js already owns the delegated click handler for [data-cq]/[data-crm] —
+     it mutates cart state and then dispatches this event. We only need to
+     re-render our own view in response, never bind our own qty/remove handlers. */
+  document.addEventListener("ttp:cartpage", renderApp);
+
+  document.getElementById("fcats").innerHTML = TTP.categories.slice(0, 6).map(function (c) {
+    return '<li><a href="category.html?cat=' + c.slug + '">' + c.name + "</a></li>";
+  }).join("");
+
+  renderApp();
+})();
+</script>
+</body>
+</html>

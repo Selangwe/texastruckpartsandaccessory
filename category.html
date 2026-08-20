@@ -75,8 +75,12 @@
       <a href="index.html#request">Request a Part</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+18327068091"><b>(832) 706-8091</b><span>Parts desk · Mon–Sat</span></a>
+      <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
       <a class="btn" href="#finder"><span>Find My Part</span></a>
+      <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
+        <span class="cartn" data-cartcount hidden>0</span>
+      </button>
       <button class="burger" id="burger" aria-label="Open menu"><i></i></button>
     </div>
   </div>
@@ -212,6 +216,7 @@
 
 <script src="assets/products.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
 <script>
 (function(){
   var qs = new URLSearchParams(location.search);
