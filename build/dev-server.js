@@ -25,6 +25,13 @@ http
     let rel = decodeURIComponent(req.url.split("?")[0]);
     if (rel === "/") rel = "/index.html";
 
+    // Mirror the rewrites in vercel.json so pretty permalinks behave the same
+    // locally as in production. Without this, /product/<slug>/ 404s here and the
+    // canonical URLs look broken in dev while being fine on the deployed site.
+    if (/^\/product\/[^/]+\/?$/.test(rel)) rel = "/product.html";
+    else if (/^\/product-category\/[^/]+\/?$/.test(rel)) rel = "/category.html";
+    else if (/^\/shop\/?$/.test(rel)) rel = "/category.html";
+
     // keep requests inside the project directory
     const file = path.join(ROOT, path.normalize(rel).replace(/^(\.\.[\\/])+/, ""));
     if (!file.startsWith(ROOT)) {

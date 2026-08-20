@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex,nofollow" />
 <title>Facebook catalogue review — Texas Truck Parts</title>
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="/assets/site.css">
 <style>
   body{padding:0 0 80px}
   .rv-head{padding:28px 0 22px;border-bottom:1px solid var(--line);margin-bottom:24px}
@@ -98,7 +98,7 @@ fetch('data/facebook-products.json').then(r=>r.json()).then(function(d){
         '<h2>'+esc(p.name||'(no title found)')+'</h2>'+
         '<div class="tags">'+tags.join('')+'</div>'+
         '<div class="shots">'+p.images.map(function(f){
-          return '<img loading="lazy" src="assets/img/_facebook/'+esc(f)+'" alt="" '+
+          return '<img loading="lazy" src="/assets/img/_facebook/'+esc(f)+'" alt="" '+
                  'onerror="this.classList.add(\'missing\')">';
         }).join('')+'</div>'+
         '<div class="copy">'+esc(p.text)+'</div>'+

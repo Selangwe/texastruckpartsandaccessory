@@ -411,39 +411,40 @@ awkward to remove. Allow the crawl, serve noindex.
 so a page reachable at a preview deployment URL still declares the production URL canonical instead
 of competing with itself.
 
-### ⚠ Canonicals currently point at URLs that do not exist
+### Permalinks — the static site serves the pretty URLs
 
-`TTP.PATHS` describes the **WooCommerce** permalink structure — `/product/<slug>/`,
-`/product-category/<slug>/`, `/shop/`. The static site does not serve those; it serves
-`product.html?id=…` and `category.html?cat=…`. So every canonical, `og:url`, JSON-LD `@id`,
-`offers.url` and breadcrumb currently names a URL that returns **404**:
+The static site is the store, so `TTP.PATHS` is no longer aspirational: Vercel rewrites in
+`vercel.json` map the permalinks onto the real files, and the pages resolve themselves from the
+path rather than a query string.
 
-| Emitted as canonical | Actually serves |
-|---|---|
-| `/product/2020-2022-ford-f250…/` → 404 | `/product.html?id=10452` → 200 |
-| `/product-category/truck-bed/` → 404 | `/category.html?cat=truck-bed` → 200 |
-| `/shop/` → 404 | `/category.html` → 200 |
+| URL | Rewrites to | Resolved by |
+|---|---|---|
+| `/product/<slug>/` | `product.html` | `TTP.pathSlug('product')` → matched against `p.slug` |
+| `/product-category/<slug>/` | `category.html` | `TTP.pathSlug('category')` → seeds the category filter |
+| `/shop/` | `category.html` | unfiltered |
 
-This is **inert while the site is noindex** — nothing is crawling to believe it. It becomes
-actively destructive the moment indexing is switched on without the Woo port, because every page
-would be telling Google its real version lives somewhere that 404s, and Google drops pages whose
-canonical target does not resolve.
+`?id=` and `?cat=` still resolve as fallbacks, so old links and bookmarks keep working.
+`build/dev-server.js` mirrors the same three rewrites, so local dev behaves like production —
+without that, every permalink 404s locally and the canonicals look broken in dev only.
 
-Two ways out, and the choice depends on whether this static site or WooCommerce is the real
-destination:
+Links and canonicals now come from the same two helpers, so they cannot drift:
+`TTP.productPath(p)` / `TTP.categoryPath(slug)` for links, and `TTP.productUrl` / `TTP.categoryUrl`
+(the same values with the origin prepended) for canonicals and schema.
 
-- **Static site is the destination** — either point `TTP.PATHS` at the real URLs
-  (`product.html?id=`), which makes canonicals truthful immediately but leaves query-string URLs,
-  or add Vercel rewrites so `/product/<slug>/` genuinely serves `product.html` and the page reads
-  the slug instead of an id. The rewrite route gives clean URLs *and* correct canonicals.
-- **WooCommerce is the destination** — leave `TTP.PATHS` alone; the paths become real when the
-  templates land in the child theme. Just do not lift the noindex before that happens.
+**Everything must be root-relative.** A page served at `/product/<slug>/` resolves a relative
+`assets/site.js` to `/product/<slug>/assets/site.js`, and `index.html` to
+`/product/<slug>/index.html`. Both 404. So every script, stylesheet and page link in the four
+templates carries a leading slash, and image paths — which the generated catalogue stores
+relative — are rooted at render time by `TTP.asset()` rather than by regenerating
+`assets/products.js`. `TTP.asset()` leaves absolute and protocol-relative URLs alone.
+
+If a new page or link is added, root it. That is the one rule this structure depends on.
 
 **Launch checklist — in order:**
 
 1. Point the custom domain at the Vercel project
 2. Update `TTP.SITE` in `assets/config.js` to that domain
-3. **Resolve the canonical/permalink mismatch above** — canonicals must resolve to live URLs
+3. Re-check that permalinks still resolve after any hosting change (the rewrites live in vercel.json)
 4. Verify the street address against the Google Business Profile, then delete the `headers` block
    from `vercel.json` and replace `robots.txt` with a real one plus a sitemap
 

@@ -26,8 +26,8 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
-<script src="assets/config.js"></script>
-<link rel="stylesheet" href="assets/site.css">
+<script src="/assets/config.js"></script>
+<link rel="stylesheet" href="/assets/site.css">
 <style>
   .cathead{padding:26px 0 34px;border-bottom:1px solid var(--line);margin-bottom:26px;position:relative;overflow:hidden}
   .cathead::before{content:"";position:absolute;left:-5%;top:-40%;width:520px;height:420px;
@@ -62,17 +62,17 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
       <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
     </a>
     <nav class="menu" id="menu">
-      <a href="category.html" aria-current="page">Shop All</a>
-      <a href="category.html?cat=front-bumper">Bumpers</a>
-      <a href="category.html?cat=truck-bed">Beds</a>
-      <a href="category.html?cat=tail-lights">Lighting</a>
-      <a href="index.html#financing">Financing</a>
-      <a href="index.html#request">Request a Part</a>
+      <a href="/shop/" aria-current="page">Shop All</a>
+      <a href="/product-category/front-bumper/">Bumpers</a>
+      <a href="/product-category/truck-bed/">Beds</a>
+      <a href="/product-category/tail-lights/">Lighting</a>
+      <a href="/#financing">Financing</a>
+      <a href="/#request">Request a Part</a>
     </nav>
     <div class="nav-right">
       <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
@@ -171,7 +171,7 @@
       <div class="empty" id="empty" hidden>
         <h3>No parts match that combination</h3>
         <p>Loosen a filter — or tell us what you need and we'll source it.</p>
-        <a class="btn" href="index.html#request" style="margin-top:18px"><span>Request This Part</span></a>
+        <a class="btn" href="/#request" style="margin-top:18px"><span>Request This Part</span></a>
       </div>
     </div>
   </div>
@@ -191,18 +191,18 @@
       <div>
         <h4>Shop by truck</h4>
         <ul>
-          <li><a href="category.html?make=Ford">Ford Super Duty</a></li>
-          <li><a href="category.html?make=Chevrolet">Chevy Silverado HD</a></li>
-          <li><a href="category.html?make=GMC">GMC Sierra HD</a></li>
-          <li><a href="category.html?make=Ram">Ram 2500 / 3500</a></li>
+          <li><a href="/shop/?make=Ford">Ford Super Duty</a></li>
+          <li><a href="/shop/?make=Chevrolet">Chevy Silverado HD</a></li>
+          <li><a href="/shop/?make=GMC">GMC Sierra HD</a></li>
+          <li><a href="/shop/?make=Ram">Ram 2500 / 3500</a></li>
         </ul>
       </div>
       <div>
         <h4>Resources</h4>
         <ul>
-          <li><a href="index.html#financing">Financing &amp; Approval</a></li>
-          <li><a href="index.html#request">Request a Part</a></li>
-          <li><a href="index.html#yard">Contact the Yard</a></li>
+          <li><a href="/#financing">Financing &amp; Approval</a></li>
+          <li><a href="/#request">Request a Part</a></li>
+          <li><a href="/#yard">Contact the Yard</a></li>
         </ul>
       </div>
     </div>
@@ -214,14 +214,17 @@
   </div>
 </footer>
 
-<script src="assets/products.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/cart.js"></script>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+<script src="/assets/cart.js"></script>
 <script>
 (function(){
   var qs = new URLSearchParams(location.search);
+  /* /product-category/<slug>/ is the canonical form; ?cat= still works. make and
+     fit stay as query params either way — they are filters, not permalinks. */
+  var pathCat = TTP.pathSlug('category');
   var state = {
-    cats:  qs.get('cat')  ? [qs.get('cat')]  : [],
+    cats:  pathCat ? [pathCat] : (qs.get('cat')  ? [qs.get('cat')]  : []),
     makes: qs.get('make') ? [qs.get('make')] : [],
     conds: [], colors: [], maxPrice: 6000, sort: 'new',
     vehicle: qs.get('fit') ? TTP.getVehicle() : null
@@ -281,8 +284,8 @@
   if (filtered) meta('meta[name=robots]', 'content', 'noindex,follow');
 
   document.getElementById('crumb').innerHTML =
-    '<a href="index.html">Home</a><span>/</span>' +
-    (cat ? '<a href="category.html">Shop</a><span>/</span><em style="font-style:normal;color:var(--chalk)">'+cat.name+'</em>'
+    '<a href="/">Home</a><span>/</span>' +
+    (cat ? '<a href="/shop/">Shop</a><span>/</span><em style="font-style:normal;color:var(--chalk)">'+cat.name+'</em>'
          : '<em style="font-style:normal;color:var(--chalk)">Shop</em>');
 
   function ld(obj){
@@ -444,7 +447,7 @@
   }
 
   document.getElementById('fcats').innerHTML = TTP.categories.slice(0,6).map(function(c){
-    return '<li><a href="category.html?cat='+c.slug+'">'+c.name+'</a></li>';
+    return '<li><a href="'+TTP.categoryPath(c.slug)+'">'+c.name+'</a></li>';
   }).join('');
 
   TTP.initFinder(document.getElementById('finder'));

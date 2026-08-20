@@ -28,8 +28,8 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
-<script src="assets/config.js"></script>
-<link rel="stylesheet" href="assets/site.css">
+<script src="/assets/config.js"></script>
+<link rel="stylesheet" href="/assets/site.css">
 <style>
   .pdp-wrap{padding-bottom:70px}
   .fitcheck{border:1px solid var(--line-hard);background:var(--panel);padding:16px 18px;margin:22px 0}
@@ -62,21 +62,21 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
       <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
     </a>
     <nav class="menu" id="menu">
-      <a href="category.html">Shop All</a>
-      <a href="category.html?cat=front-bumper">Bumpers</a>
-      <a href="category.html?cat=truck-bed">Beds</a>
-      <a href="category.html?cat=tail-lights">Lighting</a>
-      <a href="index.html#financing">Financing</a>
-      <a href="index.html#request">Request a Part</a>
+      <a href="/shop/">Shop All</a>
+      <a href="/product-category/front-bumper/">Bumpers</a>
+      <a href="/product-category/truck-bed/">Beds</a>
+      <a href="/product-category/tail-lights/">Lighting</a>
+      <a href="/#financing">Financing</a>
+      <a href="/#request">Request a Part</a>
     </nav>
     <div class="nav-right">
       <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
-      <a class="btn" href="category.html"><span>Find My Part</span></a>
+      <a class="btn" href="/shop/"><span>Find My Part</span></a>
       <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
         <span class="cartn" data-cartcount hidden>0</span>
@@ -114,18 +114,18 @@
       <div>
         <h4>Shop by truck</h4>
         <ul>
-          <li><a href="category.html?make=Ford">Ford Super Duty</a></li>
-          <li><a href="category.html?make=Chevrolet">Chevy Silverado HD</a></li>
-          <li><a href="category.html?make=GMC">GMC Sierra HD</a></li>
-          <li><a href="category.html?make=Ram">Ram 2500 / 3500</a></li>
+          <li><a href="/shop/?make=Ford">Ford Super Duty</a></li>
+          <li><a href="/shop/?make=Chevrolet">Chevy Silverado HD</a></li>
+          <li><a href="/shop/?make=GMC">GMC Sierra HD</a></li>
+          <li><a href="/shop/?make=Ram">Ram 2500 / 3500</a></li>
         </ul>
       </div>
       <div>
         <h4>Resources</h4>
         <ul>
-          <li><a href="index.html#financing">Financing &amp; Approval</a></li>
-          <li><a href="index.html#request">Request a Part</a></li>
-          <li><a href="index.html#yard">Contact the Yard</a></li>
+          <li><a href="/#financing">Financing &amp; Approval</a></li>
+          <li><a href="/#request">Request a Part</a></li>
+          <li><a href="/#yard">Contact the Yard</a></li>
         </ul>
       </div>
     </div>
@@ -137,13 +137,23 @@
   </div>
 </footer>
 
-<script src="assets/products.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/cart.js"></script>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+<script src="/assets/cart.js"></script>
 <script>
 (function(){
-  var id = +(new URLSearchParams(location.search).get('id') || 1);
-  var p  = TTP.products.filter(function(x){return x.id===id;})[0] || TTP.products[0];
+  /* Resolved from the permalink /product/<slug>/ first — that is the canonical
+     form and what the site links to. ?id= is kept as a fallback so older links,
+     bookmarks and local file:// opens still resolve. */
+  var slug = TTP.pathSlug('product');
+  var p = null;
+  if (slug) {
+    p = TTP.products.filter(function(x){ return x.slug === slug; })[0] || null;
+  }
+  if (!p) {
+    var id = +(new URLSearchParams(location.search).get('id') || 1);
+    p = TTP.products.filter(function(x){ return x.id === id; })[0] || TTP.products[0];
+  }
   TTP.currentProduct = p;
   var cat = TTP.categories.filter(function(c){return c.slug===p.cat;})[0] || {name:p.catName,slug:p.cat};
   var money = TTP.money;
@@ -175,9 +185,9 @@
 
   /* ---------- breadcrumb ---------- */
   document.getElementById('crumb').innerHTML =
-    '<a href="index.html">Home</a><span>/</span>' +
-    '<a href="category.html">Shop</a><span>/</span>' +
-    '<a href="category.html?cat='+cat.slug+'">'+cat.name+'</a><span>/</span>' +
+    '<a href="/">Home</a><span>/</span>' +
+    '<a href="/shop/">Shop</a><span>/</span>' +
+    '<a href="'+TTP.categoryPath(cat.slug)+'">'+cat.name+'</a><span>/</span>' +
     '<em style="font-style:normal;color:var(--chalk)">'+p.name.slice(0,42)+'…</em>';
 
   /* ---------- fitment verdict against saved vehicle ---------- */
@@ -191,7 +201,7 @@
         : '<svg viewBox="0 0 24 24"><path d="M12 8v5M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>Does not fit your '+veh)+'</div>'+
       '<p>'+(ok
         ? 'Verified against the listed fitment range. Send your VIN before checkout and we\'ll confirm trim, cab and sensor package too.'
-        : 'This part is listed for '+TTP.fitLine(p)+'. <a href="category.html?fit=1">See parts that fit your truck</a> instead.')+'</p></div>';
+        : 'This part is listed for '+TTP.fitLine(p)+'. <a href="/shop/?fit=1">See parts that fit your truck</a> instead.')+'</p></div>';
   }
 
   /* Facebook listings sell on "message for pricing", so a product can legitimately
@@ -300,7 +310,7 @@
           '<div class="qty"><button type="button" data-q="-1" aria-label="Decrease">−</button>'+
             '<span id="qv">1</span><button type="button" data-q="1" aria-label="Increase">+</button></div>' +
           '<button class="btn" type="button" data-add="'+p.id+'" data-qty="1" id="addBtn"><span>Add to Order</span></button>' +
-          '<a class="btn ghost" href="index.html#request"><span>Check My VIN</span></a>' +
+          '<a class="btn ghost" href="/#request"><span>Check My VIN</span></a>' +
         '</div>' +
         '<div class="shipbox">' +
           '<div><span class="mono">Shipping</span><b>Free · lower 48</b>'+
@@ -352,9 +362,9 @@
         var i = +b.dataset.shot;
         var im = p.images[i];
         /* srcset wins over src — swapping only src leaves the old photo on screen. */
-        main.srcset = [im.thumb ? im.thumb+' 300w' : '', im.main ? im.main+' 768w' : '']
+        main.srcset = [im.thumb ? TTP.asset(im.thumb)+' 300w' : '', im.main ? TTP.asset(im.main)+' 768w' : '']
           .filter(Boolean).join(', ');
-        main.src = im.main || im.thumb;
+        main.src = TTP.asset(im.main || im.thumb);
         main.alt = i === 0 ? p.name : p.name + ' — view ' + (i+1) + ' of ' + p.images.length;
         document.querySelectorAll('.thumbs button[data-shot]').forEach(function(x){
           x.setAttribute('aria-selected', x === b);
@@ -472,7 +482,7 @@
   });
 
   document.getElementById('fcats').innerHTML = TTP.categories.slice(0,6).map(function(c){
-    return '<li><a href="category.html?cat='+c.slug+'">'+c.name+'</a></li>';
+    return '<li><a href="'+TTP.categoryPath(c.slug)+'">'+c.name+'</a></li>';
   }).join('');
 })();
 </script>

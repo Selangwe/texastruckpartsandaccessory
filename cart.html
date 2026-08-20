@@ -24,8 +24,8 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
-<script src="assets/config.js"></script>
-<link rel="stylesheet" href="assets/site.css">
+<script src="/assets/config.js"></script>
+<link rel="stylesheet" href="/assets/site.css">
 <style>
   /* Page-specific only — the cart drawer and chat widget get their CSS from
      site.css (another agent's pass). Nothing here touches .cartbtn, .cartn,
@@ -172,21 +172,21 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
       <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
     </a>
     <nav class="menu" id="menu">
-      <a href="category.html">Shop All</a>
-      <a href="category.html?cat=front-bumper">Bumpers</a>
-      <a href="category.html?cat=truck-bed">Beds</a>
-      <a href="category.html?cat=tail-lights">Lighting</a>
-      <a href="index.html#financing">Financing</a>
-      <a href="index.html#request">Request a Part</a>
+      <a href="/shop/">Shop All</a>
+      <a href="/product-category/front-bumper/">Bumpers</a>
+      <a href="/product-category/truck-bed/">Beds</a>
+      <a href="/product-category/tail-lights/">Lighting</a>
+      <a href="/#financing">Financing</a>
+      <a href="/#request">Request a Part</a>
     </nav>
     <div class="nav-right">
       <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
-      <a class="btn" href="category.html"><span>Find My Part</span></a>
+      <a class="btn" href="/shop/"><span>Find My Part</span></a>
       <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
         <span class="cartn" data-cartcount hidden>0</span>
@@ -204,8 +204,8 @@
 
 <main class="wrap cart-wrap">
   <nav class="crumb" aria-label="Breadcrumb">
-    <a href="index.html">Home</a><span>/</span>
-    <a href="category.html">Shop</a><span>/</span>
+    <a href="/">Home</a><span>/</span>
+    <a href="/shop/">Shop</a><span>/</span>
     <em style="font-style:normal;color:var(--chalk)">Your order</em>
   </nav>
   <div id="cartApp"></div>
@@ -223,18 +223,18 @@
       <div>
         <h4>Shop by truck</h4>
         <ul>
-          <li><a href="category.html?make=Ford">Ford Super Duty</a></li>
-          <li><a href="category.html?make=Chevrolet">Chevy Silverado HD</a></li>
-          <li><a href="category.html?make=GMC">GMC Sierra HD</a></li>
-          <li><a href="category.html?make=Ram">Ram 2500 / 3500</a></li>
+          <li><a href="/shop/?make=Ford">Ford Super Duty</a></li>
+          <li><a href="/shop/?make=Chevrolet">Chevy Silverado HD</a></li>
+          <li><a href="/shop/?make=GMC">GMC Sierra HD</a></li>
+          <li><a href="/shop/?make=Ram">Ram 2500 / 3500</a></li>
         </ul>
       </div>
       <div>
         <h4>Resources</h4>
         <ul>
-          <li><a href="index.html#financing">Financing &amp; Approval</a></li>
-          <li><a href="index.html#request">Request a Part</a></li>
-          <li><a href="index.html#yard">Contact the Yard</a></li>
+          <li><a href="/#financing">Financing &amp; Approval</a></li>
+          <li><a href="/#request">Request a Part</a></li>
+          <li><a href="/#yard">Contact the Yard</a></li>
         </ul>
       </div>
     </div>
@@ -246,9 +246,9 @@
   </div>
 </footer>
 
-<script src="assets/products.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/cart.js"></script>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+<script src="/assets/cart.js"></script>
 <script>
 (function () {
   "use strict";
@@ -288,22 +288,22 @@
   function emptyHTML() {
     return '<div class="co-empty"><h1>Your order is empty</h1>' +
       "<p>Add a part from the shop and it will show up here, ready to send to the parts desk.</p>" +
-      '<a class="btn" href="category.html"><span>Browse parts</span></a></div>';
+      '<a class="btn" href="/shop/"><span>Browse parts</span></a></div>';
   }
 
   /* ================= STATE 1 — REVIEW ================= */
   function lineHTML(l) {
     var p = l.p, v = TTP.getVehicle();
     return '<div class="oline">' +
-      '<a class="ol-img" href="product.html?id=' + p.id + '" tabindex="-1" aria-hidden="true">' + TTP.shot(p, "thumb", 0) + "</a>" +
+      '<a class="ol-img" href="' + TTP.productPath(p) + '" tabindex="-1" aria-hidden="true">' + TTP.shot(p, "thumb", 0) + "</a>" +
       '<div class="ol-meta">' +
         '<div class="mono ol-sku">' + esc(TTP.sku(p)) + "</div>" +
-        "<h3><a href=\"product.html?id=" + p.id + '">' + esc(p.name) + "</a></h3>" +
+        '<h3><a href="' + TTP.productPath(p) + '">' + esc(p.name) + "</a></h3>" +
         '<div class="ol-ship">' + esc(TTP.shipNote(l)) + "</div>" +
         (l.fits === false
           ? '<div class="ol-warn"><b>Does not fit your ' + esc(vehicleLabel(v)) + "</b>" +
             "<span>This part is listed for " + esc(TTP.fitLine(p)) + ". </span>" +
-            '<a href="category.html?fit=1">See parts that fit your truck instead</a></div>'
+            '<a href="/shop/?fit=1">See parts that fit your truck instead</a></div>'
           : "") +
         '<div class="ol-row">' +
           '<div class="qty sm">' +
@@ -351,7 +351,7 @@
             : "") +
           '<p class="co-note">Freight and tax are confirmed by our parts desk before you pay — nothing is charged on this page. Continuing just sends your order details to a real person.</p>' +
           '<button class="btn block" type="button" id="coContinue"><span>Continue</span></button>' +
-          '<a class="co-backlink mono" href="category.html">+ Add another part</a>' +
+          '<a class="co-backlink mono" href="/shop/">+ Add another part</a>' +
         "</div>" +
       "</aside>" +
     "</div>";
@@ -620,7 +620,7 @@
   document.addEventListener("ttp:cartpage", renderApp);
 
   document.getElementById("fcats").innerHTML = TTP.categories.slice(0, 6).map(function (c) {
-    return '<li><a href="category.html?cat=' + c.slug + '">' + c.name + "</a></li>";
+    return '<li><a href="' + TTP.categoryPath(c.slug) + '">' + c.name + "</a></li>";
   }).join("");
 
   renderApp();

@@ -96,8 +96,33 @@ TTP.PATHS = {
   product: "/product/"
 };
 
+/* Root-relative permalinks. These are what the site LINKS to, and what the
+   canonicals declare — one source, so the two can never disagree. Vercel rewrites
+   (vercel.json) and the local dev server both map these onto the real .html files;
+   the pages then resolve a product by slug instead of by id.
+
+   The ?id= / ?cat= query forms still work and are still what the pages fall back
+   to, so any old link or bookmark keeps resolving. */
+TTP.productPath = function (p) {
+  return TTP.PATHS.product + p.slug + "/";
+};
+
+TTP.categoryPath = function (slug) {
+  return slug ? TTP.PATHS.productCategory + slug + "/" : TTP.PATHS.shop;
+};
+
 TTP.origin = function () {
   return (TTP.SITE || window.location.origin || "").replace(/\/+$/, "");
+};
+
+/* Root-relative asset URL. The generated catalogue stores image paths relative
+   ("assets/img/10452/1-main.jpg"), which resolved fine while every page lived at
+   the site root — but a product served at /product/<slug>/ would resolve them to
+   /product/<slug>/assets/... and 404. Anchor them to the root instead. */
+TTP.asset = function (path) {
+  if (!path) return "";
+  if (/^(https?:)?\/\//i.test(path) || path.charAt(0) === "/") return path;
+  return "/" + String(path).replace(/^\.?\//, "");
 };
 
 TTP.abs = function (path) {
@@ -109,12 +134,22 @@ TTP.abs = function (path) {
 /* The canonical URL for a product on OUR site, built from the slug rather than
    trusting the scraped absolute `url` field. */
 TTP.productUrl = function (p) {
-  return TTP.origin() + TTP.PATHS.product + p.slug + "/";
+  return TTP.origin() + TTP.productPath(p);
 };
 
 TTP.categoryUrl = function (slug) {
-  return slug ? TTP.origin() + TTP.PATHS.productCategory + slug + "/"
-              : TTP.origin() + TTP.PATHS.shop;
+  return TTP.origin() + TTP.categoryPath(slug);
+};
+
+/* Which product/category the current pretty URL refers to. Returns null when the
+   page was reached by its .html?query form, in which case the page falls back to
+   reading the query string. */
+TTP.pathSlug = function (kind) {
+  var prefix = kind === "product" ? TTP.PATHS.product : TTP.PATHS.productCategory;
+  var path = window.location.pathname;
+  if (path.indexOf(prefix) !== 0) return null;
+  var rest = path.slice(prefix.length).replace(/\/+$/, "");
+  return rest ? decodeURIComponent(rest) : null;
 };
 
 /* The static <head> of each template ships with __SITE__ placeholders so the

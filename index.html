@@ -30,8 +30,8 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
-<script src="assets/config.js"></script>
-<link rel="stylesheet" href="assets/site.css">
+<script src="/assets/config.js"></script>
+<link rel="stylesheet" href="/assets/site.css">
 <style>
   /* homepage-only composition */
   .hero{position:relative;padding:64px 0 0;overflow:hidden}
@@ -155,7 +155,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
       <span>
         <span class="lockup">Texas<br><em>Truck Parts</em></span>
@@ -163,10 +163,10 @@
       </span>
     </a>
     <nav class="menu" id="menu">
-      <a href="category.html">Shop All</a>
-      <a href="category.html?cat=front-bumper">Bumpers</a>
-      <a href="category.html?cat=truck-bed">Beds</a>
-      <a href="category.html?cat=tail-lights">Lighting</a>
+      <a href="/shop/">Shop All</a>
+      <a href="/product-category/front-bumper/">Bumpers</a>
+      <a href="/product-category/truck-bed/">Beds</a>
+      <a href="/product-category/tail-lights/">Lighting</a>
       <a href="#financing">Financing</a>
       <a href="#request">Request a Part</a>
       <a href="#yard">Contact</a>
@@ -207,7 +207,7 @@
       </h1>
       <p class="hero-sub">Genuine OEM bumpers, beds, tailgates and lights pulled from low-mileage trucks — <b>40–60% below dealer pricing</b>, inspected on our floor, and matched to your VIN before we ship.</p>
       <div class="hero-cta">
-        <a class="btn" href="category.html"><span>Browse All Parts</span></a>
+        <a class="btn" href="/shop/"><span>Browse All Parts</span></a>
         <a class="btn ghost" href="tel:+14244128976"><span>Talk to a Parts Guy</span></a>
       </div>
     </div>
@@ -301,7 +301,7 @@
     </div>
     <div class="grid rv" id="recent"></div>
     <div style="text-align:center;margin-top:28px">
-      <a class="btn ghost lg" href="category.html"><span id="viewAll">View All Parts</span></a>
+      <a class="btn ghost lg" href="/shop/"><span id="viewAll">View All Parts</span></a>
     </div>
   </div>
 </section>
@@ -469,10 +469,10 @@
       <div>
         <h4>Shop by truck</h4>
         <ul>
-          <li><a href="category.html?make=Ford">Ford Super Duty</a></li>
-          <li><a href="category.html?make=Chevrolet">Chevy Silverado HD</a></li>
-          <li><a href="category.html?make=GMC">GMC Sierra HD</a></li>
-          <li><a href="category.html?make=Ram">Ram 2500 / 3500</a></li>
+          <li><a href="/shop/?make=Ford">Ford Super Duty</a></li>
+          <li><a href="/shop/?make=Chevrolet">Chevy Silverado HD</a></li>
+          <li><a href="/shop/?make=GMC">GMC Sierra HD</a></li>
+          <li><a href="/shop/?make=Ram">Ram 2500 / 3500</a></li>
         </ul>
       </div>
       <!-- TODO: /shipping/ and /returns/ do not exist yet. Both are trust pages a
@@ -552,9 +552,9 @@
 }
 </script>
 
-<script src="assets/products.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/cart.js"></script>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+<script src="/assets/cart.js"></script>
 <script>
 (function(){
   /* live counts — the catalogue grows, so nothing here is hardcoded */
@@ -570,10 +570,10 @@
 
   /* categories */
   document.getElementById('cats').innerHTML = TTP.categories.map(function(c,i){
-    return '<a class="cat'+(c.hero?' hasphoto':'')+'" href="category.html?cat='+c.slug+'" '
+    return '<a class="cat'+(c.hero?' hasphoto':'')+'" href="'+TTP.categoryPath(c.slug)+'" '
       + 'data-n="'+String(i+1).padStart(2,'0')+'">'
       + (c.hero
-          ? '<img class="catbg" src="'+TTP.esc(c.hero)+'" alt="" loading="lazy" decoding="async">'
+          ? '<img class="catbg" src="'+TTP.esc(TTP.asset(c.hero))+'" alt="" loading="lazy" decoding="async">'
           : TTP.art(c.slug))
       + '<div class="catcopy"><h3>'+c.name+'</h3><p>'+c.tagline+'</p>'
       + '<span class="n">'+c.count+' in stock · from '+TTP.money(c.minPrice)+'</span></div></a>';
@@ -585,7 +585,7 @@
 
   /* footer category links */
   document.getElementById('fcats').innerHTML = TTP.categories.slice(0,6).map(function(c){
-    return '<li><a href="category.html?cat='+c.slug+'">'+c.name+'</a></li>';
+    return '<li><a href="'+TTP.categoryPath(c.slug)+'">'+c.name+'</a></li>';
   }).join('');
 
   /* financing calculator */

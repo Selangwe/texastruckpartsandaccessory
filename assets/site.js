@@ -65,7 +65,7 @@
     opts = typeof opts === "string" ? { loading: opts } : (opts || {});
     kind = kind || "thumb";
 
-    var src = img[kind] || img.main || img.thumb;
+    var src = TTP.asset(img[kind] || img.main || img.thumb);
     /* Facebook photos are one file at an assorted size, and the generator measures
        and records w/h for them. Store photos come from a fixed resize pipeline, so
        only their width is known. Prefer measured values when we have them. */
@@ -81,7 +81,7 @@
        the same URL at two widths would tell the browser a lie. */
     var srcset = [];
     if (img.thumb && img.main && img.thumb !== img.main) {
-      srcset.push(esc(img.thumb) + " 300w", esc(img.main) + " 768w");
+      srcset.push(esc(TTP.asset(img.thumb)) + " 300w", esc(TTP.asset(img.main)) + " 768w");
     }
 
     return '<img class="shot" src="' + esc(src) + '"' +
@@ -135,7 +135,7 @@
            confirms availability on the order. Counts read as scarcity pressure
            and go stale the moment a part sells. */
         '<div class="stock-pill"><span class="dot"></span>In stock</div>' +
-        '<a class="thumblink" href="product.html?id=' + p.id + '" tabindex="-1" aria-hidden="true">' +
+        '<a class="thumblink" href="' + TTP.productPath(p) + '" tabindex="-1" aria-hidden="true">' +
           TTP.shot(p, "thumb", 0) + "</a>" +
         '<button class="cardadd" type="button" data-add="' + p.id + '" aria-label="Add ' + esc(p.name) + ' to order">' +
           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>' +
@@ -143,7 +143,7 @@
       "</div>" +
       '<div class="meta">' +
         '<div class="sku">' + TTP.sku(p) + "</div>" +
-        '<h3><a href="product.html?id=' + p.id + '">' + esc(p.name) + "</a></h3>" +
+        '<h3><a href="' + TTP.productPath(p) + '">' + esc(p.name) + "</a></h3>" +
         '<p class="fit">' + TTP.fitLine(p) + (p.color ? " · " + p.color : "") + "</p>" +
         '<div class="price"><b' + (TTP.hasPrice(p) ? "" : ' class="ask"') + ">" + money(p.price) +
           (p.save > 0 ? "<s>" + money(p.regPrice) + "</s>" : "") + "</b>" +
@@ -233,7 +233,7 @@
       }
       var v = { year: yr.value, make: mk.value, model: md.value || "" };
       TTP.setVehicle(v);
-      location.href = "category.html?fit=1";
+      location.href = TTP.categoryPath() + "?fit=1";
     });
   };
 

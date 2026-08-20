@@ -350,10 +350,10 @@
   function lineHTML(l) {
     var p = l.p;
     return '<div class="cline" data-line="' + p.id + '">' +
-      '<a class="cl-img" href="product.html?id=' + p.id + '">' + TTP.shot(p, "thumb", 0) + '</a>' +
+      '<a class="cl-img" href="' + TTP.productPath(p) + '">' + TTP.shot(p, "thumb", 0) + '</a>' +
       '<div class="cl-meta">' +
         '<div class="sku">' + TTP.sku(p) + '</div>' +
-        '<h4><a href="product.html?id=' + p.id + '">' + esc(p.name) + '</a></h4>' +
+        '<h4><a href="' + TTP.productPath(p) + '">' + esc(p.name) + '</a></h4>' +
         '<div class="cl-ship">' + TTP.shipNote(l) + '</div>' +
         (l.fits === false
           ? '<div class="cl-warn">Does not fit your saved truck — listed for ' +
@@ -386,7 +386,7 @@
 
     if (!lines.length) {
       body.innerHTML = '<div class="cd-empty"><p>Your order is empty.</p>' +
-        '<a class="btn ghost" href="category.html"><span>Browse parts</span></a></div>';
+        '<a class="btn ghost" href="' + TTP.categoryPath() + '"><span>Browse parts</span></a></div>';
       foot.innerHTML = "";
       return;
     }
@@ -409,12 +409,12 @@
         (bad ? '<p class="cd-bad">' + bad + ' item' + (bad > 1 ? 's do' : ' does') +
                ' not fit your saved truck.</p>' : '') +
       '</div>' +
-      '<a class="btn block" href="cart.html"><span>Review &amp; send order</span></a>' +
+      '<a class="btn block" href="/cart.html"><span>Review &amp; send order</span></a>' +
       /* Deliberately NOT a wa.me link. Sending straight from the drawer produced a
          message with no name, phone, delivery address or payment preference — the
          yard then had to ask for all of it before it could quote freight. This
          routes to the details form and opens it on the form step. */
-      '<a class="btn ghost block wa" href="cart.html?send=wa"><span>' + waIcon() +
+      '<a class="btn ghost block wa" href="/cart.html?send=wa"><span>' + waIcon() +
         'Send on WhatsApp</span></a>';
   }
 
