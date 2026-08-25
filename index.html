@@ -35,11 +35,46 @@
 <style>
   /* homepage-only composition */
   .hero{position:relative;padding:64px 0 0;overflow:hidden}
-  .hero::before{content:"";position:absolute;left:50%;top:6%;width:1150px;height:600px;translate:-50% 0;
+  /* The glow and the blueprint grid both sit ABOVE the reel (.hero-bg is z-index:0).
+     The grid reading over the footage is what makes this a monitored feed rather
+     than a stock video with text on it. */
+  .hero::before{content:"";position:absolute;z-index:1;left:50%;top:6%;width:1150px;height:600px;translate:-50% 0;
     background:radial-gradient(ellipse at center,rgba(232,67,26,.20),transparent 66%);filter:blur(18px)}
-  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  .hero::after{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;
     background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
     background-size:62px 62px;mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 72%)}
+
+  /* ---------- hero background reel ----------
+     Three shots with very different exposure (dark shop, sunlit ranch, open field).
+     Grading them to near-monochrome and re-tinting with --oxide normalises all three
+     to one look, so the footage takes its colour from the site instead of the reverse.
+     .plate is the poster frame as its own layer, not the <video poster> attribute:
+     the video starts at opacity 0, so a poster attribute would be invisible on every
+     visit that never loads the file (mobile, save-data, reduced motion). */
+  .hero-bg{position:absolute;z-index:0;inset:0;overflow:hidden;background:var(--asphalt)}
+  .hero-bg .plate,.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    filter:grayscale(.92) contrast(1.14) brightness(.58) saturate(.9);
+    opacity:.62;transition:opacity 1.4s var(--ease)}
+  .hero-bg .plate{background:url(/assets/video/hero-poster.jpg) center/cover no-repeat}
+  .hero-bg video{opacity:0}
+  /* cross-dissolve still -> motion. Both layers hold the same frame at the moment of
+     the swap, so the transition itself is invisible; what it hides is the pop. */
+  .hero-bg.ready video{opacity:.62}
+  .hero-bg.ready .plate{opacity:0}
+  .hero-bg::before{content:"";position:absolute;inset:0;background:var(--oxide);mix-blend-mode:color;opacity:.22}
+  /* Scrims: a hard floor down the headline column, and a fade to solid asphalt at the
+     bottom so the stat rail keeps sitting on flat ground exactly as it does today. */
+  .hero-bg::after{content:"";position:absolute;inset:0;background:
+    linear-gradient(90deg,rgba(11,12,13,.94) 0%,rgba(11,12,13,.66) 42%,rgba(11,12,13,.28) 72%,rgba(11,12,13,.5) 100%),
+    linear-gradient(180deg,rgba(11,12,13,.55) 0%,rgba(11,12,13,.2) 30%,rgba(11,12,13,.86) 82%,var(--asphalt) 100%)}
+
+  /* Feed strip above the rail. Hidden until the reel is actually running — a timecode
+     ticking over a frozen still would be claiming something that is not happening. */
+  .hero-feed{display:none;align-items:center;gap:10px;padding-bottom:11px;
+    font-family:var(--mono);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--zinc-dim)}
+  .hero-bg.ready ~ .wrap .hero-feed{display:flex}
+  .hero-feed .dot{width:6px;height:6px;background:var(--oxide);animation:blink 1.7s steps(1) infinite}
+  .hero-feed [data-tc]{color:var(--zinc)}
   .hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr .88fr;gap:44px;align-items:end}
   .eyebrow{display:flex;align-items:center;gap:11px;color:var(--hazard);margin-bottom:20px}
   .eyebrow .dot{width:8px;height:8px;background:var(--hazard);animation:blink 1.7s steps(1) infinite}
@@ -130,6 +165,8 @@
 
   @media(max-width:1120px){
     .hero-in{grid-template-columns:1fr;gap:36px;align-items:start}
+    .hero-bg::after{background:
+      linear-gradient(180deg,rgba(11,12,13,.74) 0%,rgba(11,12,13,.6) 34%,rgba(11,12,13,.9) 80%,var(--asphalt) 100%)}
     .cats{grid-template-columns:repeat(4,1fr)}
     .cat,.cat:nth-child(1),.cat:nth-child(6){grid-column:span 2}
     .fin,.yard{grid-template-columns:1fr}
@@ -197,6 +234,17 @@
 <main>
 <!-- ===== HERO + YMM FITMENT SEARCH ===== -->
 <section class="hero">
+  <!-- Decorative atmosphere only. The <source> carries data-src rather than src so the
+       file stays detached until site.js decides the visit can afford it; there is no
+       autoplay attribute for the same reason, which keeps the mp4 out of the preload
+       scanner and off the critical path. Every visit that never loads it keeps .plate. -->
+  <div class="hero-bg" data-reel aria-hidden="true">
+    <span class="plate"></span>
+    <video muted loop playsinline preload="none">
+      <source data-src="/assets/video/hero-reel.mp4" type="video/mp4">
+    </video>
+  </div>
+
   <div class="wrap hero-in">
     <div>
       <div class="eyebrow"><span class="dot"></span><span class="mono">13618 Florence Rd · Sugar Land, TX</span></div>
@@ -238,6 +286,7 @@
   </div>
 
   <div class="wrap" style="margin-top:56px;position:relative;z-index:2">
+    <div class="hero-feed"><span class="dot"></span><span>Reel 01</span><span data-tc>00:00</span></div>
     <div class="rail">
       <div><b data-count="80" id="statParts">0</b><p>Parts in stock now</p></div>
       <div><b data-count="48">0</b><p>States we ship free</p></div>

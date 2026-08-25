@@ -18,6 +18,7 @@ const TYPES = {
   ".jpg": "image/jpeg",
   ".webp": "image/webp",
   ".ico": "image/x-icon",
+  ".mp4": "video/mp4",
 };
 
 http
@@ -39,6 +40,31 @@ http
       return;
     }
 
+    // The hero reel needs byte ranges: Chrome will play a bare 200, but Safari and iOS
+    // refuse a <video> served without range support, so local testing would say the
+    // reel is broken when only this server is. Vercel serves ranges in production.
+    const stat = fs.statSync(file, { throwIfNoEntry: false });
+    const range = stat && req.headers.range && /^bytes=\d*-\d*$/.test(req.headers.range)
+      ? req.headers.range.slice(6).split("-")
+      : null;
+    if (range) {
+      const start = range[0] ? Number(range[0]) : 0;
+      const end = range[1] ? Math.min(Number(range[1]), stat.size - 1) : stat.size - 1;
+      if (start > end || start >= stat.size) {
+        res.writeHead(416, { "Content-Range": "bytes */" + stat.size }).end();
+        return;
+      }
+      res.writeHead(206, {
+        "Content-Type": TYPES[path.extname(file).toLowerCase()] || "application/octet-stream",
+        "Content-Length": end - start + 1,
+        "Content-Range": "bytes " + start + "-" + end + "/" + stat.size,
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "no-store",
+      });
+      fs.createReadStream(file, { start, end }).pipe(res);
+      return;
+    }
+
     fs.readFile(file, (err, buf) => {
       if (err) {
         res.writeHead(404, { "Content-Type": "text/html; charset=utf-8" });
@@ -53,6 +79,7 @@ http
       }
       res.writeHead(200, {
         "Content-Type": TYPES[path.extname(file).toLowerCase()] || "application/octet-stream",
+        "Accept-Ranges": "bytes",
         "Cache-Control": "no-store",
       });
       res.end(buf);

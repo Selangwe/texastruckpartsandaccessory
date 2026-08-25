@@ -262,9 +262,52 @@
   }
   TTP.paceTicker = paceTicker;
 
+  /* ---------- hero background reel ----------
+     The reel is atmosphere, not content, so it is never allowed to cost anyone a page
+     they were going to read anyway. The <source> stays detached until the visit clears
+     every gate below; failing any one of them leaves the graded poster plate, which is
+     a finished hero on its own — it is what the type was contrast-checked against. */
+  function heroReel() {
+    var bed = document.querySelector("[data-reel]");
+    if (!bed) return;
+    var vid = bed.querySelector("video"), src = bed.querySelector("source[data-src]");
+    if (!vid || !src) return;
+
+    var conn = navigator.connection || {};
+    var afford =
+      matchMedia("(min-width:900px)").matches &&              /* phones keep the still */
+      !matchMedia("(prefers-reduced-motion:reduce)").matches && /* CSS cannot stop playback */
+      conn.saveData !== true &&
+      !/2g/.test(conn.effectiveType || "");
+    if (!afford) return;
+
+    src.src = src.dataset.src;
+    vid.load();
+    /* A blocked autoplay is a normal outcome, not an error — the plate stays put and
+       .ready never lands, so the timecode strip stays hidden along with it. */
+    function play() { var r = vid.play(); if (r && r.catch) r.catch(function () {}); }
+    vid.addEventListener("playing", function () { bed.classList.add("ready"); }, { once: true });
+    play();
+
+    /* Decoding frames nobody is looking at is the whole battery cost of a hero reel. */
+    new IntersectionObserver(function (es) {
+      es.forEach(function (en) { en.isIntersecting ? play() : vid.pause(); });
+    }, { threshold: 0 }).observe(bed);
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) vid.pause(); else if (bed.isConnected) play();
+    });
+
+    var tc = document.querySelector("[data-tc]");
+    if (tc) vid.addEventListener("timeupdate", function () {
+      var sec = Math.floor(vid.currentTime);
+      tc.textContent = "00:" + (sec < 10 ? "0" : "") + sec;
+    });
+  }
+
   /* ---------- chrome: menu, reveals, counters ---------- */
   function chrome() {
     paceTicker();
+    heroReel();
     /* Fonts land after first paint and change the strip's width, so re-measure. */
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(paceTicker);
     var rt;
