@@ -14,6 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SRC = os.path.join(ROOT, "data", "store-products.json")
 FB_SRC = os.path.join(ROOT, "data", "facebook-products.json")
+RH_SRC = os.path.join(ROOT, "data", "ranchhand-products.json")
 FB_IMGDIR = os.path.join(ROOT, "assets", "img", "_facebook")
 MANIFEST = os.path.join(ROOT, "assets", "img", "manifest.json")
 OUT = os.path.join(ROOT, "assets", "products.js")
@@ -21,6 +22,11 @@ OUT = os.path.join(ROOT, "assets", "products.js")
 # Facebook products get ids in their own block so they can never collide with a
 # WordPress product id (those top out in the low five figures).
 FB_ID_BASE = 900000
+
+# Ranch Hand imports get their own id block, below the Facebook one and well clear of
+# the WordPress ids. Keyed off the manufacturer reference number, which is stable across
+# their catalogue in a way the Magento entity id is not.
+RH_ID_BASE = 800000
 
 # Client decision: the V2 site launches with the full catalogue live, so every SKU is
 # published as in stock regardless of the store's real stock status. Set to False to
@@ -255,6 +261,192 @@ def facebook_products(start_index):
     return out, held
 
 
+# Makes and models we can recognise in a Ranch Hand product name. Their names carry
+# fitment as prose ("Fits Select F-250, F-350 Super Duty"), so this reads what is
+# actually there and leaves the rest empty rather than guessing -- an unmatched product
+# simply does not surface in the YMM finder, which is honest. Real fitment arrives with
+# the VSP stage.
+RH_MODEL_MAKE = [
+    ("f-150", "Ford", "F-150"), ("f-250", "Ford", "F-250"), ("f-350", "Ford", "F-350"),
+    ("f-450", "Ford", "F-450"), ("f-550", "Ford", "F-550"), ("super duty", "Ford", "Super Duty"),
+    ("silverado", "Chevrolet", "Silverado"), ("colorado", "Chevrolet", "Colorado"),
+    ("sierra", "GMC", "Sierra"), ("canyon", "GMC", "Canyon"),
+    ("ram 1500", "Ram", "Ram 1500"), ("ram 2500", "Ram", "Ram 2500"),
+    ("ram 3500", "Ram", "Ram 3500"), ("tundra", "Toyota", "Tundra"),
+]
+
+# Spec labels whose value is a plain yes/no about what the part keeps working. Only the
+# ones actually present are stated -- see the "--" sentinel note in sync_ranchhand.py.
+# The category display names are plurals written for page headings ("Accessories &
+# Hardware"), which read badly mid-sentence. These are the singular nouns for prose.
+RH_NOUN = {
+    "front-replacement-bumpers": "front replacement bumper",
+    "rear-replacement-bumpers": "rear replacement bumper",
+    "grill-guards": "grille guard",
+    "running-boards": "running step",
+    "truck-racks": "headache rack",
+    "accessories-hardware": "accessory",
+}
+
+RH_RETAINS = [
+    ("Retains Factory Fog Lights", "the factory fog lights"),
+    ("Retains Factory Tow Hooks", "the factory tow hooks"),
+    ("Retains Factory Receiver", "the factory receiver"),
+    ("Retains Front Camera Functionality", "front camera function"),
+    ("Retains Parking Sensors", "the parking sensors"),
+]
+
+
+def rh_fitment(name):
+    """Pull makes/models out of the product name. Returns ([makes], [models])."""
+    low = (name or "").lower()
+    makes, models = [], []
+    for needle, make, model in RH_MODEL_MAKE:
+        if needle in low:
+            if make not in makes:
+                makes.append(make)
+            if model not in models:
+                models.append(model)
+    return makes, models
+
+
+def rh_description(rec, cat_name):
+    """Compose listing copy from the spec facts.
+
+    Written rather than borrowed. Ranch Hand's own product copy is a two-sentence blurb,
+    a bullet list, a 150-230 word unbroken paragraph and a second list of ALL-CAPS
+    labelled bullets; none of that is reused, and neither is any of their phrasing. What
+    is reused is the facts -- gauge, finish, weight, what the part retains -- which are
+    not theirs to own. Short declaratives, numbers instead of adjectives, no superlatives.
+
+    Every clause is gated on the fact existing. A part whose retention flags came back
+    "--" gets no sentence about them at all, because we do not know."""
+    sp = rec.get("specs") or {}
+    series = rec.get("series")
+    bits = []
+
+    # opener: what it is
+    lead = "New Ranch Hand %s" % RH_NOUN.get(rec.get("cat"), "part")
+    if series:
+        lead += " from the %s series" % series
+    bits.append(lead + ".")
+
+    # build
+    material = sp.get("Material Type")
+    finish = sp.get("Hardware Finish")
+    color = sp.get("Product Color")
+    build = []
+    if material:
+        build.append(str(material).lower())
+    if finish:
+        build.append(str(finish).lower())
+    if build:
+        line = "Built from " + " with a ".join(build)
+        if color and str(color).lower() not in line:
+            line += " in %s" % str(color).lower()
+        bits.append(line + ".")
+
+    # weight and shipping, useful because these ship freight
+    weight = sp.get("Item Weight (Pounds)")
+    if weight:
+        bits.append("Ships at %s lb." % (int(weight) if isinstance(weight, float) and weight.is_integer() else weight))
+
+    # what it keeps working -- only where the data says so
+    keeps = [phrase for label, phrase in RH_RETAINS if sp.get(label) is True]
+    drops = [phrase for label, phrase in RH_RETAINS if sp.get(label) is False]
+    if keeps:
+        bits.append("Retains %s." % oxford(keeps))
+    if drops:
+        bits.append("Does not retain %s." % oxford(drops))
+
+    # identifiers a buyer can check against their own truck
+    ident = []
+    if rec.get("mfrRef"):
+        ident.append("Part %s" % rec["mfrRef"])
+    if rec.get("upc"):
+        ident.append("UPC %s" % rec["upc"])
+    if ident:
+        bits.append(" · ".join(ident) + ".")
+
+    # A universal part has nothing to confirm, so telling the buyer to send a VIN for one
+    # is noise. Only fitted parts get the fitment line.
+    if rec.get("universal") or str(sp.get("Universal Part", "")).lower() == "yes":
+        bits.append("Universal fit.")
+    else:
+        bits.append("Send us your VIN and we will confirm cab, bed and sensor package "
+                    "before it ships.")
+    return " ".join(bits)
+
+
+def oxford(items):
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return "%s and %s" % (items[0], items[1])
+    return "%s and %s" % (", ".join(items[:-1]), items[-1])
+
+
+def ranchhand_products(start_index):
+    """Folds data/ranchhand-products.json into the same product shape as everything else.
+
+    Built by build/import_ranchhand_dump.py (offline) or build/sync_ranchhand.py (live).
+    Three things differ from the store feed and are handled rather than papered over:
+      * no photography yet -- images is empty, and product.html already renders its
+        schematic placeholder with an honest "no photo on file" note
+      * specs exist for only part of the catalogue so far, so copy degrades to whatever
+        facts are actually present
+      * anything the importer flagged needsReview is skipped, same as Facebook"""
+    if not os.path.exists(RH_SRC):
+        return [], 0
+
+    rows = json.load(open(RH_SRC, encoding="utf-8"))
+    out, held = [], 0
+    for i, rec in enumerate(rows):
+        cat = rec.get("cat")
+        if not cat or rec.get("needsReview"):
+            held += 1
+            continue
+
+        name = rec.get("name") or ""
+        # House style puts the brand up front -- their own names omit it, and the
+        # catalogue already carries "Ranch Hand ..." titles from the Facebook source.
+        if not name.lower().startswith("ranch hand"):
+            name = "Ranch Hand " + name
+
+        cat_name = next((n for s_, n, _t, _b in CATEGORIES if s_ == cat), "")
+        makes, models = rh_fitment(rec.get("name"))
+        price = rec.get("price")
+        universal = bool(rec.get("universal"))
+
+        out.append({
+            "id": RH_ID_BASE + i,
+            "sortIndex": start_index + i,
+            "slug": slugify(name) or ("rh-" + str(i)),
+            "sku": rec.get("mfrRef") or ("RH-%04d" % i),
+            "name": name,
+            "cat": cat,
+            "catName": cat_name,
+            "price": price, "regPrice": price,
+            "save": 0, "savePct": 0,
+            "inStock": bool(rec.get("inStock", True)), "qty": 1,
+            "url": "",
+            "desc": rh_description(rec, cat_name),
+            "yearFrom": None, "yearTo": None,
+            "makes": makes, "models": models,
+            "color": (rec.get("specs") or {}).get("Product Color"),
+            "brand": rec.get("brand") or "Ranch Hand",
+            "series": rec.get("series"),
+            "side": None,
+            "condition": "New Aftermarket",
+            "universal": universal,
+            "features": [],
+            "images": [],
+            "mo": max(55, round(price / 12)) if price else None,
+            "source": "ranchhand",
+        })
+    return out, held
+
+
 def main():
     if not os.path.exists(SRC):
         sys.exit("missing %s — run `npm run sync` first" % SRC)
@@ -373,6 +565,12 @@ def main():
     fb, fb_held = facebook_products(len(products))
     products.extend(fb)
 
+    # ---- fold in the Ranch Hand catalogue ----
+    rh, rh_held = ranchhand_products(len(products))
+    products.extend(rh)
+    if rh:
+        print("  ranch hand: %d published, %d held" % (len(rh), rh_held))
+
     # ---- categories ----
     cats = []
     for slug, nm, tag, blurb in CATEGORIES:
@@ -401,15 +599,18 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("/* GENERATED by build/generate_products.py - do not edit by hand.\n")
-        f.write("   Source: data/store-products.json (%d products, %d categories) */\n" % (len(products), len(cats)))
+        f.write("   Sources: data/store-products.json, facebook-products.json, "
+                "ranchhand-products.json (%d products, %d categories) */\n"
+                % (len(products), len(cats)))
         f.write("window.TTP = window.TTP || {};\n")
         f.write("TTP.products = " + json.dumps(products, ensure_ascii=False, indent=1) + ";\n")
         f.write("TTP.categories = " + json.dumps(cats, ensure_ascii=False, indent=1) + ";\n")
         f.write("TTP.ymm = " + json.dumps(ymm, ensure_ascii=False) + ";\n")
 
     print("wrote %s" % OUT)
-    print("products: %d (%d store + %d facebook) | categories: %d | years: %d"
-          % (len(products), len(products) - len(fb), len(fb), len(cats), len(ymm)))
+    print("products: %d (%d store + %d facebook + %d ranch hand) | categories: %d | years: %d"
+          % (len(products), len(products) - len(fb) - len(rh), len(fb), len(rh),
+             len(cats), len(ymm)))
     if fb_held:
         print("facebook rows held back (needs-review / no photo / no category): %d" % fb_held)
     nopr = [p for p in products if not p["price"]]

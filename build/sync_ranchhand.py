@@ -66,8 +66,27 @@ BRAND = "Ranch Hand"
 # catch-all. A Legend front bumper WITH an integrated grille guard files under bumpers,
 # which is why the front-bumper test runs before the grille-guard one.
 #
-# Their counts: Front 90, Grille Guards 62, Running Steps 44, Rear 39, Accessories 33,
-# Headache Racks 13, Mud Flaps 11 (sums to 292 vs 283 — 9 products are dual-category).
+# Their own category field is authoritative and is consulted FIRST. Name matching alone
+# files "Legend Headache Rack Wiring Harness" as a rack, when it is a harness for one --
+# 21 brackets, harnesses and light kits landed in truck-racks that way. The source
+# category knows the difference; the product name does not.
+#
+# Verified against the store's Amasty facet counters: Full 79 + Winch 6 + Bullnose 3 +
+# Front 2 = 90 front bumpers, Grille Guards 62, Running Steps 44, Rear 39, Accessories 33,
+# Mud Flaps 11, Headache Racks 4. Sums to exactly 283.
+SOURCE_CAT_MAP = {
+    "ranch hand full bumpers":     "front-replacement-bumpers",
+    "ranch hand front bumpers":    "front-replacement-bumpers",
+    "ranch hand winch bumpers":    "front-replacement-bumpers",
+    "ranch hand bullnose bumpers": "front-replacement-bumpers",
+    "ranch hand rear bumpers":     "rear-replacement-bumpers",
+    "ranch hand grille guards":    "grill-guards",
+    "ranch hand running steps":    "running-boards",
+    "ranch hand headache racks":   "truck-racks",
+    "ranch hand mud flaps":        "accessories-hardware",
+    "ranch hand accessories":      "accessories-hardware",
+}
+
 CAT_RULES = [
     (r"mud\s*flap|splash\s*guard",                        "accessories-hardware"),
     (r"headache\s*rack|head\s*ache|cab\s*rack|ladder",    "truck-racks"),
@@ -176,16 +195,21 @@ def classify(name, algolia_cats):
     facet, because that facet mixes merchandising collections ('New', 'Best Sellers')
     with real product types. Anything unmatched is flagged for review rather than
     guessed into a category — same philosophy as parse_facebook.js."""
+    # 1. Their category, verbatim. Authoritative -- it distinguishes a rack from a
+    #    bracket for a rack, which the product name does not.
+    for c in algolia_cats or []:
+        slug = SOURCE_CAT_MAP.get(str(c).strip().lower())
+        if slug:
+            return slug, None
+
+    # 2. Fall back to the name only when the category is absent or unrecognised, e.g. a
+    #    new family we have not mapped yet.
     hay = (name or "").lower()
     for pattern, slug in CAT_RULES:
         if re.search(pattern, hay):
-            return slug, None
-    for c in algolia_cats or []:
-        cl = str(c).lower()
-        for pattern, slug in CAT_RULES:
-            if re.search(pattern, cl):
-                return slug, None
-    return None, "no category rule matched name or facets"
+            return slug, "matched on name, not source category (%s)" % (algolia_cats or "none")
+
+    return None, "no category rule matched name or source category"
 
 
 def parse_specs(html):
@@ -246,8 +270,12 @@ def main():
     os.makedirs(DATA, exist_ok=True)
     existing = {}
     if os.path.exists(OUT) and not refresh:
+        # Resume on specs, not on mere presence. import_ranchhand_dump.py writes all 283
+        # rows from the Algolia index with specs only for the handful already opened, so
+        # a presence check would skip exactly the products this run exists to fill in.
         existing = {p["mfrRef"]: p
-                    for p in json.load(open(OUT, encoding="utf-8")) if p.get("mfrRef")}
+                    for p in json.load(open(OUT, encoding="utf-8"))
+                    if p.get("mfrRef") and p.get("specs")}
         print("resuming: %d products already harvested" % len(existing))
 
     print("reading sitemap...")
