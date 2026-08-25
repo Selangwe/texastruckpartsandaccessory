@@ -10,7 +10,8 @@
     "build": "npm run sync && npm run fb:parse && npm run data",
     "fb:parse": "node build/parse_facebook.js",
     "fb:images": "node build/fetch_facebook_images.js",
-    "rh:sync": "python build/sync_ranchhand.py"
+    "rh:sync": "python build/sync_ranchhand.py",
+    "rh:images": "python build/fetch_ranchhand_images.py"
   },
   "license": "UNLICENSED"
 }

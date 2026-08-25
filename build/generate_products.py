@@ -17,6 +17,10 @@ FB_SRC = os.path.join(ROOT, "data", "facebook-products.json")
 RH_SRC = os.path.join(ROOT, "data", "ranchhand-products.json")
 FB_IMGDIR = os.path.join(ROOT, "assets", "img", "_facebook")
 MANIFEST = os.path.join(ROOT, "assets", "img", "manifest.json")
+# The Ranch Hand photography keeps its own manifest because it is keyed on the
+# manufacturer reference rather than a WordPress product id — mixing SKU strings
+# into the store manifest's numeric keys would make both harder to reason about.
+RH_MANIFEST = os.path.join(ROOT, "assets", "img", "rh", "manifest.json")
 OUT = os.path.join(ROOT, "assets", "products.js")
 
 # Facebook products get ids in their own block so they can never collide with a
@@ -391,13 +395,20 @@ def ranchhand_products(start_index):
 
     Built by build/import_ranchhand_dump.py (offline) or build/sync_ranchhand.py (live).
     Three things differ from the store feed and are handled rather than papered over:
-      * no photography yet -- images is empty, and product.html already renders its
-        schematic placeholder with an honest "no photo on file" note
+      * photography comes from Ranch Hand's own CDN via build/fetch_ranchhand_images.py
+        and is keyed on the SKU, not the product id. A SKU the fetcher has not reached
+        yet keeps an empty images list, and product.html renders its schematic
+        placeholder with an honest "no photo on file" note.
       * specs exist for only part of the catalogue so far, so copy degrades to whatever
         facts are actually present
       * anything the importer flagged needsReview is skipped, same as Facebook"""
     if not os.path.exists(RH_SRC):
         return [], 0
+
+    shots_by_sku = {}
+    if os.path.exists(RH_MANIFEST):
+        m = json.load(open(RH_MANIFEST, encoding="utf-8"))
+        shots_by_sku = {k: v["shots"] for k, v in m.items() if v.get("shots")}
 
     rows = json.load(open(RH_SRC, encoding="utf-8"))
     out, held = [], 0
@@ -417,12 +428,13 @@ def ranchhand_products(start_index):
         makes, models = rh_fitment(rec.get("name"))
         price = rec.get("price")
         universal = bool(rec.get("universal"))
+        sku = rec.get("mfrRef") or ("RH-%04d" % i)
 
         out.append({
             "id": RH_ID_BASE + i,
             "sortIndex": start_index + i,
             "slug": slugify(name) or ("rh-" + str(i)),
-            "sku": rec.get("mfrRef") or ("RH-%04d" % i),
+            "sku": sku,
             "name": name,
             "cat": cat,
             "catName": cat_name,
@@ -440,7 +452,7 @@ def ranchhand_products(start_index):
             "condition": "New Aftermarket",
             "universal": universal,
             "features": [],
-            "images": [],
+            "images": shots_by_sku.get(sku, []),
             "mo": max(55, round(price / 12)) if price else None,
             "source": "ranchhand",
         })
