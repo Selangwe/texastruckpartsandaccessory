@@ -151,16 +151,73 @@ def sitemap_products():
     return out
 
 
+def _unescape_js_unicode(txt):
+    """Turn \\uXXXX escapes into real characters.
+
+    The page emits its config with every structural character escaped that way —
+    \\u007B for {, \\u0022 for " — so json.loads cannot read the captured string
+    directly."""
+    return re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), txt)
+
+
+def _brace_match(txt, start):
+    """Return the JSON object beginning at `start`, respecting nesting and strings.
+
+    A non-greedy regex cannot do this: the config nests several levels deep, so
+    `\\{.*?\\}` stops at the first inner closing brace."""
+    depth, i, instr, esc = 0, start, False, False
+    while i < len(txt):
+        ch = txt[i]
+        if instr:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                instr = False
+        else:
+            if ch == '"':
+                instr = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return txt[start:i + 1]
+        i += 1
+    raise RuntimeError("unbalanced braces in algoliaConfig")
+
+
 def algolia_credentials(seed_url):
     """Read app id + secured API key off a live product page.
 
-    The key base64-decodes to a validUntil roughly 24 hours out, so a cached copy
-    silently starts returning auth errors the next day. Always read it fresh."""
+    The key base64-decodes to a validUntil roughly 24 hours out, and it demonstrably
+    rotates — two reads a few hours apart returned different keys for the same app.
+    A cached copy therefore starts failing auth the next day. Always read it fresh.
+
+    The page publishes the same config twice, and which one you get varies, so both
+    are handled:
+      1. JSON.parse('<\\uXXXX-escaped json>')  — needs unescaping first
+      2. Object.assign({<plain json>}, ...)   — needs brace matching, not a regex
+    """
     html = curl(seed_url)
-    m = re.search(r"window\.algoliaConfig\s*=\s*(\{.*?\});", html, re.S)
-    if not m:
+
+    cfg = None
+    m = re.search(r"algoliaConfig\s*=\s*JSON\.parse\('([^']*)'\)", html, re.S)
+    if m:
+        try:
+            cfg = json.loads(_unescape_js_unicode(m.group(1)).replace("\\'", "'"))
+        except ValueError:
+            cfg = None
+
+    if cfg is None:
+        m = re.search(r"algoliaConfig\s*=\s*Object\.assign\(\s*", html)
+        if m:
+            cfg = json.loads(_brace_match(html, html.index("{", m.end() - 1)))
+
+    if cfg is None:
         raise RuntimeError("algoliaConfig not found on %s — page structure changed" % seed_url)
-    cfg = json.loads(m.group(1))
+
     app = cfg.get("applicationId") or cfg.get("appId")
     key = cfg.get("apiKey")
     if not app or not key:
