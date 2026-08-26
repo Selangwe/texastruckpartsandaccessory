@@ -1,32 +1,25 @@
 # ==========================================================================
-# TEXAS TRUCK PARTS — PRE-LAUNCH
+# TEXAS TRUCK PARTS
 #
-# This site is not ready to be indexed. It runs on a temporary
-# *.vercel.app host, and index.html publishes LocalBusiness structured data
-# whose street address has not yet been verified against the Google Business
-# Profile. Getting indexed in that state means ranking signals land on a host
-# that will be abandoned, with a business address that may be wrong.
+# The site is open to indexing. Pages carry their own robots meta tag, which
+# is where per-page intent lives: index,follow on the homepage, category and
+# product templates, noindex,nofollow on the cart.
 #
-# Crawling is deliberately ALLOWED below. The block is done with an
-# "X-Robots-Tag: noindex" response header set in vercel.json instead.
-# That distinction matters: "Disallow: /" stops crawlers from FETCHING pages,
-# which also stops them reading the noindex header — so a URL someone links to
-# can still end up indexed, as a bare title with no description, and it becomes
-# harder to remove. Allowing the crawl and serving noindex is what actually
-# keeps pages out of the index.
+# Nothing is blocked with Disallow that we want kept OUT of the index, and
+# that is deliberate. Disallow stops a crawler FETCHING a page, which also
+# stops it reading that page's noindex — so a URL someone links to can still
+# be indexed as a bare title with no description, and is then harder to get
+# removed. To keep a page out of the index, let it be crawled and serve it
+# noindex. The cart is handled exactly that way.
 #
-# ---- AT LAUNCH, DO ALL THREE ----
-#   1. Point the custom domain at this project
-#   2. Set TTP.SITE in assets/config.js to that domain (canonicals, og:url and
-#      JSON-LD @id all derive from it and currently fall back to the origin)
-#   3. Verify the street address, then REMOVE the X-Robots-Tag block from
-#      vercel.json and replace this file with a normal robots.txt + sitemap
+# Still outstanding: no sitemap is published yet. Add one and reference it
+# here with a Sitemap: line once it exists.
 # ==========================================================================
 
 User-agent: *
 Allow: /
 
-# Internal-only pages. They are already excluded from the deployment bundle by
+# Internal-only pages. Both are already excluded from the deployment bundle by
 # .vercelignore and return 404; listed here so the intent survives if that
 # changes.
 Disallow: /texas_truck_parts_v2_plan.html
