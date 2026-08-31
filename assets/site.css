@@ -88,9 +88,16 @@ header{position:sticky;top:0;z-index:80;background:rgba(11,12,13,.9);backdrop-fi
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;height:var(--nav-h)}
 .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
 .brand .star{width:40px;height:40px;display:grid;place-items:center;border:2px solid var(--chalk);transition:.35s var(--ease);flex-shrink:0}
-.brand .star svg{width:20px;height:20px;fill:var(--oxide);transition:.35s var(--ease)}
-.brand:hover .star{background:var(--oxide);border-color:var(--oxide);transform:rotate(-6deg)}
-.brand:hover .star svg{fill:#0b0c0d}
+/* The mark is 218x148, so `contain` inside the 40x40 square settles it at 30x20 —
+   wider than the 20x20 star it replaces, because a landscape logo needs the width to
+   stay readable, and still inset from the border by about as much as the star was. */
+.brand .star img{width:30px;height:30px;object-fit:contain;transition:.35s var(--ease)}
+/* The old hover flooded the square with oxide and flipped the glyph to near-black,
+   which worked while the glyph was a shape whose fill we owned. The logo carries its
+   own orange and would vanish into that flood, so the square keeps the tilt and takes
+   the accent on its border instead, and the mark stays legible right through. */
+.brand:hover .star{border-color:var(--oxide);transform:rotate(-6deg)}
+.brand:hover .star img{transform:scale(1.06)}
 /* the brand lockup is not a heading — every page keeps its H1 for the page topic */
 .brand .lockup{display:block;font-family:var(--disp);font-weight:900;font-size:1.24rem;line-height:.86;text-transform:uppercase;letter-spacing:.005em}
 .brand .lockup em{font-style:normal;color:var(--oxide)}
@@ -198,6 +205,16 @@ section{padding:92px 0;position:relative}
 .stock-pill .dot{width:6px;height:6px;background:var(--weld);border-radius:50%;animation:pulse 2s infinite}
 .stock-pill.low{color:var(--hazard)}
 .stock-pill.low .dot{background:var(--hazard)}
+/* Sold out reads grey, not red. Hazard is the colour this site uses to pull the eye
+   toward a saving; spending it on the one card someone cannot buy would advertise the
+   dead end. The dot stops pulsing for the same reason — the pulse is what makes the
+   in-stock pill feel live, and nothing here is live. */
+.stock-pill.out{color:var(--zinc);background:rgba(11,12,13,.9)}
+.stock-pill.out .dot{background:var(--zinc-dim);animation:none}
+/* The whole card steps back rather than the badge alone shouting. It stays legible
+   and clickable — the part still has a page, specs and a phone number on it. */
+.card.sold .thumb .shot,.card.sold .thumb .part{opacity:.42;filter:grayscale(.65)}
+.card.sold .price b{color:var(--zinc)}
 @keyframes pulse{50%{opacity:.25}}
 .card .meta{padding:16px;display:flex;flex-direction:column;gap:5px;flex:1}
 .card .sku{font-family:var(--mono);font-size:.5rem;letter-spacing:.14em;color:var(--zinc-dim)}
@@ -299,6 +316,8 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;background:var(--oxid
 .finline b{font-family:var(--disp);font-size:1.5rem;color:var(--hazard);letter-spacing:.01em}
 .stockline{display:flex;align-items:center;gap:9px;margin-top:12px;font-family:var(--mono);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--weld)}
 .stockline .dot{width:7px;height:7px;background:var(--weld);border-radius:50%;animation:pulse 2s infinite}
+.stockline.out{color:var(--zinc)}
+.stockline.out .dot{background:var(--zinc-dim);animation:none}
 .buyrow{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
 .buyrow .btn{flex:1;min-width:180px}
 .trustrow{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}

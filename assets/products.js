@@ -10,10 +10,10 @@ TTP.products = [
   "name": "2019-2025 Ram 2500 3500 Factory Front Bumper OEM Granite Crystal w/ Sensor Holes",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 1049.99,
+  "price": 949.14,
   "regPrice": 1100.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 150.86,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2025-ram-2500-3500-factory-front-bumper-oem-granite-crystal-w-sensor-holes/",
@@ -63,7 +63,7 @@ TTP.products = [
     "thumb": "assets/img/10454/6-thumb.jpg"
    }
   ],
-  "mo": 87
+  "mo": 79
  },
  {
   "id": 10453,
@@ -73,10 +73,10 @@ TTP.products = [
   "name": "2024-2026 GMC Sierra 2500 3500 Factory Abalone White Front Bumper Fog Light OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 949.99,
+  "price": 864.99,
   "regPrice": 1000.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 135.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2024-2026-gmc-sierra-2500-3500-factory-abalone-white-front-bumper-fog-light-oem/",
@@ -126,7 +126,7 @@ TTP.products = [
     "thumb": "assets/img/10453/6-thumb.jpg"
    }
   ],
-  "mo": 79
+  "mo": 72
  },
  {
   "id": 10452,
@@ -136,12 +136,12 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 Short Bed 6.75ft SRW Iconic Silver OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3499.99,
+  "price": 3406.5,
   "regPrice": 3700.0,
-  "save": 200.01,
-  "savePct": 5,
-  "inStock": true,
-  "qty": 1,
+  "save": 293.5,
+  "savePct": 8,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-short-bed-6-75ft-srw-iconic-silver-oem-take-off/",
   "desc": "2020-2022 6.75 ft (short bed) SRW Iconic Silver OEM take-off The Ford F250/F350 Truck Bed shown here is a 2020-2022 Ford F250/F350 6.75 ft SRW truck bed finished in Iconic Silver. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Includes a spray-in bed liner. Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2022 Make / Model Ford F250/F350 Part Truck Bed Color / Finish Iconic Silver Bed Size 6.75 ft (short bed) Drivetrain SRW — single rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ford F250/F350 Truck Bed Fitment This Ford F250/F350 Truck Bed is built for Ford F250/F350 trucks in the 2020-2022 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F250/F350 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ford truck beds · shop all inventory",
   "yearFrom": 2017,
@@ -190,7 +190,7 @@ TTP.products = [
     "thumb": "assets/img/10452/6-thumb.jpg"
    }
   ],
-  "mo": 292
+  "mo": 284
  },
  {
   "id": 10451,
@@ -200,10 +200,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 Short Bed 6.75ft SRW Platinum White OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3499.99,
+  "price": 3385.99,
   "regPrice": 3700.0,
-  "save": 200.01,
-  "savePct": 5,
+  "save": 314.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-short-bed-6-75ft-srw-platinum-white-oem/",
@@ -254,7 +254,7 @@ TTP.products = [
     "thumb": "assets/img/10451/6-thumb.jpg"
    }
   ],
-  "mo": 292
+  "mo": 282
  },
  {
   "id": 10450,
@@ -264,10 +264,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Platinum Dually Bed 8ft DRW Oxford White OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2899.99,
+  "price": 2794.54,
   "regPrice": 3000.0,
-  "save": 100.01,
-  "savePct": 3,
+  "save": 205.46,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f350-f450-platinum-dually-bed-8ft-drw-oxford-white-oem/",
@@ -318,7 +318,7 @@ TTP.products = [
     "thumb": "assets/img/10450/6-thumb.jpg"
    }
   ],
-  "mo": 242
+  "mo": 233
  },
  {
   "id": 10449,
@@ -328,12 +328,12 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 3500HD Dually Bed 8ft DRW Summit White OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3499.99,
+  "price": 3385.99,
   "regPrice": 3650.0,
-  "save": 150.01,
-  "savePct": 4,
-  "inStock": true,
-  "qty": 1,
+  "save": 264.01,
+  "savePct": 7,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-3500hd-dually-bed-8ft-drw-summit-white-oem-2/",
   "desc": "2020-2026 8 ft DRW Summit White OEM take-off The Chevy 3500 Truck Bed shown here is a 2020-2026 Chevy 3500 8 ft DRW dually truck bed finished in Summit White. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2026 Make / Model Chevy 3500 Part Truck Bed Color / Finish Summit White Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Chevy 3500 Truck Bed Fitment This Chevy 3500 Truck Bed is built for Chevy 3500 trucks in the 2020-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Chevy 3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Chevy truck beds · shop all inventory",
   "yearFrom": 2020,
@@ -381,7 +381,7 @@ TTP.products = [
     "thumb": "assets/img/10449/6-thumb.jpg"
    }
   ],
-  "mo": 292
+  "mo": 282
  },
  {
   "id": 10448,
@@ -391,10 +391,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory Tailgate Platinum White Step Camera Hole OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1199.99,
+  "price": 1114.99,
   "regPrice": 1300.0,
-  "save": 100.01,
-  "savePct": 8,
+  "save": 185.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-f450-factory-tailgate-platinum-white-step-camera-hole-oem/",
@@ -449,7 +449,7 @@ TTP.products = [
     "thumb": "assets/img/10448/6-thumb.jpg"
    }
   ],
-  "mo": 100
+  "mo": 93
  },
  {
   "id": 10447,
@@ -459,10 +459,10 @@ TTP.products = [
   "name": "2017-2019 Ford Super Duty F250 F350 F450 Right Halogen Tail Light OEM Genuine",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 199.99,
+  "price": 94.54,
   "regPrice": 210.0,
-  "save": 10.01,
-  "savePct": 5,
+  "save": 115.46,
+  "savePct": 55,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-super-duty-f250-f350-f450-right-halogen-tail-light-oem-genuine/",
@@ -523,10 +523,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 LH Driver Halogen Tail Light Factory OEM Used",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 199.99,
+  "price": 85.99,
   "regPrice": 210.0,
-  "save": 10.01,
-  "savePct": 5,
+  "save": 124.01,
+  "savePct": 59,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-f450-lh-driver-halogen-tail-light-factory-oem-used/",
@@ -587,10 +587,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Oxford White w/ Step & Camera Hole OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1299.99,
+  "price": 1194.54,
   "regPrice": 1399.99,
-  "save": 100.0,
-  "savePct": 7,
+  "save": 205.45,
+  "savePct": 15,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-factory-tailgate-oxford-white-w-step-camera-hole-oem/",
@@ -645,7 +645,7 @@ TTP.products = [
     "thumb": "assets/img/10445/6-thumb.jpg"
    }
   ],
-  "mo": 108
+  "mo": 100
  },
  {
   "id": 10444,
@@ -655,10 +655,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory Tailgate Platinum White Camera Hole NO STEP",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 949.99,
+  "price": 864.99,
   "regPrice": 1000.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 135.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-f450-factory-tailgate-platinum-white-camera-hole-no-step/",
@@ -713,7 +713,7 @@ TTP.products = [
     "thumb": "assets/img/10444/6-thumb.jpg"
    }
   ],
-  "mo": 79
+  "mo": 72
  },
  {
   "id": 10443,
@@ -723,10 +723,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Tailgate Summit White OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 999.99,
+  "price": 899.14,
   "regPrice": 1100.0,
-  "save": 100.01,
-  "savePct": 9,
+  "save": 200.86,
+  "savePct": 18,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-tailgate-summit-white-oem-3/",
@@ -771,7 +771,7 @@ TTP.products = [
     "thumb": "assets/img/10443/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 75
  },
  {
   "id": 10442,
@@ -781,12 +781,12 @@ TTP.products = [
   "name": "2019-2024 DODGE RAM 2500 3500 LED BLISS TAIL LIGHT LEFT HAND DRIVERS OEM",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 399.99,
+  "price": 285.99,
   "regPrice": 415.0,
-  "save": 15.01,
-  "savePct": 4,
-  "inStock": true,
-  "qty": 1,
+  "save": 129.01,
+  "savePct": 31,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2019-2024-dodge-ram-2500-3500-led-bliss-tail-light-left-hand-drivers-oem/",
   "desc": "2019-2024 LED BLIS Driver Side (LH) OEM The Ram 2500/3500 Tail Light shown here is a 2019-2024 Ram 2500/3500 LED with BLIS Driver Side (LH) tail light. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has a crack — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2019-2024 Make / Model Ram 2500/3500 Part Tail Light Bulb Type LED Blind Spot (BLIS) Yes Side Driver Side (LH) Type OEM take-off Condition OEM take-off (used) — see photos Ram 2500/3500 Tail Light Fitment This Ram 2500/3500 Tail Light is built for Ram 2500/3500 trucks in the 2019-2024 range. Confirm the bulb type (Halogen or LED) and BLIS blind-spot module and the correct side ( Driver Side (LH) ) against your existing lamp before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ram 2500/3500 Tail Light is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Tail Lights · Ram tail lights · shop all inventory",
   "yearFrom": 2019,
@@ -848,10 +848,10 @@ TTP.products = [
   "name": "2019-2024 DODGE RAM 2500 3500 LED BLISS TAIL LIGHT Right HAND Passenger OEM",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 399.99,
+  "price": 306.5,
   "regPrice": 415.0,
-  "save": 15.01,
-  "savePct": 4,
+  "save": 108.5,
+  "savePct": 26,
   "inStock": true,
   "qty": 2,
   "url": "https://texastruckparts.shop/product/2019-2024-dodge-ram-2500-3500-led-bliss-tail-light-right-hand-passenger-oem/",
@@ -915,12 +915,12 @@ TTP.products = [
   "name": "2023-2026 Ford Ranger Raptor Factory Front Bumper w/ Skid Plate & Fog Lights OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 1199.99,
+  "price": 1106.5,
   "regPrice": 1300.0,
-  "save": 100.01,
-  "savePct": 8,
-  "inStock": true,
-  "qty": 1,
+  "save": 193.5,
+  "savePct": 15,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-ranger-raptor-factory-front-bumper-w-skid-plate-fog-lights-oem/",
   "desc": "2023-2026 Front OEM take-off The Ford Ranger Front Bumper shown here is a 2023-2026 Ford Ranger front bumper. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has factory sensor holes. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford Ranger Part Front Bumper Type OEM take-off Condition OEM take-off (used) — see photos Ford Ranger Front Bumper Fitment This Ford Ranger Front Bumper is built for Ford Ranger trucks in the 2023-2026 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford Ranger Front Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Front Bumpers · Ford front bumpers · shop all inventory",
   "yearFrom": 2023,
@@ -972,7 +972,7 @@ TTP.products = [
     "thumb": "assets/img/10354/6-thumb.jpg"
    }
   ],
-  "mo": 100
+  "mo": 92
  },
  {
   "id": 10338,
@@ -982,10 +982,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado GMC 2500 3500 Sterling Silver Rear Bumper Sensor Holes",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 699.99,
+  "price": 585.99,
   "regPrice": 750.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 164.01,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-gmc-2500-3500-sterling-silver-rear-bumper-sensor-holes/",
@@ -1038,7 +1038,7 @@ TTP.products = [
     "thumb": "assets/img/10338/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 10322,
@@ -1048,10 +1048,10 @@ TTP.products = [
   "name": "2010-2018 Ram HD 2500 3500 Chrome Front Bumper OEM Take Off Mopar",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 599.14,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 200.86,
+  "savePct": 25,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2010-2018-ram-hd-2500-3500-chrome-front-bumper-oem-take-off-mopar/",
@@ -1096,7 +1096,7 @@ TTP.products = [
     "thumb": "assets/img/10322/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 10308,
@@ -1106,10 +1106,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Oxford White Front Bumper Fog Light Hole OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 799.99,
+  "price": 706.5,
   "regPrice": 900.0,
-  "save": 100.01,
-  "savePct": 11,
+  "save": 193.5,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-super-duty-oxford-white-front-bumper-fog-light-hole-oem/",
@@ -1160,7 +1160,7 @@ TTP.products = [
     "thumb": "assets/img/10308/6-thumb.jpg"
    }
   ],
-  "mo": 67
+  "mo": 59
  },
  {
   "id": 10292,
@@ -1170,10 +1170,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Star White Front Bumper w/ Fog Lights Sensor",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 1049.99,
+  "price": 964.99,
   "regPrice": 1100.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 135.01,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-super-duty-star-white-front-bumper-w-fog-lights-sensor/",
@@ -1224,7 +1224,7 @@ TTP.products = [
     "thumb": "assets/img/10292/6-thumb.jpg"
    }
   ],
-  "mo": 87
+  "mo": 80
  },
  {
   "id": 10276,
@@ -1234,10 +1234,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Front Chrome Bumper Fog Light Slot Sensor Holes",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 749.99,
+  "price": 649.14,
   "regPrice": 800.0,
-  "save": 50.01,
-  "savePct": 6,
+  "save": 150.86,
+  "savePct": 19,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-chrome-bumper-fog-light-slot-sensor-holes-2/",
@@ -1292,7 +1292,7 @@ TTP.products = [
     "thumb": "assets/img/10276/6-thumb.jpg"
    }
   ],
-  "mo": 62
+  "mo": 55
  },
  {
   "id": 10263,
@@ -1302,10 +1302,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Front Chrome Bumper Fog Light Slot Sensor Holes",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 749.99,
+  "price": 656.5,
   "regPrice": 800.0,
-  "save": 50.01,
-  "savePct": 6,
+  "save": 143.5,
+  "savePct": 18,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-chrome-bumper-fog-light-slot-sensor-holes/",
@@ -1360,7 +1360,7 @@ TTP.products = [
     "thumb": "assets/img/10263/6-thumb.jpg"
    }
   ],
-  "mo": 62
+  "mo": 55
  },
  {
   "id": 10249,
@@ -1370,10 +1370,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Painted Rear Bumper Star White Sensor Hole OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 699.99,
+  "price": 614.99,
   "regPrice": 750.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 135.01,
+  "savePct": 18,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-painted-rear-bumper-star-white-sensor-hole-oem/",
@@ -1424,7 +1424,7 @@ TTP.products = [
     "thumb": "assets/img/10249/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 10234,
@@ -1434,10 +1434,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Tailgate Marsh Grey w/ Step & Camera Hole OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1799.99,
+  "price": 1694.54,
   "regPrice": 1899.99,
-  "save": 100.0,
-  "savePct": 5,
+  "save": 205.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-tailgate-marsh-grey-w-step-camera-hole-oem/",
@@ -1492,7 +1492,7 @@ TTP.products = [
     "thumb": "assets/img/10234/6-thumb.jpg"
    }
   ],
-  "mo": 150
+  "mo": 141
  },
  {
   "id": 10218,
@@ -1502,10 +1502,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Short Bed 6.4ft SRW Bright White OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3799.99,
+  "price": 3706.5,
   "regPrice": 4000.0,
-  "save": 200.01,
-  "savePct": 5,
+  "save": 293.5,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-short-bed-6-4ft-srw-bright-white-oem-take-off-2/",
@@ -1555,7 +1555,7 @@ TTP.products = [
     "thumb": "assets/img/10218/6-thumb.jpg"
    }
   ],
-  "mo": 317
+  "mo": 309
  },
  {
   "id": 10202,
@@ -1565,10 +1565,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 SHORT Bed 6FT 9IN SRW Marsh Grey Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 4099.99,
+  "price": 4006.5,
   "regPrice": 4200.0,
-  "save": 100.01,
-  "savePct": 2,
+  "save": 193.5,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-short-bed-6ft-9in-srw-marsh-grey-take-off/",
@@ -1619,7 +1619,7 @@ TTP.products = [
     "thumb": "assets/img/10202/6-thumb.jpg"
    }
   ],
-  "mo": 342
+  "mo": 334
  },
  {
   "id": 10137,
@@ -1629,10 +1629,10 @@ TTP.products = [
   "name": "KMC IMS KM552 20×9 +0 Wheels on Nitto Ridge Grappler 37×12.5×20 — Ford F250/F350 Set",
   "cat": "wheels-tires",
   "catName": "Wheels & Tires",
-  "price": 3949.99,
+  "price": 3849.14,
   "regPrice": 3949.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 3,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/kmc-ims-km552-20x9-0-wheels-on-nitto-ridge-grappler-37x12-5x20-ford-f250-f350-set/",
@@ -1678,7 +1678,7 @@ TTP.products = [
     "thumb": "assets/img/10137/6-thumb.jpeg"
    }
   ],
-  "mo": 329
+  "mo": 321
  },
  {
   "id": 10129,
@@ -1688,10 +1688,10 @@ TTP.products = [
   "name": "Tough Country Evolution Ram 2500/3500 Rear Bumper (2010-2024) #EB1034DRSL",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 849.99,
+  "price": 749.14,
   "regPrice": 849.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-evolution-ram-2500-3500-rear-bumper-2010-2024-eb1034drsl/",
@@ -1736,7 +1736,7 @@ TTP.products = [
     "thumb": "assets/img/10129/6-thumb.jpeg"
    }
   ],
-  "mo": 71
+  "mo": 62
  },
  {
   "id": 10106,
@@ -1746,10 +1746,10 @@ TTP.products = [
   "name": "Ranch Hand Ram 1500 Bumper — Sport Series Rear (2019-2024) #SBD19HBLSL",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 899.99,
+  "price": 794.54,
   "regPrice": 899.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 2,
   "url": "https://texastruckparts.shop/product/2019-2024-ram-1500-ranch-hand-sport-rear-bumper-sbd19hblsl/",
@@ -1793,7 +1793,7 @@ TTP.products = [
     "thumb": "assets/img/10106/6-thumb.jpeg"
    }
   ],
-  "mo": 75
+  "mo": 66
  },
  {
   "id": 10079,
@@ -1803,10 +1803,10 @@ TTP.products = [
   "name": "One Source Ford F250 Bumper — Rear Replacement (2017-2026 F250/F350/F450) #4397LS",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 999.99,
+  "price": 914.99,
   "regPrice": 999.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2026-ford-f250-f350-f450-one-source-rear-bumper-4397ls-with-steps/",
@@ -1852,7 +1852,7 @@ TTP.products = [
     "thumb": "assets/img/10079/6-thumb.jpeg"
    }
   ],
-  "mo": 83
+  "mo": 76
  },
  {
   "id": 10071,
@@ -1862,10 +1862,10 @@ TTP.products = [
   "name": "American Force Iceberg SS Wheels 20×10 + Nitto Ridge Grappler 37×12.5 Tire Set (Ford Super Duty)",
   "cat": "wheels-tires",
   "catName": "Wheels & Tires",
-  "price": 6000.0,
+  "price": 5915.0,
   "regPrice": 6000.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 1,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/american-force-iceberg-ss-20x10-nitto-ridge-grappler-37x12-5-wheel-tire-set-ford-super-duty/",
@@ -1911,7 +1911,7 @@ TTP.products = [
     "thumb": "assets/img/10071/6-thumb.jpeg"
    }
   ],
-  "mo": 500
+  "mo": 493
  },
  {
   "id": 10062,
@@ -1921,12 +1921,12 @@ TTP.products = [
   "name": "Tough Country Evolution Bullnose Ram 2500/3500 Front Bumper (2019-2024) — Scratch/Dent",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1099.99,
+  "price": 1006.5,
   "regPrice": 1099.99,
-  "save": 0,
-  "savePct": 0,
-  "inStock": true,
-  "qty": 1,
+  "save": 93.49,
+  "savePct": 8,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/tough-country-evolution-bullnose-ram-2500-3500-front-bumper-2019-2024-scratch-dent/",
   "desc": "Tough Country Ram 2500/3500 Wrinkle Black Powder Coat 2019-2024 The Ram 2500/3500 Front Bumper shown here is a 2019-2024 Ram 2500/3500 front bumper. It is a Tough Country aftermarket front bumper. Review the listing photos and the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has scratches — see photos. Has dents — see photos. Has scuffs — see photos. This is a scratch & dent unit — priced accordingly; see photos. See the photos and listing details for this item's exact condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2019-2024 Make / Model Ram 2500/3500 Part Front Bumper Brand Tough Country Color / Finish Wrinkle Black Powder Coat Type Aftermarket Condition See photos for exact condition Ram 2500/3500 Front Bumper Fitment This Ram 2500/3500 Front Bumper is built for Ram 2500/3500 trucks in the 2019-2024 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This Part This is a Tough Country aftermarket front bumper. See the photos and specifications for exact details, and compare your options in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Detailed photos on every listing Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Front Bumpers · Ram front bumpers · shop all inventory",
   "yearFrom": 2019,
@@ -1969,7 +1969,7 @@ TTP.products = [
     "thumb": "assets/img/10062/6-thumb.jpeg"
    }
   ],
-  "mo": 92
+  "mo": 84
  },
  {
   "id": 10053,
@@ -1979,10 +1979,10 @@ TTP.products = [
   "name": "Tough Country Evolution Bullnose Ford F250/F350 Front Bumper (2017-2019) — Scratch/Dent",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1099.99,
+  "price": 999.14,
   "regPrice": 1099.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-evolution-bullnose-ford-f250-f350-front-bumper-2017-2019-scratch-dent/",
@@ -2028,7 +2028,7 @@ TTP.products = [
     "thumb": "assets/img/10053/6-thumb.jpeg"
    }
   ],
-  "mo": 92
+  "mo": 83
  },
  {
   "id": 10021,
@@ -2038,10 +2038,10 @@ TTP.products = [
   "name": "Tough Country Traditional Chevy Silverado 2500/3500 Front Bumper (2015-2019) #TFR3415C — Scratch/Dent",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1399.99,
+  "price": 1285.99,
   "regPrice": 1399.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 8,
   "inStock": true,
   "qty": 2,
   "url": "https://texastruckparts.shop/product/tough-country-traditional-chevy-silverado-2500-3500-front-bumper-2015-2019-tfr3415c-scratch-dent/",
@@ -2086,7 +2086,7 @@ TTP.products = [
     "thumb": "assets/img/10021/6-thumb.jpeg"
    }
   ],
-  "mo": 117
+  "mo": 107
  },
  {
   "id": 10008,
@@ -2096,10 +2096,10 @@ TTP.products = [
   "name": "Tough Country Traditional Ram 2500/3500 Front Bumper Winch Ready (2019-2024) #TFR1934DW",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1399.99,
+  "price": 1294.54,
   "regPrice": 1399.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-traditional-ram-2500-3500-front-bumper-winch-ready-2019-2024-tfr1934dw/",
@@ -2144,7 +2144,7 @@ TTP.products = [
     "thumb": "assets/img/10008/6-thumb.jpeg"
    }
   ],
-  "mo": 117
+  "mo": 108
  },
  {
   "id": 9997,
@@ -2154,10 +2154,10 @@ TTP.products = [
   "name": "Tough Country Traditional Chevy Silverado 2500/3500 Front Bumper (2024-2026) #TFR3424C",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1399.99,
+  "price": 1299.14,
   "regPrice": 1399.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-traditional-chevy-silverado-2500-3500-front-bumper-2024-2026-tfr3424c/",
@@ -2202,7 +2202,7 @@ TTP.products = [
     "thumb": "assets/img/9997/6-thumb.jpeg"
    }
   ],
-  "mo": 117
+  "mo": 108
  },
  {
   "id": 9982,
@@ -2212,10 +2212,10 @@ TTP.products = [
   "name": "Tough Country Traditional Ford F250/F350 Front Bumper (2023-2026) #TFR2023F",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1399.99,
+  "price": 1299.14,
   "regPrice": 1399.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-traditional-ford-f250-f350-front-bumper-2023-2026-tfr2023f/",
@@ -2261,7 +2261,7 @@ TTP.products = [
     "thumb": "assets/img/9982/6-thumb.jpeg"
    }
   ],
-  "mo": 117
+  "mo": 108
  },
  {
   "id": 9969,
@@ -2271,10 +2271,10 @@ TTP.products = [
   "name": "Tough Country Traditional GMC Sierra 2500/3500 Grill Guard (2024-2026) #BG2525G",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 599.99,
+  "price": 499.14,
   "regPrice": 599.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 17,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-traditional-gmc-sierra-2500-3500-grill-guard-2024-2026-bg2525g/",
@@ -2329,10 +2329,10 @@ TTP.products = [
   "name": "Tough Country Evolution Ram 2500/3500 Front Bumper Winch Ready (2019-2024) #EFR1934D",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1299.99,
+  "price": 1185.99,
   "regPrice": 1299.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-evolution-ram-2500-3500-front-bumper-winch-ready-2019-2024-efr1934d/",
@@ -2377,7 +2377,7 @@ TTP.products = [
     "thumb": "assets/img/9957/6-thumb.jpeg"
    }
   ],
-  "mo": 108
+  "mo": 99
  },
  {
   "id": 9947,
@@ -2387,10 +2387,10 @@ TTP.products = [
   "name": "Tough Country Traditional Ford F250/F350 Front Bumper (2017-2022)",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1349.99,
+  "price": 1235.99,
   "regPrice": 1349.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-traditional-ford-f250-f350-front-bumper-2017-2022/",
@@ -2436,7 +2436,7 @@ TTP.products = [
     "thumb": "assets/img/9947/6-thumb.jpeg"
    }
   ],
-  "mo": 112
+  "mo": 103
  },
  {
   "id": 9845,
@@ -2446,10 +2446,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 KING RANCH Tailgate Step Camera Star White OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2799.99,
+  "price": 2699.14,
   "regPrice": 3000.0,
-  "save": 200.01,
-  "savePct": 7,
+  "save": 300.86,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-king-ranch-tailgate-step-camera-star-white-oem/",
@@ -2504,7 +2504,7 @@ TTP.products = [
     "thumb": "assets/img/9845/6-thumb.jpg"
    }
   ],
-  "mo": 233
+  "mo": 225
  },
  {
   "id": 9829,
@@ -2514,10 +2514,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Carbonized Grey Step Camera OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1699.99,
+  "price": 1606.5,
   "regPrice": 1799.99,
-  "save": 100.0,
-  "savePct": 6,
+  "save": 193.49,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-factory-tailgate-carbonized-grey-step-camera-oem-2/",
@@ -2572,7 +2572,7 @@ TTP.products = [
     "thumb": "assets/img/9829/6-thumb.jpg"
    }
   ],
-  "mo": 142
+  "mo": 134
  },
  {
   "id": 9815,
@@ -2582,10 +2582,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Carbonized Grey Step Camera OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1699.99,
+  "price": 1614.99,
   "regPrice": 1799.99,
-  "save": 100.0,
-  "savePct": 6,
+  "save": 185.0,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-factory-tailgate-carbonized-grey-step-camera-oem/",
@@ -2640,7 +2640,7 @@ TTP.products = [
     "thumb": "assets/img/9815/6-thumb.jpg"
    }
   ],
-  "mo": 142
+  "mo": 135
  },
  {
   "id": 9798,
@@ -2650,10 +2650,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 3500HD Dually Bed 8ft DRW Summit White OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3399.99,
+  "price": 3294.54,
   "regPrice": 3650.0,
-  "save": 250.01,
-  "savePct": 7,
+  "save": 355.46,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-3500hd-dually-bed-8ft-drw-summit-white-oem/",
@@ -2703,7 +2703,7 @@ TTP.products = [
     "thumb": "assets/img/9798/6-thumb.jpg"
    }
   ],
-  "mo": 283
+  "mo": 275
  },
  {
   "id": 9782,
@@ -2713,10 +2713,10 @@ TTP.products = [
   "name": "2017-2022 Ford F350 F450 Dually Bed 8 FT OEM Oxford White Bed Only OEM DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2699.99,
+  "price": 2614.99,
   "regPrice": 3000.0,
-  "save": 300.01,
-  "savePct": 10,
+  "save": 385.01,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f350-f450-dually-bed-8-ft-oem-oxford-white-bed-only-oem-drw/",
@@ -2767,7 +2767,7 @@ TTP.products = [
     "thumb": "assets/img/9782/6-thumb.jpg"
    }
   ],
-  "mo": 225
+  "mo": 218
  },
  {
   "id": 9762,
@@ -2777,10 +2777,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Lariat Dually Bed 8ft DRW Carbonized Grey M7 OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2400.0,
+  "price": 2315.0,
   "regPrice": 2500.0,
-  "save": 100.0,
-  "savePct": 4,
+  "save": 185.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f350-f450-lariat-dually-bed-8ft-drw-carbonized-grey-m7-oem/",
@@ -2831,7 +2831,7 @@ TTP.products = [
     "thumb": "assets/img/9762/6-thumb.jpg"
    }
   ],
-  "mo": 200
+  "mo": 193
  },
  {
   "id": 9745,
@@ -2841,10 +2841,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 3500 Dually Factory Driver Side Tail Light LH OEM",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 449.99,
+  "price": 335.99,
   "regPrice": 500.0,
-  "save": 50.01,
-  "savePct": 10,
+  "save": 164.01,
+  "savePct": 33,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-3500-dually-factory-driver-side-tail-light-lh-oem/",
@@ -2904,10 +2904,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 3500 Dually Only Factory Passenger Side Tail Light RH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 449.99,
+  "price": 344.54,
   "regPrice": 500.0,
-  "save": 50.01,
-  "savePct": 10,
+  "save": 155.46,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-3500-dually-only-factory-passenger-side-tail-light-rh/",
@@ -2967,12 +2967,12 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 HD Hunter Green Short Bed 6.75ft SRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3999.99,
+  "price": 3894.54,
   "regPrice": 4199.99,
-  "save": 200.0,
-  "savePct": 5,
-  "inStock": true,
-  "qty": 1,
+  "save": 305.45,
+  "savePct": 7,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-hd-hunter-green-short-bed-6-75ft-srw/",
   "desc": "2020-2026 6.75 ft (short bed) SRW Hunter Green OEM take-off The Chevy 2500/3500 Truck Bed shown here is a 2020-2026 Chevy 2500/3500 6.75 ft SRW truck bed finished in Hunter Green. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2026 Make / Model Chevy 2500/3500 Part Truck Bed Color / Finish Hunter Green Bed Size 6.75 ft (short bed) Drivetrain SRW — single rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Chevy 2500/3500 Truck Bed Fitment This Chevy 2500/3500 Truck Bed is built for Chevy 2500/3500 trucks in the 2020-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Chevy 2500/3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Chevy truck beds · shop all inventory",
   "yearFrom": 2020,
@@ -3020,7 +3020,7 @@ TTP.products = [
     "thumb": "assets/img/9728/6-thumb.jpg"
    }
   ],
-  "mo": 333
+  "mo": 325
  },
  {
   "id": 9710,
@@ -3030,10 +3030,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Tailgate Hunter Green OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 999.99,
+  "price": 906.5,
   "regPrice": 1100.0,
-  "save": 100.01,
-  "savePct": 9,
+  "save": 193.5,
+  "savePct": 18,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-tailgate-hunter-green-oem/",
@@ -3078,7 +3078,7 @@ TTP.products = [
     "thumb": "assets/img/9710/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 76
  },
  {
   "id": 9694,
@@ -3088,10 +3088,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Tailgate Summit White OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 999.99,
+  "price": 914.99,
   "regPrice": 1100.0,
-  "save": 100.01,
-  "savePct": 9,
+  "save": 185.01,
+  "savePct": 17,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-tailgate-summit-white-oem-2/",
@@ -3136,7 +3136,7 @@ TTP.products = [
     "thumb": "assets/img/9694/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 76
  },
  {
   "id": 9219,
@@ -3146,10 +3146,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 3500HD Denali DRW Dually Bed 8ft Abalone White OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3185.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 314.01,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-sierra-3500hd-denali-drw-dually-bed-8ft-abalone-white-oem/",
@@ -3199,7 +3199,7 @@ TTP.products = [
     "thumb": "assets/img/9219/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 265
  },
  {
   "id": 9195,
@@ -3209,10 +3209,10 @@ TTP.products = [
   "name": "2011-2016 Ford F250 F350 Short Bed 6.75ft SRW Black & Brown Two Tone King Ranch OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 4349.99,
+  "price": 4264.99,
   "regPrice": 4500.0,
-  "save": 150.01,
-  "savePct": 3,
+  "save": 235.01,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2011-2016-ford-f250-f350-short-bed-6-75ft-srw-black-brown-two-tone-king-ranch-oe/",
@@ -3263,7 +3263,7 @@ TTP.products = [
     "thumb": "assets/img/9195/6-thumb.jpg"
    }
   ],
-  "mo": 362
+  "mo": 355
  },
  {
   "id": 9170,
@@ -3273,10 +3273,10 @@ TTP.products = [
   "name": "2024-2026 Chevy Silverado 2500 3500 Black Front Bumper Fog Light & Sensor Holes",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 999.99,
+  "price": 899.14,
   "regPrice": 1050.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 150.86,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2024-2026-chevy-silverado-2500-3500-black-front-bumper-fog-light-sensor-holes/",
@@ -3330,7 +3330,7 @@ TTP.products = [
     "thumb": "assets/img/9170/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 75
  },
  {
   "id": 9152,
@@ -3340,12 +3340,12 @@ TTP.products = [
   "name": "2024-2026 Chevy Silverado 2500 3500 Black Front Bumper w/ LED Fog Light & Sensor Holes",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 1099.99,
+  "price": 1014.99,
   "regPrice": 1150.0,
-  "save": 50.01,
-  "savePct": 4,
-  "inStock": true,
-  "qty": 1,
+  "save": 135.01,
+  "savePct": 12,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2024-2026-chevy-silverado-2500-3500-black-front-bumper-led-fog-light-sensor/",
   "desc": "2024-2026 Front Sensors Black OEM take-off The Chevy 2500/3500 Front Bumper shown here is a 2024-2026 Chevy 2500/3500 LED with sensors front bumper finished in Black. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has factory sensor holes. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2024-2026 Make / Model Chevy 2500/3500 Part Front Bumper Color / Finish Black Bulb Type LED Sensors With Sensors Type OEM take-off Condition OEM take-off (used) — see photos Chevy 2500/3500 Front Bumper Fitment This Chevy 2500/3500 Front Bumper is built for Chevy 2500/3500 trucks in the 2024-2026 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Chevy 2500/3500 Front Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Front Bumpers · Chevy front bumpers · shop all inventory",
   "yearFrom": 2020,
@@ -3401,7 +3401,7 @@ TTP.products = [
     "thumb": "assets/img/9152/6-thumb.jpg"
    }
   ],
-  "mo": 92
+  "mo": 85
  },
  {
   "id": 9134,
@@ -3411,10 +3411,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Carbonized Grey Camera Hole NO STEP",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 899.99,
+  "price": 806.5,
   "regPrice": 950.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 143.5,
+  "savePct": 15,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-tailgate-carbonized-grey-camera-hole-no-step/",
@@ -3469,7 +3469,7 @@ TTP.products = [
     "thumb": "assets/img/9134/6-thumb.jpg"
    }
   ],
-  "mo": 75
+  "mo": 67
  },
  {
   "id": 9104,
@@ -3479,10 +3479,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado GMC 2500 3500 Abalone White Rear Bumper w/ Sensor",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 649.99,
+  "price": 544.54,
   "regPrice": 700.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 155.46,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-gmc-2500-3500-abalone-white-rear-bumper-w-sensor/",
@@ -3543,10 +3543,10 @@ TTP.products = [
   "name": "2025-2026 Ram 2500 3500 One Source Front Replacement Bumper #2270PRS",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1749.99,
+  "price": 1649.14,
   "regPrice": 1800.0,
-  "save": 50.01,
-  "savePct": 3,
+  "save": 150.86,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2025-2026-ram-2500-3500-ranch-hand-style-front-replacement-bumper-new-one-source/",
@@ -3591,7 +3591,7 @@ TTP.products = [
     "thumb": "assets/img/8893/6-thumb.jpg"
    }
   ],
-  "mo": 146
+  "mo": 137
  },
  {
   "id": 8884,
@@ -3601,10 +3601,10 @@ TTP.products = [
   "name": "2024-2026 Chevy Silverado 2500 3500 One Source Front Replacement Bumper #2123PRS",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1749.99,
+  "price": 1656.5,
   "regPrice": 1800.0,
-  "save": 50.01,
-  "savePct": 3,
+  "save": 143.5,
+  "savePct": 8,
   "inStock": true,
   "qty": 2,
   "url": "https://texastruckparts.shop/product/2024-2026-chevy-2500-3500-ranch-hand-style-front-replacement-bumper-new/",
@@ -3649,7 +3649,7 @@ TTP.products = [
     "thumb": "assets/img/8884/6-thumb.jpg"
    }
   ],
-  "mo": 146
+  "mo": 138
  },
  {
   "id": 8875,
@@ -3659,10 +3659,10 @@ TTP.products = [
   "name": "2017-2022 Ford F250 F350 One Source Front Replacement Bumper #2367PRS",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1749.99,
+  "price": 1664.99,
   "regPrice": 1800.0,
-  "save": 50.01,
-  "savePct": 3,
+  "save": 135.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-ranch-hand-style-front-replacement-bumper-new/",
@@ -3708,7 +3708,7 @@ TTP.products = [
     "thumb": "assets/img/8875/6-thumb.jpg"
    }
   ],
-  "mo": 146
+  "mo": 139
  },
  {
   "id": 8866,
@@ -3718,12 +3718,12 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Tailgate Summit White OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 999.99,
+  "price": 885.99,
   "regPrice": 1100.0,
-  "save": 100.01,
-  "savePct": 9,
-  "inStock": true,
-  "qty": 1,
+  "save": 214.01,
+  "savePct": 19,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-tailgate-summit-white-oem/",
   "desc": "2020-2026 No Step Summit White OEM take-off The Chevy 2500/3500 Tailgate shown here is a 2020-2026 Chevy 2500/3500 tailgate finished in Summit White. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has dents — see photos. Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2026 Make / Model Chevy 2500/3500 Part Tailgate Color / Finish Summit White Tailgate Step No step Type OEM take-off Condition OEM take-off (used) — see photos Chevy 2500/3500 Tailgate Fitment This Chevy 2500/3500 Tailgate is built for Chevy 2500/3500 trucks in the 2020-2026 range. Verify your step, camera, and applique configuration against your truck. This tailgate fits across the family where the factory used the same tailgate. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Chevy 2500/3500 Tailgate is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. dealer vs. aftermarket tailgate guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Tailgates · Chevy tailgates · shop all inventory",
   "yearFrom": 2020,
@@ -3766,7 +3766,7 @@ TTP.products = [
     "thumb": "assets/img/8866/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 74
  },
  {
   "id": 8853,
@@ -3776,12 +3776,12 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Multi Flex Tailgate Sterling Metallic",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2599.99,
+  "price": 2499.14,
   "regPrice": 2800.0,
-  "save": 200.01,
-  "savePct": 7,
-  "inStock": true,
-  "qty": 1,
+  "save": 300.86,
+  "savePct": 11,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-multiflex-tailgate-sterling-metallic/",
   "desc": "2020-2026 Step Sterling Metallic OEM take-off The Chevy 2500/3500 Tailgate shown here is a 2020-2026 Chevy 2500/3500 tailgate finished in Sterling Metallic. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has dents — see photos. Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2026 Make / Model Chevy 2500/3500 Part Tailgate Color / Finish Sterling Metallic Tailgate Step With step Type OEM take-off Condition OEM take-off (used) — see photos Chevy 2500/3500 Tailgate Fitment This Chevy 2500/3500 Tailgate is built for Chevy 2500/3500 trucks in the 2020-2026 range. Verify your step, camera, and applique configuration against your truck. This tailgate fits across the family where the factory used the same tailgate. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Chevy 2500/3500 Tailgate is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. dealer vs. aftermarket tailgate guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Tailgates · Chevy tailgates · shop all inventory",
   "yearFrom": 2020,
@@ -3824,7 +3824,7 @@ TTP.products = [
     "thumb": "assets/img/8853/6-thumb.jpg"
    }
   ],
-  "mo": 217
+  "mo": 208
  },
  {
   "id": 8840,
@@ -3834,10 +3834,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 HD Sterling Metallic Short Bed 6.75ft SRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3999.99,
+  "price": 3885.99,
   "regPrice": 4199.99,
-  "save": 200.0,
-  "savePct": 5,
+  "save": 314.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-hd-sterling-metallic-short-bed-6-75ft-srw/",
@@ -3887,7 +3887,7 @@ TTP.products = [
     "thumb": "assets/img/8840/6-thumb.jpg"
    }
   ],
-  "mo": 333
+  "mo": 324
  },
  {
   "id": 8822,
@@ -3897,10 +3897,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Front Chrome Bumper Fog Light Slot Super Duty",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 606.5,
   "regPrice": 750.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 143.5,
+  "savePct": 19,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-chrome-bumper-fog-light-slot-super-duty/",
@@ -3951,7 +3951,7 @@ TTP.products = [
     "thumb": "assets/img/8822/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8807,
@@ -3961,12 +3961,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Front Chrome Bumper Fog Light Slot",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 614.99,
   "regPrice": 750.0,
-  "save": 50.01,
-  "savePct": 7,
-  "inStock": true,
-  "qty": 1,
+  "save": 135.01,
+  "savePct": 18,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-chrome-bumper-fog-light-slot/",
   "desc": "2023-2026 Chrome OEM take-off The Ford F250/F350 Bumper shown here is a 2023-2026 Ford F250/F350 bumper finished in Chrome. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has factory sensor holes. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford F250/F350 Part Bumper Color / Finish Chrome Type OEM take-off Condition OEM take-off (used) — see photos Ford F250/F350 Bumper Fitment This Ford F250/F350 Bumper is built for Ford F250/F350 trucks in the 2023-2026 range. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F250/F350 Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Bumpers · Ford bumpers · shop all inventory",
   "yearFrom": 2023,
@@ -4015,7 +4015,7 @@ TTP.products = [
     "thumb": "assets/img/8807/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8795,
@@ -4025,10 +4025,10 @@ TTP.products = [
   "name": "2019-2026 Ram HD 2500 3500 Chrome Front Bumper OEM Mopar",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 899.99,
+  "price": 814.99,
   "regPrice": 950.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 135.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-hd-2500-3500-chrome-front-bumper-oem-mopar/",
@@ -4073,7 +4073,7 @@ TTP.products = [
     "thumb": "assets/img/8795/6-thumb.jpg"
    }
   ],
-  "mo": 75
+  "mo": 68
  },
  {
   "id": 8778,
@@ -4083,10 +4083,10 @@ TTP.products = [
   "name": "2020-2023 Chevy Silverado 2500 3500 Black Front Bumper No Sensor No Fog Light",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 799.99,
+  "price": 685.99,
   "regPrice": 850.0,
-  "save": 50.01,
-  "savePct": 6,
+  "save": 164.01,
+  "savePct": 19,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-chevy-silverado-2500-3500-black-front-bumper-no-sensor-no-fog-light/",
@@ -4140,7 +4140,7 @@ TTP.products = [
     "thumb": "assets/img/8778/6-thumb.jpg"
    }
   ],
-  "mo": 67
+  "mo": 57
  },
  {
   "id": 8761,
@@ -4150,10 +4150,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Short Bed 6.4ft SRW Bright White OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3700.0,
+  "price": 3594.55,
   "regPrice": 4000.0,
-  "save": 300.0,
-  "savePct": 8,
+  "save": 405.45,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-short-bed-6-4ft-srw-bright-white-oem-take-off/",
@@ -4203,7 +4203,7 @@ TTP.products = [
     "thumb": "assets/img/8761/6-thumb.jpg"
    }
   ],
-  "mo": 308
+  "mo": 300
  },
  {
   "id": 8743,
@@ -4213,10 +4213,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Glacier Grey Front Bumper Fog Lights & Sensor Holes OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 999.99,
+  "price": 885.99,
   "regPrice": 1050.0,
-  "save": 50.01,
-  "savePct": 5,
+  "save": 164.01,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-glacier-grey-front-bumper-fog-lights-sensor-holes-oem/",
@@ -4271,7 +4271,7 @@ TTP.products = [
     "thumb": "assets/img/8743/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 74
  },
  {
   "id": 8725,
@@ -4281,10 +4281,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Darkened Bronze Front Bumper Fog Light Sensor Hole OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 974.99,
+  "price": 889.99,
   "regPrice": 1000.0,
-  "save": 25.01,
-  "savePct": 3,
+  "save": 110.01,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-darkened-bronze-front-bumper-fog-light-sensor-hole-oem/",
@@ -4339,7 +4339,7 @@ TTP.products = [
     "thumb": "assets/img/8725/6-thumb.jpg"
    }
   ],
-  "mo": 81
+  "mo": 74
  },
  {
   "id": 8706,
@@ -4349,10 +4349,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Carbonized Grey Front Bumper w/ Fog Lights",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 974.99,
+  "price": 889.99,
   "regPrice": 1000.0,
-  "save": 25.01,
-  "savePct": 3,
+  "save": 110.01,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-super-duty-carbonized-grey-front-bumper-w-fog-lights/",
@@ -4403,7 +4403,7 @@ TTP.products = [
     "thumb": "assets/img/8706/6-thumb.jpg"
    }
   ],
-  "mo": 81
+  "mo": 74
  },
  {
   "id": 8688,
@@ -4413,10 +4413,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Marsh Grey Front Bumper Fog Light & Sensor",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 974.99,
+  "price": 860.99,
   "regPrice": 1000.0,
-  "save": 25.01,
-  "savePct": 3,
+  "save": 139.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-super-duty-marsh-grey-front-bumper-fog-light-sensor/",
@@ -4467,7 +4467,7 @@ TTP.products = [
     "thumb": "assets/img/8688/6-thumb.jpg"
    }
   ],
-  "mo": 81
+  "mo": 72
  },
  {
   "id": 8671,
@@ -4477,10 +4477,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Painted Rear Bumper Stone Grey Sensor Hole OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 699.99,
+  "price": 606.5,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 193.5,
+  "savePct": 24,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-painted-rear-bumper-stone-grey-sensor-hole-oem/",
@@ -4531,7 +4531,7 @@ TTP.products = [
     "thumb": "assets/img/8671/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8525,
@@ -4541,12 +4541,12 @@ TTP.products = [
   "name": "2020-2022 Ford Super Duty Factory LED Taillight w/ BLISS OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 549.99,
+  "price": 435.99,
   "regPrice": 574.99,
-  "save": 25.0,
-  "savePct": 4,
-  "inStock": true,
-  "qty": 1,
+  "save": 139.0,
+  "savePct": 24,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-super-duty-factory-led-taillight-w-bliss-oem-lh-driver-side/",
   "desc": "2020-2022 LED BLIS Driver Side (LH) OEM The Ford Super Duty Tail Light shown here is a 2020-2022 Ford Super Duty LED with BLIS Driver Side (LH) tail light. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has a crack — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2022 Make / Model Ford Super Duty Part Tail Light Bulb Type LED Blind Spot (BLIS) Yes Side Driver Side (LH) Type OEM take-off Condition OEM take-off (used) — see photos Ford Super Duty Tail Light Fitment This Ford Super Duty Tail Light is built for Ford Super Duty trucks in the 2020-2022 range. Confirm the bulb type (Halogen or LED) and BLIS blind-spot module and the correct side ( Driver Side (LH) ) against your existing lamp before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford Super Duty Tail Light is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our Ford Super Duty tail light guide (Halogen/LED/BLIS) . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Tail Lights · Ford tail lights · shop all inventory",
   "yearFrom": 2017,
@@ -4609,10 +4609,10 @@ TTP.products = [
   "name": "2020-2022 Ford Super Duty Factory LED Taillight w/ BLISS OEM RH Passenger",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 549.99,
+  "price": 435.99,
   "regPrice": 574.99,
-  "save": 25.0,
-  "savePct": 4,
+  "save": 139.0,
+  "savePct": 24,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-super-duty-factory-led-taillight-w-bliss-oem-rh-passenger/",
@@ -4677,10 +4677,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Platinum Ruby Red Tailgate w/ Step OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2899.99,
+  "price": 2785.99,
   "regPrice": 3199.99,
-  "save": 300.0,
-  "savePct": 9,
+  "save": 414.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-platinum-ruby-red-tailgate-w-step-oem/",
@@ -4731,7 +4731,7 @@ TTP.products = [
     "thumb": "assets/img/8459/6-thumb.jpg"
    }
   ],
-  "mo": 242
+  "mo": 232
  },
  {
   "id": 8437,
@@ -4741,10 +4741,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 2500 3500 Factory Multi Pro Tailgate Abalone White OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2300.0,
+  "price": 2194.55,
   "regPrice": 2700.0,
-  "save": 400.0,
-  "savePct": 15,
+  "save": 505.45,
+  "savePct": 19,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-sierra-2500-3500-factory-multi-pro-tailgate-abalone-white-oem/",
@@ -4789,7 +4789,7 @@ TTP.products = [
     "thumb": "assets/img/8437/6-thumb.jpg"
    }
   ],
-  "mo": 192
+  "mo": 183
  },
  {
   "id": 8421,
@@ -4799,10 +4799,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Carbonized Grey STEP OEM Camera Hole",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1599.99,
+  "price": 1514.99,
   "regPrice": 1799.99,
-  "save": 200.0,
-  "savePct": 11,
+  "save": 285.0,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-tailgate-carbonized-grey-step-oem-camera-hole/",
@@ -4857,7 +4857,7 @@ TTP.products = [
     "thumb": "assets/img/8421/6-thumb.jpg"
    }
   ],
-  "mo": 133
+  "mo": 126
  },
  {
   "id": 8406,
@@ -4867,10 +4867,10 @@ TTP.products = [
   "name": "2024-2026 Chevy Silverado 2500 3500 Factory Abalone White Front Bumper Sensor",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 899.99,
+  "price": 806.5,
   "regPrice": 1099.99,
-  "save": 200.0,
-  "savePct": 18,
+  "save": 293.49,
+  "savePct": 27,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2024-2026-chevy-silverado-2500-3500-factory-abalone-white-front-bumper-sensor/",
@@ -4915,7 +4915,7 @@ TTP.products = [
     "thumb": "assets/img/8406/6-thumb.jpg"
    }
   ],
-  "mo": 75
+  "mo": 67
  },
  {
   "id": 8383,
@@ -4925,10 +4925,10 @@ TTP.products = [
   "name": "2024-2026 GMC Sierra 2500 3500 Factory Painted Red Front Bumper Fog Light OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 749.99,
+  "price": 656.5,
   "regPrice": 950.0,
-  "save": 200.01,
-  "savePct": 21,
+  "save": 293.5,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2024-2026-gmc-sierra-2500-3500-factory-painted-red-front-bumper-fog-light-oem/",
@@ -4978,7 +4978,7 @@ TTP.products = [
     "thumb": "assets/img/8383/6-thumb.jpg"
    }
   ],
-  "mo": 62
+  "mo": 55
  },
  {
   "id": 8361,
@@ -4988,12 +4988,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Short Bed 6FT 9IN SRW Carbonized Grey OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3799.99,
+  "price": 3706.5,
   "regPrice": 4000.0,
-  "save": 200.01,
-  "savePct": 5,
-  "inStock": true,
-  "qty": 1,
+  "save": 293.5,
+  "savePct": 7,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-short-bed-6ft-9in-srw-carbonized-grey-oem-take-off/",
   "desc": "2023-2026 6.9 ft (short bed) SRW Carbonized Grey OEM take-off The Ford F250/F350 Truck Bed shown here is a 2023-2026 Ford F250/F350 6.9 ft SRW truck bed finished in Carbonized Grey. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford F250/F350 Part Truck Bed Color / Finish Carbonized Grey Bed Size 6.9 ft (short bed) Drivetrain SRW — single rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ford F250/F350 Truck Bed Fitment This Ford F250/F350 Truck Bed is built for Ford F250/F350 trucks in the 2023-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F250/F350 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ford truck beds · shop all inventory",
   "yearFrom": 2023,
@@ -5042,7 +5042,7 @@ TTP.products = [
     "thumb": "assets/img/8361/6-thumb.jpg"
    }
   ],
-  "mo": 317
+  "mo": 309
  },
  {
   "id": 8341,
@@ -5052,10 +5052,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Dually Bed 8FT Ruby Red OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2299.99,
+  "price": 2199.14,
   "regPrice": 2499.99,
-  "save": 200.0,
-  "savePct": 8,
+  "save": 300.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f350-f450-dually-bed-8ft-ruby-red-oem-take-off-drw/",
@@ -5106,7 +5106,7 @@ TTP.products = [
     "thumb": "assets/img/8341/6-thumb.jpg"
    }
   ],
-  "mo": 192
+  "mo": 183
  },
  {
   "id": 8318,
@@ -5116,10 +5116,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 3500 Abalone White Dually Bed 8 FT OEM Bed DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3185.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 314.01,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-sierra-3500-abalone-white-dually-bed-8-ft-oem-bed-drw/",
@@ -5169,7 +5169,7 @@ TTP.products = [
     "thumb": "assets/img/8318/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 265
  },
  {
   "id": 8294,
@@ -5179,10 +5179,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Passenger Side Full LED Tail Light BLISS OEM RH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 1099.99,
+  "price": 1014.99,
   "regPrice": 1149.99,
-  "save": 50.0,
-  "savePct": 4,
+  "save": 135.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-passenger-side-full-led-tail-light-bliss-oem-rh/",
@@ -5237,7 +5237,7 @@ TTP.products = [
     "thumb": "assets/img/8294/6-thumb.jpg"
    }
   ],
-  "mo": 92
+  "mo": 85
  },
  {
   "id": 8283,
@@ -5247,10 +5247,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Driver Side Full LED Tail Light w/ BLISS OEM LH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 1000.0,
+  "price": 915.0,
   "regPrice": 1149.99,
-  "save": 149.99,
-  "savePct": 13,
+  "save": 234.99,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-driver-side-full-led-tail-light-w-bliss-oem-lh/",
@@ -5305,7 +5305,7 @@ TTP.products = [
     "thumb": "assets/img/8283/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 76
  },
  {
   "id": 8273,
@@ -5382,10 +5382,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Painted Rear Bumper Ruby Red w/ Sensor Hole OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 699.99,
+  "price": 614.99,
   "regPrice": 750.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 135.01,
+  "savePct": 18,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-painted-rear-bumper-ruby-red-w-sensor-hole-oem/",
@@ -5436,7 +5436,7 @@ TTP.products = [
     "thumb": "assets/img/8265/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8250,
@@ -5446,10 +5446,10 @@ TTP.products = [
   "name": "2020-2026 GMC Chevy 2500 3500 Factory Rear Bumper Abalone White w/ Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 649.99,
+  "price": 535.99,
   "regPrice": 700.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 164.01,
+  "savePct": 23,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-chevy-2500-3500-factory-rear-bumper-abalone-white-w-sensor-oem/",
@@ -5510,10 +5510,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Oxford White NO STEP Camera Hole",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 649.99,
+  "price": 556.5,
   "regPrice": 700.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 143.5,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-tailgate-oxford-white-no-step-camera-hole/",
@@ -5578,10 +5578,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 4500 Factory Rear Bumper OEM Billet Silver w/ Sensors",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 599.99,
+  "price": 494.54,
   "regPrice": 650.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 155.46,
+  "savePct": 24,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-4500-factory-rear-bumper-oem-billet-silver-w-sensors/",
@@ -5641,10 +5641,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Painted Rear Bumper Darkened Bronze Sensor Hole",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 699.99,
+  "price": 585.99,
   "regPrice": 750.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 164.01,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-painted-rear-bumper-darkened-bronze-sensor-hole/",
@@ -5695,7 +5695,7 @@ TTP.products = [
     "thumb": "assets/img/8153/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8140,
@@ -5705,10 +5705,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Bright White DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3206.5,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 293.5,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-bright-white-drw-take-off/",
@@ -5758,7 +5758,7 @@ TTP.products = [
     "thumb": "assets/img/8140/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 8119,
@@ -5768,10 +5768,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Front Bumper Argon Blue w/ Fog Light OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 614.99,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 185.01,
+  "savePct": 23,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-bumper-argon-blue-w-fog-light-oem/",
@@ -5822,7 +5822,7 @@ TTP.products = [
     "thumb": "assets/img/8119/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8099,
@@ -5832,10 +5832,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Dually Bed 8FT Agate Black King Ranch Two Tone OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2699.99,
+  "price": 2614.99,
   "regPrice": 3000.0,
-  "save": 300.01,
-  "savePct": 10,
+  "save": 385.01,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f350-f450-dually-bed-8ft-agate-black-king-ranch-two-tone-oem/",
@@ -5886,7 +5886,7 @@ TTP.products = [
     "thumb": "assets/img/8099/6-thumb.jpg"
    }
   ],
-  "mo": 225
+  "mo": 218
  },
  {
   "id": 8078,
@@ -5896,10 +5896,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory King Ranch Tailgate Step Camera Agate Black OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2499.99,
+  "price": 2399.14,
   "regPrice": 2700.0,
-  "save": 200.01,
-  "savePct": 7,
+  "save": 300.86,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-king-ranch-tailgate-step-camera-agate-black-oem/",
@@ -5954,7 +5954,7 @@ TTP.products = [
     "thumb": "assets/img/8078/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 200
  },
  {
   "id": 8061,
@@ -5964,10 +5964,10 @@ TTP.products = [
   "name": "2020-2026 GMC Chevy 2500 3500 Factory Rear Bumper Black No Sensors OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 699.99,
+  "price": 585.99,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 214.01,
+  "savePct": 27,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-chevy-2500-3500-factory-rear-bumper-black-no-sensors-oem/",
@@ -6018,7 +6018,7 @@ TTP.products = [
     "thumb": "assets/img/8061/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 8046,
@@ -6028,10 +6028,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 F450 Factory Tailgate Star White w/ Step & Camera Hole OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1599.99,
+  "price": 1514.99,
   "regPrice": 1800.0,
-  "save": 200.01,
-  "savePct": 11,
+  "save": 285.01,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-factory-tailgate-star-white-w-step-camera-hole-oem/",
@@ -6086,7 +6086,7 @@ TTP.products = [
     "thumb": "assets/img/8046/6-thumb.jpg"
    }
   ],
-  "mo": 133
+  "mo": 126
  },
  {
   "id": 8028,
@@ -6096,10 +6096,10 @@ TTP.products = [
   "name": "2020-2022 Ford F350 F450 Dually Bed 8 FT OEM Star White Bed Only OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2699.99,
+  "price": 2594.54,
   "regPrice": 3000.0,
-  "save": 300.01,
-  "savePct": 10,
+  "save": 405.46,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f350-f450-dually-bed-8-ft-oem-star-white-bed-only-oem/",
@@ -6150,7 +6150,7 @@ TTP.products = [
     "thumb": "assets/img/8028/6-thumb.jpg"
    }
   ],
-  "mo": 225
+  "mo": 216
  },
  {
   "id": 8003,
@@ -6160,10 +6160,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Tailgate Sterling Grey OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 999.99,
+  "price": 885.99,
   "regPrice": 1100.0,
-  "save": 100.01,
-  "savePct": 9,
+  "save": 214.01,
+  "savePct": 19,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-tailgate-sterling-grey-oem/",
@@ -6208,7 +6208,7 @@ TTP.products = [
     "thumb": "assets/img/8003/6-thumb.jpg"
    }
   ],
-  "mo": 83
+  "mo": 74
  },
  {
   "id": 7990,
@@ -6218,10 +6218,10 @@ TTP.products = [
   "name": "2020-2023 Chevy Silverado 2500HD 3500HD One Source Front Replacement Bumper #2122PRS",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1699.99,
+  "price": 1599.14,
   "regPrice": 1800.0,
-  "save": 100.01,
-  "savePct": 6,
+  "save": 200.86,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-chevy-silverado-2500hd-3500hd-one-source-front-replacement-bumper/",
@@ -6266,7 +6266,7 @@ TTP.products = [
     "thumb": "assets/img/7990/6-thumb.jpg"
    }
   ],
-  "mo": 142
+  "mo": 133
  },
  {
   "id": 7965,
@@ -6276,10 +6276,10 @@ TTP.products = [
   "name": "Tough Country Evolution Ford F250/F350/F450 Rear Bumper (1999-2016) #EB0065FLRS",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 849.99,
+  "price": 735.99,
   "regPrice": 849.99,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/tough-country-evolution-ford-f250-f350-f450-rear-bumper-1999-2016-eb0065flrs/",
@@ -6325,7 +6325,7 @@ TTP.products = [
     "thumb": "assets/img/7965/6-thumb.jpeg"
    }
   ],
-  "mo": 71
+  "mo": 61
  },
  {
   "id": 7948,
@@ -6335,10 +6335,10 @@ TTP.products = [
   "name": "2024-2026 GMC Sierra 2500 3500 Tough Country Traditional Front Replacement Bumper TFR2524G",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1599.99,
+  "price": 1499.14,
   "regPrice": 2696.4,
-  "save": 1096.41,
-  "savePct": 41,
+  "save": 1197.26,
+  "savePct": 44,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2024-2026-gmc-sierra-2500-3500-tough-country-traditional-front-replacement-bumper-tfr2524g/",
@@ -6383,7 +6383,7 @@ TTP.products = [
     "thumb": "assets/img/7948/6-thumb.jpeg"
    }
   ],
-  "mo": 133
+  "mo": 125
  },
  {
   "id": 7839,
@@ -6393,10 +6393,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Factory Tailgate Diamond Black Crystal OEM w/ Camera Hole",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1049.99,
+  "price": 944.54,
   "regPrice": 1250.0,
-  "save": 200.01,
-  "savePct": 16,
+  "save": 305.46,
+  "savePct": 24,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-factory-tailgate-diamond-black-crystal-oem-w-camera-hole-2/",
@@ -6446,7 +6446,7 @@ TTP.products = [
     "thumb": "assets/img/7839/6-thumb.webp"
    }
   ],
-  "mo": 87
+  "mo": 79
  },
  {
   "id": 7806,
@@ -6456,10 +6456,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 4500 Factory Fifth Wheel Gooseneck Trailer Prep Hitch OEM Mopar",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 399.99,
+  "price": 285.99,
   "regPrice": 500.0,
-  "save": 100.01,
-  "savePct": 20,
+  "save": 214.01,
+  "savePct": 43,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-4500-factory-fifth-wheel-gooseneck-trailer-prep-hitch-oem-mopar/",
@@ -6514,10 +6514,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Super Duty Factory Fifth Wheel Gooseneck Trailer Prep Hitch OEM",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 599.99,
+  "price": 494.54,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 205.46,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-super-duty-factory-fifth-wheel-gooseneck-trailer-prep-hitch-oem/",
@@ -6573,10 +6573,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 2500 3500 Factory Multi Flex Tailgate Summit White OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1399.99,
+  "price": 1314.99,
   "regPrice": 1600.0,
-  "save": 200.01,
-  "savePct": 13,
+  "save": 285.01,
+  "savePct": 18,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-2500-3500-factory-multi-flex-tailgate-summit-white-oem/",
@@ -6621,7 +6621,7 @@ TTP.products = [
     "thumb": "assets/img/7708/6-thumb.jpg"
    }
   ],
-  "mo": 117
+  "mo": 110
  },
  {
   "id": 7684,
@@ -6631,10 +6631,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate OEM Oxford White w/ Step Camera Hole",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1199.99,
+  "price": 1106.5,
   "regPrice": 1300.0,
-  "save": 100.01,
-  "savePct": 8,
+  "save": 193.5,
+  "savePct": 15,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-tailgate-oem-oxford-white-w-step-camera-hole-2/",
@@ -6689,7 +6689,7 @@ TTP.products = [
     "thumb": "assets/img/7684/6-thumb.jpg"
    }
   ],
-  "mo": 100
+  "mo": 92
  },
  {
   "id": 7643,
@@ -6699,10 +6699,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Diamond Black DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3214.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 285.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-diamond-black-drw-take-off-3/",
@@ -6752,7 +6752,7 @@ TTP.products = [
     "thumb": "assets/img/7643/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 268
  },
  {
   "id": 7622,
@@ -6762,10 +6762,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Diamond Black DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3214.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 285.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-diamond-black-drw-take-off-2/",
@@ -6815,7 +6815,7 @@ TTP.products = [
     "thumb": "assets/img/7622/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 268
  },
  {
   "id": 7584,
@@ -6825,10 +6825,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Factory Tailgate Granite Crystal Metallic OEM w/ Camera",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1200.0,
+  "price": 1106.51,
   "regPrice": 1250.0,
-  "save": 50.0,
-  "savePct": 4,
+  "save": 143.49,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-factory-tailgate-granite-crystal-metallic-oem-w-camera/",
@@ -6878,7 +6878,7 @@ TTP.products = [
     "thumb": "assets/img/7584/6-thumb.jpg"
    }
   ],
-  "mo": 100
+  "mo": 92
  },
  {
   "id": 7391,
@@ -6888,10 +6888,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Granite Crystal Metallic DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3199.14,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 300.86,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-granite-crystal-metallic-drw-take-off-2/",
@@ -6941,7 +6941,7 @@ TTP.products = [
     "thumb": "assets/img/7391/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7559,
@@ -6951,10 +6951,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Granite Crystal Metallic DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3199.14,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 300.86,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-granite-crystal-metallic-drw-take-off-3/",
@@ -7004,7 +7004,7 @@ TTP.products = [
     "thumb": "assets/img/7559/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7537,
@@ -7014,12 +7014,12 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Silver Zynith DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3199.14,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
-  "inStock": true,
-  "qty": 1,
+  "save": 300.86,
+  "savePct": 9,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-silver-zynith-drw-take-off/",
   "desc": "2019-2026 8 ft DRW Silver OEM take-off The Ram 3500 Truck Bed shown here is a 2019-2026 Ram 3500 8 ft DRW dually truck bed finished in Silver. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2019-2026 Make / Model Ram 3500 Part Truck Bed Color / Finish Silver Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ram 3500 Truck Bed Fitment This Ram 3500 Truck Bed is built for Ram 3500 trucks in the 2019-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ram 3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ram truck beds · shop all inventory",
   "yearFrom": 2019,
@@ -7067,7 +7067,7 @@ TTP.products = [
     "thumb": "assets/img/7537/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7481,
@@ -7077,12 +7077,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Front Bumper Star White Fog Light & Sensor OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 614.99,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
-  "inStock": true,
-  "qty": 1,
+  "save": 185.01,
+  "savePct": 23,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-bumper-star-white-fog-light-sensor-oem/",
   "desc": "2023-2026 Front Sensors Star White OEM take-off The Ford F250/F350 Front Bumper shown here is a 2023-2026 Ford F250/F350 with sensors front bumper finished in Star White. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has factory sensor holes. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford F250/F350 Part Front Bumper Color / Finish Star White Sensors With Sensors Type OEM take-off Condition OEM take-off (used) — see photos Ford F250/F350 Front Bumper Fitment This Ford F250/F350 Front Bumper is built for Ford F250/F350 trucks in the 2023-2026 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F250/F350 Front Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Front Bumpers · Ford front bumpers · shop all inventory",
   "yearFrom": 2023,
@@ -7131,7 +7131,7 @@ TTP.products = [
     "thumb": "assets/img/7481/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 7447,
@@ -7141,10 +7141,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Long Bed 8FT SRW Race Red OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 1999.99,
+  "price": 1906.5,
   "regPrice": 2200.0,
-  "save": 200.01,
-  "savePct": 9,
+  "save": 293.5,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-long-bed-8ft-srw-race-red-oem-take-off/",
@@ -7195,7 +7195,7 @@ TTP.products = [
     "thumb": "assets/img/7447/6-thumb.jpg"
    }
   ],
-  "mo": 167
+  "mo": 159
  },
  {
   "id": 7426,
@@ -7205,10 +7205,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 3500 Sterling Metallic Dually Bed 8 FT OEM BED ONLY DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3206.5,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 293.5,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-sierra-3500-sterling-metallic-dually-bed-8-ft-oem-bed-only-drw/",
@@ -7258,7 +7258,7 @@ TTP.products = [
     "thumb": "assets/img/7426/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7412,
@@ -7268,10 +7268,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 2500 3500 Factory Tailgate Sterling Metallic OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 949.99,
+  "price": 856.5,
   "regPrice": 1100.0,
-  "save": 150.01,
-  "savePct": 14,
+  "save": 243.5,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-sierra-2500-3500-factory-tailgate-sterling-metallic-oem/",
@@ -7316,7 +7316,7 @@ TTP.products = [
     "thumb": "assets/img/7412/6-thumb.jpg"
    }
   ],
-  "mo": 79
+  "mo": 71
  },
  {
   "id": 7410,
@@ -7326,10 +7326,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Driver Side Halogen BLISS Tail Light LH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 299.99,
+  "price": 206.5,
   "regPrice": 350.0,
-  "save": 50.01,
-  "savePct": 14,
+  "save": 143.5,
+  "savePct": 41,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-factory-driver-side-halogen-bliss-tail-light-lh-12/",
@@ -7390,10 +7390,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Bright White DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3206.5,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 293.5,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-bright-white-drw-take-off-3/",
@@ -7443,7 +7443,7 @@ TTP.products = [
     "thumb": "assets/img/7371/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7348,
@@ -7453,10 +7453,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Diamond Black DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3194.54,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 305.46,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-diamond-black-drw-take-off/",
@@ -7506,7 +7506,7 @@ TTP.products = [
     "thumb": "assets/img/7348/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 266
  },
  {
   "id": 7309,
@@ -7516,10 +7516,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed 8FT OEM Diamond Black DRW Take Off Bed Only",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3199.14,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 300.86,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-8ft-oem-diamond-black-drw-take-off-bed-only/",
@@ -7569,7 +7569,7 @@ TTP.products = [
     "thumb": "assets/img/7309/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7298,
@@ -7579,10 +7579,10 @@ TTP.products = [
   "name": "2020-2026 GMC Chevy 2500 3500 Factory Chrome Rear Bumper w/ Sensor Hole OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 599.99,
+  "price": 506.5,
   "regPrice": 650.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 143.5,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-chevy-2500-3500-factory-chrome-rear-bumper-w-sensor-hole-oem/",
@@ -7643,12 +7643,12 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Dually Bed ONLY 8FT OEM Bright White DRW Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3199.14,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
-  "inStock": true,
-  "qty": 1,
+  "save": 300.86,
+  "savePct": 9,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-bright-white-drw-take-off-2/",
   "desc": "2019-2026 8 ft DRW Bright White OEM take-off The Ram 3500 Truck Bed shown here is a 2019-2026 Ram 3500 8 ft DRW dually truck bed finished in Bright White. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2019-2026 Make / Model Ram 3500 Part Truck Bed Color / Finish Bright White Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ram 3500 Truck Bed Fitment This Ram 3500 Truck Bed is built for Ram 3500 trucks in the 2019-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ram 3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ram truck beds · shop all inventory",
   "yearFrom": 2019,
@@ -7696,7 +7696,7 @@ TTP.products = [
     "thumb": "assets/img/7268/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 267
  },
  {
   "id": 7254,
@@ -7706,10 +7706,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 4500 Factory Chrome Rear Bumper w/ Sensor Holes",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 464.99,
   "regPrice": 600.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 135.01,
+  "savePct": 23,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-4500-factory-chrome-rear-bumper-w-sensor-holes-6/",
@@ -7769,10 +7769,10 @@ TTP.products = [
   "name": "2025-2026 DODGE RAM 2500 3500 Halogen Taillight Passenger OEM RH NEW STYLE",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 139.99,
+  "price": 39.14,
   "regPrice": 150.0,
-  "save": 10.01,
-  "savePct": 7,
+  "save": 110.86,
+  "savePct": 74,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2025-2026-dodge-ram-2500-3500-halogen-taillight-passenger-oem-rh-new-style-8/",
@@ -7832,10 +7832,10 @@ TTP.products = [
   "name": "2025-2026 DODGE RAM 2500 3500 Halogen Taillight Drivers Side OEM RH NEW STYLE",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 139.99,
+  "price": 34.54,
   "regPrice": 150.0,
-  "save": 10.01,
-  "savePct": 7,
+  "save": 115.46,
+  "savePct": 77,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2025-2026-dodge-ram-2500-3500-halogen-taillight-drivers-side-oem-rh-new-style-6/",
@@ -7895,10 +7895,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Chrome Rear Bumper No Sensors OEM Take Off",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 456.5,
   "regPrice": 650.0,
-  "save": 100.01,
-  "savePct": 15,
+  "save": 193.5,
+  "savePct": 30,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-chrome-rear-bumper-no-sensors-oem-take-off/",
@@ -7959,10 +7959,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Passenger Side Halogen BLISS Tail Light RH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 329.99,
+  "price": 236.5,
   "regPrice": 350.0,
-  "save": 20.01,
-  "savePct": 6,
+  "save": 113.5,
+  "savePct": 32,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-factory-passenger-side-halogen-bliss-tail-light-rh-17/",
@@ -8027,12 +8027,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate Avalanche Grey NO STEP OEM Camera Hole",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 849.99,
+  "price": 756.5,
   "regPrice": 950.0,
-  "save": 100.01,
-  "savePct": 11,
-  "inStock": true,
-  "qty": 1,
+  "save": 193.5,
+  "savePct": 20,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-tailgate-avalanche-grey-no-step-oem-camera-hole/",
   "desc": "2023-2026 No Step Camera Avalanche Grey OEM take-off The Ford Super Duty Tailgate shown here is a 2023-2026 Ford Super Duty tailgate finished in Avalanche Grey. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has dents — see photos. Has some rust — see photos. Has a factory camera cutout. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford Super Duty Part Tailgate Color / Finish Avalanche Grey Tailgate Step No step Camera Camera cutout Type OEM take-off Condition OEM take-off (used) — see photos Ford Super Duty Tailgate Fitment This Ford Super Duty Tailgate is built for Ford Super Duty trucks in the 2023-2026 range. Verify your step, camera, and applique configuration against your truck. This tailgate fits across the family where the factory used the same tailgate. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford Super Duty Tailgate is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. dealer vs. aftermarket tailgate guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Tailgates · Ford tailgates · shop all inventory",
   "yearFrom": 2023,
@@ -8085,7 +8085,7 @@ TTP.products = [
     "thumb": "assets/img/6591/6-thumb.jpg"
    }
   ],
-  "mo": 71
+  "mo": 63
  },
  {
   "id": 6996,
@@ -8095,10 +8095,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Tailgate STEP Camera Hole OEM Oxford White",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1299.99,
+  "price": 1185.99,
   "regPrice": 1600.0,
-  "save": 300.01,
-  "savePct": 19,
+  "save": 414.01,
+  "savePct": 26,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-ford-f250-f350-factory-tailgate-step-camera-hole-oem-oxford-white/",
@@ -8153,7 +8153,7 @@ TTP.products = [
     "thumb": "assets/img/6996/6-thumb.jpg"
    }
   ],
-  "mo": 108
+  "mo": 99
  },
  {
   "id": 6971,
@@ -8163,10 +8163,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Short Bed 6 FT 4IN SRW OEM Two Tone Black Brown Laramie",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3799.99,
+  "price": 3685.99,
   "regPrice": 4000.0,
-  "save": 200.01,
-  "savePct": 5,
+  "save": 314.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-short-bed-6-ft-4in-srw-oem-two-tone-black-brown-laramie/",
@@ -8216,7 +8216,7 @@ TTP.products = [
     "thumb": "assets/img/6971/6-thumb.jpg"
    }
   ],
-  "mo": 317
+  "mo": 307
  },
  {
   "id": 6912,
@@ -8226,10 +8226,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Stone Grey Painted 8ft Bed Step Panel OEM",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 324.99,
+  "price": 231.5,
   "regPrice": 350.0,
-  "save": 25.01,
-  "savePct": 7,
+  "save": 118.5,
+  "savePct": 34,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-ford-super-duty-stone-grey-painted-8ft-bed-step-panel-f250-f350-f450-oem/",
@@ -8290,10 +8290,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 F450 Factory Passenger Side Halogen Tail Light w/ BLISS RH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 229.99,
+  "price": 129.14,
   "regPrice": 250.0,
-  "save": 20.01,
-  "savePct": 8,
+  "save": 120.86,
+  "savePct": 48,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-factory-passenger-side-halogen-tail-light-w-bliss-rh/",
@@ -8358,10 +8358,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Star White Painted 8ft Bed Step Panel OEM",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 324.99,
+  "price": 210.99,
   "regPrice": 350.0,
-  "save": 25.01,
-  "savePct": 7,
+  "save": 139.01,
+  "savePct": 40,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-oem-ford-super-duty-star-white-painted-8ft-bed-step-panel-f250-f350/",
@@ -8422,12 +8422,12 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Dually Bed 8 FT CARBONIZED GREY Bed Only OEM",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2199.99,
+  "price": 2106.5,
   "regPrice": 2500.0,
-  "save": 300.01,
-  "savePct": 12,
-  "inStock": true,
-  "qty": 1,
+  "save": 393.5,
+  "savePct": 16,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-ford-f350-f450-dually-bed-8-ft-carbonized-grey-bed-only-oem/",
   "desc": "2023-2026 8 ft DRW Carbonized Grey OEM take-off The Ford F350/F450 Truck Bed shown here is a 2023-2026 Ford F350/F450 8 ft DRW dually truck bed finished in Carbonized Grey. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford F350/F450 Part Truck Bed Color / Finish Carbonized Grey Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ford F350/F450 Truck Bed Fitment This Ford F350/F450 Truck Bed is built for Ford F350/F450 trucks in the 2023-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F350/F450 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ford truck beds · shop all inventory",
   "yearFrom": 2023,
@@ -8476,7 +8476,7 @@ TTP.products = [
     "thumb": "assets/img/6893/6-thumb.jpg"
    }
   ],
-  "mo": 183
+  "mo": 176
  },
  {
   "id": 6843,
@@ -8486,10 +8486,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Super Duty Carbonized Grey Painted 8ft Bed Step Panel OEM",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 324.99,
+  "price": 231.5,
   "regPrice": 350.0,
-  "save": 25.01,
-  "savePct": 7,
+  "save": 118.5,
+  "savePct": 34,
   "inStock": true,
   "qty": 2,
   "url": "https://texastruckparts.shop/product/2023-oem-ford-super-duty-carbonized-grey-painted-8ft-bed-step-panel-f250-f350/",
@@ -8550,10 +8550,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 2500 3500 Factory Multi Pro Tailgate Black OEM Denali",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2599.99,
+  "price": 2485.99,
   "regPrice": 2800.0,
-  "save": 200.01,
-  "savePct": 7,
+  "save": 314.01,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-gmc-sierra-2500-3500-factory-multi-pro-tailgate-black-oem-denali/",
@@ -8598,7 +8598,7 @@ TTP.products = [
     "thumb": "assets/img/6479/6-thumb.jpg"
    }
   ],
-  "mo": 217
+  "mo": 207
  },
  {
   "id": 6468,
@@ -8608,10 +8608,10 @@ TTP.products = [
   "name": "2020-2023 GMC SIERRA 2500 3500 Factory Driver Side LED Tail Light LH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 430.0,
+  "price": 345.0,
   "regPrice": 430.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-gmc-sierra-2500-3500-factory-driver-side-led-tail-light-lh/",
@@ -8671,10 +8671,10 @@ TTP.products = [
   "name": "2020-2023 GMC SIERRA 2500 3500 Factory Passenger Side LED Tail Light RH",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 430.0,
+  "price": 345.0,
   "regPrice": 430.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-gmc-sierra-2500-3500-factory-passenger-side-led-tail-light-rh/",
@@ -8734,10 +8734,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 SHORT Bed 6 FT 4 IN Bright White SRW Factory Take off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3799.99,
+  "price": 3699.14,
   "regPrice": 4000.0,
-  "save": 200.01,
-  "savePct": 5,
+  "save": 300.86,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-short-bed-6-ft-4-in-bright-white-srw-factory-take-off/",
@@ -8787,7 +8787,7 @@ TTP.products = [
     "thumb": "assets/img/6403/6-thumb.jpg"
    }
   ],
-  "mo": 317
+  "mo": 308
  },
  {
   "id": 6834,
@@ -8861,10 +8861,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Dually Bed 8 FT OEM Star White Bed Only",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2499.99,
+  "price": 2385.99,
   "regPrice": 3000.0,
-  "save": 500.01,
-  "savePct": 17,
+  "save": 614.01,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-ford-f350-f450-dually-bed-8-ft-oem-star-white-bed-only/",
@@ -8915,7 +8915,7 @@ TTP.products = [
     "thumb": "assets/img/6827/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 199
  },
  {
   "id": 6826,
@@ -8925,10 +8925,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory KING RANCH Tailgate Step Camera Oxford White",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2699.99,
+  "price": 2599.14,
   "regPrice": 3000.0,
-  "save": 300.01,
-  "savePct": 10,
+  "save": 400.86,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-king-ranch-tailgate-step-camera-oxford-white/",
@@ -8983,7 +8983,7 @@ TTP.products = [
     "thumb": "assets/img/6826/6-thumb.jpg"
    }
   ],
-  "mo": 225
+  "mo": 217
  },
  {
   "id": 6825,
@@ -8993,10 +8993,10 @@ TTP.products = [
   "name": "2023-2026 Ford F450 F550 Factory Painted Carbonized Grey Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 649.99,
+  "price": 544.54,
   "regPrice": 750.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 205.46,
+  "savePct": 27,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-25-ford-f450-f550-factory-chrome-front-bumper-carbonized-grey-flare/",
@@ -9052,10 +9052,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Primed Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 499.99,
+  "price": 399.14,
   "regPrice": 600.0,
-  "save": 100.01,
-  "savePct": 17,
+  "save": 200.86,
+  "savePct": 33,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-ford-f250-f350-factory-primed-rear-bumper-no-sensor-holes-oem-17/",
@@ -9111,10 +9111,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Primed Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 499.99,
+  "price": 414.99,
   "regPrice": 600.0,
-  "save": 100.01,
-  "savePct": 17,
+  "save": 185.01,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-f450-factory-primed-rear-bumper-oem/",
@@ -9170,10 +9170,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Chrome Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 649.99,
+  "price": 535.99,
   "regPrice": 750.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 214.01,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-front-chrome-bumper-fog-light-slot-2/",
@@ -9229,10 +9229,10 @@ TTP.products = [
   "name": "2023-2026 Ford F450 F550 Factory Chrome Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 649.99,
+  "price": 535.99,
   "regPrice": 700.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 164.01,
+  "savePct": 23,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f450-f550-factory-chrome-front-bumper-w-fog-light-slots/",
@@ -9288,10 +9288,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Painted Bronze Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 585.99,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 214.01,
+  "savePct": 27,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-ford-f250-f350-factory-front-bumper-darkened-bronze-fog-light/",
@@ -9337,7 +9337,7 @@ TTP.products = [
     "thumb": "assets/img/6819/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 6809,
@@ -9347,12 +9347,12 @@ TTP.products = [
   "name": "2020-2025 GMC Sierra 3500 Factory 8 FT Dually Summit White Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2999.99,
+  "price": 2914.99,
   "regPrice": 3300.0,
-  "save": 300.01,
-  "savePct": 9,
-  "inStock": true,
-  "qty": 1,
+  "save": 385.01,
+  "savePct": 12,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2025-gmc-sierra-3500-summit-white-dually-bed-8-ft-oem-bed-only-drw/",
   "desc": "2020-2025 8 ft DRW Summit White OEM take-off The GMC 3500 Truck Bed shown here is a 2020-2025 GMC 3500 8 ft DRW dually truck bed finished in Summit White. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2025 Make / Model GMC 3500 Part Truck Bed Color / Finish Summit White Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos GMC 3500 Truck Bed Fitment This GMC 3500 Truck Bed is built for GMC 3500 trucks in the 2020-2025 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This GMC 3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · GMC truck beds · shop all inventory",
   "yearFrom": 2020,
@@ -9400,7 +9400,7 @@ TTP.products = [
     "thumb": "assets/img/6809/6-thumb.jpg"
    }
   ],
-  "mo": 250
+  "mo": 243
  },
  {
   "id": 6805,
@@ -9410,10 +9410,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 F450 Factory Halogen Tail Light w/ BLISS OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 180.0,
+  "price": 66.0,
   "regPrice": 180.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 63,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-oem-tail-light-blind-spot-module-bracket-lh-driver-side/",
@@ -9478,10 +9478,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Factory 6.5 FT SRW Granite Crystal Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3799.99,
+  "price": 3706.5,
   "regPrice": 4000.0,
-  "save": 200.01,
-  "savePct": 5,
+  "save": 293.5,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-short-bed-6-ft-4-in-granite-crystal-srw-factory-take-off/",
@@ -9531,7 +9531,7 @@ TTP.products = [
     "thumb": "assets/img/6797/6-thumb.jpg"
    }
   ],
-  "mo": 317
+  "mo": 309
  },
  {
   "id": 6794,
@@ -9541,10 +9541,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 F450 Factory Halogen Tail Light w/ BLISS OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 229.99,
+  "price": 124.54,
   "regPrice": 250.0,
-  "save": 20.01,
-  "savePct": 8,
+  "save": 125.46,
+  "savePct": 50,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-factory-drivers-side-halogen-tail-light-w-bliss-lh-5/",
@@ -9605,10 +9605,10 @@ TTP.products = [
   "name": "2020-2023 GMC Sierra 2500 3500 Factory Painted Red Front Bumper w/ Sensor OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 549.99,
+  "price": 456.5,
   "regPrice": 650.0,
-  "save": 100.01,
-  "savePct": 15,
+  "save": 193.5,
+  "savePct": 30,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-gmc-sierra-2500-3500-factory-painted-red-front-bumper-w-sensor-holes/",
@@ -9668,10 +9668,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Factory Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 606.5,
   "regPrice": 800.0,
-  "save": 100.01,
-  "savePct": 13,
+  "save": 193.5,
+  "savePct": 24,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-factory-primed-front-bumper-oem-take-off-fog-light-holes-2/",
@@ -9716,7 +9716,7 @@ TTP.products = [
     "thumb": "assets/img/6783/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 6782,
@@ -9726,10 +9726,10 @@ TTP.products = [
   "name": "2020-2025 Chevy Silverado 2500 3500 Factory Primed Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 435.99,
   "regPrice": 600.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 164.01,
+  "savePct": 27,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2025-gmc-chevy-2500-3500-factory-rear-primed-bumper-no-sensor-hole-2/",
@@ -9785,10 +9785,10 @@ TTP.products = [
   "name": "2020-2025 Chevy Silverado 2500 3500 Factory Primed Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 464.99,
   "regPrice": 600.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 135.01,
+  "savePct": 23,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2025-gmc-chevy-2500-3500-factory-rear-primed-bumper-no-sensor-hole/",
@@ -9844,12 +9844,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Painted Oxford White Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 649.99,
+  "price": 544.54,
   "regPrice": 700.0,
-  "save": 50.01,
-  "savePct": 7,
-  "inStock": true,
-  "qty": 1,
+  "save": 155.46,
+  "savePct": 22,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-painted-rear-bumper-oxford-white-w-sensor-2/",
   "desc": "2023-2026 Rear Oxford White OEM take-off The Ford Super Duty Rear Bumper shown here is a 2023-2026 Ford Super Duty rear bumper finished in Oxford White. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has factory sensor holes. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford Super Duty Part Rear Bumper Color / Finish Oxford White Type OEM take-off Condition OEM take-off (used) — see photos Ford Super Duty Rear Bumper Fitment This Ford Super Duty Rear Bumper is built for Ford Super Duty trucks in the 2023-2026 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford Super Duty Rear Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Rear Bumpers · Ford rear bumpers · shop all inventory",
   "yearFrom": 2023,
@@ -9903,10 +9903,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Painted Oxford White Rear Bumper w/ Sensor Holes OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 649.99,
+  "price": 556.5,
   "regPrice": 700.0,
-  "save": 50.01,
-  "savePct": 7,
+  "save": 143.5,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-painted-rear-bumper-oxford-white-w-sensor/",
@@ -9967,10 +9967,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Factory 8 FT Dually Blue Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3214.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 285.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-forged-blue-metallic-drw-take-off/",
@@ -10020,7 +10020,7 @@ TTP.products = [
     "thumb": "assets/img/6778/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 268
  },
  {
   "id": 6777,
@@ -10030,10 +10030,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Factory 8 FT Dually Star White Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2499.99,
+  "price": 2394.54,
   "regPrice": 3000.0,
-  "save": 500.01,
-  "savePct": 17,
+  "save": 605.46,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-2026-ford-f350-f450-dually-bed-8-ft-oem-star-white-bed-only/",
@@ -10084,7 +10084,7 @@ TTP.products = [
     "thumb": "assets/img/6777/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 200
  },
  {
   "id": 6775,
@@ -10094,12 +10094,12 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Factory 6.5 FT SRW Billet Silver Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3100.0,
+  "price": 2999.15,
   "regPrice": 4000.0,
-  "save": 900.0,
-  "savePct": 22,
-  "inStock": true,
-  "qty": 1,
+  "save": 1000.85,
+  "savePct": 25,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-short-bed-6-ft-4-in-billet-silver-srw-factory-take-off/",
   "desc": "2019-2026 6.5 ft SRW Billet Silver OEM take-off The Ram 2500/3500 Truck Bed shown here is a 2019-2026 Ram 2500/3500 6.5 ft SRW truck bed finished in Billet Silver. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2019-2026 Make / Model Ram 2500/3500 Part Truck Bed Color / Finish Billet Silver Bed Size 6.5 ft Drivetrain SRW — single rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ram 2500/3500 Truck Bed Fitment This Ram 2500/3500 Truck Bed is built for Ram 2500/3500 trucks in the 2019-2026 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ram 2500/3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ram truck beds · shop all inventory",
   "yearFrom": 2019,
@@ -10147,7 +10147,7 @@ TTP.products = [
     "thumb": "assets/img/6775/6-thumb.jpg"
    }
   ],
-  "mo": 258
+  "mo": 250
  },
  {
   "id": 6774,
@@ -10157,10 +10157,10 @@ TTP.products = [
   "name": "2017-2022 Ford F250 F350 F450 Factory Primed Rear Bumper No Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 449.99,
+  "price": 344.54,
   "regPrice": 600.0,
-  "save": 150.01,
-  "savePct": 25,
+  "save": 255.46,
+  "savePct": 43,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-factory-primed-rear-bumper-oem-take-off-no-sensors/",
@@ -10221,10 +10221,10 @@ TTP.products = [
   "name": "2019-2026 Ram 3500 Factory 8 FT Dually Granite Crystal Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3214.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 285.01,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-3500-dually-bed-only-8ft-oem-granite-crystal-metallic-drw-take-off/",
@@ -10274,7 +10274,7 @@ TTP.products = [
     "thumb": "assets/img/6751/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 268
  },
  {
   "id": 6773,
@@ -10284,10 +10284,10 @@ TTP.products = [
   "name": "2018-2020 Ford F150 Factory Gray Tailgate w/ Step OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 1299.99,
+  "price": 1206.5,
   "regPrice": 1500.0,
-  "save": 200.01,
-  "savePct": 13,
+  "save": 293.5,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2018-2020-ford-f150-factory-tailgate-step-camera-auto-release-lead-foot-gray-oem/",
@@ -10338,7 +10338,7 @@ TTP.products = [
     "thumb": "assets/img/6773/6-thumb.jpg"
    }
   ],
-  "mo": 108
+  "mo": 101
  },
  {
   "id": 6771,
@@ -10348,10 +10348,10 @@ TTP.products = [
   "name": "2017-2022 Ford F250 F350 F450 Factory Painted White Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 499.99,
+  "price": 414.99,
   "regPrice": 600.0,
-  "save": 100.01,
-  "savePct": 17,
+  "save": 185.01,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-factory-rear-bumper-white-gold-rigid-light-sensor-oem/",
@@ -10407,10 +10407,10 @@ TTP.products = [
   "name": "2011-2016 Ford F250 F350 F450 Factory Painted Grey Rear Bumper w/ Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 449.14,
   "regPrice": 800.0,
-  "save": 250.01,
-  "savePct": 31,
+  "save": 350.86,
+  "savePct": 44,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2011-2016-ford-f250-f350-factory-rear-bumper-stone-grey-w-sensor-holes-oem/",
@@ -10534,10 +10534,10 @@ TTP.products = [
   "name": "2011-2016 Ford F-250 F-350 Tough Country Evolution Winch-Ready Front Bumper #EFR2011FAL",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1299.99,
+  "price": 1206.5,
   "regPrice": 2961.54,
-  "save": 1661.55,
-  "savePct": 56,
+  "save": 1755.04,
+  "savePct": 59,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2011-2016-ford-f250-f350-tough-country-ranch-style-winch-ready-front-replacement/",
@@ -10583,7 +10583,7 @@ TTP.products = [
     "thumb": "assets/img/6765/6-thumb.jpg"
    }
   ],
-  "mo": 108
+  "mo": 101
  },
  {
   "id": 6764,
@@ -10593,10 +10593,10 @@ TTP.products = [
   "name": "2015-2019 Chevy Silverado 2500 3500 Factory 6.5 FT SRW Silver Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3399.99,
+  "price": 3294.54,
   "regPrice": 3800.0,
-  "save": 400.01,
-  "savePct": 11,
+  "save": 505.46,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2015-2019-chevy-2500-3500-take-off-short-bed-6ft-9in-silver-srw-oem/",
@@ -10646,7 +10646,7 @@ TTP.products = [
     "thumb": "assets/img/6764/6-thumb.jpg"
    }
   ],
-  "mo": 283
+  "mo": 275
  },
  {
   "id": 6760,
@@ -10656,10 +10656,10 @@ TTP.products = [
   "name": "2017-2022 Ford F250 F350 F450 Factory Chrome Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 464.99,
   "regPrice": 650.0,
-  "save": 100.01,
-  "savePct": 15,
+  "save": 185.01,
+  "savePct": 28,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-factory-chrome-rear-bumper-no-sensor-holes-oem-7/",
@@ -10715,10 +10715,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory Halogen Tail Light w/ BLISS OEM RH Passenger Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 289.99,
+  "price": 196.5,
   "regPrice": 320.0,
-  "save": 30.01,
-  "savePct": 9,
+  "save": 123.5,
+  "savePct": 39,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-factory-passenger-side-halogen-tail-light-bliss-rh-oem/",
@@ -10783,10 +10783,10 @@ TTP.products = [
   "name": "2010-2018 Ram 2500 3500 Tough Country Evolution Winch-Ready Front Bumper #EFR1034DAL",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.99,
+  "price": 1406.5,
   "regPrice": 2961.54,
-  "save": 1461.55,
-  "savePct": 49,
+  "save": 1555.04,
+  "savePct": 53,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2010-2018-ram-2500-3500-tough-country-ranch-hand-style-winch-front-replacement/",
@@ -10831,7 +10831,7 @@ TTP.products = [
     "thumb": "assets/img/6757/6-thumb.jpg"
    }
   ],
-  "mo": 125
+  "mo": 117
  },
  {
   "id": 6756,
@@ -10841,10 +10841,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 F450 Factory Halogen Tail Light OEM RH Passenger Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 129.99,
+  "price": 29.14,
   "regPrice": 150.0,
-  "save": 20.01,
-  "savePct": 13,
+  "save": 120.86,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-f450-factory-passenger-side-halogen-tail-light-rh-oem-4/",
@@ -10905,10 +10905,10 @@ TTP.products = [
   "name": "2017-2026 Ford F-250 F-350 F-450 Tough Country Evolution Rear Bumper #EB2017FLRS",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 999.99,
+  "price": 899.14,
   "regPrice": 1599.99,
-  "save": 600.0,
-  "savePct": 38,
+  "save": 700.85,
+  "savePct": 44,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2026-ford-f250-f350-f450-tough-country-ranch-style-rear-replacement-bumper/",
@@ -10954,7 +10954,7 @@ TTP.products = [
     "thumb": "assets/img/6755/6-thumb.jpeg"
    }
   ],
-  "mo": 83
+  "mo": 75
  },
  {
   "id": 6753,
@@ -10964,10 +10964,10 @@ TTP.products = [
   "name": "2017-2022 Ford F250 F350 F450 Factory Painted White Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 499.99,
+  "price": 385.99,
   "regPrice": 600.0,
-  "save": 100.01,
-  "savePct": 17,
+  "save": 214.01,
+  "savePct": 36,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-factory-rear-bumper-white-gold-w-sensors-oem-take-off/",
@@ -11023,10 +11023,10 @@ TTP.products = [
   "name": "2019-2023 Ram 2500 3500 4500 Factory Primed Rear Bumper No Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 464.99,
   "regPrice": 600.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 135.01,
+  "savePct": 23,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2023-ram-2500-3500-4500-factory-primed-rear-bumper-no-sensors-oem/",
@@ -11086,10 +11086,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 Factory 8 FT SRW Ingot Silver Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 1699.99,
+  "price": 1594.54,
   "regPrice": 2000.0,
-  "save": 300.01,
-  "savePct": 15,
+  "save": 405.46,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-long-bed-8ft-srw-ingot-silver-oem-take-off/",
@@ -11140,7 +11140,7 @@ TTP.products = [
     "thumb": "assets/img/6749/6-thumb.jpg"
    }
   ],
-  "mo": 142
+  "mo": 133
  },
  {
   "id": 6747,
@@ -11150,10 +11150,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory Halogen Tail Light w/ BLISS OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 289.99,
+  "price": 189.14,
   "regPrice": 320.0,
-  "save": 30.01,
-  "savePct": 9,
+  "save": 130.86,
+  "savePct": 41,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-factory-drivers-side-halogen-tail-light-w-bliss-lh-oem-2/",
@@ -11218,10 +11218,10 @@ TTP.products = [
   "name": "2015-2019 Chevy Silverado 2500 3500 Factory 6.5 FT SRW Summit White Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3185.99,
   "regPrice": 3500.0,
-  "save": 200.01,
-  "savePct": 6,
+  "save": 314.01,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2015-2019-chevy-2500-3500-take-off-short-bed-6ft-9in-summit-white-srw-oem/",
@@ -11271,7 +11271,7 @@ TTP.products = [
     "thumb": "assets/img/6746/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 265
  },
  {
   "id": 6745,
@@ -11281,10 +11281,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory LED Taillight OEM",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 589.99,
+  "price": 484.54,
   "regPrice": 600.0,
-  "save": 10.01,
-  "savePct": 2,
+  "save": 115.46,
+  "savePct": 19,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2018-2019-ford-f250-f350-factory-led-taillight-w-bliss-oem-rh-passenger/",
@@ -11345,10 +11345,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory LED Taillight OEM",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 589.99,
+  "price": 475.99,
   "regPrice": 600.0,
-  "save": 10.01,
-  "savePct": 2,
+  "save": 124.01,
+  "savePct": 21,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2018-2019-ford-f250-f350-factory-led-taillight-w-bliss-oem-lh-driver-side/",
@@ -11468,10 +11468,10 @@ TTP.products = [
   "name": "2017-2019 Ford F250 F350 F450 Factory Halogen Tail Light w/ BLISS OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 189.99,
+  "price": 104.99,
   "regPrice": 200.0,
-  "save": 10.01,
-  "savePct": 5,
+  "save": 95.01,
+  "savePct": 48,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2019-ford-f250-f350-factory-drivers-side-halogen-tail-light-w-bliss-lh-oem/",
@@ -11536,10 +11536,10 @@ TTP.products = [
   "name": "2017-2022 Ford F250 F350 Factory 6.5 FT SRW Agate Black Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3499.99,
+  "price": 3406.5,
   "regPrice": 3800.0,
-  "save": 300.01,
-  "savePct": 8,
+  "save": 393.5,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-short-bed-6ft-9in-srw-agate-black-take-off-oem/",
@@ -11590,7 +11590,7 @@ TTP.products = [
     "thumb": "assets/img/6738/6-thumb.jpg"
    }
   ],
-  "mo": 292
+  "mo": 284
  },
  {
   "id": 6737,
@@ -11600,12 +11600,12 @@ TTP.products = [
   "name": "2019-2025 Ram 3500 Factory 8 FT Dually Maximum Steel Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2999.99,
+  "price": 2906.5,
   "regPrice": 3300.0,
-  "save": 300.01,
-  "savePct": 9,
-  "inStock": true,
-  "qty": 1,
+  "save": 393.5,
+  "savePct": 12,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2019-2025-ram-3500-dually-bed-only-8ft-oem-maximum-steel-drw-take-off/",
   "desc": "2019-2025 8 ft DRW Maximum Steel OEM take-off The Ram 3500 Truck Bed shown here is a 2019-2025 Ram 3500 8 ft DRW dually truck bed finished in Maximum Steel. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2019-2025 Make / Model Ram 3500 Part Truck Bed Color / Finish Maximum Steel Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Ram 3500 Truck Bed Fitment This Ram 3500 Truck Bed is built for Ram 3500 trucks in the 2019-2025 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ram 3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Ram truck beds · shop all inventory",
   "yearFrom": 2019,
@@ -11653,7 +11653,7 @@ TTP.products = [
     "thumb": "assets/img/6737/6-thumb.jpg"
    }
   ],
-  "mo": 250
+  "mo": 242
  },
  {
   "id": 6736,
@@ -11663,10 +11663,10 @@ TTP.products = [
   "name": "2017-2022 Ford F-250 F-350 Tough Country Evolution Winch-Ready Front Bumper #EFR2017FAL",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.99,
+  "price": 1394.54,
   "regPrice": 3023.99,
-  "save": 1524.0,
-  "savePct": 50,
+  "save": 1629.45,
+  "savePct": 54,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2017-2022-ford-f250-f350-tough-country-ranch-style-winch-ready-front-replacement/",
@@ -11712,7 +11712,7 @@ TTP.products = [
     "thumb": "assets/img/6736/6-thumb.jpg"
    }
   ],
-  "mo": 125
+  "mo": 116
  },
  {
   "id": 6733,
@@ -11785,10 +11785,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 4500 Factory Chrome Rear Bumper No Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 464.99,
   "regPrice": 650.0,
-  "save": 100.01,
-  "savePct": 15,
+  "save": 185.01,
+  "savePct": 28,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2025-ram-2500-3500-4500-factory-chrome-rear-bumper-no-sensors/",
@@ -11848,10 +11848,10 @@ TTP.products = [
   "name": "2019-2024 Ram 1500 Tough Country Traditional Front Bumper w/ Receiver Hitch #TFR1219DLREFSTAB",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.99,
+  "price": 1394.54,
   "regPrice": 2399.99,
-  "save": 900.0,
-  "savePct": 38,
+  "save": 1005.45,
+  "savePct": 42,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2024-ram-1500-ranch-hand-style-front-replacement-bumper-new/",
@@ -11896,7 +11896,7 @@ TTP.products = [
     "thumb": "assets/img/6711/6-thumb.jpg"
    }
   ],
-  "mo": 125
+  "mo": 116
  },
  {
   "id": 6699,
@@ -11906,10 +11906,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 F450 Factory Halogen Tail Light OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 129.99,
+  "price": 29.14,
   "regPrice": 150.0,
-  "save": 20.01,
-  "savePct": 13,
+  "save": 120.86,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2021-2022-ford-f250-f350-f450-factory-driver-side-halogen-tail-light-lh-oem-3/",
@@ -11970,10 +11970,10 @@ TTP.products = [
   "name": "2010-2018 Ram 2500 3500 Ranch Hand Midnight Bullnose Front Bumper #MFD101BMN",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1199.99,
+  "price": 1094.54,
   "regPrice": 1744.95,
-  "save": 544.96,
-  "savePct": 31,
+  "save": 650.41,
+  "savePct": 37,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2010-2018-ram-2500-3500-ranch-hand-midnight-bullnose-front-bumper/",
@@ -12010,7 +12010,7 @@ TTP.products = [
     "thumb": "assets/img/6697/4-thumb.jpg"
    }
   ],
-  "mo": 100
+  "mo": 91
  },
  {
   "id": 6692,
@@ -12020,10 +12020,10 @@ TTP.products = [
   "name": "2019-2026 Ram 2500 3500 Factory Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 849.99,
+  "price": 749.14,
   "regPrice": 1000.0,
-  "save": 150.01,
-  "savePct": 15,
+  "save": 250.86,
+  "savePct": 25,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2019-2026-ram-2500-3500-factory-primed-front-bumper-oem-take-off-fog-light-holes/",
@@ -12068,7 +12068,7 @@ TTP.products = [
     "thumb": "assets/img/6692/6-thumb.jpg"
    }
   ],
-  "mo": 71
+  "mo": 62
  },
  {
   "id": 6676,
@@ -12201,10 +12201,10 @@ TTP.products = [
   "name": "2020-2026 Chevy Silverado 3500 Factory 8 FT Dually Silver Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3199.99,
+  "price": 3094.54,
   "regPrice": 3500.0,
-  "save": 300.01,
-  "savePct": 9,
+  "save": 405.46,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2026-chevy-silverado-3500-cypress-gray-dually-bed-8-ft-oem-bed-only-drw/",
@@ -12254,7 +12254,7 @@ TTP.products = [
     "thumb": "assets/img/6663/6-thumb.jpg"
    }
   ],
-  "mo": 267
+  "mo": 258
  },
  {
   "id": 6660,
@@ -12328,10 +12328,10 @@ TTP.products = [
   "name": "2020-2026 GMC Sierra 2500 3500 Factory Summit White Tailgate OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2699.99,
+  "price": 2599.14,
   "regPrice": 3000.0,
-  "save": 300.01,
-  "savePct": 10,
+  "save": 400.86,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2024-gmc-sierra-2500-3500-factory-multi-pro-tailgate-summit-white-oem/",
@@ -12376,7 +12376,7 @@ TTP.products = [
     "thumb": "assets/img/6659/6-thumb.jpg"
    }
   ],
-  "mo": 225
+  "mo": 217
  },
  {
   "id": 6652,
@@ -12386,10 +12386,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Primed Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 449.99,
+  "price": 349.14,
   "regPrice": 550.0,
-  "save": 100.01,
-  "savePct": 18,
+  "save": 200.86,
+  "savePct": 37,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-ford-f250-f350-factory-primed-rear-bumper-no-sensor-holes-oem-11/",
@@ -12445,10 +12445,10 @@ TTP.products = [
   "name": "2020-2025 Chevy Silverado 2500 3500 Factory 6.5 FT SRW Abalone White Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3999.99,
+  "price": 3894.54,
   "regPrice": 4350.0,
-  "save": 350.01,
-  "savePct": 8,
+  "save": 455.46,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2025-chevy-2500-3500-take-off-short-bed-6ft-9in-abalone-white-srw-oem/",
@@ -12498,7 +12498,7 @@ TTP.products = [
     "thumb": "assets/img/6641/6-thumb.jpg"
    }
   ],
-  "mo": 333
+  "mo": 325
  },
  {
   "id": 6640,
@@ -12508,10 +12508,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Painted Bronze Rear Bumper w/ Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 599.99,
+  "price": 506.5,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 193.5,
+  "savePct": 28,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2025-ford-f250-f350-factory-painted-rear-bumper-darkened-bronze-sensor-hole/",
@@ -12572,10 +12572,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Factory 8 FT Dually Star White Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2499.99,
+  "price": 2406.5,
   "regPrice": 3000.0,
-  "save": 500.01,
-  "savePct": 17,
+  "save": 593.5,
+  "savePct": 20,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f350-f450-dually-bed-8ft-star-white-king-ranch-two-tone-oem/",
@@ -12626,7 +12626,7 @@ TTP.products = [
     "thumb": "assets/img/6639/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 201
  },
  {
   "id": 6638,
@@ -12636,10 +12636,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Factory 8 FT Dually Carbonized Grey Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2199.99,
+  "price": 2085.99,
   "regPrice": 2500.0,
-  "save": 300.01,
-  "savePct": 12,
+  "save": 414.01,
+  "savePct": 17,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-2026-ford-f350-f450-dually-bed-8-ft-carbonized-grey-bed-only-oem/",
@@ -12690,7 +12690,7 @@ TTP.products = [
     "thumb": "assets/img/6638/6-thumb.jpg"
    }
   ],
-  "mo": 183
+  "mo": 174
  },
  {
   "id": 6590,
@@ -12700,10 +12700,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Factory 8 FT Dually Avalanche Grey Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2499.99,
+  "price": 2399.14,
   "regPrice": 2800.0,
-  "save": 300.01,
-  "savePct": 11,
+  "save": 400.86,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-2026-ford-f350-f450-dually-bed-8-ft-avalanche-grey-bed-only-oem/",
@@ -12754,7 +12754,7 @@ TTP.products = [
     "thumb": "assets/img/6590/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 200
  },
  {
   "id": 6635,
@@ -12764,10 +12764,10 @@ TTP.products = [
   "name": "2020-2024 GMC Sierra 2500 3500 Factory Multi Pro Tailgate OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2499.99,
+  "price": 2414.99,
   "regPrice": 2800.0,
-  "save": 300.01,
-  "savePct": 11,
+  "save": 385.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2024-gmc-sierra-2500-3500-factory-multi-pro-tailgate-dark-sky-metallic-oem/",
@@ -12812,7 +12812,7 @@ TTP.products = [
     "thumb": "assets/img/6635/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 201
  },
  {
   "id": 6605,
@@ -12822,10 +12822,10 @@ TTP.products = [
   "name": "2025-2026 Ram 2500 3500 Factory Halogen Tail Light w/ BLISS OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 430.0,
+  "price": 336.51,
   "regPrice": 430.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 22,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2025-2026-dodge-ram-2500-3500-led-bliss-tail-light-left-hand-driver-side-oem/",
@@ -12889,10 +12889,10 @@ TTP.products = [
   "name": "2020-2023 Chevy Silverado 2500 3500 Factory Silver LED Tail Light OEM",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 324.99,
+  "price": 210.99,
   "regPrice": 350.0,
-  "save": 25.01,
-  "savePct": 7,
+  "save": 139.01,
+  "savePct": 40,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-chevy-2500-3500-factory-driver-side-led-tail-light-lh-srw/",
@@ -12952,12 +12952,12 @@ TTP.products = [
   "name": "2020-2025 GMC Sierra 3500 Dually Bed 8 FT OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2999.99,
+  "price": 2914.99,
   "regPrice": 3500.0,
-  "save": 500.01,
-  "savePct": 14,
-  "inStock": true,
-  "qty": 1,
+  "save": 585.01,
+  "savePct": 17,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2025-gmc-sierra-3500-dark-sky-metallic-dually-bed-8-ft-oem-bed-only-drw/",
   "desc": "2020-2025 8 ft DRW OEM take-off The GMC 3500 Truck Bed shown here is a 2020-2025 GMC 3500 8 ft DRW dually truck bed. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2025 Make / Model GMC 3500 Part Truck Bed Bed Size 8 ft Drivetrain DRW — dual rear wheel Type OEM take-off Condition OEM take-off (used) — see photos GMC 3500 Truck Bed Fitment This GMC 3500 Truck Bed is built for GMC 3500 trucks in the 2020-2025 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This GMC 3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · GMC truck beds · shop all inventory",
   "yearFrom": 2020,
@@ -13005,7 +13005,7 @@ TTP.products = [
     "thumb": "assets/img/6599/6-thumb.jpg"
    }
   ],
-  "mo": 250
+  "mo": 243
  },
  {
   "id": 6597,
@@ -13015,10 +13015,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 Factory 8 FT SRW Iconic Silver Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 1999.99,
+  "price": 1899.14,
   "regPrice": 2200.0,
-  "save": 200.01,
-  "savePct": 9,
+  "save": 300.86,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-long-bed-8ft-srw-iconic-silver-oem-take-off/",
@@ -13069,7 +13069,7 @@ TTP.products = [
     "thumb": "assets/img/6597/6-thumb.jpg"
    }
   ],
-  "mo": 167
+  "mo": 158
  },
  {
   "id": 6595,
@@ -13079,10 +13079,10 @@ TTP.products = [
   "name": "2020-2022 Ford F250 F350 Factory 6.5 FT SRW Star White Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3299.99,
+  "price": 3185.99,
   "regPrice": 3700.0,
-  "save": 400.01,
-  "savePct": 11,
+  "save": 514.01,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2022-ford-f250-f350-short-bed-6ft-9in-srw-star-white-take-off/",
@@ -13133,7 +13133,7 @@ TTP.products = [
     "thumb": "assets/img/6595/6-thumb.jpg"
    }
   ],
-  "mo": 275
+  "mo": 265
  },
  {
   "id": 6593,
@@ -13143,10 +13143,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory King Ranch Grey Tailgate w/ Step OEM",
   "cat": "tailgate",
   "catName": "Tailgate",
-  "price": 2799.99,
+  "price": 2694.54,
   "regPrice": 3200.0,
-  "save": 400.01,
-  "savePct": 13,
+  "save": 505.46,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-king-ranch-tailgate-step-camera-glacier-grey/",
@@ -13197,7 +13197,7 @@ TTP.products = [
     "thumb": "assets/img/6593/6-thumb.jpg"
    }
   ],
-  "mo": 233
+  "mo": 225
  },
  {
   "id": 6592,
@@ -13207,10 +13207,10 @@ TTP.products = [
   "name": "2023-2026 Ford F350 F450 Factory 8 FT Dually Glacier Grey Bed OEM Take Off DRW",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 2499.99,
+  "price": 2385.99,
   "regPrice": 2800.0,
-  "save": 300.01,
-  "savePct": 11,
+  "save": 414.01,
+  "savePct": 15,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-2026-ford-f350-f450-dually-bed-8-ft-glacier-grey-bed-only-oem/",
@@ -13261,7 +13261,7 @@ TTP.products = [
     "thumb": "assets/img/6592/6-thumb.jpg"
    }
   ],
-  "mo": 208
+  "mo": 199
  },
  {
   "id": 6589,
@@ -13271,10 +13271,10 @@ TTP.products = [
   "name": "2020-2025 Chevy Silverado 2500 3500 Factory Chrome Rear Bumper No Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 599.99,
+  "price": 485.99,
   "regPrice": 650.0,
-  "save": 50.01,
-  "savePct": 8,
+  "save": 164.01,
+  "savePct": 25,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2025-gmc-chevy-2500-3500-factory-chrome-rear-bumper-no-sensor/",
@@ -13335,10 +13335,10 @@ TTP.products = [
   "name": "2020-2024 Chevy Silverado 1500 Factory Rear Bumper w/ Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 499.99,
+  "price": 385.99,
   "regPrice": 550.0,
-  "save": 50.01,
-  "savePct": 9,
+  "save": 164.01,
+  "savePct": 30,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2024-gmc-chevy-1500-factory-rear-bumper-cannon-metal-sensor-holes/",
@@ -13399,10 +13399,10 @@ TTP.products = [
   "name": "2020-2023 GMC Sierra 2500 3500 Factory Halogen Tail Light OEM LH Driver Side",
   "cat": "tail-lights",
   "catName": "Tail Lights",
-  "price": 280.0,
+  "price": 186.51,
   "regPrice": 280.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 33,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-gmc-sierra-2500-3500-factory-driver-side-halogen-tail-light-lh/",
@@ -13526,10 +13526,10 @@ TTP.products = [
   "name": "2021-2024 Ford Bronco Factory Rear Bumper w/ Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 449.99,
+  "price": 349.14,
   "regPrice": 550.0,
-  "save": 100.01,
-  "savePct": 18,
+  "save": 200.86,
+  "savePct": 37,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2021-2024-ford-bronco-rear-bumper-cover-oem-plastic-sensor-holes/",
@@ -13590,10 +13590,10 @@ TTP.products = [
   "name": "2021-2024 Ford Bronco Factory Rear Bumper OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 449.99,
+  "price": 349.14,
   "regPrice": 550.0,
-  "save": 100.01,
-  "savePct": 18,
+  "save": 200.86,
+  "savePct": 37,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2021-2024-ford-bronco-rear-bumper-cover-oem-plastic/",
@@ -13649,12 +13649,12 @@ TTP.products = [
   "name": "2020-2025 Chevy Silverado 2500 3500 Factory 8 FT SRW Silver Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 1999.99,
+  "price": 1894.54,
   "regPrice": 2200.0,
-  "save": 200.01,
-  "savePct": 9,
-  "inStock": true,
-  "qty": 1,
+  "save": 305.46,
+  "savePct": 14,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2020-2025-chevy-silverado-2500-3500-take-off-long-bed-8ft-greenstone-srw-oem/",
   "desc": "2020-2025 8 ft SRW Silver OEM take-off The Chevy 2500/3500 Truck Bed shown here is a 2020-2025 Chevy 2500/3500 8 ft SRW truck bed finished in Silver. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes Has some rust — see photos. The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2020-2025 Make / Model Chevy 2500/3500 Part Truck Bed Color / Finish Silver Bed Size 8 ft Drivetrain SRW — single rear wheel Type OEM take-off Condition OEM take-off (used) — see photos Chevy 2500/3500 Truck Bed Fitment This Chevy 2500/3500 Truck Bed is built for Chevy 2500/3500 trucks in the 2020-2025 range. Factory truck beds use the vehicle's original bed mounting configuration. Single-rear-wheel (SRW) and dual-rear-wheel (DRW/dually) beds are not interchangeable , and short beds and long beds use different mounting points — confirm your bed length and wheel configuration before ordering. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Chevy 2500/3500 Truck Bed is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off truck bed buyer's guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Truck Beds · Chevy truck beds · shop all inventory",
   "yearFrom": 2020,
@@ -13702,7 +13702,7 @@ TTP.products = [
     "thumb": "assets/img/6567/6-thumb.jpg"
    }
   ],
-  "mo": 167
+  "mo": 158
  },
  {
   "id": 6565,
@@ -13712,10 +13712,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 F450 Factory Chrome Rear Bumper w/ Sensor OEM",
   "cat": "rear-bumper",
   "catName": "Rear Bumper",
-  "price": 549.99,
+  "price": 456.5,
   "regPrice": 650.0,
-  "save": 100.01,
-  "savePct": 15,
+  "save": 193.5,
+  "savePct": 30,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2024-2025-2026-ford-f250-f350-factory-chrome-rear-bumper-sensor-holes-oem/",
@@ -13835,10 +13835,10 @@ TTP.products = [
   "name": "2020-2023 Chevy Silverado 2500HD 3500HD Tough Country Traditional Front Bumper #TFR3420",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1799.99,
+  "price": 1699.14,
   "regPrice": 2470.77,
-  "save": 670.78,
-  "savePct": 27,
+  "save": 771.63,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-chevy-2500-3500-ranch-hand-style-front-replacement-bumper-new/",
@@ -13879,7 +13879,7 @@ TTP.products = [
     "thumb": "assets/img/6546/5-thumb.jpg"
    }
   ],
-  "mo": 150
+  "mo": 142
  },
  {
   "id": 6556,
@@ -13889,10 +13889,10 @@ TTP.products = [
   "name": "2023-2026 Ford F450 F550 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 485.99,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 214.01,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f450-f550-factory-primed-front-bumper-no-fog-lights-oem-3/",
@@ -13948,10 +13948,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 485.99,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 214.01,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-10/",
@@ -14007,10 +14007,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 506.5,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 193.5,
+  "savePct": 28,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-9/",
@@ -14066,10 +14066,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 494.54,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 205.46,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-8/",
@@ -14125,10 +14125,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 499.14,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 200.86,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-7/",
@@ -14184,10 +14184,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 494.54,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 205.46,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-6/",
@@ -14243,12 +14243,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 506.5,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
-  "inStock": true,
-  "qty": 1,
+  "save": 193.5,
+  "savePct": 28,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-5/",
   "desc": "2023-2026 Front Primed (Ready for Paint) OEM take-off The Ford F250/F350 Front Bumper shown here is a 2023-2026 Ford F250/F350 front bumper. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford F250/F350 Part Front Bumper Color / Finish Primed (Ready for Paint) Type OEM take-off Condition OEM take-off (used) — see photos Ford F250/F350 Front Bumper Fitment This Ford F250/F350 Front Bumper is built for Ford F250/F350 trucks in the 2023-2026 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F250/F350 Front Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Front Bumpers · Ford front bumpers · shop all inventory",
   "yearFrom": 2023,
@@ -14302,10 +14302,10 @@ TTP.products = [
   "name": "2023-2026 Ford F450 F550 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 499.14,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 200.86,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f450-f550-factory-primed-front-bumper-no-fog-lights-oem-2/",
@@ -14361,10 +14361,10 @@ TTP.products = [
   "name": "2020-2023 Chevy Silverado 2500HD 3500HD Tough Country Evolution Front Bumper #EFR3420CAL-BLKWKL",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.99,
+  "price": 1394.54,
   "regPrice": 3023.99,
-  "save": 1524.0,
-  "savePct": 50,
+  "save": 1629.45,
+  "savePct": 54,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2020-2023-chevy-2500-3500-tough-country-ranch-style-front-replacement-bumper/",
@@ -14409,7 +14409,7 @@ TTP.products = [
     "thumb": "assets/img/6548/6-thumb.jpg"
    }
   ],
-  "mo": 125
+  "mo": 116
  },
  {
   "id": 6547,
@@ -14419,10 +14419,10 @@ TTP.products = [
   "name": "2022-2025 GMC Sierra 1500 Factory Chrome Front Bumper w/ Sensor OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 699.99,
+  "price": 585.99,
   "regPrice": 950.0,
-  "save": 250.01,
-  "savePct": 26,
+  "save": 364.01,
+  "savePct": 38,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2022-2025-gmc-sierra-1500-factory-chrome-front-bumper-sensor-hole-fog-light/",
@@ -14472,7 +14472,7 @@ TTP.products = [
     "thumb": "assets/img/6547/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 6545,
@@ -14482,10 +14482,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory 6.5 FT SRW Oxford White Bed OEM Take Off",
   "cat": "truck-bed",
   "catName": "Truck Bed",
-  "price": 3499.99,
+  "price": 3385.99,
   "regPrice": 4000.0,
-  "save": 500.01,
-  "savePct": 13,
+  "save": 614.01,
+  "savePct": 15,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-short-bed-6ft-9in-srw-oxford-white-take-off/",
@@ -14536,7 +14536,7 @@ TTP.products = [
     "thumb": "assets/img/6545/6-thumb.jpg"
    }
   ],
-  "mo": 292
+  "mo": 282
  },
  {
   "id": 6540,
@@ -14546,12 +14546,12 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 499.14,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
-  "inStock": true,
-  "qty": 1,
+  "save": 200.86,
+  "savePct": 29,
+  "inStock": false,
+  "qty": 0,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-4/",
   "desc": "2023-2026 Front Primed (Ready for Paint) OEM take-off The Ford F250/F350 Front Bumper shown here is a 2023-2026 Ford F250/F350 front bumper. It is a genuine factory OEM take-off — an original part removed from another truck that can be a cost-effective alternative to purchasing a new dealer replacement. The listing photos show the exact item you will receive; review them with the fitment details below before ordering. 📸 Condition & Exact-Item Notes The photos are of the exact item you will receive. Please review them for condition before purchasing. Questions about a specific mark or included hardware? Contact us before you buy. Specifications Year 2023-2026 Make / Model Ford F250/F350 Part Front Bumper Color / Finish Primed (Ready for Paint) Type OEM take-off Condition OEM take-off (used) — see photos Ford F250/F350 Front Bumper Fitment This Ford F250/F350 Front Bumper is built for Ford F250/F350 trucks in the 2023-2026 range. Confirm your sensor and fog-light configuration and finish (chrome, painted, or primed) — bumpers with and without factory sensor or fog-light provisions are not interchangeable. Not sure it fits? Send us your VIN and we'll confirm compatibility before you buy. About This OEM Take-Off This Ford F250/F350 Front Bumper is a factory OEM take-off — an original-equipment part removed from another truck. Condition varies by item, so the photos above show this exact part. Learn how take-offs compare to used and aftermarket parts in our OEM take-off vs. used vs. aftermarket guide . Shipping · Pickup · Financing Free commercial shipping — freight with tracking; residential extra on large items. Local pickup — Sugar Land, TX (13618 Florence Rd). Financing — Snap · Acima · Progressive; no credit needed to apply. Why Texas Truck Parts Exact-item photos on every take-off Parts inspected before sale VIN fitment help Ships nationwide from Sugar Land, TX Explore more: Front Bumpers · Ford front bumpers · shop all inventory",
   "yearFrom": 2023,
@@ -14605,10 +14605,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 485.99,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 214.01,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-3/",
@@ -14664,10 +14664,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 494.54,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 205.46,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem-2/",
@@ -14723,10 +14723,10 @@ TTP.products = [
   "name": "2023-2026 Ford F250 F350 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 599.99,
+  "price": 494.54,
   "regPrice": 700.0,
-  "save": 100.01,
-  "savePct": 14,
+  "save": 205.46,
+  "savePct": 29,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f250-f350-factory-primed-front-bumper-no-fog-lights-oem/",
@@ -14782,10 +14782,10 @@ TTP.products = [
   "name": "2023-2026 Ford F450 F550 Factory Primed Front Bumper OEM",
   "cat": "front-bumper",
   "catName": "Front Bumper",
-  "price": 700.0,
+  "price": 606.51,
   "regPrice": 700.0,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "https://texastruckparts.shop/product/2023-2026-ford-f450-f550-factory-primed-front-bumper-no-fog-lights-oem/",
@@ -14831,7 +14831,7 @@ TTP.products = [
     "thumb": "assets/img/6536/6-thumb.jpg"
    }
   ],
-  "mo": 58
+  "mo": 55
  },
  {
   "id": 6534,
@@ -14909,10 +14909,10 @@ TTP.products = [
   "name": "MULTIPLE BRANDS & SIZES Need more secure storage for your work truck? We have new and quality t",
   "cat": "tool-boxes",
   "catName": "Truck Tool Boxes",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 224.14,
+  "regPrice": 324.99,
+  "save": 100.85,
+  "savePct": 31,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -14988,7 +14988,7 @@ TTP.products = [
     "h": 442
    }
   ],
-  "mo": null,
+  "mo": 55,
   "source": "facebook"
  },
  {
@@ -14999,10 +14999,10 @@ TTP.products = [
   "name": "FORD F250 / F350 Estribos disponibles para Ford F250 / F350 Super Duty 2017 en adelante.",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 778.95,
+  "regPrice": 863.95,
+  "save": 85.0,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15054,7 +15054,7 @@ TTP.products = [
     "h": 590
    }
   ],
-  "mo": null,
+  "mo": 65,
   "source": "facebook"
  },
  {
@@ -15065,10 +15065,10 @@ TTP.products = [
   "name": "NEW GMC SIERRA 1500 REPLACEMENT BUMPER 2014 - 2015 Heavy-Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1639.5,
+  "regPrice": 1744.95,
+  "save": 105.45,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15116,7 +15116,7 @@ TTP.products = [
     "h": 437
    }
   ],
-  "mo": null,
+  "mo": 137,
   "source": "facebook"
  },
  {
@@ -15127,10 +15127,10 @@ TTP.products = [
   "name": "NEW CHEVY HD 2500 REPLACEMENT BUMPER (2024) Heavy-Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1285.99,
+  "regPrice": 1399.99,
+  "save": 114.0,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15180,7 +15180,7 @@ TTP.products = [
     "h": 441
    }
   ],
-  "mo": null,
+  "mo": 107,
   "source": "facebook"
  },
  {
@@ -15191,10 +15191,10 @@ TTP.products = [
   "name": "Dodge Ram 2500/3500 Tough Country EVOS Bumper OLD STOCK",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1294.54,
+  "regPrice": 1399.99,
+  "save": 105.45,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15245,7 +15245,7 @@ TTP.products = [
     "h": 440
    }
   ],
-  "mo": null,
+  "mo": 108,
   "source": "facebook"
  },
  {
@@ -15256,10 +15256,10 @@ TTP.products = [
   "name": "GMC Sierra 2500 3500 Tough Country Traditional Front Replacement Bumper",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1000,
+  "price": 906.51,
   "regPrice": 1000,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15309,7 +15309,7 @@ TTP.products = [
     "h": 442
    }
   ],
-  "mo": 83,
+  "mo": 76,
   "source": "facebook"
  },
  {
@@ -15320,10 +15320,10 @@ TTP.products = [
   "name": "Chevy Silverado 2500 3500 Tough Country Traditional Winch Ready Front Replacement Tough Country",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1314.99,
+  "regPrice": 1399.99,
+  "save": 85.0,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15405,7 +15405,7 @@ TTP.products = [
     "h": 590
    }
   ],
-  "mo": null,
+  "mo": 110,
   "source": "facebook"
  },
  {
@@ -15416,10 +15416,10 @@ TTP.products = [
   "name": "Ram 2500 3500 Ranch Hand Legend Front Replacement Bumper W/ Camera",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1929.46,
+  "regPrice": 2022.95,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15457,7 +15457,7 @@ TTP.products = [
     "h": 417
    }
   ],
-  "mo": null,
+  "mo": 161,
   "source": "facebook"
  },
  {
@@ -15468,10 +15468,10 @@ TTP.products = [
   "name": "Remplasement bumper chevy HD 2500 3500 2023 2024 nuevo new replacement bumper",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1306.5,
+  "regPrice": 1399.99,
+  "save": 93.49,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15513,7 +15513,7 @@ TTP.products = [
     "h": 590
    }
   ],
-  "mo": null,
+  "mo": 109,
   "source": "facebook"
  },
  {
@@ -15524,10 +15524,10 @@ TTP.products = [
   "name": "Full Replacement",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 814.99,
+  "regPrice": 899.99,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15571,7 +15571,7 @@ TTP.products = [
     "h": 441
    }
   ],
-  "mo": null,
+  "mo": 68,
   "source": "facebook"
  },
  {
@@ -15582,10 +15582,10 @@ TTP.products = [
   "name": "Heavy-Duty Steel",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1314.99,
+  "regPrice": 1399.99,
+  "save": 85.0,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15729,7 +15729,7 @@ TTP.products = [
     "h": 439
    }
   ],
-  "mo": null,
+  "mo": 110,
   "source": "facebook"
  },
  {
@@ -15740,10 +15740,10 @@ TTP.products = [
   "name": "Heavy-Duty Steel full replacement front bumper for Chevrolet Silverado 2500HD / 3500HD (2015",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1599.14,
+  "regPrice": 1699.99,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15793,7 +15793,7 @@ TTP.products = [
     "h": 590
    }
   ],
-  "mo": null,
+  "mo": 133,
   "source": "facebook"
  },
  {
@@ -15804,10 +15804,10 @@ TTP.products = [
   "name": "Heavy-Duty Steel full replacement front bumper for Dodge Ram 2500 / 3500 (2006",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1958.95,
+  "regPrice": 2072.95,
+  "save": 114.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15888,7 +15888,7 @@ TTP.products = [
     "h": 590
    }
   ],
-  "mo": null,
+  "mo": 163,
   "source": "facebook"
  },
  {
@@ -15899,10 +15899,10 @@ TTP.products = [
   "name": "TRUCK BUMPERS & GRILLE GUARDS AVAILABLE Aftermarket",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 891.95,
+  "regPrice": 976.95,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -15951,7 +15951,7 @@ TTP.products = [
     "h": 443
    }
   ],
-  "mo": null,
+  "mo": 74,
   "source": "facebook"
  },
  {
@@ -15962,10 +15962,10 @@ TTP.products = [
   "name": "Frontier truck rack, Ford F250 rack, F350 ladder rack, Super Duty bed rack, headache rack Ford ",
   "cat": "truck-racks",
   "catName": "Truck & Ladder Racks",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 561.46,
+  "regPrice": 654.95,
+  "save": 93.49,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16020,7 +16020,7 @@ TTP.products = [
     "h": 442
    }
   ],
-  "mo": null,
+  "mo": 55,
   "source": "facebook"
  },
  {
@@ -16031,10 +16031,10 @@ TTP.products = [
   "name": "Built Ford Tough",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 994.54,
+  "regPrice": 1099.99,
+  "save": 105.45,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16085,7 +16085,7 @@ TTP.products = [
     "h": 439
    }
   ],
-  "mo": null,
+  "mo": 83,
   "source": "facebook"
  },
  {
@@ -16096,10 +16096,10 @@ TTP.products = [
   "name": "Truck Ready Solid grille guard / brush guard for Ford Super Duty F-250 & F-350 (2017",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 862.95,
+  "regPrice": 976.95,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16147,7 +16147,7 @@ TTP.products = [
     "h": 443
    }
   ],
-  "mo": null,
+  "mo": 72,
   "source": "facebook"
  },
  {
@@ -16158,10 +16158,10 @@ TTP.products = [
   "name": "Style Front Bumper (Chevy Silverado 2020",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 900,
+  "price": 806.51,
   "regPrice": 900,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16209,7 +16209,7 @@ TTP.products = [
     "h": 581
    }
   ],
-  "mo": 75,
+  "mo": 67,
   "source": "facebook"
  },
  {
@@ -16220,10 +16220,10 @@ TTP.products = [
   "name": "HEAVY-DUTY RANCH HAND BUMPERS AVAILABLE Looking to upgrade your truck with a Ranch Hand bumper ",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": null,
-  "regPrice": null,
-  "save": 0,
-  "savePct": 0,
+  "price": 1094.54,
+  "regPrice": 1199.99,
+  "save": 105.45,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16272,7 +16272,7 @@ TTP.products = [
     "h": 590
    }
   ],
-  "mo": null,
+  "mo": 91,
   "source": "facebook"
  },
  {
@@ -16319,10 +16319,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16348,7 +16348,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC19HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -16359,10 +16359,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Colorado",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16388,7 +16388,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC23MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -16399,10 +16399,10 @@ TTP.products = [
   "name": "Ranch Hand Mounting Kit for Grille Guard, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 142.95,
+  "price": 37.5,
   "regPrice": 142.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 74,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16443,10 +16443,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1630.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16472,7 +16472,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSG241BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 136,
   "source": "ranchhand"
  },
  {
@@ -16483,10 +16483,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Expedition",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 1081.95,
+  "price": 967.95,
   "regPrice": 1081.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16508,7 +16508,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF25SBL1/1-thumb.jpg"
    }
   ],
-  "mo": 90,
+  "mo": 81,
   "source": "ranchhand"
  },
  {
@@ -16519,10 +16519,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2276.46,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16548,7 +16548,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD255BLR/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 190,
   "source": "ranchhand"
  },
  {
@@ -16559,10 +16559,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16591,7 +16591,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF231BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -16674,10 +16674,10 @@ TTP.products = [
   "name": "Ranch Hand Front 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Chevrolet Silverado 2500, 3500 HD",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 109.95,
+  "price": 24.95,
   "regPrice": 109.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 77,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16714,10 +16714,10 @@ TTP.products = [
   "name": "Ranch Hand Front or Rear 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 109.95,
+  "price": 24.95,
   "regPrice": 109.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 77,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16758,10 +16758,10 @@ TTP.products = [
   "name": "Ranch Hand Rear 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Chevrolet Silverado, GMC Sierra 2500, 3500 HD",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 109.95,
+  "price": 24.95,
   "regPrice": 109.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 77,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16840,10 +16840,10 @@ TTP.products = [
   "name": "Ranch Hand Front or Rear 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 119.95,
+  "price": 26.46,
   "regPrice": 119.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 78,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16884,10 +16884,10 @@ TTP.products = [
   "name": "Ranch Hand Rear 20\" x 23\" Textured Rubber Mud Flaps, Fits Select Chevrolet Silverado, GMC Sierra 3500 HD Dually",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 199.95,
+  "price": 99.1,
   "regPrice": 199.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 50,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16926,10 +16926,10 @@ TTP.products = [
   "name": "Ranch Hand Rear 20\" x 23\" Textured Rubber Mud Flaps, Fits Select Ford F-350, F-450 Super Duty Dually",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 269.95,
+  "price": 169.1,
   "regPrice": 269.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 37,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -16968,10 +16968,10 @@ TTP.products = [
   "name": "Ranch Hand Rear 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Dodge, Ram 1500, 2500, 3500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 109.95,
+  "price": 24.95,
   "regPrice": 109.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 77,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17048,10 +17048,10 @@ TTP.products = [
   "name": "Ranch Hand Rear 20\" x 23\" Textured Rubber Mud Flaps, Fits Select Ram 3500 Dually",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 199.95,
+  "price": 94.5,
   "regPrice": 199.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 53,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17088,10 +17088,10 @@ TTP.products = [
   "name": "Ranch Hand Front 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 109.95,
+  "price": 24.95,
   "regPrice": 109.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 77,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17128,10 +17128,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1630.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17159,7 +17159,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF201BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 136,
   "source": "ranchhand"
  },
  {
@@ -17212,10 +17212,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Ford F-250, F-350, F-450 Super Duty",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 914.95,
+  "price": 821.46,
   "regPrice": 914.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17244,7 +17244,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBF231BLSS/1-thumb.jpg"
    }
   ],
-  "mo": 76,
+  "mo": 68,
   "source": "ranchhand"
  },
  {
@@ -17291,10 +17291,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.05,
+  "price": 1937.05,
   "regPrice": 2022.05,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17320,7 +17320,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD251BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -17331,10 +17331,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1630.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17360,7 +17360,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSD251BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 136,
   "source": "ranchhand"
  },
  {
@@ -17371,10 +17371,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard Winch Plate, Fits Select Ram 2500, 3500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 679.95,
+  "price": 565.95,
   "regPrice": 679.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 17,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17400,7 +17400,7 @@ TTP.products = [
     "thumb": "assets/img/rh/LWD191BL1/1-thumb.jpg"
    }
   ],
-  "mo": 57,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -17411,10 +17411,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17440,7 +17440,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGD251BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -17451,10 +17451,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard Winch Plate, Fits Select Ford F-150",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 679.95,
+  "price": 594.95,
   "regPrice": 679.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17480,7 +17480,7 @@ TTP.products = [
     "thumb": "assets/img/rh/LWF24HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 57,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -17491,10 +17491,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ram 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 877.46,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17520,7 +17520,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD251BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -17531,10 +17531,10 @@ TTP.products = [
   "name": "Ranch Hand 2\" Bolt-on Bumper Hitch Receiver Tube",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 137.95,
+  "price": 32.5,
   "regPrice": 137.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 76,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17567,10 +17567,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17611,10 +17611,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17640,7 +17640,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGD09HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -17651,10 +17651,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tundra",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17680,7 +17680,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGT14HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -17691,10 +17691,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17720,7 +17720,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC011BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -17731,10 +17731,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17760,7 +17760,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC16HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -17771,10 +17771,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1958.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17800,7 +17800,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFF18HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 163,
   "source": "ranchhand"
  },
  {
@@ -17811,10 +17811,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17840,7 +17840,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGD061BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -17851,10 +17851,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Ram 2500, 3500, 4500, 5500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1937.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17880,7 +17880,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD101BLRS/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -17891,10 +17891,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 4-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 749.95,
+  "price": 635.95,
   "regPrice": 749.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 15,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17922,7 +17922,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSC191C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -17933,10 +17933,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Suburban, Tahoe",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17958,7 +17958,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC15HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -17969,10 +17969,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Toyota Tundra",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1630.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -17998,7 +17998,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FST07HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 136,
   "source": "ranchhand"
  },
  {
@@ -18009,10 +18009,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2264.5,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18041,7 +18041,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF235BLR/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 189,
   "source": "ranchhand"
  },
  {
@@ -18052,10 +18052,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-150",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18081,7 +18081,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF09HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -18092,10 +18092,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1644.1,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18121,7 +18121,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSD13HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -18132,10 +18132,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18161,7 +18161,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG03HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -18172,10 +18172,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18205,7 +18205,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF111BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -18216,10 +18216,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18245,7 +18245,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF18HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -18256,10 +18256,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1908.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18285,7 +18285,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD061BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 159,
   "source": "ranchhand"
  },
  {
@@ -18296,10 +18296,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18325,7 +18325,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC08HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -18336,12 +18336,12 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Excursion, F-250, F-350, F-450, F-550",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
-  "inStock": true,
-  "qty": 1,
+  "save": 100.85,
+  "savePct": 10,
+  "inStock": false,
+  "qty": 0,
   "url": "",
   "desc": "New Ranch Hand grille guard from the Legend series. Part GGF99SBL1. Send us your VIN and we will confirm cab, bed and sensor package before it ships.",
   "yearFrom": null,
@@ -18368,7 +18368,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF99SBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -18379,10 +18379,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1958.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18408,7 +18408,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFF21HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 163,
   "source": "ranchhand"
  },
  {
@@ -18419,10 +18419,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select F-150, F-250, F-350 Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18450,7 +18450,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF151S6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -18461,10 +18461,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-250, F-350, F-450",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1639.5,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18492,7 +18492,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF111BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -18503,10 +18503,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2284.95,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18535,7 +18535,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF115BLR/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 190,
   "source": "ranchhand"
  },
  {
@@ -18546,10 +18546,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Toyota Tundra",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18575,7 +18575,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FST14HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -18586,10 +18586,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1639.5,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18615,7 +18615,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF09HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -18626,10 +18626,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18655,7 +18655,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG081BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -18666,10 +18666,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Excursion, F-250, F-350, F-450, F-550",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18698,7 +18698,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF051BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -18709,10 +18709,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard and Camera Cutout, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18738,7 +18738,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSD191BL1C/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -18749,10 +18749,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18778,7 +18778,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG241BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -18789,10 +18789,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18818,7 +18818,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC031BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -18829,10 +18829,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select F-150, F-250, F-350 Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 634.1,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18860,7 +18860,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF151S1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -18871,10 +18871,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Blazer, C/K, Tahoe, Jimmy, Yukon",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18896,7 +18896,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC881BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -18907,10 +18907,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Dodge Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18936,7 +18936,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD031BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -18947,10 +18947,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tacoma",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -18972,7 +18972,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGT16MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -18983,10 +18983,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Toyota Tundra",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1958.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19012,7 +19012,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFT14HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 163,
   "source": "ranchhand"
  },
  {
@@ -19023,10 +19023,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1987.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19052,7 +19052,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFC151BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 166,
   "source": "ranchhand"
  },
  {
@@ -19063,10 +19063,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19092,7 +19092,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG19HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -19103,10 +19103,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tacoma",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19128,7 +19128,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGT05MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -19139,10 +19139,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2264.5,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19170,7 +19170,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF205BLR/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 189,
   "source": "ranchhand"
  },
  {
@@ -19181,10 +19181,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard and Camera Cutout, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19210,7 +19210,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF21HBL1C/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -19221,10 +19221,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Bullnose Front Bumper, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.95,
+  "price": 1406.46,
   "regPrice": 1499.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19252,7 +19252,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BTF201BLR/1-thumb.jpg"
    }
   ],
-  "mo": 125,
+  "mo": 117,
   "source": "ranchhand"
  },
  {
@@ -19263,10 +19263,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19294,7 +19294,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC011BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -19305,10 +19305,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Bullnose Front Bumper, Fits Select F-250, F-350, F-450, F-550 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.95,
+  "price": 1406.46,
   "regPrice": 1499.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19338,7 +19338,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BTF231BLR/1-thumb.jpg"
    }
   ],
-  "mo": 125,
+  "mo": 117,
   "source": "ranchhand"
  },
  {
@@ -19349,10 +19349,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1979.46,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19378,7 +19378,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFC19HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 165,
   "source": "ranchhand"
  },
  {
@@ -19389,10 +19389,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19418,7 +19418,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSG151BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -19429,10 +19429,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Dodge, Ram 1500, 2500, 3500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 767.95,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19458,7 +19458,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSD101C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -19469,10 +19469,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1639.5,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19498,7 +19498,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC16HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -19509,10 +19509,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500 HD with Front Sensors and Cameras",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19538,7 +19538,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC151BLS/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -19549,10 +19549,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19578,7 +19578,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSD19HBL1C/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -19589,10 +19589,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard and Camera Cutout, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19618,7 +19618,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC201BL1C/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -19629,10 +19629,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-250, F-350 Super Duty Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 770.46,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19660,7 +19660,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF991C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -19671,10 +19671,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tundra",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19700,7 +19700,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGT22HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -19711,10 +19711,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19742,7 +19742,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF201BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -19753,10 +19753,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Blazer, C/K, Jimmy",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19778,7 +19778,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC881BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -19789,10 +19789,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tundra",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19818,7 +19818,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGT07HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -19829,10 +19829,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500, Suburban, Tahoe",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19858,7 +19858,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC99HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -19869,10 +19869,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard with Camera Cutout, Fits Select Ford Expedition",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19894,7 +19894,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF19HBL1C/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -19905,10 +19905,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19947,10 +19947,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard with Camera Cutout, Fits Select Chevrolet Suburban, Tahoe",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -19972,7 +19972,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC21SBL1C/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -19983,10 +19983,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Dodge, Ram 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 885.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20012,7 +20012,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD09HBLSLE/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -20023,10 +20023,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20052,7 +20052,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSG16HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -20063,10 +20063,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Avalanche, Silverado",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20092,7 +20092,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC06HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -20103,10 +20103,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1644.1,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20132,7 +20132,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC14HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -20143,10 +20143,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 2500, 3500, 4500, 5500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1644.1,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20172,7 +20172,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSD101BL1S/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -20183,10 +20183,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Expedition",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20208,7 +20208,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF19HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -20219,10 +20219,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1979.46,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20248,7 +20248,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFG19HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 165,
   "source": "ranchhand"
  },
  {
@@ -20259,10 +20259,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1972.1,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20288,7 +20288,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFG151BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 164,
   "source": "ranchhand"
  },
  {
@@ -20299,10 +20299,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Avalanche, Silverado",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20328,7 +20328,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC03HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -20339,10 +20339,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Dodge, Ram 2500, 3500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 776.5,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20368,7 +20368,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSD101C8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 65,
   "source": "ranchhand"
  },
  {
@@ -20379,10 +20379,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 914.95,
+  "price": 800.95,
   "regPrice": 914.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20408,7 +20408,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBD948BLS/1-thumb.jpg"
    }
   ],
-  "mo": 76,
+  "mo": 67,
   "source": "ranchhand"
  },
  {
@@ -20419,10 +20419,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20452,7 +20452,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF081BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -20463,10 +20463,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1644.1,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20492,7 +20492,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF15HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -20503,10 +20503,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Bronco, F-150, F-250, F-350",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1937.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20534,7 +20534,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF921BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -20545,10 +20545,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Silverado, Suburban, Tahoe",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20574,7 +20574,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC99HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -20585,10 +20585,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard and Camera Cutout, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1639.5,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20616,7 +20616,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF201BL1C/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -20627,10 +20627,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select F-150, F-250, F-350 Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 767.95,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20658,7 +20658,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSF151S6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -20669,10 +20669,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard with Camera Cutout, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20698,7 +20698,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC19HBL1C/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -20709,10 +20709,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Avalanche, Suburban, Tahoe",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20734,7 +20734,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC07HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -20745,10 +20745,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1908.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20774,7 +20774,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC241BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 159,
   "source": "ranchhand"
  },
  {
@@ -20785,10 +20785,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1967.5,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20816,7 +20816,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFF201BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 164,
   "source": "ranchhand"
  },
  {
@@ -20827,10 +20827,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20856,7 +20856,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC151BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -20867,10 +20867,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard and Camera Cutout, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20896,7 +20896,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC19HBL1C/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -20907,10 +20907,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20936,7 +20936,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC201BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -20947,10 +20947,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -20976,7 +20976,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC201BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -20987,10 +20987,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard and Camera Cutout, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1937.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21016,7 +21016,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG201BLRC/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -21027,10 +21027,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD with Front Cameras and Sensors",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21056,7 +21056,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG151BLS/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -21067,10 +21067,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21096,7 +21096,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG201BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -21107,10 +21107,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21136,7 +21136,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC031BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -21147,10 +21147,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21176,7 +21176,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGD191BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -21187,10 +21187,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard and Camera Cutout, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1908.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21218,7 +21218,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF201BLRC/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 159,
   "source": "ranchhand"
  },
  {
@@ -21229,10 +21229,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21258,7 +21258,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSG14HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -21269,10 +21269,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1972.1,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21298,7 +21298,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFG201BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 164,
   "source": "ranchhand"
  },
  {
@@ -21309,10 +21309,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21340,7 +21340,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF201BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -21351,10 +21351,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500 HD",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 885.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21382,7 +21382,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC151BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -21393,10 +21393,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Dodge, Ram 1500, 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 870.1,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21422,7 +21422,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD09HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -21433,10 +21433,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Toyota Tacoma",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1958.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21458,7 +21458,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFT16MBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 163,
   "source": "ranchhand"
  },
  {
@@ -21469,10 +21469,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21498,7 +21498,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG08HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -21509,10 +21509,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500 HD",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21538,7 +21538,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC111BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -21549,10 +21549,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21578,7 +21578,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC081BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -21589,10 +21589,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21618,7 +21618,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG031BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -21629,10 +21629,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1644.1,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21658,7 +21658,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSG22HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -21669,10 +21669,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2264.5,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21698,7 +21698,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC155BLR/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 189,
   "source": "ranchhand"
  },
  {
@@ -21709,10 +21709,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500 HD",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21738,7 +21738,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC151BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -21749,10 +21749,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21778,7 +21778,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC22HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -21789,10 +21789,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Ranger",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 876.1,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21814,7 +21814,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF19MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -21825,10 +21825,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21854,7 +21854,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC08HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -21865,10 +21865,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21894,7 +21894,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSG08HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -21905,10 +21905,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1639.5,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21934,7 +21934,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC151BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -21945,10 +21945,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Dodge, Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1987.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -21974,7 +21974,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFD101BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 166,
   "source": "ranchhand"
  },
  {
@@ -21985,10 +21985,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ram 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1967.5,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22014,7 +22014,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFD19HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 164,
   "source": "ranchhand"
  },
  {
@@ -22025,10 +22025,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22054,7 +22054,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC14HBL1S/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -22065,10 +22065,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-150",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22094,7 +22094,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF24HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -22105,10 +22105,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22134,7 +22134,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF21HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -22145,10 +22145,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard with Camera Cutout, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22176,7 +22176,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF201BL1C/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -22187,10 +22187,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22216,7 +22216,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGD101BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -22227,10 +22227,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22256,7 +22256,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG16HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -22267,10 +22267,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Expedition",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22292,7 +22292,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF07HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -22303,10 +22303,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1651.46,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22332,7 +22332,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC241BL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -22343,10 +22343,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1958.95,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22372,7 +22372,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFD191BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 163,
   "source": "ranchhand"
  },
  {
@@ -22383,10 +22383,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1967.5,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22412,7 +22412,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFC201BM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 164,
   "source": "ranchhand"
  },
  {
@@ -22459,10 +22459,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Bullnose Front Bumper, Fits Select Dodge, Ram 2500, 3500, 4500, 5500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1499.95,
+  "price": 1399.1,
   "regPrice": 1499.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22488,7 +22488,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BTD101BLRS/1-thumb.jpg"
    }
   ],
-  "mo": 125,
+  "mo": 117,
   "source": "ranchhand"
  },
  {
@@ -22499,10 +22499,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Chevrolet Silverado 1500, Suburban, Tahoe",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22539,10 +22539,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Silverado 2500 HD, 3500 HD, Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22581,10 +22581,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22613,7 +22613,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF081BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -22624,10 +22624,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Ford Excursion, Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22653,7 +22653,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF991BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -22664,10 +22664,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Ford Excursion, Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1922.1,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22693,7 +22693,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF051BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -22704,10 +22704,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tacoma",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22729,7 +22729,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGT24MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -22740,10 +22740,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Ford F-250, F-350, F-450",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 114.95,
+  "price": 29.95,
   "regPrice": 114.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 74,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22782,10 +22782,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150 with Side Exhaust",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 865.5,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22811,7 +22811,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF24HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -22822,10 +22822,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150 with Dual Exhaust",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 865.5,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22851,7 +22851,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF24HBLSLE/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -22862,10 +22862,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2072.95,
+  "price": 1979.46,
   "regPrice": 2072.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22891,7 +22891,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MFF24HBM1/1-thumb.jpg"
    }
   ],
-  "mo": 173,
+  "mo": 165,
   "source": "ranchhand"
  },
  {
@@ -22902,10 +22902,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Canyon with Tow Hooks",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 871.5,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22931,7 +22931,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG23MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -22942,10 +22942,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Ram 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -22982,10 +22982,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Ford Ranger Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 634.1,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23007,7 +23007,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF19MC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -23018,10 +23018,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.96,
+  "price": 876.11,
   "regPrice": 976.96,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23047,7 +23047,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGD25HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -23058,10 +23058,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota 4Runner",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 641.46,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23083,7 +23083,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RST10MC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -23094,10 +23094,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Ford F-250, F-350, F-450",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 114.95,
+  "price": 29.95,
   "regPrice": 114.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 74,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23136,10 +23136,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tacoma Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 641.46,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23161,7 +23161,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RST07MC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -23172,10 +23172,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Bumper Winch Plate, Fits Select Ford F-150",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 204.95,
+  "price": 119.95,
   "regPrice": 204.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 41,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23212,10 +23212,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Silverado, Sierra",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 114.95,
+  "price": 21.46,
   "regPrice": 114.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23254,10 +23254,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Ford F-150 with Side Exhaust",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1115.95,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23283,7 +23283,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBF24HBMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 93,
   "source": "ranchhand"
  },
  {
@@ -23294,10 +23294,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1644.1,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 6,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23323,7 +23323,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSF24HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 137,
   "source": "ranchhand"
  },
  {
@@ -23334,10 +23334,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Chevrolet Colorado",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23374,10 +23374,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Ranger",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23399,7 +23399,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF24MBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -23410,10 +23410,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Ford F-150",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 114.95,
+  "price": 21.46,
   "regPrice": 114.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23450,10 +23450,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Ford F-150",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 114.95,
+  "price": 29.95,
   "regPrice": 114.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 74,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23490,10 +23490,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard Winch Plate, Fits Select Ford F-250, F-350, F450, F-550",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 679.95,
+  "price": 594.95,
   "regPrice": 679.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23521,7 +23521,7 @@ TTP.products = [
     "thumb": "assets/img/rh/LWF231BL1/1-thumb.jpg"
    }
   ],
-  "mo": 57,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -23532,10 +23532,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Silverado, Sierra 2500, 3500 HD",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 114.95,
+  "price": 21.46,
   "regPrice": 114.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23574,10 +23574,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23603,7 +23603,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSD25HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -23650,10 +23650,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 629.5,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23681,7 +23681,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSC191C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -23692,10 +23692,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ford F-150",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 144.1,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 41,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23732,10 +23732,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-250, F-350 Super Duty Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 758.5,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23763,7 +23763,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF991C8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 63,
   "source": "ranchhand"
  },
  {
@@ -23774,10 +23774,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ram 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 870.1,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23803,7 +23803,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD19HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -23850,10 +23850,10 @@ TTP.products = [
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 104.95,
+  "price": 19.95,
   "regPrice": 104.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 81,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23892,10 +23892,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 4-Step Running Steps, Fits Select Ford F-150, F-250, F-350, F-450 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 749.95,
+  "price": 649.1,
   "regPrice": 749.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23924,7 +23924,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSF151C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -23935,10 +23935,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Ford F-350, F-450 Dually Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 767.95,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -23965,7 +23965,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSF17DC8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -23976,10 +23976,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-250, F-350 Super Duty Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24007,7 +24007,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF171C8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -24018,10 +24018,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Toyota Tundra",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 870.1,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24047,7 +24047,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBT14HBLL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -24058,10 +24058,10 @@ TTP.products = [
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 1744.95,
+  "price": 1659.95,
   "regPrice": 1744.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24087,7 +24087,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FSC22HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 145,
+  "mo": 138,
   "source": "ranchhand"
  },
  {
@@ -24098,10 +24098,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Dodge, Ram 2500, 3500 Extended Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 781.1,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24127,7 +24127,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSD101M6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 65,
   "source": "ranchhand"
  },
  {
@@ -24138,10 +24138,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tundra Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 629.5,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24167,7 +24167,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RST07HQ1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -24178,10 +24178,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500, 3500 HD",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1129.1,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24209,7 +24209,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBC151BMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 94,
   "source": "ranchhand"
  },
  {
@@ -24220,10 +24220,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Chevrolet Colorado, GMC Canyon Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 620.95,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24251,7 +24251,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSC15MC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -24262,10 +24262,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 870.1,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24293,7 +24293,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF161BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -24304,10 +24304,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Dodge, Ram 1500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 130.95,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 47,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24344,10 +24344,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 4-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 749.95,
+  "price": 644.5,
   "regPrice": 749.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24375,7 +24375,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSC071C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -24386,10 +24386,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tundra Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 641.46,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24415,7 +24415,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RST07HC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -24426,10 +24426,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard and Camera Cutout, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1937.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24455,7 +24455,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD191BLRC/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -24466,10 +24466,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500 HD",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 883.46,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24495,7 +24495,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGC241BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -24506,10 +24506,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1115.95,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24537,7 +24537,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBC19HBMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 93,
   "source": "ranchhand"
  },
  {
@@ -24548,10 +24548,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500 HD",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 885.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24579,7 +24579,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC111BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -24590,10 +24590,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-350, F-450 Dually Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24620,7 +24620,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF17DC8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -24631,10 +24631,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-150",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24660,7 +24660,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF06HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -24671,10 +24671,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2276.46,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24700,7 +24700,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD195BLRC/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 190,
   "source": "ranchhand"
  },
  {
@@ -24711,10 +24711,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack, Fits Select Ford F-250, F-350, F-450 Super Duty",
   "cat": "truck-racks",
   "catName": "Truck & Ladder Racks",
-  "price": 654.95,
+  "price": 549.5,
   "regPrice": 654.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24754,10 +24754,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24783,7 +24783,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG111BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -24794,10 +24794,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 758.5,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24825,7 +24825,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSC191C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 63,
   "source": "ranchhand"
  },
  {
@@ -24836,10 +24836,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Dodge, Ram 2500, 3500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24865,7 +24865,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSD101C8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -24876,10 +24876,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Dodge, Ram 1500, 2500, 3500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 144.1,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 41,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24916,10 +24916,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 634.1,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24947,7 +24947,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSC071C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -24958,10 +24958,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select Ram 2500, 3500, 4500, 5500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2369.95,
+  "price": 2276.46,
   "regPrice": 2369.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -24987,7 +24987,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD105BLRS/1-thumb.jpg"
    }
   ],
-  "mo": 197,
+  "mo": 190,
   "source": "ranchhand"
  },
  {
@@ -24998,10 +24998,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25029,7 +25029,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSC071C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -25040,10 +25040,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack, Fits Various Makes",
   "cat": "truck-racks",
   "catName": "Truck & Ladder Racks",
-  "price": 654.95,
+  "price": 569.95,
   "regPrice": 654.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25076,10 +25076,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 856.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25105,7 +25105,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF21HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 71,
   "source": "ranchhand"
  },
  {
@@ -25116,10 +25116,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Ford F-250, F-350, F-450 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 620.95,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25147,7 +25147,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF991C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25158,10 +25158,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Dodge, Ram 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 914.95,
+  "price": 814.1,
   "regPrice": 914.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25187,7 +25187,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBD100BLSS/1-thumb.jpg"
    }
   ],
-  "mo": 76,
+  "mo": 68,
   "source": "ranchhand"
  },
  {
@@ -25234,10 +25234,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Ford F-250, F-350 Super Duty Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 776.5,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25265,7 +25265,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSF171C8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 65,
   "source": "ranchhand"
  },
  {
@@ -25276,10 +25276,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select F-150, F-250, F-350, F-450 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 641.46,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25308,7 +25308,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF151C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25319,10 +25319,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ram 1500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 151.46,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 38,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25359,10 +25359,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500 HD",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 877.46,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25390,7 +25390,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC081BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -25401,10 +25401,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ford F-250, F-350, F-450 Super Duty",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 151.46,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 38,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25444,10 +25444,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 781.1,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25475,7 +25475,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSC071C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 65,
   "source": "ranchhand"
  },
  {
@@ -25486,10 +25486,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 999.95,
+  "price": 894.5,
   "regPrice": 999.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25517,7 +25517,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBC010BLL/1-thumb.jpg"
    }
   ],
-  "mo": 83,
+  "mo": 75,
   "source": "ranchhand"
  },
  {
@@ -25528,10 +25528,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1922.1,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25560,7 +25560,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF111BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -25571,10 +25571,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Ram 2500, 3500 Extended Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 649.95,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25600,7 +25600,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSD101M1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25611,10 +25611,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25640,7 +25640,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG22HBL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -25651,10 +25651,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tundra Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 620.95,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 16,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25680,7 +25680,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RST22HQ1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25691,10 +25691,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 856.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25722,7 +25722,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC19HBLSE/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 71,
   "source": "ranchhand"
  },
  {
@@ -25733,10 +25733,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack with LED Lights, Fits Various Makes",
   "cat": "truck-racks",
   "catName": "Truck & Ladder Racks",
-  "price": 739.95,
+  "price": 646.46,
   "regPrice": 739.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25758,7 +25758,7 @@ TTP.products = [
     "thumb": "assets/img/rh/HRLWL200/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25769,10 +25769,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Ram 1500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 629.5,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 14,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25798,7 +25798,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSD19HC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25809,12 +25809,12 @@ TTP.products = [
   "name": "Ranch Hand Midnight 4-Step Running Steps, Fits Select Dodge, Ram 1500, 2500, 3500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 749.95,
+  "price": 635.95,
   "regPrice": 749.95,
-  "save": 0,
-  "savePct": 0,
-  "inStock": true,
-  "qty": 1,
+  "save": 114.0,
+  "savePct": 15,
+  "inStock": false,
+  "qty": 0,
   "url": "",
   "desc": "New Ranch Hand running step from the Midnight series. Part MRSD091C1B4S. Send us your VIN and we will confirm cab, bed and sensor package before it ships.",
   "yearFrom": null,
@@ -25838,7 +25838,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSD091C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25849,10 +25849,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 865.5,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25880,7 +25880,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF081BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -25891,10 +25891,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Dodge, Ram 1500, 2500, 3500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 641.46,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25920,7 +25920,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSD091C1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -25931,10 +25931,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 885.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -25960,7 +25960,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF15HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -25971,10 +25971,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 891.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26004,7 +26004,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGF231BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -26015,10 +26015,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 870.1,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26046,7 +26046,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC14HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -26057,10 +26057,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-150, F-250, F-350 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 770.46,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26088,7 +26088,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF171C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -26099,10 +26099,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Dodge, Ram 2500, 3500 Extended Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26128,7 +26128,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSD101M6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -26139,10 +26139,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ford F-150",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 159.95,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 35,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26179,10 +26179,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Dodge, Ram 1500, 2500, 3500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 749.95,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26208,7 +26208,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSD101C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 62,
   "source": "ranchhand"
  },
  {
@@ -26219,10 +26219,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ford F-250, F-350, F-450 Super Duty",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 151.46,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 38,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26262,10 +26262,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26291,7 +26291,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBC111BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -26302,10 +26302,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Ram 1500 with Rear Exhaust",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1144.95,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26331,7 +26331,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBD19HBMSLE/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 95,
   "source": "ranchhand"
  },
  {
@@ -26342,10 +26342,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Ford F-250, F350 Super Duty",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1129.1,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 8,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26372,7 +26372,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBF201BMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 94,
   "source": "ranchhand"
  },
  {
@@ -26383,10 +26383,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ram 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 870.1,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26412,7 +26412,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD191BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -26423,10 +26423,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500, 3500 HD",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1124.5,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26454,7 +26454,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBC201BMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 94,
   "source": "ranchhand"
  },
  {
@@ -26465,10 +26465,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 865.5,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26496,7 +26496,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC08HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -26507,10 +26507,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1929.46,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26536,7 +26536,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBD941BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -26547,10 +26547,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Silverado, Sierra 1500, 2500, 3500 HD",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 151.46,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 38,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26589,10 +26589,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 885.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26618,7 +26618,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF09HBLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -26629,10 +26629,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Silverado, Sierra 1500 HD, 2500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 914.95,
+  "price": 809.5,
   "regPrice": 914.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26660,7 +26660,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBC998BLS/1-thumb.jpg"
    }
   ],
-  "mo": 76,
+  "mo": 67,
   "source": "ranchhand"
  },
  {
@@ -26671,10 +26671,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack with LED Lights, Fits Select Ford F-250, F-350, F-450",
   "cat": "truck-racks",
   "catName": "Truck & Ladder Racks",
-  "price": 739.95,
+  "price": 646.46,
   "regPrice": 739.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26702,7 +26702,7 @@ TTP.products = [
     "thumb": "assets/img/rh/HRLWL100/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -26713,10 +26713,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Ford F-150, F-250, F-350 Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 796.95,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26744,7 +26744,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSF171C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 66,
   "source": "ranchhand"
  },
  {
@@ -26755,10 +26755,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-250, F-350, F-450 Super Duty",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 877.46,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26787,7 +26787,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBF231BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -26798,10 +26798,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ram 1500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 865.5,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26827,7 +26827,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD19HBLSLE/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -26838,10 +26838,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "grill-guards",
   "catName": "Grill Guards",
-  "price": 976.95,
+  "price": 862.95,
   "regPrice": 976.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26867,7 +26867,7 @@ TTP.products = [
     "thumb": "assets/img/rh/GGG241BL1/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 72,
   "source": "ranchhand"
  },
  {
@@ -26878,10 +26878,10 @@ TTP.products = [
   "name": "Ranch Hand 46\" Universal Headache Rack Center Light Mounting Bracket",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 179.95,
+  "price": 74.5,
   "regPrice": 179.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 59,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26950,10 +26950,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 885.95,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -26979,7 +26979,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBD031BLL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -26990,10 +26990,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Silverado, Sierra 2500, 3500 HD Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 781.1,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27021,7 +27021,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSC191C6B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 65,
   "source": "ranchhand"
  },
  {
@@ -27032,10 +27032,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tundra Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 734.95,
+  "price": 649.95,
   "regPrice": 734.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27061,7 +27061,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RST22HC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 61,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -27072,10 +27072,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Silverado, Sierra 2500, 3500 HD Crew",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 749.95,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 13,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27103,7 +27103,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSC071C8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 62,
   "source": "ranchhand"
  },
  {
@@ -27114,10 +27114,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 6-Step Running Steps, Fits Select Ford F-150, F-250, F-350 Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 881.95,
+  "price": 781.1,
   "regPrice": 881.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27145,7 +27145,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSF171S8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 73,
+  "mo": 65,
   "source": "ranchhand"
  },
  {
@@ -27156,10 +27156,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 999.95,
+  "price": 885.95,
   "regPrice": 999.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 114.0,
+  "savePct": 11,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27187,7 +27187,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBF050BLL/1-thumb.jpg"
    }
   ],
-  "mo": 83,
+  "mo": 74,
   "source": "ranchhand"
  },
  {
@@ -27198,10 +27198,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Dodge, Ram 2500, 3500",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1144.95,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 7,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27227,7 +27227,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBD101BMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 95,
   "source": "ranchhand"
  },
  {
@@ -27238,10 +27238,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Ford F-150",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1124.5,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27267,7 +27267,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBF15HBMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 94,
   "source": "ranchhand"
  },
  {
@@ -27314,10 +27314,10 @@ TTP.products = [
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-150, F-250, F-350 Extended Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 863.95,
+  "price": 763.1,
   "regPrice": 863.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 100.85,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27345,7 +27345,7 @@ TTP.products = [
     "thumb": "assets/img/rh/RSF171S8B6S/1-thumb.jpg"
    }
   ],
-  "mo": 72,
+  "mo": 64,
   "source": "ranchhand"
  },
  {
@@ -27356,10 +27356,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Rear Bumper, Fits Select Ford F-150, F-250, F-350",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 914.95,
+  "price": 809.5,
   "regPrice": 914.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27387,7 +27387,7 @@ TTP.products = [
     "thumb": "assets/img/rh/BBF928BLS/1-thumb.jpg"
    }
   ],
-  "mo": 76,
+  "mo": 67,
   "source": "ranchhand"
  },
  {
@@ -27398,10 +27398,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1937.95,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 4,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27427,7 +27427,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBG151BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 161,
   "source": "ranchhand"
  },
  {
@@ -27438,10 +27438,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight 4-Step Running Steps, Fits Select Ram 1500 Crew Cab",
   "cat": "running-boards",
   "catName": "Running Boards & Steps",
-  "price": 749.95,
+  "price": 656.46,
   "regPrice": 749.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 12,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27467,7 +27467,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MRSD19HC1B4S/1-thumb.jpg"
    }
   ],
-  "mo": 62,
+  "mo": 55,
   "source": "ranchhand"
  },
  {
@@ -27478,10 +27478,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
   "catName": "Front Replacement Bumpers",
-  "price": 2022.95,
+  "price": 1917.5,
   "regPrice": 2022.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 5,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27509,7 +27509,7 @@ TTP.products = [
     "thumb": "assets/img/rh/FBF231BLR/1-thumb.jpg"
    }
   ],
-  "mo": 169,
+  "mo": 160,
   "source": "ranchhand"
  },
  {
@@ -27556,10 +27556,10 @@ TTP.products = [
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "accessories-hardware",
   "catName": "Accessories & Hardware",
-  "price": 244.95,
+  "price": 159.95,
   "regPrice": 244.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 85.0,
+  "savePct": 35,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27598,10 +27598,10 @@ TTP.products = [
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Silverado, Sierra 1500, 2500 HD, 3500 HD",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 970.95,
+  "price": 877.46,
   "regPrice": 970.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 93.49,
+  "savePct": 10,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27629,7 +27629,7 @@ TTP.products = [
     "thumb": "assets/img/rh/SBC201BLSL/1-thumb.jpg"
    }
   ],
-  "mo": 81,
+  "mo": 73,
   "source": "ranchhand"
  },
  {
@@ -27640,10 +27640,10 @@ TTP.products = [
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Ram 1500 with Side Exhaust",
   "cat": "rear-replacement-bumpers",
   "catName": "Rear Replacement Bumpers",
-  "price": 1229.95,
+  "price": 1124.5,
   "regPrice": 1229.95,
-  "save": 0,
-  "savePct": 0,
+  "save": 105.45,
+  "savePct": 9,
   "inStock": true,
   "qty": 1,
   "url": "",
@@ -27669,7 +27669,7 @@ TTP.products = [
     "thumb": "assets/img/rh/MBD19HBMSL/1-thumb.jpg"
    }
   ],
-  "mo": 102,
+  "mo": 94,
   "source": "ranchhand"
  }
 ];
@@ -27681,9 +27681,9 @@ TTP.categories = [
   "intro": "Factory-original front bumpers taken off late-model Ford, Chevy, GMC and Ram trucks. Every unit is an OEM take-off — the same part the dealer sells, at 40–60% less, with the correct fog light slots, sensor holes and mounting brackets already in place. We photograph each bumper on our floor in Sugar Land so you see the exact piece before you buy, blemishes included.",
   "hero": "assets/img/10454/1-main.jpg",
   "count": 43,
-  "inStock": 43,
-  "minPrice": 549.99,
-  "maxPrice": 1199.99
+  "inStock": 37,
+  "minPrice": 456.5,
+  "maxPrice": 1106.5
  },
  {
   "slug": "rear-bumper",
@@ -27692,9 +27692,9 @@ TTP.categories = [
   "intro": "OEM rear bumpers for Super Duty, Silverado/Sierra HD and Ram HD trucks, in chrome and factory paint codes. Sensor and no-sensor variants are listed separately so the harness and park-assist package match your truck exactly. Step pads, license brackets and end caps are included unless the listing says otherwise.",
   "hero": "assets/img/10338/1-main.jpg",
   "count": 34,
-  "inStock": 34,
+  "inStock": 33,
   "minPrice": 64.99,
-  "maxPrice": 699.99
+  "maxPrice": 614.99
  },
  {
   "slug": "truck-bed",
@@ -27703,9 +27703,9 @@ TTP.categories = [
   "intro": "Complete factory truck beds in original paint, from 6.4ft short beds to 8ft dually (DRW) beds. These are full take-off beds — no rust, no filler, no accident history — pulled from low-mileage trucks and shipped crated on a pallet by freight. Bed only unless the listing states that lights, tailgate or bumper are included.",
   "hero": "assets/img/10452/1-main.jpg",
   "count": 57,
-  "inStock": 57,
-  "minPrice": 1699.99,
-  "maxPrice": 4349.99
+  "inStock": 45,
+  "minPrice": 1594.54,
+  "maxPrice": 4264.99
  },
  {
   "slug": "tailgate",
@@ -27714,9 +27714,9 @@ TTP.categories = [
   "intro": "OEM tailgates in factory colors, listed by exact configuration: with or without the integrated step, with or without the camera hole, and by trim level where the panel differs (King Ranch, Platinum, Lariat). Handle, latches and camera are included where the listing says so.",
   "hero": "assets/img/10448/1-main.jpg",
   "count": 33,
-  "inStock": 33,
-  "minPrice": 649.99,
-  "maxPrice": 2899.99
+  "inStock": 30,
+  "minPrice": 556.5,
+  "maxPrice": 2785.99
  },
  {
   "slug": "tail-lights",
@@ -27725,9 +27725,9 @@ TTP.categories = [
   "intro": "Factory tail lights sold as individual left-hand (driver) and right-hand (passenger) units so you only pay for the side you need. Halogen, full LED, and BLIS/BLISS blind-spot-equipped variants are listed separately — the harness plug and blind-spot module differ between them, so match the listing to your truck's original equipment.",
   "hero": "assets/img/10447/1-main.jpg",
   "count": 36,
-  "inStock": 36,
-  "minPrice": 69.99,
-  "maxPrice": 1099.99
+  "inStock": 34,
+  "minPrice": 29.14,
+  "maxPrice": 1014.99
  },
  {
   "slug": "accessories-hardware",
@@ -27738,7 +27738,7 @@ TTP.categories = [
   "count": 51,
   "inStock": 51,
   "minPrice": 17.95,
-  "maxPrice": 679.95
+  "maxPrice": 594.95
  },
  {
   "slug": "front-replacement-bumpers",
@@ -27747,9 +27747,9 @@ TTP.categories = [
   "intro": "Aftermarket heavy-duty steel front bumpers built for work and recovery — Tough Country Evolution and Traditional series, and One Source replacement bumpers. New units unless marked Scratch/Dent, which are cosmetically imperfect and discounted accordingly but structurally sound and fully covered.",
   "hero": "assets/img/10062/1-main.jpeg",
   "count": 123,
-  "inStock": 123,
-  "minPrice": 900,
-  "maxPrice": 2369.95
+  "inStock": 122,
+  "minPrice": 806.51,
+  "maxPrice": 2284.95
  },
  {
   "slug": "rear-replacement-bumpers",
@@ -27759,8 +27759,8 @@ TTP.categories = [
   "hero": "assets/img/10129/1-main.jpeg",
   "count": 45,
   "inStock": 45,
-  "minPrice": 849.99,
-  "maxPrice": 1229.95
+  "minPrice": 735.99,
+  "maxPrice": 1144.95
  },
  {
   "slug": "grill-guards",
@@ -27769,9 +27769,9 @@ TTP.categories = [
   "intro": "Tough Country grill guards and brush guards that bolt to the frame and protect the grille, headlights and radiator support without blocking airflow or sensor operation.",
   "hero": "assets/img/9969/1-main.jpeg",
   "count": 65,
-  "inStock": 65,
-  "minPrice": 76.95,
-  "maxPrice": 1081.95
+  "inStock": 64,
+  "minPrice": 19.95,
+  "maxPrice": 967.95
  },
  {
   "slug": "wheels-tires",
@@ -27781,8 +27781,8 @@ TTP.categories = [
   "hero": "assets/img/10137/1-main.jpeg",
   "count": 2,
   "inStock": 2,
-  "minPrice": 3949.99,
-  "maxPrice": 6000.0
+  "minPrice": 3849.14,
+  "maxPrice": 5915.0
  },
  {
   "slug": "tool-boxes",
@@ -27792,8 +27792,8 @@ TTP.categories = [
   "hero": "assets/img/_facebook/774148947_122135484117188965_1848677423274863177_n.jpg",
   "count": 1,
   "inStock": 1,
-  "minPrice": 0,
-  "maxPrice": 0
+  "minPrice": 224.14,
+  "maxPrice": 224.14
  },
  {
   "slug": "running-boards",
@@ -27802,9 +27802,9 @@ TTP.categories = [
   "intro": "Running boards, nerf bars, step bars and rock sliders that bolt to the factory mounting points and make a lifted or heavy-duty truck usable every day. Sized by cab configuration — Regular, Extended/Super and Crew Cab all take different lengths — so confirm your cab before ordering. Estribos disponibles para Ford, Chevy, GMC y Ram; pregúntanos por tu modelo.",
   "hero": "assets/img/_facebook/776163814_122135482347188965_1379723284038376935_n.jpg",
   "count": 45,
-  "inStock": 45,
-  "minPrice": 734.95,
-  "maxPrice": 881.95
+  "inStock": 44,
+  "minPrice": 620.95,
+  "maxPrice": 796.95
  },
  {
   "slug": "truck-racks",
@@ -27814,8 +27814,8 @@ TTP.categories = [
   "hero": "assets/img/_facebook/684646258_122123681025188965_8368472642588977241_n.jpg",
   "count": 5,
   "inStock": 5,
-  "minPrice": 654.95,
-  "maxPrice": 739.95
+  "minPrice": 549.5,
+  "maxPrice": 646.46
  }
 ];
 TTP.ymm = {"2026": {"Ram": ["Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["F-250", "F-350", "F-450", "Ranger", "Ranger Raptor"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2025": {"Ram": ["Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["All models", "F-250", "F-350", "F-450", "Ranger", "Ranger Raptor"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2024": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["All models", "F-250", "F-350", "F-450", "Ranger", "Ranger Raptor"], "Chevrolet": ["All models", "Silverado 2500", "Silverado 3500", "Silverado HD 2500"]}, "2023": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["F-250", "F-350", "F-450", "Ranger", "Ranger Raptor"], "Chevrolet": ["All models", "Silverado 2500", "Silverado 3500"]}, "2022": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2021": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2020": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "GMC": ["All models", "Sierra 2500", "Sierra 3500"], "Ford": ["F-150", "F-250", "F-350", "F-450", "Super Duty"], "Chevrolet": ["All models", "Silverado 2500", "Silverado 3500"]}, "2019": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-150", "F-250", "F-350", "F-450", "Super Duty"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2018": {"Ford": ["F-150", "F-250", "F-350", "F-450", "Super Duty"], "Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2017": {"Ford": ["F-250", "F-350", "F-450", "Super Duty"], "Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2016": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"], "Chevrolet": ["Silverado 2500", "Silverado 3500"]}, "2015": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"], "Chevrolet": ["Silverado 2500", "Silverado 3500"], "GMC": ["All models"]}, "2014": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"], "GMC": ["All models"]}, "2013": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"]}, "2012": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"]}, "2011": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450", "Super Duty"]}, "2010": {"Ram": ["Ram 1500", "Ram 2500", "Ram 3500"], "Ford": ["F-250", "F-350", "F-450"]}, "2009": {"Ford": ["F-250", "F-350", "F-450"], "Ram": ["Ram 2500", "Ram 3500"]}, "2008": {"Ford": ["F-250", "F-350", "F-450"], "Ram": ["Ram 2500", "Ram 3500"]}, "2007": {"Ford": ["F-250", "F-350", "F-450"], "Ram": ["Ram 2500", "Ram 3500"]}, "2006": {"Ford": ["F-250", "F-350", "F-450"], "Ram": ["Ram 2500", "Ram 3500"]}, "2005": {"Ford": ["F-250", "F-350", "F-450"]}, "2004": {"Ford": ["F-250", "F-350", "F-450"]}, "2003": {"Ford": ["F-250", "F-350", "F-450"]}, "2002": {"Ford": ["F-250", "F-350", "F-450"]}, "2001": {"Ford": ["F-250", "F-350", "F-450"]}, "2000": {"Ford": ["F-250", "F-350", "F-450"]}, "1999": {"Ford": ["F-250", "F-350", "F-450"]}};

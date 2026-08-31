@@ -15,6 +15,11 @@
   TTP.money = money;
   TTP.hasPrice = function (p) { return p.price !== null && p.price !== undefined && p.price !== 0; };
 
+  /* Availability is a published field again. It reads as in stock unless the catalogue
+     says otherwise, so a record from an older build that predates the flag still shows
+     as buyable rather than silently going dark across the whole grid. */
+  TTP.inStock = function (p) { return p.inStock !== false; };
+
   /* ---------- blueprint part schematics, one per category ----------
      Stand-ins until the photo shoot (plan §10: photo library is a launch risk).
      Swapping these for <img> is a one-line change in card()/gallery. */
@@ -128,18 +133,26 @@
     if (p.savePct >= 5) b.push('<span class="badge save">Save ' + money(p.save) + "</span>");
     if (p.side) b.push('<span class="badge">' + p.side + "</span>");
 
-    return '<article class="card">' +
+    return '<article class="card' + (TTP.inStock(p) ? "" : " sold") + '">' +
       '<div class="thumb">' +
         '<div class="badges">' + b.join("") + "</div>" +
-        /* Everything publishes as in stock and no unit count is shown — the yard
-           confirms availability on the order. Counts read as scarcity pressure
-           and go stale the moment a part sells. */
-        '<div class="stock-pill"><span class="dot"></span>In stock</div>' +
+        /* No unit count either way — the yard confirms the exact figure on the order,
+           and a number on the card reads as scarcity pressure and goes stale the
+           moment a part sells. Whether there is one at all is a different question,
+           and that one the shopper has to be able to see before they click. */
+        (TTP.inStock(p)
+          ? '<div class="stock-pill"><span class="dot"></span>In stock</div>'
+          : '<div class="stock-pill out"><span class="dot"></span>Out of stock</div>') +
         '<a class="thumblink" href="' + TTP.productPath(p) + '" tabindex="-1" aria-hidden="true">' +
           TTP.shot(p, "thumb", 0) + "</a>" +
-        '<button class="cardadd" type="button" data-add="' + p.id + '" aria-label="Add ' + esc(p.name) + ' to order">' +
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>' +
-        '</button>' +
+        /* The quick-add corner button disappears on a sold-out card rather than
+           sitting there disabled. There is nothing to add, and a dead control the
+           thumb keeps finding is worse than no control. */
+        (TTP.inStock(p)
+          ? '<button class="cardadd" type="button" data-add="' + p.id + '" aria-label="Add ' + esc(p.name) + ' to order">' +
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>' +
+            '</button>'
+          : "") +
       "</div>" +
       '<div class="meta">' +
         '<div class="sku">' + TTP.sku(p) + "</div>" +
@@ -176,7 +189,10 @@
   };
 
   /* ---------- YMM finder wiring ---------- */
-  TTP.initFinder = function (root) {
+  /* onApply is optional. Pass it from a page that is already rendering a grid and the
+     submit filters in place instead of navigating; leave it off and the finder keeps
+     its original behaviour of sending the visitor to the shop. */
+  TTP.initFinder = function (root, onApply) {
     var yr = root.querySelector("[data-yr]"), mk = root.querySelector("[data-mk]"),
         md = root.querySelector("[data-md]"), out = root.querySelector("[data-out]"),
         step = root.querySelector("[data-step]");
@@ -233,8 +249,37 @@
       }
       var v = { year: yr.value, make: mk.value, model: md.value || "" };
       TTP.setVehicle(v);
+      /* Where a grid is already on screen, re-render it rather than reloading. The
+         round trip used to drop every other active filter on the floor — category,
+         make, condition, colour and price live only in the page's `state` and never
+         reach the URL, so they could not survive it. */
+      if (typeof onApply === "function") { onApply(v); return; }
       location.href = TTP.categoryPath() + "?fit=1";
     });
+
+    /* Replay the stored vehicle back into the controls. Without this the picker reads
+       "Select year" the moment a fitment is active: the header bar and the result pill
+       both name a truck while the control that chose it looks untouched, which reads
+       as though the choice was lost. Dispatching change rather than assigning the
+       dependent values directly means the make and model lists populate by the same
+       path a human takes, and the verdict line lands on the same sentence. */
+    var saved = TTP.getVehicle();
+    if (saved && saved.year) {
+      yr.value = saved.year;
+      if (yr.value) {
+        yr.dispatchEvent(new Event("change"));
+        if (saved.make) {
+          mk.value = saved.make;
+          if (mk.value) {
+            mk.dispatchEvent(new Event("change"));
+            if (saved.model) {
+              md.value = saved.model;
+              if (md.value) md.dispatchEvent(new Event("change"));
+            }
+          }
+        }
+      }
+    }
   };
 
   /* ---------- ticker pacing ----------
@@ -273,12 +318,18 @@
     var vid = bed.querySelector("video"), src = bed.querySelector("source[data-src]");
     if (!vid || !src) return;
 
+    /* Phones get the reel too. The viewport gate that used to lead this list was the
+       reason the hero sat frozen on mobile — it bailed before the source was ever
+       attached, so the mp4 was never even requested. What is left are the gates that
+       describe the CONNECTION rather than the screen: a 2.9 MB atmosphere loop is
+       worth it on wifi and not worth it on a metered 3G leg, and that is a question
+       about the pipe, not about how wide the glass is. Fail any of them and the graded
+       poster plate stays — a finished hero on its own. */
     var conn = navigator.connection || {};
     var afford =
-      matchMedia("(min-width:900px)").matches &&              /* phones keep the still */
       !matchMedia("(prefers-reduced-motion:reduce)").matches && /* CSS cannot stop playback */
       conn.saveData !== true &&
-      !/2g/.test(conn.effectiveType || "");
+      !/2g|3g/.test(conn.effectiveType || "");
     if (!afford) return;
 
     src.src = src.dataset.src;

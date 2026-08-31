@@ -63,7 +63,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
+      <span class="star"><img src="/assets/img/logo.png" alt="" width="218" height="148"></span>
       <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
     </a>
     <nav class="menu" id="menu">
@@ -75,7 +75,7 @@
       <a href="/#request">Request a Part</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
+      <a class="tel" href="tel:+19525293586"><b>(952) 529-3586</b><span>Parts desk · Mon–Sat</span></a>
       <a class="btn" href="/shop/"><span>Find My Part</span></a>
       <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
@@ -213,6 +213,9 @@
      carry no price. Everything money-shaped below branches on this rather than
      printing "$0". */
   var priced = TTP.hasPrice(p);
+  /* Same shape as `priced`: one flag read once, so every control that could take
+     money branches on the same answer instead of each deciding for itself. */
+  var stocked = TTP.inStock(p);
 
   /* ---------- badges ---------- */
   var badges = [];
@@ -234,7 +237,8 @@
     ['Part features', p.features.length ? p.features.map(function(f){return f.label;}).join(' · ') : '—'],
     ['Brand',        p.brand || 'OEM factory'],
     ['SKU',          TTP.sku(p)],
-    ['Stock',        'In stock · ships from Sugar Land, TX']
+    ['Stock',        stocked ? 'In stock · ships from Sugar Land, TX'
+                             : 'Out of stock · call ' + TTP.CONTACT.phoneDisplay + ' to check for another']
   ].map(function(r){ return '<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>'; }).join('');
 
   /* ---------- structured description (plan §07 V2 standard) ---------- */
@@ -310,13 +314,25 @@
           ? '<div class="finline">As low as <b>'+money(p.mo)+'/mo</b> with Snap · Acima · Progressive</div>'
           : '<div class="finline">Financing available through Snap · Acima · Progressive — '+
             '<a href="tel:'+TTP.pricingTel()+'">call for a quote</a></div>') +
-        '<div class="stockline"><span class="dot"></span>In stock · Ships in 1–2 business days</div>' +
-        '<div class="buyrow">' +
-          '<div class="qty"><button type="button" data-q="-1" aria-label="Decrease">−</button>'+
-            '<span id="qv">1</span><button type="button" data-q="1" aria-label="Increase">+</button></div>' +
-          '<button class="btn" type="button" data-add="'+p.id+'" data-qty="1" id="addBtn"><span>Add to Order</span></button>' +
-          '<a class="btn ghost" href="/#request"><span>Check My VIN</span></a>' +
-        '</div>' +
+        (stocked
+          ? '<div class="stockline"><span class="dot"></span>In stock · Ships in 1–2 business days</div>'
+          : '<div class="stockline out"><span class="dot"></span>Out of stock · we often have another</div>') +
+        /* Nothing that adds to an order survives on a sold-out part — not the stepper,
+           not the button. The page keeps its job of describing the part and pointing
+           at a human: these are one-of-one take-offs, so the yard genuinely may have
+           the same panel off another truck, and that conversation is the conversion
+           here. A disabled "Add to Order" would only invite the click twice. */
+        (stocked
+          ? '<div class="buyrow">' +
+              '<div class="qty"><button type="button" data-q="-1" aria-label="Decrease">−</button>'+
+                '<span id="qv">1</span><button type="button" data-q="1" aria-label="Increase">+</button></div>' +
+              '<button class="btn" type="button" data-add="'+p.id+'" data-qty="1" id="addBtn"><span>Add to Order</span></button>' +
+              '<a class="btn ghost" href="/#request"><span>Check My VIN</span></a>' +
+            '</div>'
+          : '<div class="buyrow">' +
+              '<a class="btn" href="tel:'+TTP.pricingTel()+'"><span>Call About This Part</span></a>' +
+              '<a class="btn ghost" href="/#request"><span>Request One</span></a>' +
+            '</div>') +
         '<div class="shipbox">' +
           '<div><span class="mono">Shipping</span><b>Free · lower 48</b>'+
             '<small>'+(big?'Freight, crated on a pallet':'Ground, 3–6 business days')+'</small></div>' +
@@ -382,21 +398,35 @@
   }
 
   /* ---------- qty + sticky bar ---------- */
+  /* The stepper and both Add buttons only exist while the part is buyable, so every
+     lookup here is guarded rather than assumed. */
   var q = 1;
   document.querySelectorAll('[data-q]').forEach(function(b){
     b.addEventListener('click', function(){
       q = Math.min(TTP.MAX_QTY, Math.max(1, q + (+b.dataset.q)));
       document.getElementById('qv').textContent = q;
-      document.getElementById('addBtn').dataset.qty = q;
-      document.getElementById('sbBtn').dataset.qty = q;
+      var ab = document.getElementById('addBtn'); if (ab) ab.dataset.qty = q;
+      var sbb = document.getElementById('sbBtn'); if (sbb) sbb.dataset.qty = q;
     });
   });
 
   var sb = document.getElementById('stickybuy');
   document.getElementById('sbPrice').textContent = money(p.price);
-  document.getElementById('sbFin').textContent = priced ? money(p.mo) + '/mo financed'
+  document.getElementById('sbFin').textContent = !stocked ? 'out of stock'
+                                               : priced ? money(p.mo) + '/mo financed'
                                                         : 'call for a quote';
-  document.getElementById('sbBtn').dataset.add = p.id;
+  /* The sticky bar follows the price box, so it has to make the same offer. On a
+     sold-out part that is a phone call, not an add. */
+  var sbBtn = document.getElementById('sbBtn');
+  if (stocked) {
+    sbBtn.dataset.add = p.id;
+  } else {
+    var call = document.createElement('a');
+    call.className = 'btn';
+    call.href = 'tel:' + TTP.pricingTel();
+    call.innerHTML = '<span>Call About This Part</span>';
+    sbBtn.replaceWith(call);
+  }
   var buy = document.getElementById('buy');
   new IntersectionObserver(function(es){
     sb.classList.toggle('on', !es[0].isIntersecting && es[0].boundingClientRect.top < 0);
@@ -446,7 +476,8 @@
       "@type":"Offer","url":pageUrl,"priceCurrency":"USD",
       "price": priced ? p.price : undefined,
       "priceValidUntil": priced ? validUntil : undefined,
-      "availability":"https://schema.org/InStock",
+      "availability": stocked ? "https://schema.org/InStock"
+                              : "https://schema.org/OutOfStock",
       "itemCondition":condition,
       "seller":{"@id":SITE+"/#store"},
       "shippingDetails":{"@type":"OfferShippingDetails",

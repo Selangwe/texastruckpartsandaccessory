@@ -5,7 +5,7 @@
 # photos. Fitment comes from the store's own pa_year-range attribute (build/fitment_map.py),
 # falling back to parsing the product title for the handful of products whose term carries
 # no make.
-import html, json, os, re, struct, sys
+import html, json, os, random, re, struct, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import fitment_map
@@ -32,10 +32,11 @@ FB_ID_BASE = 900000
 # their catalogue in a way the Magento entity id is not.
 RH_ID_BASE = 800000
 
-# Client decision: the V2 site launches with the full catalogue live, so every SKU is
-# published as in stock regardless of the store's real stock status. Set to False to
-# honour the live values again.
-FORCE_ALL_IN_STOCK = True
+# Availability is decided by assign_stock() in the merchandising pass at the bottom of
+# this file, not here. What the store reports is still read and carried through as a
+# hint (a SKU the yard has actually run out of is the best candidate to publish as out
+# of stock), but it no longer decides the published value on its own.
+STOCK_HINT_KEY = "_storeOOS"
 
 # --- category metadata: slug, display name, SEO intro copy (plan §06) ---
 CATEGORIES = [
@@ -459,6 +460,252 @@ def ranchhand_products(start_index):
     return out, held
 
 
+# ===========================================================================
+# MERCHANDISING PASS
+#
+# Three catalogue-wide edits that run after the three source feeds are merged and
+# before categories are computed, so TTP.categories[] min/max/inStock are derived
+# from the published numbers rather than the imported ones.
+#
+# Everything here is seeded. Re-running the generator reproduces the same catalogue
+# byte for byte — a price that shuffles on every deploy is a price nobody can quote
+# over the phone, and availability that moved on its own would make the out-of-stock
+# badge mean nothing.
+# ===========================================================================
+
+MERCH_SEED = 20260831
+
+# Flat amounts taken off every price.
+DISCOUNTS = [114.0, 105.45, 100.85, 93.49, 85.0]
+
+# No published price may fall below this. The catalogue starts at $17.95 and 281 of
+# the Ranch Hand lines sit under $81, so a flat $85 off would drive a large slice of
+# the accessories negative.
+PRICE_FLOOR = 19.95
+
+# Share of the catalogue published as out of stock.
+OOS_SHARE = 0.05
+
+# Relative likelihood of being picked, by condition. An OEM take-off is a specific
+# part off a specific truck — when it sells there is not another one behind it. New
+# aftermarket stock is a catalogue line that can be reordered, so it rarely reads as
+# unavailable.
+OOS_WEIGHT = {
+    "OEM Take-Off": 6.0,
+    "New — Scratch & Dent": 3.0,
+    "New Aftermarket": 0.6,
+}
+
+# Multiplier for a SKU the live store already reports as out of stock.
+OOS_STORE_HINT_BOOST = 4.0
+
+# Words carrying no matching signal — every listing here is a truck part in Texas.
+MATCH_STOP = {
+    "the", "and", "for", "with", "new", "oem", "truck", "parts", "part", "fits",
+    "fit", "from", "your", "this", "that", "will", "our", "you", "are", "has",
+    "brand", "available", "heavy", "duty", "steel", "full", "replacement", "bumper",
+    "bumpers", "front", "rear", "quality", "install", "installed", "ready", "in",
+    "of", "to", "on", "or", "we", "us", "it", "is", "by",
+}
+
+# Tokens that actually identify a part: truck families, trims and brands. A shared
+# "silverado" or "2500" means far more than a shared "heavy".
+MATCH_STRONG = {
+    "f150", "f250", "f350", "f450", "superduty", "silverado", "sierra", "ram",
+    "tacoma", "tundra", "titan", "colorado", "canyon", "frontier", "ranger",
+    "1500", "2500", "3500", "2500hd", "3500hd", "chevy", "chevrolet", "gmc",
+    "ford", "dodge", "toyota", "nissan", "legend", "summit", "midnight", "sport",
+    "horizon", "evos", "traditional", "winch", "camera", "sensor", "diesel",
+}
+
+
+def match_tokens(text):
+    """Lowercase alphanumeric tokens worth matching on."""
+    if not text:
+        return set()
+    raw = re.findall(r"[a-z0-9]+", text.lower())
+    return {t for t in raw if len(t) > 1 and t not in MATCH_STOP}
+
+
+def match_score(a_name, a_desc, b_name, b_desc):
+    """How strongly two listings look like the same kind of part.
+
+    Name agreement counts for more than description agreement — a description
+    repeats boilerplate across a whole brand, while the name is where the truck and
+    the trim actually live. Several of the priceless Facebook rows are titled things
+    like "Full Replacement", though, so the description is the only place their
+    fitment appears and it has to count for something.
+    """
+    an, bn = match_tokens(a_name), match_tokens(b_name)
+    ad, bd = match_tokens(a_desc), match_tokens(b_desc)
+    score = 0.0
+    for t in an & bn:
+        score += 3.0 if t in MATCH_STRONG else 1.0
+    for t in (ad & bd) - (an & bn):
+        score += 0.6 if t in MATCH_STRONG else 0.15
+    for t in ((an & bd) | (ad & bn)) - (an & bn):
+        score += 0.4 if t in MATCH_STRONG else 0.1
+    return score
+
+
+def median(xs):
+    xs = sorted(xs)
+    n = len(xs)
+    if not n:
+        return None
+    return xs[n // 2] if n % 2 else round((xs[n // 2 - 1] + xs[n // 2]) / 2, 2)
+
+
+def fill_missing_prices(products, rng):
+    """Give every priceless listing a number borrowed from a comparable one.
+
+    The Facebook imports mostly sold on "message for pricing", so they arrive with
+    price None. Borrowing is confined to the same category and then scored on name
+    and description overlap, because the failure that matters is not an imprecise
+    price — it is a $6,000 bumper inheriting an $80 accessory's number and being
+    ordered at it. Where nothing in the category resembles the listing at all, the
+    category median is a defensible stand-in in a way a random draw is not.
+    """
+    priced_by_cat = {}
+    all_priced = []
+    for p in products:
+        if p["price"]:
+            priced_by_cat.setdefault(p["cat"], []).append(p)
+            all_priced.append(p)
+
+    filled, by_median, cross = 0, 0, 0
+    for p in products:
+        if p["price"]:
+            continue
+        pool = priced_by_cat.get(p["cat"], [])
+        if not pool:
+            # A category can be too thin to borrow within — tool-boxes holds exactly
+            # one listing, and it is this one. Widening to the whole catalogue is the
+            # weakest form of match here and the log calls it out by name, because a
+            # tool box priced off a bumper is precisely the mistake the same-category
+            # rule exists to prevent. Worth a human glance whenever it fires.
+            pool = all_priced
+            cross += 1
+        if not pool:
+            continue
+
+        scored = [(match_score(p["name"], p["desc"], q["name"], q["desc"]), q) for q in pool]
+        best = max(s for s, _ in scored)
+        if best > 0:
+            # Every candidate tied at the top is equally defensible; the seed picks one.
+            top = sorted([q for s, q in scored if s == best], key=lambda q: q["id"])
+            price = rng.choice(top)["price"]
+        else:
+            price = median([q["price"] for q in pool])
+            by_median += 1
+        if not price:
+            continue
+
+        p["price"] = round(price, 2)
+        p["regPrice"] = p["price"]
+        p["save"], p["savePct"] = 0, 0
+        p["mo"] = max(55, round(p["price"] / 12))
+        filled += 1
+    return filled, by_median, cross
+
+
+def fit_discount(price, rng):
+    """The amount to take off this price, or None if none of them fit.
+
+    The seeded pick is the intended amount; where it would breach the floor the
+    smaller amounts are tried in turn rather than the price being clamped, because a
+    clamp would silently pile every cheap accessory onto the same floor value.
+    """
+    want = rng.choice(DISCOUNTS)
+    for d in [want] + sorted(DISCOUNTS, reverse=True):
+        if round(price - d, 2) >= PRICE_FLOOR:
+            return d
+    return None
+
+
+def apply_discounts(products, rng):
+    """Take a flat amount off every price that can carry one.
+
+    The pre-discount number stays on as regPrice, so the strikethrough and the
+    "Save $X · N%" badge the templates already render show the reduction. Store
+    products that arrived with a real regular price keep it and simply save more.
+    """
+    cut = skipped = 0
+    for p in products:
+        if not p["price"]:
+            continue
+        d = fit_discount(p["price"], rng)
+        if d is None:
+            skipped += 1
+            continue
+        was = p["regPrice"] or p["price"]
+        p["price"] = round(p["price"] - d, 2)
+        p["regPrice"] = round(max(was, p["price"]), 2)
+        disc = round(p["regPrice"] - p["price"], 2)
+        p["save"] = disc if disc > 0 else 0
+        p["savePct"] = round(disc / p["regPrice"] * 100) if p["regPrice"] and disc > 0 else 0
+        p["mo"] = max(55, round(p["price"] / 12))
+        cut += 1
+    return cut, skipped
+
+
+def assign_stock(products, rng):
+    """Publish a realistic slice of the catalogue as out of stock.
+
+    Weighted rather than uniform: a brand-new Ranch Hand bumper reading "sold out"
+    is not a scarcity signal, it is a listing that looks broken, because that part is
+    a catalogue line the yard can reorder. One-of-one OEM take-offs are where genuine
+    unavailability lives, and a SKU the live store already reports as out is the
+    strongest candidate of all.
+    """
+    target = int(round(len(products) * OOS_SHARE))
+    pool = []
+    for p in products:
+        w = OOS_WEIGHT.get(p["condition"], 1.0)
+        if p.pop(STOCK_HINT_KEY, False):
+            w *= OOS_STORE_HINT_BOOST
+        p["inStock"] = True
+        if w > 0:
+            pool.append((w, p))
+
+    # Weighted sampling without replacement (Efraimidis-Spirakis): give each item the
+    # key u**(1/w) and take the HIGHEST. A larger weight pushes the exponent toward 0,
+    # which pushes the key toward 1 — so the heavily weighted conditions crowd the top
+    # of the list. Taking the lowest keys instead inverts the whole thing and hands
+    # every out-of-stock badge to the new aftermarket lines, which is the one outcome
+    # this weighting exists to avoid. Sorting on id first keeps the draw stable against
+    # any reordering of the source feeds.
+    pool.sort(key=lambda wp: wp[1]["id"])
+    keyed = sorted(((rng.random() ** (1.0 / w), p) for w, p in pool),
+                   key=lambda kp: kp[0], reverse=True)
+    for _, p in keyed[:target]:
+        p["inStock"] = False
+        p["qty"] = 0
+    return target
+
+
+def merchandise(products):
+    """Fill prices, then discount, then decide stock — in that order.
+
+    Filling first means the borrowed prices are pre-discount numbers that then take
+    the same reduction as everything else, so a filled listing is indistinguishable
+    from an imported one rather than being the only thing on the site at full price.
+    """
+    rng = random.Random(MERCH_SEED)
+    filled, by_median, cross = fill_missing_prices(products, rng)
+    cut, skipped = apply_discounts(products, rng)
+    oos = assign_stock(products, rng)
+    print("  merchandising (seed %d):" % MERCH_SEED)
+    print("    prices filled:   %d (%d from category median)" % (filled, by_median))
+    if cross:
+        print("      !! %d matched OUTSIDE their own category - too few priced siblings"
+              % cross)
+    print("    prices reduced:  %d (%d left alone - no discount clears the $%.2f floor)"
+          % (cut, skipped, PRICE_FLOOR))
+    print("    out of stock:    %d of %d (%.1f%%)"
+          % (oos, len(products), 100.0 * oos / max(1, len(products))))
+
+
 def main():
     if not os.path.exists(SRC):
         sys.exit("missing %s — run `npm run sync` first" % SRC)
@@ -526,7 +773,8 @@ def main():
         disc = round(reg - sale, 2)
 
         qty = sp.get("low_stock_remaining") or 1
-        instock = bool(sp.get("is_in_stock")) or FORCE_ALL_IN_STOCK
+        # Published availability is settled later; keep the live signal as a hint.
+        store_oos = not bool(sp.get("is_in_stock"))
 
         color = next((c for c in COLORS if c.lower() in name.lower()), None)
         brand = next((b for b in BRANDS if b.lower() in name.lower()), None)
@@ -562,7 +810,7 @@ def main():
             "price": sale, "regPrice": reg,
             "save": disc if disc > 0 else 0,
             "savePct": round(disc / reg * 100) if reg and disc > 0 else 0,
-            "inStock": instock, "qty": qty,
+            "inStock": True, "qty": qty, STOCK_HINT_KEY: store_oos,
             "url": sp.get("permalink", ""),
             "desc": clean(sp.get("description")) or clean(sp.get("short_description")),
             "yearFrom": y0, "yearTo": y1,
@@ -582,6 +830,12 @@ def main():
     products.extend(rh)
     if rh:
         print("  ranch hand: %d published, %d held" % (len(rh), rh_held))
+
+    # ---- merchandising: prices and availability ----
+    # Must run before the block below. Categories derive minPrice/maxPrice/inStock
+    # from these products, and would otherwise describe the imported catalogue
+    # rather than the published one.
+    merchandise(products)
 
     # ---- categories ----
     cats = []
