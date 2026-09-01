@@ -12,12 +12,21 @@
 # removed. To keep a page out of the index, let it be crawled and serve it
 # noindex. The cart is handled exactly that way.
 #
-# Still outstanding: no sitemap is published yet. Add one and reference it
-# here with a Sitemap: line once it exists.
+# The sitemap is generated, not maintained: build/generate_products.py writes
+# it from the same in-memory catalogue it writes assets/products.js from, so the
+# two cannot drift. It lists the homepage, /shop/, the 13 category pages and
+# every product page — every URL with a trailing slash, because vercel.json sets
+# trailingSlash: true and an unslashed URL would only 308 to the slashed one.
+#
+# The Sitemap: line below is absolute, as the protocol requires. It must stay on
+# the origin declared by TTP.SITE in assets/config.js, which is where the
+# generator reads it from.
 # ==========================================================================
 
 User-agent: *
 Allow: /
+
+Sitemap: https://texastruckpartsandaccessory.vercel.app/sitemap.xml
 
 # Internal-only pages. Both are already excluded from the deployment bundle by
 # .vercelignore and return 404; listed here so the intent survives if that

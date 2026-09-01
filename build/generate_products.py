@@ -22,6 +22,10 @@ MANIFEST = os.path.join(ROOT, "assets", "img", "manifest.json")
 # into the store manifest's numeric keys would make both harder to reason about.
 RH_MANIFEST = os.path.join(ROOT, "assets", "img", "rh", "manifest.json")
 OUT = os.path.join(ROOT, "assets", "products.js")
+# The sitemap ships at the site root, and reads its origin from config.js (see
+# site_origin()) rather than repeating the domain here.
+CONFIG_JS = os.path.join(ROOT, "assets", "config.js")
+SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
 # Facebook products get ids in their own block so they can never collide with a
 # WordPress product id (those top out in the low five figures).
@@ -684,6 +688,58 @@ def assign_stock(products, rng):
     return target
 
 
+def site_origin():
+    """Read the production origin out of assets/config.js — never hardcode it.
+
+    config.js is the deliberate single source of truth for "what domain is this
+    site?"; canonicals, og:url and every JSON-LD @id already derive from it, and
+    a sitemap that disagreed with the canonicals would be worse than no sitemap
+    at all. It also carries a standing warning that texastruckparts.shop is a
+    THIRD-PARTY store we were seeded from and must never be emitted as one of
+    our own URLs — so the origin is taken from the one line that is allowed to
+    define it, and asserted, rather than typed in a second time here.
+    """
+    src = open(CONFIG_JS, encoding="utf-8").read()
+    m = re.search(r"""TTP\.SITE\s*=\s*["']([^"']+)["']""", src)
+    if not m:
+        sys.exit("could not find TTP.SITE in %s" % CONFIG_JS)
+    origin = m.group(1).rstrip("/")
+    if not origin.startswith("https://"):
+        sys.exit("TTP.SITE is not an https:// origin: %r" % origin)
+    return origin
+
+
+def write_sitemap(products, cats):
+    """Emit sitemap.xml for the home page, the shop, every category and every product.
+
+    Trailing slash on every URL, without exception. vercel.json sets
+    "trailingSlash": true, so an unslashed URL is a 308 to the slashed one —
+    a sitemap full of those spends half the crawl budget on redirects and asks
+    Google to discover each page twice.
+
+    URLs are built from the same slug + path shapes TTP.productPath() and
+    TTP.categoryPath() use in config.js, so what we submit is byte-identical to
+    what the pages declare canonical.
+    """
+    origin = site_origin()
+    urls = [origin + "/", origin + "/shop/"]
+    urls += [origin + "/product-category/" + c["slug"] + "/" for c in cats]
+    urls += [origin + "/product/" + p["slug"] + "/" for p in products]
+
+    with open(SITEMAP, "w", encoding="utf-8", newline="\n") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        for u in urls:
+            # Slugs are ASCII by construction (slugify strips everything else), but
+            # escape anyway — an & or < reaching the file unescaped makes the whole
+            # sitemap unparseable and silently drops all 555 URLs, not just one.
+            f.write("  <url><loc>%s</loc></url>\n" % html.escape(u, quote=False))
+        f.write("</urlset>\n")
+
+    print("wrote %s (%d urls, origin %s)" % (SITEMAP, len(urls), origin))
+    return urls
+
+
 def dedupe_slugs(products):
     """Guarantee every product owns a slug nobody else does.
 
@@ -930,6 +986,12 @@ def main():
         f.write("TTP.ymm = " + json.dumps(ymm, ensure_ascii=False) + ";\n")
 
     print("wrote %s" % OUT)
+
+    # ---- sitemap ----
+    # Written from the same in-memory catalogue, so it can never drift out of
+    # step with what products.js publishes.
+    write_sitemap(products, cats)
+
     print("products: %d (%d store + %d facebook + %d ranch hand) | categories: %d | years: %d"
           % (len(products), len(products) - len(fb) - len(rh), len(fb), len(rh),
              len(cats), len(ymm)))
