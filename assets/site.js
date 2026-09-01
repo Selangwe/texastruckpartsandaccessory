@@ -318,26 +318,73 @@
     var vid = bed.querySelector("video"), src = bed.querySelector("source[data-src]");
     if (!vid || !src) return;
 
-    /* Phones get the reel too. The viewport gate that used to lead this list was the
-       reason the hero sat frozen on mobile — it bailed before the source was ever
-       attached, so the mp4 was never even requested. What is left are the gates that
-       describe the CONNECTION rather than the screen: a 2.9 MB atmosphere loop is
-       worth it on wifi and not worth it on a metered 3G leg, and that is a question
-       about the pipe, not about how wide the glass is. Fail any of them and the graded
-       poster plate stays — a finished hero on its own. */
+    /* Phones get the reel too, and so does anyone whose connection merely LOOKS slow.
+       Two gates used to lead this list and both were wrong. The viewport gate bailed
+       before the source was ever attached, so on a phone the mp4 was never requested.
+       Its replacement, /2g|3g/ on effectiveType, was wrong in a subtler and more
+       damaging way: effectiveType is derived from round-trip time, not from the radio,
+       so desktop Chrome on merely mediocre wifi reports "3g" and phones on real LTE
+       report "3g" routinely. It was rejecting most of the audience, silently, on both
+       form factors — which is exactly the "never plays anywhere" this fixes.
+
+       What is left are the two signals that mean what they say: saveData, which is the
+       visitor explicitly asking for less, and prefers-reduced-motion, which CSS cannot
+       enforce on playback. Fail either and the graded poster plate stays, which is a
+       finished hero on its own rather than a hole. */
     var conn = navigator.connection || {};
     var afford =
       !matchMedia("(prefers-reduced-motion:reduce)").matches && /* CSS cannot stop playback */
-      conn.saveData !== true &&
-      !/2g|3g/.test(conn.effectiveType || "");
+      conn.saveData !== true;
     if (!afford) return;
+
+    /* Every failure below used to be silent by construction: no error listener, and an
+       empty catch on the play() rejection. A 404, a decode failure and a blocked
+       autoplay all looked identical to success — and identical to each other — which is
+       why this went unfound for so long. The .plate fallback is a graded still of THIS
+       reel sharing the video's exact opacity and filter rule, so a dead reel and a
+       working one look nearly the same on screen. The timecode strip is the only
+       ground truth, and it only appears on `playing`. */
+    function warn(what) { if (window.console && console.warn) console.warn("[hero reel] " + what); }
+    vid.addEventListener("error", function () {
+      var e = vid.error;
+      warn("video error" + (e ? " code " + e.code + (e.message ? ": " + e.message : "") : "") +
+           " — falling back to the poster plate.");
+    });
+    src.addEventListener("error", function () {
+      warn("could not load " + src.src + " — check the path and the MIME type.");
+    });
 
     src.src = src.dataset.src;
     vid.load();
-    /* A blocked autoplay is a normal outcome, not an error — the plate stays put and
-       .ready never lands, so the timecode strip stays hidden along with it. */
-    function play() { var r = vid.play(); if (r && r.catch) r.catch(function () {}); }
-    vid.addEventListener("playing", function () { bed.classList.add("ready"); }, { once: true });
+
+    /* A blocked autoplay is a normal outcome and not an error, but it is not a dead end
+       either: a user gesture satisfies every browser's autoplay policy, so the first
+       tap or click anywhere on the document retries. One-shot, and removed the moment
+       the reel is running, so the handler never outlives its reason to exist. */
+    var gesture = false;
+    function armGesture() {
+      if (gesture) return;
+      gesture = true;
+      document.addEventListener("pointerdown", onGesture, { once: true });
+      document.addEventListener("touchstart", onGesture, { once: true, passive: true });
+    }
+    function onGesture() { gesture = false; play(); }
+    function play() {
+      var r = vid.play();
+      if (r && r.catch) r.catch(function (err) {
+        warn("autoplay refused (" + ((err && err.name) || "unknown") + ") — retrying on first interaction.");
+        armGesture();
+      });
+    }
+    vid.addEventListener("playing", function () {
+      bed.classList.add("ready");
+      document.removeEventListener("pointerdown", onGesture);
+      document.removeEventListener("touchstart", onGesture);
+    }, { once: true });
+    /* preload="none" means load() has nothing buffered yet when the immediate play()
+       lands, so play() runs again once there is a frame to show. Calling it twice is
+       harmless — the second call on an already-playing element resolves straight away. */
+    vid.addEventListener("canplay", play);
     play();
 
     /* Decoding frames nobody is looking at is the whole battery cost of a hero reel. */

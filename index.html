@@ -52,14 +52,23 @@
      the video starts at opacity 0, so a poster attribute would be invisible on every
      visit that never loads the file (mobile, save-data, reduced motion). */
   .hero-bg{position:absolute;z-index:0;inset:0;overflow:hidden;background:var(--asphalt)}
+  /* The grade used to be grayscale(.92) brightness(.58) at opacity .62, and under the
+     four layers stacked on top of it that left roughly a fifth of the source luminance
+     on screen — enough to see that something is there, not enough to see it MOVE. The
+     reel was paying its 2.9 MB and reading as a texture. Eased on all three axes; the
+     scrims below are untouched on desktop because they are what the headline was
+     contrast-checked against. */
   .hero-bg .plate,.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-    filter:grayscale(.92) contrast(1.14) brightness(.58) saturate(.9);
-    opacity:.62;transition:opacity 1.4s var(--ease)}
+    filter:grayscale(.82) contrast(1.12) brightness(.76) saturate(.92);
+    opacity:.7;transition:opacity 1.4s var(--ease)}
   .hero-bg .plate{background:url(/assets/video/hero-poster.jpg) center/cover no-repeat}
   .hero-bg video{opacity:0}
   /* cross-dissolve still -> motion. Both layers hold the same frame at the moment of
-     the swap, so the transition itself is invisible; what it hides is the pop. */
-  .hero-bg.ready video{opacity:.62}
+     the swap, so the transition itself is invisible; what it hides is the pop. The
+     reel settles a tenth above the plate rather than level with it — a still held at
+     full strength competes with the type, where the same level in motion reads as
+     motion — and .7 -> .8 across 1.4s is well under what the eye catches as a step. */
+  .hero-bg.ready video{opacity:.8}
   .hero-bg.ready .plate{opacity:0}
   .hero-bg::before{content:"";position:absolute;inset:0;background:var(--oxide);mix-blend-mode:color;opacity:.22}
   /* Scrims: a hard floor down the headline column, and a fade to solid asphalt at the
@@ -171,8 +180,15 @@
 
   @media(max-width:1120px){
     .hero-in{grid-template-columns:1fr;gap:36px;align-items:start}
+    /* One vertical scrim replaces the desktop pair, because with the hero stacked to a
+       single column the type runs the full width and there is no clear left column to
+       protect. The old mid-stops (.6 at 34%, .9 at 80%) took a reel that was already
+       dim down to nothing on a phone — 90% black over dark footage on a #0b0c0d page
+       is just the page. The ends keep their density, where the headline and the stat
+       rail actually sit; only the middle opens up, and the headline still clears 5:1
+       against the brightest frame in the reel. */
     .hero-bg::after{background:
-      linear-gradient(180deg,rgba(11,12,13,.74) 0%,rgba(11,12,13,.6) 34%,rgba(11,12,13,.9) 80%,var(--asphalt) 100%)}
+      linear-gradient(180deg,rgba(11,12,13,.76) 0%,rgba(11,12,13,.44) 38%,rgba(11,12,13,.86) 80%,var(--asphalt) 100%)}
     .cats{grid-template-columns:repeat(4,1fr)}
     .cat,.cat:nth-child(1),.cat:nth-child(6){grid-column:span 2}
     .fin,.yard{grid-template-columns:1fr}
