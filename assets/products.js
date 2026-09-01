@@ -16835,7 +16835,7 @@ TTP.products = [
  {
   "id": 800014,
   "sortIndex": 271,
-  "slug": "ranch-hand-front-or-rear-12-x-23-textured-rubber-mud-flaps-fits-select-ford-f-25",
+  "slug": "ranch-hand-front-or-rear-12-x-23-textured-rubber-mud-flaps-fits-select-ford-f-25-2",
   "sku": "251723RH",
   "name": "Ranch Hand Front or Rear 12\" x 23\" Textured Rubber Mud Flaps, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "accessories-hardware",
@@ -18291,7 +18291,7 @@ TTP.products = [
  {
   "id": 800050,
   "sortIndex": 307,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-1500-2",
   "sku": "GGC08HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
@@ -18374,7 +18374,7 @@ TTP.products = [
  {
   "id": 800052,
   "sortIndex": 309,
-  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-ford-f-150-2",
   "sku": "MFF21HBM1",
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
@@ -18498,7 +18498,7 @@ TTP.products = [
  {
   "id": 800055,
   "sortIndex": 312,
-  "slug": "ranch-hand-sport-winch-ready-front-bumper-fits-select-f-250-f-350-f-450-f-550",
+  "slug": "ranch-hand-sport-winch-ready-front-bumper-fits-select-f-250-f-350-f-450-f-550-2",
   "sku": "FBF115BLR",
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
@@ -18541,7 +18541,7 @@ TTP.products = [
  {
   "id": 800056,
   "sortIndex": 313,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-toyota-tundra",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-toyota-tundra-2",
   "sku": "FST14HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Toyota Tundra",
   "cat": "front-replacement-bumpers",
@@ -18581,7 +18581,7 @@ TTP.products = [
  {
   "id": 800057,
   "sortIndex": 314,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150-2",
   "sku": "FSF09HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
@@ -18661,7 +18661,7 @@ TTP.products = [
  {
   "id": 800059,
   "sortIndex": 316,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-excursion-f-250-f-350-f-450-f-550",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-excursion-f-250-f-350-f-450-f-550-2",
   "sku": "GGF051BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Excursion, F-250, F-350, F-450, F-550",
   "cat": "grill-guards",
@@ -18744,7 +18744,7 @@ TTP.products = [
  {
   "id": 800061,
   "sortIndex": 318,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd--2",
   "sku": "FBG241BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -18784,7 +18784,7 @@ TTP.products = [
  {
   "id": 800062,
   "sortIndex": 319,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-2",
   "sku": "FBC031BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500",
   "cat": "front-replacement-bumpers",
@@ -19058,7 +19058,7 @@ TTP.products = [
  {
   "id": 800069,
   "sortIndex": 326,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500-2",
   "sku": "GGG19HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
@@ -19098,7 +19098,7 @@ TTP.products = [
  {
   "id": 800070,
   "sortIndex": 327,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tacoma",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tacoma-2",
   "sku": "GGT05MBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tacoma",
   "cat": "grill-guards",
@@ -19464,7 +19464,7 @@ TTP.products = [
  {
   "id": 800079,
   "sortIndex": 336,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado-2",
   "sku": "FSC16HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
@@ -19544,7 +19544,7 @@ TTP.products = [
  {
   "id": 800081,
   "sortIndex": 338,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ram-1500",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ram-1500-2",
   "sku": "FSD19HBL1C",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 1500",
   "cat": "front-replacement-bumpers",
@@ -19666,7 +19666,7 @@ TTP.products = [
  {
   "id": 800084,
   "sortIndex": 341,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tundra",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tundra-2",
   "sku": "GGT22HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tundra",
   "cat": "grill-guards",
@@ -19784,7 +19784,7 @@ TTP.products = [
  {
   "id": 800087,
   "sortIndex": 344,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tundra",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tundra-3",
   "sku": "GGT07HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tundra",
   "cat": "grill-guards",
@@ -20018,7 +20018,7 @@ TTP.products = [
  {
   "id": 800093,
   "sortIndex": 350,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500-2",
   "sku": "FSG16HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
@@ -20098,7 +20098,7 @@ TTP.products = [
  {
   "id": 800095,
   "sortIndex": 352,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado-3",
   "sku": "FSC14HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
@@ -20178,7 +20178,7 @@ TTP.products = [
  {
   "id": 800097,
   "sortIndex": 354,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-expedition",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-expedition-2",
   "sku": "GGF19HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Expedition",
   "cat": "grill-guards",
@@ -20414,7 +20414,7 @@ TTP.products = [
  {
   "id": 800103,
   "sortIndex": 360,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-250-f-350-f-450-f-550-super-du",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-250-f-350-f-450-f-550-super-du-2",
   "sku": "GGF081BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "grill-guards",
@@ -20458,7 +20458,7 @@ TTP.products = [
  {
   "id": 800104,
   "sortIndex": 361,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150-3",
   "sku": "FSF15HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
@@ -20580,7 +20580,7 @@ TTP.products = [
  {
   "id": 800107,
   "sortIndex": 364,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-and-camera-cutout-fits-select-f",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-and-camera-cutout-fits-select-f-2",
   "sku": "FSF201BL1C",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard and Camera Cutout, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "front-replacement-bumpers",
@@ -20740,7 +20740,7 @@ TTP.products = [
  {
   "id": 800111,
   "sortIndex": 368,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-3",
   "sku": "FBC241BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -20822,7 +20822,7 @@ TTP.products = [
  {
   "id": 800113,
   "sortIndex": 370,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-4",
   "sku": "FBC151BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -20902,7 +20902,7 @@ TTP.products = [
  {
   "id": 800115,
   "sortIndex": 372,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-5",
   "sku": "FBC201BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -21062,7 +21062,7 @@ TTP.products = [
  {
   "id": 800119,
   "sortIndex": 376,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd--3",
   "sku": "FBG201BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -21142,7 +21142,7 @@ TTP.products = [
  {
   "id": 800121,
   "sortIndex": 378,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ram-2500-3500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ram-2500-3500-2",
   "sku": "GGD191BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "grill-guards",
@@ -21224,7 +21224,7 @@ TTP.products = [
  {
   "id": 800123,
   "sortIndex": 380,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500-3",
   "sku": "FSG14HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
@@ -21264,7 +21264,7 @@ TTP.products = [
  {
   "id": 800124,
   "sortIndex": 381,
-  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-h",
+  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-h-2",
   "sku": "MFG201BM1",
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -21464,7 +21464,7 @@ TTP.products = [
  {
   "id": 800129,
   "sortIndex": 386,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500-3",
   "sku": "GGG08HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
@@ -21544,7 +21544,7 @@ TTP.products = [
  {
   "id": 800131,
   "sortIndex": 388,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-6",
   "sku": "FBC081BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -21584,7 +21584,7 @@ TTP.products = [
  {
   "id": 800132,
   "sortIndex": 389,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd--4",
   "sku": "FBG031BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500",
   "cat": "front-replacement-bumpers",
@@ -21624,7 +21624,7 @@ TTP.products = [
  {
   "id": 800133,
   "sortIndex": 390,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500-4",
   "sku": "FSG22HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
@@ -21704,7 +21704,7 @@ TTP.products = [
  {
   "id": 800135,
   "sortIndex": 392,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-2500-hd-3500-hd",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-2500-hd-3500-hd-2",
   "sku": "GGC151BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500 HD",
   "cat": "grill-guards",
@@ -21744,7 +21744,7 @@ TTP.products = [
  {
   "id": 800136,
   "sortIndex": 393,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-1500-3",
   "sku": "GGC22HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
@@ -21820,7 +21820,7 @@ TTP.products = [
  {
   "id": 800138,
   "sortIndex": 395,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado-4",
   "sku": "FSC08HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
@@ -21860,7 +21860,7 @@ TTP.products = [
  {
   "id": 800139,
   "sortIndex": 396,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-gmc-sierra-1500-5",
   "sku": "FSG08HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "front-replacement-bumpers",
@@ -21900,7 +21900,7 @@ TTP.products = [
  {
   "id": 800140,
   "sortIndex": 397,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-2",
   "sku": "FSC151BL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -22020,7 +22020,7 @@ TTP.products = [
  {
   "id": 800143,
   "sortIndex": 400,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-1500-4",
   "sku": "GGC14HBL1S",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "grill-guards",
@@ -22060,7 +22060,7 @@ TTP.products = [
  {
   "id": 800144,
   "sortIndex": 401,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-150-2",
   "sku": "GGF24HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-150",
   "cat": "grill-guards",
@@ -22100,7 +22100,7 @@ TTP.products = [
  {
   "id": 800145,
   "sortIndex": 402,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150-4",
   "sku": "FSF21HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
@@ -22182,7 +22182,7 @@ TTP.products = [
  {
   "id": 800147,
   "sortIndex": 404,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ram-2500-3500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ram-2500-3500-3",
   "sku": "GGD101BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 2500, 3500",
   "cat": "grill-guards",
@@ -22222,7 +22222,7 @@ TTP.products = [
  {
   "id": 800148,
   "sortIndex": 405,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500-4",
   "sku": "GGG16HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
@@ -22262,7 +22262,7 @@ TTP.products = [
  {
   "id": 800149,
   "sortIndex": 406,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-expedition",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-expedition-3",
   "sku": "GGF07HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Expedition",
   "cat": "grill-guards",
@@ -22298,7 +22298,7 @@ TTP.products = [
  {
   "id": 800150,
   "sortIndex": 407,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-3",
   "sku": "FSC241BL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -22378,7 +22378,7 @@ TTP.products = [
  {
   "id": 800152,
   "sortIndex": 409,
-  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-silverado-2500-hd",
+  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-2",
   "sku": "MFC201BM1",
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -22659,7 +22659,7 @@ TTP.products = [
  {
   "id": 800159,
   "sortIndex": 416,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-ford-excursion-supe",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-ford-excursion-supe-2",
   "sku": "FBF051BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Ford Excursion, Super Duty",
   "cat": "front-replacement-bumpers",
@@ -22699,7 +22699,7 @@ TTP.products = [
  {
   "id": 800160,
   "sortIndex": 417,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tacoma",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-toyota-tacoma-3",
   "sku": "GGT24MBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Toyota Tacoma",
   "cat": "grill-guards",
@@ -22857,7 +22857,7 @@ TTP.products = [
  {
   "id": 800164,
   "sortIndex": 421,
-  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-midnight-front-bumper-with-grille-guard-fits-select-ford-f-150-3",
   "sku": "MFF24HBM1",
   "name": "Ranch Hand Midnight Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
@@ -23013,7 +23013,7 @@ TTP.products = [
  {
   "id": 800168,
   "sortIndex": 425,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ram-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ram-1500-2",
   "sku": "GGD25HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ram 1500",
   "cat": "grill-guards",
@@ -23089,7 +23089,7 @@ TTP.products = [
  {
   "id": 800170,
   "sortIndex": 427,
-  "slug": "ranch-hand-legend-headache-rack-wiring-harness-fits-select-ford-f-250-f-350-f-45",
+  "slug": "ranch-hand-legend-headache-rack-wiring-harness-fits-select-ford-f-250-f-350-f-45-2",
   "sku": "RHE-10008",
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Ford F-250, F-350, F-450",
   "cat": "accessories-hardware",
@@ -23289,7 +23289,7 @@ TTP.products = [
  {
   "id": 800175,
   "sortIndex": 432,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ford-f-150-5",
   "sku": "FSF24HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ford F-150",
   "cat": "front-replacement-bumpers",
@@ -23369,7 +23369,7 @@ TTP.products = [
  {
   "id": 800177,
   "sortIndex": 434,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-ranger",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-ranger-2",
   "sku": "GGF24MBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford Ranger",
   "cat": "grill-guards",
@@ -23445,7 +23445,7 @@ TTP.products = [
  {
   "id": 800179,
   "sortIndex": 436,
-  "slug": "ranch-hand-legend-headache-rack-wiring-harness-fits-select-ford-f-150",
+  "slug": "ranch-hand-legend-headache-rack-wiring-harness-fits-select-ford-f-150-2",
   "sku": "RHE-10006",
   "name": "Ranch Hand Legend Headache Rack Wiring Harness, Fits Select Ford F-150",
   "cat": "accessories-hardware",
@@ -23569,7 +23569,7 @@ TTP.products = [
  {
   "id": 800182,
   "sortIndex": 439,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ram-1500",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-ram-1500-3",
   "sku": "FSD25HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Ram 1500",
   "cat": "front-replacement-bumpers",
@@ -23727,7 +23727,7 @@ TTP.products = [
  {
   "id": 800186,
   "sortIndex": 443,
-  "slug": "ranch-hand-legend-6-step-running-steps-fits-select-ford-f-250-f-350-super-duty-c",
+  "slug": "ranch-hand-legend-6-step-running-steps-fits-select-ford-f-250-f-350-super-duty-c-2",
   "sku": "RSF991C8B6S",
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-250, F-350 Super Duty Crew Cab",
   "cat": "running-boards",
@@ -23845,7 +23845,7 @@ TTP.products = [
  {
   "id": 800189,
   "sortIndex": 446,
-  "slug": "ranch-hand-sensor-relocation-kit-fits-select-chevrolet-silverado-gmc-sierra-1500",
+  "slug": "ranch-hand-sensor-relocation-kit-fits-select-chevrolet-silverado-gmc-sierra-1500-2",
   "sku": "PSC22HBL1",
   "name": "Ranch Hand Sensor Relocation Kit, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "grill-guards",
@@ -23971,7 +23971,7 @@ TTP.products = [
  {
   "id": 800192,
   "sortIndex": 449,
-  "slug": "ranch-hand-legend-6-step-running-steps-fits-select-ford-f-250-f-350-super-duty-c",
+  "slug": "ranch-hand-legend-6-step-running-steps-fits-select-ford-f-250-f-350-super-duty-c-3",
   "sku": "RSF171C8B6S",
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Ford F-250, F-350 Super Duty Crew Cab",
   "cat": "running-boards",
@@ -24053,7 +24053,7 @@ TTP.products = [
  {
   "id": 800194,
   "sortIndex": 451,
-  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado",
+  "slug": "ranch-hand-summit-front-bumper-with-grille-guard-fits-select-chevrolet-silverado-5",
   "sku": "FSC22HBL1",
   "name": "Ranch Hand Summit Front Bumper with Grille Guard, Fits Select Chevrolet Silverado 1500",
   "cat": "front-replacement-bumpers",
@@ -24339,7 +24339,7 @@ TTP.products = [
  {
   "id": 800201,
   "sortIndex": 458,
-  "slug": "ranch-hand-midnight-4-step-running-steps-fits-select-silverado-sierra-1500-2500-",
+  "slug": "ranch-hand-midnight-4-step-running-steps-fits-select-silverado-sierra-1500-2500--2",
   "sku": "MRSC071C1B4S",
   "name": "Ranch Hand Midnight 4-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
@@ -24461,7 +24461,7 @@ TTP.products = [
  {
   "id": 800204,
   "sortIndex": 461,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-2500-hd-3500-hd",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-chevrolet-silverado-2500-hd-3500-hd-3",
   "sku": "GGC241BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Chevrolet Silverado 2500 HD, 3500 HD",
   "cat": "grill-guards",
@@ -24543,7 +24543,7 @@ TTP.products = [
  {
   "id": 800206,
   "sortIndex": 463,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-2500-hd--2",
   "sku": "SBC111BLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500 HD",
   "cat": "rear-replacement-bumpers",
@@ -24626,7 +24626,7 @@ TTP.products = [
  {
   "id": 800208,
   "sortIndex": 465,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-150",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-150-3",
   "sku": "GGF06HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-150",
   "cat": "grill-guards",
@@ -24666,7 +24666,7 @@ TTP.products = [
  {
   "id": 800209,
   "sortIndex": 466,
-  "slug": "ranch-hand-sport-winch-ready-front-bumper-fits-select-ram-2500-3500",
+  "slug": "ranch-hand-sport-winch-ready-front-bumper-fits-select-ram-2500-3500-2",
   "sku": "FBD195BLRC",
   "name": "Ranch Hand Sport Winch-Ready Front Bumper, Fits Select Ram 2500, 3500",
   "cat": "front-replacement-bumpers",
@@ -24749,7 +24749,7 @@ TTP.products = [
  {
   "id": 800211,
   "sortIndex": 468,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd--5",
   "sku": "FBG111BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -24911,7 +24911,7 @@ TTP.products = [
  {
   "id": 800215,
   "sortIndex": 472,
-  "slug": "ranch-hand-legend-4-step-running-steps-fits-select-silverado-sierra-1500-2500-35",
+  "slug": "ranch-hand-legend-4-step-running-steps-fits-select-silverado-sierra-1500-2500-35-2",
   "sku": "RSC071C1B4S",
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
@@ -24993,7 +24993,7 @@ TTP.products = [
  {
   "id": 800217,
   "sortIndex": 474,
-  "slug": "ranch-hand-legend-6-step-running-steps-fits-select-silverado-sierra-1500-2500-35",
+  "slug": "ranch-hand-legend-6-step-running-steps-fits-select-silverado-sierra-1500-2500-35-2",
   "sku": "RSC071C6B6S",
   "name": "Ranch Hand Legend 6-Step Running Steps, Fits Select Silverado, Sierra 1500, 2500, 3500 Crew",
   "cat": "running-boards",
@@ -25354,7 +25354,7 @@ TTP.products = [
  {
   "id": 800226,
   "sortIndex": 483,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-2500-hd--3",
   "sku": "SBC081BLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500 HD, 3500 HD",
   "cat": "rear-replacement-bumpers",
@@ -25523,7 +25523,7 @@ TTP.products = [
  {
   "id": 800230,
   "sortIndex": 487,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-f-250-f-350-f-450-f",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-f-250-f-350-f-450-f-2",
   "sku": "FBF111BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select F-250, F-350, F-450, F-550",
   "cat": "front-replacement-bumpers",
@@ -25606,7 +25606,7 @@ TTP.products = [
  {
   "id": 800232,
   "sortIndex": 489,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-gmc-sierra-1500-5",
   "sku": "GGG22HBL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select GMC Sierra 1500",
   "cat": "grill-guards",
@@ -25646,7 +25646,7 @@ TTP.products = [
  {
   "id": 800233,
   "sortIndex": 490,
-  "slug": "ranch-hand-legend-4-step-running-steps-fits-select-toyota-tundra-extended-cab",
+  "slug": "ranch-hand-legend-4-step-running-steps-fits-select-toyota-tundra-extended-cab-2",
   "sku": "RST22HQ1B4S",
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tundra Extended Cab",
   "cat": "running-boards",
@@ -25844,7 +25844,7 @@ TTP.products = [
  {
   "id": 800238,
   "sortIndex": 495,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-ford-f-250-f-350-super-duty",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-ford-f-250-f-350-super-duty-2",
   "sku": "SBF081BLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-250, F-350 Super Duty",
   "cat": "rear-replacement-bumpers",
@@ -25926,7 +25926,7 @@ TTP.products = [
  {
   "id": 800240,
   "sortIndex": 497,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-ford-f-150",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-ford-f-150-2",
   "sku": "SBF15HBLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150",
   "cat": "rear-replacement-bumpers",
@@ -25966,7 +25966,7 @@ TTP.products = [
  {
   "id": 800241,
   "sortIndex": 498,
-  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-250-f-350-f-450-f-550-super-du",
+  "slug": "ranch-hand-legend-grille-guard-fits-select-ford-f-250-f-350-f-450-f-550-super-du-3",
   "sku": "GGF231BL1",
   "name": "Ranch Hand Legend Grille Guard, Fits Select Ford F-250, F-350, F-450, F-550 Super Duty",
   "cat": "grill-guards",
@@ -26010,7 +26010,7 @@ TTP.products = [
  {
   "id": 800242,
   "sortIndex": 499,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-1500",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-1500-2",
   "sku": "SBC14HBLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "rear-replacement-bumpers",
@@ -26134,7 +26134,7 @@ TTP.products = [
  {
   "id": 800245,
   "sortIndex": 502,
-  "slug": "ranch-hand-legend-headache-rack-brackets-fits-select-ford-f-150",
+  "slug": "ranch-hand-legend-headache-rack-brackets-fits-select-ford-f-150-2",
   "sku": "HRSBF97H",
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ford F-150",
   "cat": "accessories-hardware",
@@ -26214,7 +26214,7 @@ TTP.products = [
  {
   "id": 800247,
   "sortIndex": 504,
-  "slug": "ranch-hand-legend-headache-rack-brackets-fits-select-ford-f-250-f-350-f-450-supe",
+  "slug": "ranch-hand-legend-headache-rack-brackets-fits-select-ford-f-250-f-350-f-450-supe-2",
   "sku": "HRSBF171",
   "name": "Ranch Hand Legend Headache Rack Brackets, Fits Select Ford F-250, F-350, F-450 Super Duty",
   "cat": "accessories-hardware",
@@ -26257,7 +26257,7 @@ TTP.products = [
  {
   "id": 800248,
   "sortIndex": 505,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-silverado-2500-hd-3-7",
   "sku": "FBC111BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Silverado 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",
@@ -26378,7 +26378,7 @@ TTP.products = [
  {
   "id": 800251,
   "sortIndex": 508,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-ram-2500-3500",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-ram-2500-3500-2",
   "sku": "SBD191BLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ram 2500, 3500",
   "cat": "rear-replacement-bumpers",
@@ -26418,7 +26418,7 @@ TTP.products = [
  {
   "id": 800252,
   "sortIndex": 509,
-  "slug": "ranch-hand-midnight-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-2500-",
+  "slug": "ranch-hand-midnight-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-2500--2",
   "sku": "MBC201BMSL",
   "name": "Ranch Hand Midnight Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 2500, 3500 HD",
   "cat": "rear-replacement-bumpers",
@@ -26460,7 +26460,7 @@ TTP.products = [
  {
   "id": 800253,
   "sortIndex": 510,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-1500",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-chevrolet-silverado-gmc-sierra-1500-3",
   "sku": "SBC08HBLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Chevrolet Silverado, GMC Sierra 1500",
   "cat": "rear-replacement-bumpers",
@@ -26502,7 +26502,7 @@ TTP.products = [
  {
   "id": 800254,
   "sortIndex": 511,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-dodge-ram-1500-2500",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-dodge-ram-1500-2500-2",
   "sku": "FBD941BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "front-replacement-bumpers",
@@ -26584,7 +26584,7 @@ TTP.products = [
  {
   "id": 800256,
   "sortIndex": 513,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-ford-f-150",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-ford-f-150-3",
   "sku": "SBF09HBLSL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ford F-150",
   "cat": "rear-replacement-bumpers",
@@ -26793,7 +26793,7 @@ TTP.products = [
  {
   "id": 800261,
   "sortIndex": 518,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-ram-1500",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-ram-1500-2",
   "sku": "SBD19HBLSLE",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Ram 1500",
   "cat": "rear-replacement-bumpers",
@@ -26945,7 +26945,7 @@ TTP.products = [
  {
   "id": 800265,
   "sortIndex": 522,
-  "slug": "ranch-hand-sport-rear-bumper-fits-select-dodge-ram-1500-2500-3500",
+  "slug": "ranch-hand-sport-rear-bumper-fits-select-dodge-ram-1500-2500-3500-2",
   "sku": "SBD031BLL",
   "name": "Ranch Hand Sport Rear Bumper, Fits Select Dodge Ram 1500, 2500, 3500",
   "cat": "rear-replacement-bumpers",
@@ -27027,7 +27027,7 @@ TTP.products = [
  {
   "id": 800267,
   "sortIndex": 524,
-  "slug": "ranch-hand-legend-4-step-running-steps-fits-select-toyota-tundra-crew-cab",
+  "slug": "ranch-hand-legend-4-step-running-steps-fits-select-toyota-tundra-crew-cab-2",
   "sku": "RST22HC1B4S",
   "name": "Ranch Hand Legend 4-Step Running Steps, Fits Select Toyota Tundra Crew Cab",
   "cat": "running-boards",
@@ -27393,7 +27393,7 @@ TTP.products = [
  {
   "id": 800276,
   "sortIndex": 533,
-  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd-",
+  "slug": "ranch-hand-legend-front-bumper-with-grille-guard-fits-select-gmc-sierra-2500-hd--6",
   "sku": "FBG151BLR",
   "name": "Ranch Hand Legend Front Bumper with Grille Guard, Fits Select GMC Sierra 2500 HD, 3500 HD",
   "cat": "front-replacement-bumpers",

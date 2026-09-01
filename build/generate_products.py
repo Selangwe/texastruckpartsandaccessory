@@ -684,6 +684,57 @@ def assign_stock(products, rng):
     return target
 
 
+def dedupe_slugs(products):
+    """Guarantee every product owns a slug nobody else does.
+
+    The slug IS the permalink: product.html resolves a page with
+    filter(x => x.slug === slug)[0], and TTP.productUrl() hands the same URL to
+    the canonical tag, the JSON-LD and every card in the grid. So when two
+    products share a slug only the FIRST one is reachable at all — the rest are
+    published, linked and sitemapped, but every one of those links lands on the
+    first product's page. Three sources feed this catalogue (the WooCommerce
+    store, the Facebook parse and the Ranch Hand import) and each slugifies from
+    the product name, so near-identical titles collided freely across the fold.
+
+    The safety property, and the reason this runs the way it does:
+
+      * The FIRST occurrence of a slug always keeps it, untouched. First means
+        first in `products`, which is the same array order product.html's
+        filter()[0] resolves against — so every URL that works today still
+        resolves to exactly the same product. Only the stranded duplicates,
+        which had no working URL of their own, get a new one.
+      * Later occurrences take -2, -3, ... in ascending order.
+      * A generated suffix is checked against every slug in the catalogue, not
+        just the ones handed out so far. Without that, a duplicate of "foo"
+        could be renamed to "foo-2" and quietly steal the permalink from a
+        product that legitimately arrived from the store already named "foo-2".
+
+    Must run after the last catalogue is folded in, so it sees every product,
+    and before merchandise() only because there is no reason to defer it.
+    """
+    reserved = {p["slug"] for p in products}
+    taken, renamed = set(), 0
+    for p in products:
+        base = p["slug"]
+        if base not in taken:
+            taken.add(base)
+            continue
+        n = 2
+        while True:
+            cand = "%s-%d" % (base, n)
+            if cand not in taken and cand not in reserved:
+                break
+            n += 1
+        p["slug"] = cand
+        reserved.add(cand)
+        taken.add(cand)
+        renamed += 1
+    if renamed:
+        print("  slugs: %d duplicate permalinks resolved (%d unique)"
+              % (renamed, len(taken)))
+    return renamed
+
+
 def merchandise(products):
     """Fill prices, then discount, then decide stock — in that order.
 
@@ -830,6 +881,11 @@ def main():
     products.extend(rh)
     if rh:
         print("  ranch hand: %d published, %d held" % (len(rh), rh_held))
+
+    # ---- permalinks: one slug, one product ----
+    # Runs here, after the last fold, so it sees the whole merged catalogue —
+    # most of the collisions were between sources, not inside one.
+    dedupe_slugs(products)
 
     # ---- merchandising: prices and availability ----
     # Must run before the block below. Categories derive minPrice/maxPrice/inStock
