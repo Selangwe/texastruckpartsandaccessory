@@ -39,7 +39,7 @@
      The grid reading over the footage is what makes this a monitored feed rather
      than a stock video with text on it. */
   .hero::before{content:"";position:absolute;z-index:1;left:50%;top:6%;width:1150px;height:600px;translate:-50% 0;
-    background:radial-gradient(ellipse at center,rgba(232,67,26,.20),transparent 66%);filter:blur(18px)}
+    background:radial-gradient(ellipse at center,rgba(var(--oxide-rgb),.20),transparent 66%);filter:blur(18px)}
   .hero::after{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;
     background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
     background-size:62px 62px;mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 72%)}
@@ -101,7 +101,7 @@
   .cat::before{content:attr(data-n);position:absolute;right:12px;top:2px;font-family:var(--disp);font-weight:900;
     font-size:5.4rem;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);transition:.45s var(--ease)}
   .cat:hover{background:#1c2024}
-  .cat:hover::before{-webkit-text-stroke-color:rgba(232,67,26,.5);transform:translateY(-4px)}
+  .cat:hover::before{-webkit-text-stroke-color:rgba(var(--oxide-rgb),.5);transform:translateY(-4px)}
   .cat svg.part{height:88px;width:auto;color:var(--zinc);transition:color .4s,transform .5s var(--ease);align-self:flex-start}
   .cat:hover svg.part{color:var(--oxide);transform:translateX(6px)}
   /* tiles backed by real product photography */
@@ -134,6 +134,12 @@
   .yard{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-hard)}
   .yard-map{position:relative;min-height:400px;background:var(--plate);overflow:hidden}
   .yard-map svg{position:absolute;inset:0;width:100%;height:100%}
+  /* The route and the lot are brand-tinted, and a presentation attribute cannot
+     read a custom property — var() only resolves inside a CSS declaration. So
+     the stroke and fill live here rather than on the elements, which is also the
+     only reason these two shapes carry a class at all. */
+  .yard-route{stroke:rgba(var(--oxide-rgb),.32)}
+  .yard-lot{fill:rgba(var(--oxide-rgb),.09);stroke:rgba(var(--oxide-rgb),.45)}
   .pin{position:absolute;left:52%;top:46%;translate:-50% -50%;text-align:center}
   .pin .ring{width:20px;height:20px;border:2px solid var(--oxide);border-radius:50%;margin:0 auto;position:relative}
   .pin .ring::after{content:"";position:absolute;inset:-13px;border:1px solid var(--oxide);border-radius:50%;animation:ping 2.4s var(--ease) infinite}
@@ -456,9 +462,9 @@
         <svg viewBox="0 0 400 420" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1" aria-hidden="true">
           <path d="M0 60h400M0 140h400M0 220h400M0 300h400M0 380h400"/>
           <path d="M60 0v420M140 0v420M220 0v420M300 0v420M380 0v420"/>
-          <path d="M-20 300L200 80l240 240" stroke="rgba(232,67,26,.32)" stroke-width="3"/>
+          <path class="yard-route" d="M-20 300L200 80l240 240" stroke-width="3"/>
           <path d="M0 224h400" stroke="rgba(242,194,0,.22)" stroke-width="2" stroke-dasharray="14 10"/>
-          <rect x="152" y="168" width="112" height="72" fill="rgba(232,67,26,.09)" stroke="rgba(232,67,26,.45)"/>
+          <rect class="yard-lot" x="152" y="168" width="112" height="72"/>
         </svg>
         <div class="pin"><div class="ring"></div><span>The Yard</span></div>
       </div>

@@ -15,9 +15,18 @@
   --chalk:#e9eaeb;
   --zinc:#8d949c;
   --zinc-dim:#666d74;
-  /* accents */
-  --oxide:#e8431a;          /* primary — American truck red/orange */
-  --oxide-hot:#ff5a2b;
+  /* accents.
+     --oxide is the logo orange, measured off assets/img/logo.png rather than
+     picked: that file is a palette PNG whose only opaque colour is #EE6400, so
+     the site now matches its own mark instead of sitting a hue away from it.
+     --oxide-rgb carries the same colour as bare channels because rgba() cannot
+     read a hex custom property. Every translucent brand tint on this site used
+     to be a hardcoded rgba() literal, which is exactly why they all drifted red
+     while the solid fills were tokenised; tints now say
+     rgba(var(--oxide-rgb),.18) and follow the accent wherever it goes. */
+  --oxide:#EE6400;          /* primary — the orange the logo is drawn in */
+  --oxide-hot:#FF7A24;      /* lifted hover variant, same relationship as before */
+  --oxide-rgb:238,100,0;    /* #EE6400 as channels, for rgba() tints */
   --hazard:#f2c200;         /* savings, urgency */
   --weld:#39c9b8;           /* verified / trust */
   /* lines */
@@ -140,7 +149,7 @@ header{position:sticky;top:0;z-index:80;background:rgba(11,12,13,.9);backdrop-fi
   font-family:var(--disp);font-weight:700;font-size:1.2rem;letter-spacing:.03em;text-transform:uppercase;
   padding:23px 42px 9px 12px;cursor:pointer;transition:border-color .2s,box-shadow .2s;
 }
-.field select:focus,.field input:focus{outline:none;border-color:var(--oxide);box-shadow:0 0 0 3px rgba(232,67,26,.18)}
+.field select:focus,.field input:focus{outline:none;border-color:var(--oxide);box-shadow:0 0 0 3px rgba(var(--oxide-rgb),.18)}
 .field select:disabled{opacity:.38;cursor:not-allowed}
 .field::after{content:"";position:absolute;right:15px;top:54%;width:8px;height:8px;border-right:2px solid var(--oxide);border-bottom:2px solid var(--oxide);rotate:45deg;translate:0 -50%;pointer-events:none}
 .field.no-caret::after{display:none}
@@ -536,7 +545,7 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
 /* the fitment failure — most important warning in the cart, so it gets a red
    card of its own, but stays a notice rather than an error-page red */
 .cl-warn{
-  margin-top:7px;border:1px solid rgba(232,67,26,.5);background:rgba(232,67,26,.07);
+  margin-top:7px;border:1px solid rgba(var(--oxide-rgb),.5);background:rgba(var(--oxide-rgb),.07);
   padding:6px 9px;font-size:.74rem;color:var(--oxide);line-height:1.4;
 }
 .cl-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px}
