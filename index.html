@@ -27,6 +27,12 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- The hero plate is this page's LCP element, and it is painted by a CSS
+     background-image inside the <style> block below. The preload scanner reads
+     markup, not stylesheets, so without this line the file is not even requested
+     until the CSS has been fetched and parsed. The reel that eventually replaces
+     the plate is deliberately NOT preloaded — see the note on the <video>. -->
+<link rel="preload" as="image" href="/assets/video/hero-poster.jpg" fetchpriority="high">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
@@ -654,8 +660,14 @@
   document.getElementById('cats').innerHTML = TTP.categories.map(function(c,i){
     return '<a class="cat'+(c.hero?' hasphoto':'')+'" href="'+TTP.categoryPath(c.slug)+'" '
       + 'data-n="'+String(i+1).padStart(2,'0')+'">'
+      /* width/height are written whenever the generator could measure the file. The
+         tile is absolutely positioned at inset:0 so they never size it — they give
+         the box an intrinsic ratio, which is what stops the grid shifting as these
+         13 lazy images arrive. A zero means unmeasurable, and then we write nothing
+         rather than an attribute the browser would read as a real dimension. */
       + (c.hero
-          ? '<img class="catbg" src="'+TTP.esc(TTP.asset(c.hero))+'" alt="" loading="lazy" decoding="async">'
+          ? '<img class="catbg" src="'+TTP.esc(TTP.asset(c.hero))+'" alt="" loading="lazy" decoding="async"'
+            + (c.heroW && c.heroH ? ' width="'+c.heroW+'" height="'+c.heroH+'"' : '')+'>'
           : TTP.art(c.slug))
       + '<div class="catcopy"><h3>'+c.name+'</h3><p>'+c.tagline+'</p>'
       /* cat.inStock, not cat.count — the sentence says "in stock", so it has to be

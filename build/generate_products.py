@@ -204,6 +204,43 @@ def jpeg_dims(path):
         return None
 
 
+def webp_dims(path):
+    """Intrinsic size straight off the WebP header — same no-Pillow rule as jpeg_dims.
+
+    Only needed because one category hero happens to be a .webp. All three WebP
+    flavours are covered: lossy (VP8 ), lossless (VP8L) and extended (VP8X).
+    """
+    try:
+        with open(path, "rb") as f:
+            head = f.read(30)
+        if head[:4] != b"RIFF" or head[8:12] != b"WEBP":
+            return None
+        fourcc = head[12:16]
+        if fourcc == b"VP8 ":
+            # frame header: 3-byte tag, 3-byte start code, then 14-bit w/h
+            w, h = struct.unpack("<HH", head[26:30])
+            return (w & 0x3FFF, h & 0x3FFF)
+        if fourcc == b"VP8L":
+            bits = struct.unpack("<I", head[21:25])[0]
+            return ((bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1)
+        if fourcc == b"VP8X":
+            # 24-bit little-endian canvas width-1 / height-1
+            w = head[24] | (head[25] << 8) | (head[26] << 16)
+            h = head[27] | (head[28] << 8) | (head[29] << 16)
+            return (w + 1, h + 1)
+    except Exception:
+        pass
+    return None
+
+
+def image_dims(path):
+    """Intrinsic (w, h) for any hero we ship, or None. JPEG or WebP; nothing else occurs."""
+    if not path:
+        return None
+    full = os.path.join(ROOT, path.replace("/", os.sep))
+    return webp_dims(full) if full.lower().endswith(".webp") else jpeg_dims(full)
+
+
 def facebook_products(start_index):
     """Folds data/facebook-products.json into the same product shape as the store feed.
 
@@ -954,9 +991,27 @@ def main():
     for slug, nm, tag, blurb in CATEGORIES:
         items = [p for p in products if p["cat"] == slug]
         prices = [p["price"] for p in items if p["price"]]
+        hero = next((p["images"][0]["thumb"] for p in items if p["images"]), None)
+        # Measured, not assumed: the store derivatives are a square 300px tier but the
+        # Facebook imports are whatever size the CDN handed back. The homepage writes
+        # these onto the <img> so the tile has an aspect ratio before the file lands.
+        hero_wh = image_dims(hero) or (0, 0)
         cats.append({
             "slug": slug, "name": nm, "tagline": tag, "intro": blurb,
-            "hero": next((p["images"][0]["main"] for p in items if p["images"]), None),
+            # The thumb derivative, not the full-size shot. The homepage draws all
+            # 13 of these at once as a decorative tile background, cropped with
+            # object-fit:cover and greyscaled — nothing about that render can use
+            # the extra resolution, and the -main tier cost ~1.08 MB of the home
+            # page for it. Facebook imports have no separate derivative, so their
+            # "thumb" is the same file and this is a no-op for those three.
+            "hero": hero,
+            # Shipped so the <img> can carry width/height and reserve its box. The
+            # tile is absolutely positioned at inset:0, so these never size it —
+            # they only give the box an intrinsic ratio, which is what stops the
+            # grid reflowing as 13 lazy images land. 0 means "unmeasurable", and
+            # the homepage omits the attributes rather than writing a zero.
+            "heroW": hero_wh[0],
+            "heroH": hero_wh[1],
             "count": len(items),
             "inStock": len([p for p in items if p["inStock"]]),
             "minPrice": min(prices) if prices else 0,
