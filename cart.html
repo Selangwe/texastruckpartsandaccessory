@@ -173,7 +173,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
+      <span class="star"><img src="/assets/img/logo.png" alt="" width="218" height="148"></span>
       <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
     </a>
     <nav class="menu" id="menu">
@@ -185,7 +185,7 @@
       <a href="/#request">Request a Part</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
+      <a class="tel" href="tel:+19525293586"><b>(952) 529-3586</b><span>Parts desk · Mon–Sat</span></a>
       <a class="btn" href="/shop/"><span>Find My Part</span></a>
       <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
@@ -305,6 +305,13 @@
         '<div class="mono ol-sku">' + esc(TTP.sku(p)) + "</div>" +
         '<h3><a href="' + TTP.productPath(p) + '">' + esc(p.name) + "</a></h3>" +
         '<div class="ol-ship">' + esc(TTP.shipNote(l)) + "</div>" +
+        (l.stocked === false
+          ? '<div class="ol-warn"><b>Out of stock</b>' +
+            "<span>This one sold after you added it. Send the order anyway — these are " +
+            "mostly one-of-one take-offs, so the yard will confirm whether another is " +
+            "on the floor before anything is charged.</span>" +
+            '<a href="tel:' + esc(TTP.pricingTel()) + '">Call ' + esc(TTP.pricingTelDisplay()) + '</a></div>'
+          : "") +
         (l.fits === false
           ? '<div class="ol-warn"><b>Does not fit your ' + esc(vehicleLabel(v)) + "</b>" +
             "<span>This part is listed for " + esc(TTP.fitLine(p)) + ". </span>" +
@@ -314,7 +321,7 @@
           '<div class="qty sm">' +
             '<button type="button" data-cq="-1" data-id="' + p.id + '" aria-label="Decrease quantity">−</button>' +
             "<span>" + l.qty + "</span>" +
-            '<button type="button" data-cq="1" data-id="' + p.id + '"' + (l.atCap ? " disabled" : "") + ' aria-label="Increase quantity">+</button>' +
+            '<button type="button" data-cq="1" data-id="' + p.id + '"' + (l.atCap || !l.stocked ? " disabled" : "") + ' aria-label="Increase quantity">+</button>' +
           "</div>" +
           (l.atCap ? '<span class="ol-cap">Max ' + TTP.MAX_QTY + " per order — call for a fleet quote</span>" : "") +
           '<div class="ol-price">' +

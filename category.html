@@ -42,12 +42,31 @@
   .filterbtn{display:none;align-items:center;gap:8px;border:1px solid var(--line-hard);padding:9px 15px;
     font-family:var(--mono);font-size:.55rem;letter-spacing:.14em;text-transform:uppercase}
   .drawer-close{display:none}
+
+  /* The finder as a full-width band rather than the hero's narrow column. The base
+     .finder-body is a single-column stack (site.css) because on the homepage it sits
+     in a 0.88fr slot; across the full grid width that would be three enormous rows
+     before you reach the parts, so the three selects and the button ride one line and
+     the verdict drops underneath. */
+  .finder-band{margin-bottom:26px}
+  .finder-band .finder-body{grid-template-columns:repeat(3,1fr) auto;align-items:end;
+    gap:11px;padding-bottom:16px}
+  .finder-band .finder-body .btn{height:100%;padding-inline:26px;white-space:nowrap}
+  .finder-band .finder-out{margin:0 22px 17px}
+
   @media(max-width:900px){
     .cathead-in{grid-template-columns:1fr;gap:20px}
+    /* One line will not hold four controls here, but two will: year and make read as a
+       pair, model and the button as another. */
+    .finder-band .finder-body{grid-template-columns:1fr 1fr}
+    .finder-band .finder-head h3{font-size:1.28rem}
     .drawer-close{display:block;width:100%;padding:14px;background:var(--oxide);color:#0b0c0d;
       font-family:var(--disp);font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:.06em}
     .scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:94;opacity:0;pointer-events:none;transition:opacity .3s}
     .scrim.on{opacity:1;pointer-events:auto}
+  }
+  @media(max-width:560px){
+    .finder-band .finder-body{grid-template-columns:1fr}
   }
 </style>
 </head>
@@ -63,7 +82,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
+      <span class="star"><img src="/assets/img/logo.png" alt="" width="218" height="148"></span>
       <span><span class="lockup">Texas<br><em>Truck Parts</em></span><small>Sugar Land · Est. 2019</small></span>
     </a>
     <nav class="menu" id="menu">
@@ -75,7 +94,7 @@
       <a href="/#request">Request a Part</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+14244128976"><b>(424) 412-8976</b><span>Parts desk · Mon–Sat</span></a>
+      <a class="tel" href="tel:+19525293586"><b>(952) 529-3586</b><span>Parts desk · Mon–Sat</span></a>
       <a class="btn" href="#finder"><span>Find My Part</span></a>
       <button class="cartbtn" data-cartbtn type="button" aria-label="View order">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.6 9H8L6 3H3"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
@@ -112,26 +131,35 @@
     </div>
   </div>
 
+  <!-- ============ FITMENT ============
+       Above the grid, full width, outside .filters on purpose. It used to be the
+       first .fgroup inside that aside, which put it in a 262px rail beside the
+       results on desktop and — worse — inside the off-canvas drawer below 900px,
+       where the one question every visitor arrives with was invisible until they
+       thought to tap "Filters". Narrowing 540 parts to the ones that bolt onto
+       your truck is not a refinement of a result set; it is the thing you do
+       before you look at one. -->
+  <form class="finder finder-band" id="finder" autocomplete="off">
+    <div class="finder-head">
+      <h3>Will it fit my truck?</h3>
+      <span class="mono" data-step>Step 01 / 03</span>
+    </div>
+    <div class="finder-body">
+      <div class="field"><label for="yr">Year</label>
+        <select id="yr" data-yr aria-label="Year"><option value="">Select year</option></select></div>
+      <div class="field"><label for="mk">Make</label>
+        <select id="mk" data-mk disabled aria-label="Make"><option value="">Select make</option></select></div>
+      <div class="field"><label for="md">Model</label>
+        <select id="md" data-md disabled aria-label="Model"><option value="">Select model</option></select></div>
+      <button class="btn" type="submit"><span>Apply Fitment</span></button>
+    </div>
+    <div class="finder-out mono" data-out>Awaiting vehicle input…</div>
+  </form>
+
   <div class="shop">
     <!-- ============ FILTERS ============ -->
     <aside class="filters" id="filters">
       <h3>Filter <button type="button" id="clearAll">Clear all</button></h3>
-
-      <form class="finder" id="finder" autocomplete="off" style="border:none;box-shadow:none;background:none">
-        <div class="fgroup">
-          <span class="mono">Fits my truck</span>
-          <div class="finder-body" style="padding:0;gap:8px">
-            <div class="field"><label for="yr">Year</label>
-              <select id="yr" data-yr aria-label="Year"><option value="">Select year</option></select></div>
-            <div class="field"><label for="mk">Make</label>
-              <select id="mk" data-mk disabled aria-label="Make"><option value="">Select make</option></select></div>
-            <div class="field"><label for="md">Model</label>
-              <select id="md" data-md disabled aria-label="Model"><option value="">Select model</option></select></div>
-            <button class="btn block" type="submit" style="font-size:.95rem;padding:11px"><span>Apply Fitment</span></button>
-            <div class="finder-out mono" data-out style="font-size:.52rem">Awaiting vehicle input…</div>
-          </div>
-        </div>
-      </form>
 
       <div class="fgroup"><span class="mono">Category</span><div id="fCat"></div></div>
       <div class="fgroup"><span class="mono">Make</span><div id="fMake"></div></div>
@@ -232,7 +260,15 @@
     cats:  pathCat ? [pathCat] : (qs.get('cat')  ? [qs.get('cat')]  : []),
     makes: qs.get('make') ? [qs.get('make')] : [],
     conds: [], colors: [], maxPrice: 6000, sort: 'new',
-    vehicle: qs.get('fit') ? TTP.getVehicle() : null
+    /* A stored vehicle now applies whether or not ?fit=1 is on the URL. The flag made
+       sense while the picker was a sidebar control that reset itself on every load:
+       arriving at /shop/ showed an empty picker and a full grid, which agreed with
+       each other. Now that the picker sits above the grid and replays the stored
+       truck, the flag would put them at odds — the control naming a vehicle over a
+       grid ignoring it. The header fitbar already asserts that vehicle on every page,
+       so honouring it here is the reading that matches what the visitor is told, and
+       the "Fits …" pill is the one click that clears it. */
+    vehicle: TTP.getVehicle()
   };
 
   var cat = state.cats.length === 1
@@ -272,7 +308,7 @@
                       : 'Shop OEM Truck Parts | Texas Truck Parts — Sugar Land, TX');
 
   var desc = cat
-    ? (cat.tagline + '. ' + cat.count + ' in stock from ' + TTP.money(cat.minPrice) +
+    ? (cat.tagline + '. ' + cat.inStock + ' in stock from ' + TTP.money(cat.minPrice) +
        ', shipped free to the lower 48 or picked up in Sugar Land, TX.').slice(0, 158)
     : (state.makes[0]
         ? 'OEM take-off and aftermarket ' + state.makes[0] + ' truck parts — bumpers, beds, tailgates, ' +
@@ -377,9 +413,22 @@
   });
   document.getElementById('sort').addEventListener('change', function(e){ state.sort = e.target.value; render(); });
 
+  /* Clearing a fitment has to clear the control that set it. While the picker lived in
+     the sidebar it could stay stale unnoticed; sitting above the grid, a "Fits 2019
+     Ram" pill removed while the selects still read "2019 / Ram" is a straight
+     contradiction on screen. Resetting year alone is enough — its change handler
+     empties and re-disables make and model on the way down. */
+  function clearFinder(){
+    var yr = document.getElementById('yr');
+    if (!yr) return;
+    yr.value = '';
+    yr.dispatchEvent(new Event('change'));
+  }
+
   document.getElementById('clearAll').addEventListener('click', function(){
     state.cats=[];state.makes=[];state.conds=[];state.colors=[];state.maxPrice=6000;state.vehicle=null;
     TTP.setVehicle(null);
+    clearFinder();
     fp.value=6000; pl.textContent='Any';
     document.querySelectorAll('.filters input[type=checkbox]').forEach(function(c){c.checked=false;});
     render();
@@ -440,7 +489,7 @@
     document.getElementById('pills').querySelectorAll('button').forEach(function(b,i){
       b.addEventListener('click', function(){
         var p = pills[i];
-        if (p.k==='veh'){ state.vehicle=null; TTP.setVehicle(null); }
+        if (p.k==='veh'){ state.vehicle=null; TTP.setVehicle(null); clearFinder(); }
         else if (p.k==='price'){ state.maxPrice=6000; fp.value=6000; pl.textContent='Any'; }
         else {
           state[p.k].splice(state[p.k].indexOf(p.v),1);
@@ -455,7 +504,13 @@
     return '<li><a href="'+TTP.categoryPath(c.slug)+'">'+c.name+'</a></li>';
   }).join('');
 
-  TTP.initFinder(document.getElementById('finder'));
+  /* The finder sits directly above this grid, so applying a fitment re-renders in
+     place. Reloading to /shop/?fit=1 from a control the visitor can see the results
+     of would throw away every other filter they had set on the way here. */
+  TTP.initFinder(document.getElementById('finder'), function (v) {
+    state.vehicle = v;
+    render();
+  });
   render();
 })();
 </script>

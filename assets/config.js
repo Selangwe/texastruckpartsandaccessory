@@ -41,28 +41,43 @@ TTP.SITE = "https://texastruckpartsandaccessory.vercel.app";
    index.html actively damages local ranking. Confirm the address before launch. */
 
 /* ---------------------------------------------------------------------------
-   CONTACT — every phone number, WhatsApp link and email on the site resolves
-   from here. Nothing else hardcodes them.
+   CONTACT — every phone number, WhatsApp link and email rendered BY JAVASCRIPT
+   resolves from here.
+
+   The hand-written HTML does NOT. Each page's header carries a literal
+   <a class="tel"> block, and index.html repeats the number in the hero CTA, the
+   form note, the yard section, the closing CTA band and the LocalBusiness
+   JSON-LD. Changing the parts desk line means editing those nine spots in
+   index/category/product/cart.html as well as the two strings below — in four
+   different formats: "(952) 529-3586" for display, "+19525293586" for tel:
+   hrefs, and "+1-952-529-3586" for the JSON-LD telephone property.
    --------------------------------------------------------------------------- */
 TTP.CONTACT = {
   /* Order handoff. Digits only, country code first, no "+".
-     ONLY this wa.me/<number>?text= form carries a prefilled message. */
+     ONLY this wa.me/<number>?text= form carries a prefilled message.
+
+     DELIBERATELY NOT the same number as `phone` below. The parts desk line moved
+     to 952-529-3586; the WhatsApp inbox stayed on this one, so orders keep
+     landing where the yard already reads them. Do not "fix" the mismatch by
+     syncing them — checkout is order-by-message, and pointing it at a number
+     with no WhatsApp account silently breaks every order. */
   whatsapp: "14244128976",
   /* WhatsApp Business short link. Opens the same inbox but silently DROPS any
      ?text=, so it is used only where there is nothing to prefill (the bare
      chat bubble). Never use it for the order handoff. */
   waInvite: "https://wa.me/message/ASKUCPHXUHX6A1",
 
-  phone: "+14244128976",
-  phoneDisplay: "(424) 412-8976",
+  phone: "+19525293586",
+  phoneDisplay: "(952) 529-3586",
 
   /* First address is the default button; add a second to render an alternate. */
   emails: ["Support.ranchhand@gmail.com"],
 
-  /* TODO — dedicated pricing line, number pending.
-     The 17 "Call for price" products dial THIS, not the main line. While it is
-     empty every pricing CTA falls back to the number above, so the flow works
-     today and switching over is one string. */
+  /* Optional dedicated pricing line. Every product now carries a price, so nothing
+     renders "Call for price" any more and the CTAs that used this are down to the
+     out-of-stock ones ("Call About This Part"). Still worth keeping: those calls are
+     a different conversation from a parts-desk order, and routing them separately is
+     one string. Empty means they fall back to the main line, which is fine. */
   pricingPhone: "",
   pricingPhoneDisplay: ""
 };

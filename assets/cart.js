@@ -97,6 +97,12 @@
           priced: TTP.hasPrice(p),
           freight: TTP.hasPrice(p) && p.price >= FREIGHT_OVER,
           atCap: qty >= MAX_QTY,
+          /* A part can go out of stock while it is sitting in someone's order — the
+             catalogue is rebuilt on every deploy and the order lives in localStorage
+             for as long as the browser keeps it. The line is kept rather than pruned:
+             silently deleting something a customer chose is worse than showing it and
+             saying it needs a phone call. */
+          stocked: TTP.inStock(p),
           /* null when no vehicle is saved — "unknown", not "does not fit". */
           fits: (v && v.year) ? TTP.fits(p, v) : null
         });
@@ -133,6 +139,10 @@
     add: function (id, qty) {
       var p = find(id);
       if (!p) return false;
+      /* Refused here rather than only hidden in the UI. The add controls are already
+         gone from a sold-out card and PDP, but this is the one path all of them run
+         through, so it is the only place the rule actually holds. */
+      if (!TTP.inStock(p)) return false;
       var state = read();
       var cap = MAX_QTY;
       var existing = null;
@@ -313,7 +323,11 @@
   function renderLines(lines) {
     return lines.map(function (l) {
       return l.qty + "x  " + TTP.sku(l.p) + "  " + shortName(l.p.name) +
-             "  —  " + (l.priced ? money(l.p.price * l.qty) : "Call for price");
+             "  —  " + (l.priced ? money(l.p.price * l.qty) : "Call for price") +
+             /* The yard works from this message, not from the screen the customer saw.
+                A line that went out of stock has to say so here or nobody finds out
+                until they go looking for the part. */
+             (l.stocked === false ? "  [OUT OF STOCK - confirm or source]" : "");
     });
   }
 
@@ -363,6 +377,10 @@
         '<div class="sku">' + TTP.sku(p) + '</div>' +
         '<h4><a href="' + TTP.productPath(p) + '">' + esc(p.name) + '</a></h4>' +
         '<div class="cl-ship">' + TTP.shipNote(l) + '</div>' +
+        (l.stocked === false
+          ? '<div class="cl-warn">Out of stock since you added it — we will confirm or ' +
+            'source another before anything is charged</div>'
+          : '') +
         (l.fits === false
           ? '<div class="cl-warn">Does not fit your saved truck — listed for ' +
             esc(TTP.fitLine(p)) + '</div>'
@@ -372,7 +390,7 @@
             '<button type="button" data-cq="-1" data-id="' + p.id + '" aria-label="Decrease">−</button>' +
             '<span>' + l.qty + '</span>' +
             '<button type="button" data-cq="1" data-id="' + p.id + '"' +
-              (l.atCap ? ' disabled' : '') + ' aria-label="Increase">+</button>' +
+              (l.atCap || !l.stocked ? ' disabled' : '') + ' aria-label="Increase">+</button>' +
           '</div>' +
           '<div class="cl-price">' +
             (l.priced

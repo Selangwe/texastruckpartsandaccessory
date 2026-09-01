@@ -193,7 +193,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <span class="star"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 7.4H22l-6 4.6 2.3 7.4-6.3-4.7L5.7 21.4 8 14 2 9.4h7.4z"/></svg></span>
+      <span class="star"><img src="/assets/img/logo.png" alt="" width="218" height="148"></span>
       <span>
         <span class="lockup">Texas<br><em>Truck Parts</em></span>
         <small>Sugar Land · Est. 2019</small>
@@ -209,8 +209,8 @@
       <a href="#yard">Contact</a>
     </nav>
     <div class="nav-right">
-      <a class="tel" href="tel:+14244128976">
-        <b>(424) 412-8976</b>
+      <a class="tel" href="tel:+19525293586">
+        <b>(952) 529-3586</b>
         <span>Parts desk · Mon–Sat</span>
       </a>
       <a class="btn" href="#finder"><span>Find My Part</span></a>
@@ -256,7 +256,7 @@
       <p class="hero-sub">Genuine OEM bumpers, beds, tailgates and lights pulled from low-mileage trucks — <b>40–60% below dealer pricing</b>, inspected on our floor, and matched to your VIN before we ship.</p>
       <div class="hero-cta">
         <a class="btn" href="/shop/"><span>Browse All Parts</span></a>
-        <a class="btn ghost" href="tel:+14244128976"><span>Talk to a Parts Guy</span></a>
+        <a class="btn ghost" href="tel:+19525293586"><span>Talk to a Parts Guy</span></a>
       </div>
     </div>
 
@@ -441,7 +441,7 @@
           </div>
           <textarea name="notes" placeholder="Color, trim, sensor package, anything else we should know"></textarea>
           <button class="btn block" type="submit"><span>Send Part Request</span></button>
-          <p class="formnote" data-note>We reply the same business day · (424) 412-8976</p>
+          <p class="formnote" data-note>We reply the same business day · (952) 529-3586</p>
         </form>
       </div>
     </div>
@@ -473,7 +473,7 @@
         </div>
         <div class="irow">
           <span class="mono">Parts desk</span>
-          <p><a href="tel:+14244128976">(424) 412-8976</a></p>
+          <p><a href="tel:+19525293586">(952) 529-3586</a></p>
         </div>
         <div class="irow">
           <span class="mono">Email</span>
@@ -497,7 +497,7 @@
         <h2>Got a VIN? We'll find the part.</h2>
         <p>Same-day quotes · Free freight · 30-day fitment guarantee</p>
       </div>
-      <a class="btn lg" href="tel:+14244128976"><span>Call (424) 412-8976</span></a>
+      <a class="btn lg" href="tel:+19525293586"><span>Call (952) 529-3586</span></a>
     </div>
   </div>
 </section>
@@ -571,7 +571,7 @@
   "logo":"__SITE__/assets/img/logo.png",
   "image":"__SITE__/assets/img/og-default.jpg",
   "sameAs":["https://www.facebook.com/people/Ranch-Hand-Bumpers/61585668963901/"],
-  "telephone":"+1-424-412-8976",
+  "telephone":"+1-952-529-3586",
   "email":"Support.ranchhand@gmail.com",
   "priceRange":"$$",
   "currenciesAccepted":"USD",
@@ -614,9 +614,13 @@
 (function(){
   /* live counts — the catalogue grows, so nothing here is hardcoded */
   var N = TTP.products.length;
+  /* The stat under the hero says "Parts in stock now", so it counts what is in stock.
+     The catalogue total keeps its own uses below — "View All N Parts" and the aisles
+     blurb are describing the size of the catalogue, which is a different claim. */
+  var NS = TTP.products.filter(TTP.inStock).length;
   var NC = TTP.categories.filter(function(c){return c.count;}).length;
   var WORDS = ['zero','one','two','three','four','five','six','seven','eight','nine','ten'];
-  document.getElementById('statParts').dataset.count = N;
+  document.getElementById('statParts').dataset.count = NS;
   document.getElementById('viewAll').textContent = 'View All ' + N + ' Parts';
   document.getElementById('catsBlurb').textContent =
     (WORDS[NC] ? WORDS[NC].charAt(0).toUpperCase()+WORDS[NC].slice(1) : NC) +
@@ -631,7 +635,10 @@
           ? '<img class="catbg" src="'+TTP.esc(TTP.asset(c.hero))+'" alt="" loading="lazy" decoding="async">'
           : TTP.art(c.slug))
       + '<div class="catcopy"><h3>'+c.name+'</h3><p>'+c.tagline+'</p>'
-      + '<span class="n">'+c.count+' in stock · from '+TTP.money(c.minPrice)+'</span></div></a>';
+      /* cat.inStock, not cat.count — the sentence says "in stock", so it has to be
+         the number that is actually in stock. They were the same figure while the
+         catalogue published everything as available. */
+      + '<span class="n">'+c.inStock+' in stock · from '+TTP.money(c.minPrice)+'</span></div></a>';
   }).join('');
 
   /* recent arrivals — highest-id first, 8 across */
