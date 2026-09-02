@@ -5,15 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Privacy Policy | Texas Truck Parts</title>
 <meta name="description" content="What Texas Truck Parts collects, what it does not, and how to reach us about your information. No analytics, no advertising pixels, no tracking cookies." />
-<link rel="canonical" href="__SITE__/privacy/" />
+<!-- Absolute, not the __SITE__ placeholder the other templates use. Those pages serve
+     many URLs from one file, so their canonical genuinely cannot be known until script
+     reads the slug. This page is one file at one fixed URL, so there is nothing to
+     resolve — and a canonical that only exists after JS runs is a canonical every
+     non-rendering crawler and link preview misses. build/generate_products.py checks
+     these against TTP.SITE on every run, so the domain still has one source of truth. -->
+<link rel="canonical" href="https://texastruckpartsandaccessory.vercel.app/privacy/" />
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Privacy Policy | Texas Truck Parts" />
 <meta property="og:description" content="What Texas Truck Parts collects, what it does not, and how to reach us about your information." />
-<meta property="og:url" content="__SITE__/privacy/" />
+<meta property="og:url" content="https://texastruckpartsandaccessory.vercel.app/privacy/" />
 <meta property="og:site_name" content="Texas Truck Parts" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:image" content="__SITE__/assets/img/og-default.jpg" />
+<meta property="og:image" content="https://texastruckpartsandaccessory.vercel.app/assets/img/og-default.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#0b0c0d" />
 <link rel="icon" href="/favicon.ico" sizes="32x32">
