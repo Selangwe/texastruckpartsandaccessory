@@ -354,8 +354,20 @@
       warn("could not load " + src.src + " — check the path and the MIME type.");
     });
 
-    src.src = src.dataset.src;
-    vid.load();
+    /* The homepage starts the reel from an inline script beside the markup, so that
+       the fetch is not queued behind the catalogue parse. By the time this runs the
+       source is normally already attached and playing; re-assigning src here would
+       tear a running video down and start it again. So attach only if nobody has.
+       Any page that ships the markup without that starter still works. */
+    if (!src.src) {
+      src.src = (matchMedia("(max-width:900px)").matches && src.dataset.srcMobile) || src.dataset.src;
+      vid.load();
+    } else if (vid.error) {
+      /* An error that fired before the listeners above existed leaves no event to
+         catch, only state — so ask. Without this the one case the early start can
+         lose is the one worth knowing about. */
+      warn("video failed before site.js loaded, code " + vid.error.code + ".");
+    }
 
     /* A blocked autoplay is a normal outcome and not an error, but it is not a dead end
        either: a user gesture satisfies every browser's autoplay policy, so the first
