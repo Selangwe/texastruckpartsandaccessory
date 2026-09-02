@@ -746,6 +746,58 @@ def site_origin():
     return origin
 
 
+# The hand-authored pages that hardcode an absolute canonical, and the path each
+# one is served at. Everything else in the site uses the __SITE__ placeholder that
+# config.js swaps at runtime, which is correct for a template serving many URLs and
+# unnecessary for a page that only ever has one.
+STATIC_CANONICALS = {"privacy.html": "/privacy/", "terms.html": "/terms/"}
+
+
+def check_static_canonicals(origin):
+    """Fail the build if a hardcoded canonical has drifted from TTP.SITE.
+
+    privacy.html and terms.html state their canonical outright rather than through
+    the placeholder, because a canonical that only exists after JS runs is one that
+    non-rendering crawlers and link-preview scrapers never see, and those two URLs
+    are fixed and knowable. The cost of hardcoding is that changing TTP.SITE would
+    silently leave them pointing at the old domain — which is exactly the class of
+    error the placeholder existed to prevent.
+
+    So the single source of truth is enforced here instead of at runtime: config.js
+    still DEFINES the origin, and this asserts the static pages agree with it. Moving
+    the site now fails loudly at generation rather than quietly in the index.
+    """
+    bad = []
+    for fname, path in STATIC_CANONICALS.items():
+        full = os.path.join(ROOT, fname)
+        if not os.path.exists(full):
+            bad.append("%s is missing" % fname)
+            continue
+        src = open(full, encoding="utf-8").read()
+        # Comments are stripped before any of this. Both files explain in a comment
+        # why they do NOT use the __SITE__ placeholder, and that explanation has to
+        # name the thing it is talking about — a check that reads its own
+        # documentation as a violation is a check that punishes commenting.
+        src = re.sub(r"<!--.*?-->", "", src, flags=re.S)
+        want = origin + path
+        m = re.search(r'<link\s+rel="canonical"\s+href="([^"]+)"', src)
+        if not m:
+            bad.append("%s has no canonical" % fname)
+        elif m.group(1) != want:
+            bad.append("%s canonical is %r, expected %r" % (fname, m.group(1), want))
+        # og:url has to agree with the canonical or the two tell crawlers different
+        # stories about the same page.
+        m = re.search(r'<meta\s+property="og:url"\s+content="([^"]+)"', src)
+        if m and m.group(1) != want:
+            bad.append("%s og:url is %r, expected %r" % (fname, m.group(1), want))
+        if "__SITE__" in src:
+            bad.append("%s still contains an unresolved __SITE__ placeholder" % fname)
+    if bad:
+        sys.exit("static canonicals disagree with TTP.SITE (%s):\n  %s"
+                 % (origin, "\n  ".join(bad)))
+    print("  static canonicals: %d checked against %s" % (len(STATIC_CANONICALS), origin))
+
+
 def write_sitemap(products, cats):
     """Emit sitemap.xml for the home page, the shop, every category and every product.
 
@@ -759,6 +811,7 @@ def write_sitemap(products, cats):
     what the pages declare canonical.
     """
     origin = site_origin()
+    check_static_canonicals(origin)
     urls = [origin + "/", origin + "/shop/"]
     # The two policy pages are static and hand-authored rather than generated, but
     # they are indexable, they are linked from every footer, and a shopper looking
