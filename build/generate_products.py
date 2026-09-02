@@ -760,6 +760,11 @@ def write_sitemap(products, cats):
     """
     origin = site_origin()
     urls = [origin + "/", origin + "/shop/"]
+    # The two policy pages are static and hand-authored rather than generated, but
+    # they are indexable, they are linked from every footer, and a shopper looking
+    # for a returns policy before a four-figure freight order is a shopper worth
+    # finding. Listed here because this is the only place the site enumerates URLs.
+    urls += [origin + "/privacy/", origin + "/terms/"]
     urls += [origin + "/product-category/" + c["slug"] + "/" for c in cats]
     urls += [origin + "/product/" + p["slug"] + "/" for p in products]
 

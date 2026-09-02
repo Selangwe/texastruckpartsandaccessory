@@ -32,6 +32,8 @@ http
     if (/^\/product\/[^/]+\/?$/.test(rel)) rel = "/product.html";
     else if (/^\/product-category\/[^/]+\/?$/.test(rel)) rel = "/category.html";
     else if (/^\/shop\/?$/.test(rel)) rel = "/category.html";
+    else if (/^\/privacy\/?$/.test(rel)) rel = "/privacy.html";
+    else if (/^\/terms\/?$/.test(rel)) rel = "/terms.html";
 
     // keep requests inside the project directory
     const file = path.join(ROOT, path.normalize(rel).replace(/^(\.\.[\\/])+/, ""));
