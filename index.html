@@ -5,22 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>OEM Truck Parts in Sugar Land, TX | Texas Truck Parts</title>
 <meta name="description" content="Factory OEM take-off bumpers, beds, tailgates, tail lights and wheels for Ford, Chevy, GMC and Ram trucks. 40–60% below dealer. Free shipping, financing from $55/mo, local pickup in Sugar Land, TX." />
-<link rel="canonical" href="__SITE__/" />
+<!-- Absolute, not the __SITE__ placeholder. The homepage serves exactly one URL, so
+     there has never been anything here for script to resolve — and that applies to the
+     LocalBusiness JSON-LD further down too, whose @id, url, logo and category links
+     were all placeholders. A crawler that does not run JS was reading the whole local
+     business record with an unresolved token in every URL, which is the one block on
+     this site where that costs the most. build/generate_products.py checks these
+     against TTP.SITE on every run, so the domain keeps a single source of truth.
+     category.html and product.html keep the placeholder: they serve hundreds of URLs
+     from one file and genuinely cannot know their canonical before script reads the slug. -->
+<link rel="canonical" href="https://texastruckpartsandaccessory.vercel.app/" />
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 <meta property="og:title" content="Texas Truck Parts — OEM Take-Off Truck Parts, Sugar Land TX" />
 <meta property="og:description" content="Factory take-off bumpers, beds, tailgates and lights at 40–60% below dealer. Fits-your-truck guaranteed." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="__SITE__/" />
+<meta property="og:url" content="https://texastruckpartsandaccessory.vercel.app/" />
 <meta property="og:site_name" content="Texas Truck Parts" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:image" content="__SITE__/assets/img/og-default.jpg" />
+<meta property="og:image" content="https://texastruckpartsandaccessory.vercel.app/assets/img/og-default.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="OEM take-off truck bumpers and beds on the rack at Texas Truck Parts, Sugar Land TX" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Texas Truck Parts — OEM Take-Off Truck Parts, Sugar Land TX" />
 <meta name="twitter:description" content="Factory take-off bumpers, beds, tailgates and lights at 40–60% below dealer. Fits-your-truck guaranteed." />
-<meta name="twitter:image" content="__SITE__/assets/img/og-default.jpg" />
+<meta name="twitter:image" content="https://texastruckpartsandaccessory.vercel.app/assets/img/og-default.jpg" />
 <meta name="theme-color" content="#0b0c0d" />
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
@@ -643,13 +652,13 @@
 {
   "@context":"https://schema.org",
   "@type":"AutoPartsStore",
-  "@id":"__SITE__/#store",
+  "@id":"https://texastruckpartsandaccessory.vercel.app/#store",
   "name":"Texas Truck Parts",
   "alternateName":"Texas Truck Parts & Accessories",
   "description":"OEM factory take-off bumpers, beds, tailgates, tail lights and wheels for Ford, Chevy, GMC and Ram trucks, sold 40–60% below dealer pricing from a yard in Sugar Land, Texas.",
-  "url":"__SITE__/",
-  "logo":"__SITE__/assets/img/logo.png",
-  "image":"__SITE__/assets/img/og-default.jpg",
+  "url":"https://texastruckpartsandaccessory.vercel.app/",
+  "logo":"https://texastruckpartsandaccessory.vercel.app/assets/img/logo.png",
+  "image":"https://texastruckpartsandaccessory.vercel.app/assets/img/og-default.jpg",
   "sameAs":["https://www.facebook.com/people/Ranch-Hand-Bumpers/61585668963901/"],
   "telephone":"+1-952-529-3586",
   "email":"Support.ranchhand@gmail.com",
@@ -676,12 +685,12 @@
     "@type":"OfferCatalog",
     "name":"OEM take-off truck parts",
     "itemListElement":[
-      {"@type":"OfferCatalog","name":"Front Bumpers","url":"__SITE__/product-category/front-bumper/"},
-      {"@type":"OfferCatalog","name":"Rear Bumpers","url":"__SITE__/product-category/rear-bumper/"},
-      {"@type":"OfferCatalog","name":"Truck Beds","url":"__SITE__/product-category/truck-bed/"},
-      {"@type":"OfferCatalog","name":"Tailgates","url":"__SITE__/product-category/tailgate/"},
-      {"@type":"OfferCatalog","name":"Tail Lights","url":"__SITE__/product-category/tail-lights/"},
-      {"@type":"OfferCatalog","name":"Wheels & Tires","url":"__SITE__/product-category/wheels-tires/"}
+      {"@type":"OfferCatalog","name":"Front Bumpers","url":"https://texastruckpartsandaccessory.vercel.app/product-category/front-bumper/"},
+      {"@type":"OfferCatalog","name":"Rear Bumpers","url":"https://texastruckpartsandaccessory.vercel.app/product-category/rear-bumper/"},
+      {"@type":"OfferCatalog","name":"Truck Beds","url":"https://texastruckpartsandaccessory.vercel.app/product-category/truck-bed/"},
+      {"@type":"OfferCatalog","name":"Tailgates","url":"https://texastruckpartsandaccessory.vercel.app/product-category/tailgate/"},
+      {"@type":"OfferCatalog","name":"Tail Lights","url":"https://texastruckpartsandaccessory.vercel.app/product-category/tail-lights/"},
+      {"@type":"OfferCatalog","name":"Wheels & Tires","url":"https://texastruckpartsandaccessory.vercel.app/product-category/wheels-tires/"}
     ]
   }
 }

@@ -750,7 +750,11 @@ def site_origin():
 # one is served at. Everything else in the site uses the __SITE__ placeholder that
 # config.js swaps at runtime, which is correct for a template serving many URLs and
 # unnecessary for a page that only ever has one.
-STATIC_CANONICALS = {"privacy.html": "/privacy/", "terms.html": "/terms/"}
+STATIC_CANONICALS = {
+    "index.html": "/",
+    "privacy.html": "/privacy/",
+    "terms.html": "/terms/",
+}
 
 
 def check_static_canonicals(origin):
