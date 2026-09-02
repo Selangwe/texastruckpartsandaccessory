@@ -443,6 +443,40 @@
   scrim.addEventListener('click',function(){drawer(false);});
 
   /* ---- render ---- */
+  /* The grid paints in batches rather than in one go. /shop/ unfiltered is 540
+     cards — roughly 450 KB of markup and several thousand nodes — and building
+     that string, parsing it and laying it out was one synchronous block on every
+     render, including every checkbox click.
+
+     Batching, NOT paginating. Every one of the 540 product links still lands in
+     the DOM; the only thing that changes is that they arrive over a few frames
+     instead of all inside one. That distinction matters here: there is a sitemap
+     now, but the category grid is still a primary internal-link path into the
+     catalogue, and cutting it to a page of 48 would drop the other 492 links.
+
+     paintToken exists because the batches are asynchronous. Toggle two filters
+     quickly and the first paint is still feeding cards in when the second starts;
+     the token lets a superseded paint notice it is stale and stop. */
+  var CHUNK = 48, paintToken = 0;
+  var idle = window.requestIdleCallback || function(fn){ return setTimeout(fn, 16); };
+
+  function paintGrid(out){
+    var grid = document.getElementById('grid'), token = ++paintToken;
+    grid.innerHTML = out.slice(0, CHUNK).map(TTP.card).join('');
+    if (out.length <= CHUNK) return;
+    var i = CHUNK;
+    function step(){
+      if (token !== paintToken) return;          /* a newer render owns the grid */
+      var end = Math.min(i + CHUNK, out.length), html = '';
+      for (; i < end; i++) html += TTP.card(out[i]);
+      grid.insertAdjacentHTML('beforeend', html);
+      if (i < out.length) idle(step);
+    }
+    idle(step);   /* scheduled, not called: the synchronous burst stays one chunk */
+  }
+
+  var pills = [];   /* hoisted: the delegated handler below reads it by index */
+
   function render(){
     var v = state.vehicle;
     var out = TTP.products.filter(function(p){
@@ -462,7 +496,7 @@
       return b.id-a.id;
     });
 
-    document.getElementById('grid').innerHTML = out.map(TTP.card).join('');
+    paintGrid(out);
     document.getElementById('empty').hidden = out.length > 0;
     document.getElementById('nShown').textContent = out.length;
     document.getElementById('nTotal').textContent = TTP.products.length;
@@ -473,7 +507,7 @@
     document.getElementById('sSave').textContent = out.length ? TTP.money(Math.max.apply(null,out.map(function(p){return p.save;}))) : '—';
 
     /* active filter pills */
-    var pills = [];
+    pills = [];
     if (v) pills.push({t:'Fits ' + v.year + ' ' + v.make + (v.model && v.model!=='All models' ? ' '+v.model : ''), k:'veh'});
     state.cats.forEach(function(c){
       var m = TTP.categories.filter(function(x){return x.slug===c;})[0];
@@ -487,19 +521,25 @@
     document.getElementById('pills').innerHTML = pills.map(function(p,i){
       return '<span class="pill">'+p.t+'<button type="button" data-i="'+i+'" aria-label="Remove filter">×</button></span>';
     }).join('');
-    document.getElementById('pills').querySelectorAll('button').forEach(function(b,i){
-      b.addEventListener('click', function(){
-        var p = pills[i];
-        if (p.k==='veh'){ state.vehicle=null; TTP.setVehicle(null); clearFinder(); }
-        else if (p.k==='price'){ state.maxPrice=6000; fp.value=6000; pl.textContent='Any'; }
-        else {
-          state[p.k].splice(state[p.k].indexOf(p.v),1);
-          document.querySelectorAll('.filters input[value="'+p.v.replace(/"/g,'\\"')+'"]').forEach(function(c){c.checked=false;});
-        }
-        render();
-      });
-    });
   }
+
+  /* One delegated listener, bound once, instead of a fresh listener per pill on
+     every render. The old code re-attached N of them each time the grid redrew,
+     which leaked a set on every filter change and only worked because the nodes
+     went away with them. data-i indexes the pills array rebuilt above. */
+  document.getElementById('pills').addEventListener('click', function(e){
+    var b = e.target.closest('button[data-i]');
+    if (!b) return;
+    var p = pills[+b.getAttribute('data-i')];
+    if (!p) return;
+    if (p.k==='veh'){ state.vehicle=null; TTP.setVehicle(null); clearFinder(); }
+    else if (p.k==='price'){ state.maxPrice=6000; fp.value=6000; pl.textContent='Any'; }
+    else {
+      state[p.k].splice(state[p.k].indexOf(p.v),1);
+      document.querySelectorAll('.filters input[value="'+p.v.replace(/"/g,'\\"')+'"]').forEach(function(c){c.checked=false;});
+    }
+    render();
+  });
 
   document.getElementById('fcats').innerHTML = TTP.categories.slice(0,6).map(function(c){
     return '<li><a href="'+TTP.categoryPath(c.slug)+'">'+c.name+'</a></li>';
