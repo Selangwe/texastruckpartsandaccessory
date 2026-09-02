@@ -202,6 +202,21 @@
     .revs{grid-template-columns:1fr}
   }
   @media(max-width:640px){
+    /* Hero spacing on a phone. The 64px desktop inset was written for a two-column
+       hero with the reel reading across the empty half; stacked into one column it
+       just pushed the headline down and gave the top of the frame to dead space.
+       Tightened here only — the desktop composition is unchanged. */
+    .hero{padding:26px 0 0}
+    .hero-in{gap:26px}
+    /* The reel is 16:9 and the hero on a phone is far taller than it is wide, so
+       object-fit:cover throws away most of the width and keeps a narrow vertical
+       slice. Centred, that slice is the middle of the frame, which in all three
+       shots is the empty ground between the truck and the horizon. Biasing up the
+       frame puts the actual subject in the part that survives the crop. */
+    .hero-bg .plate,.hero-bg video{object-position:center 38%}
+    /* The blueprint grid is sized for a desktop viewport; at 62px squares it reads
+       as a coarse checkerboard on a 390px screen rather than as a technical grid. */
+    .hero::after{background-size:38px 38px}
     .cats{grid-template-columns:1fr}
     .cat,.cat:nth-child(1),.cat:nth-child(6){grid-column:span 1}
     .fin-l,.fin-r,.yard-info,.cta-in{padding:30px 22px}
@@ -262,16 +277,48 @@
 <main>
 <!-- ===== HERO + YMM FITMENT SEARCH ===== -->
 <section class="hero">
-  <!-- Decorative atmosphere only. The <source> carries data-src rather than src so the
-       file stays detached until site.js decides the visit can afford it; there is no
-       autoplay attribute for the same reason, which keeps the mp4 out of the preload
-       scanner and off the critical path. Every visit that never loads it keeps .plate. -->
+  <!-- Decorative atmosphere only. The <source> still carries data-src rather than src:
+       the file has to stay detached until script picks WHICH of the two encodes to
+       fetch, and that choice cannot be expressed in markup. A <source media> attribute
+       would be the obvious way and is not reliable for this — browsers evaluate it once
+       at parse and several ignore it entirely on <video>. Every visit that never loads
+       a file keeps .plate, which is a finished hero on its own. -->
   <div class="hero-bg" data-reel aria-hidden="true">
     <span class="plate"></span>
     <video muted loop playsinline preload="none">
-      <source data-src="/assets/video/hero-reel.mp4" type="video/mp4">
+      <source data-src="/assets/video/hero-reel.mp4"
+              data-src-mobile="/assets/video/hero-reel-mobile.mp4" type="video/mp4">
     </video>
   </div>
+  <script>
+  /* The reel starts HERE, inline, instead of waiting for site.js.
+
+     The scripts sit at the end of the body and site.js loads after products.js, so
+     until now the browser parsed a megabyte of catalogue before the video was so
+     much as requested. That parse was most of the delay between the page appearing
+     and the hero coming alive. Picking the file and calling load() at this point in
+     the document starts the fetch while the rest of the page is still arriving.
+
+     Deliberately minimal: choose, load, play. Everything that is not needed in the
+     first moment — pause-when-offscreen, the retry on first tap, the timecode, the
+     error reporting — stays in site.js, which finds the element already started and
+     leaves the source alone. The two gates repeated here are the two that must be
+     honoured BEFORE any bytes are fetched; site.js re-checks them for its own path. */
+  (function () {
+    var bed = document.querySelector("[data-reel]"); if (!bed) return;
+    var vid = bed.querySelector("video"), s = bed.querySelector("source[data-src]");
+    if (!vid || !s) return;
+    var conn = navigator.connection || {};
+    if (matchMedia("(prefers-reduced-motion:reduce)").matches || conn.saveData === true) return;
+    /* 900px is the same line the layout treats as "not a desktop any more". The mobile
+       encode is 960x540 against 1600x900 — 740 KB against 2.8 MB — which is invisible
+       under a grade this heavy and is the difference between the reel arriving during
+       the first scroll and arriving after it. */
+    s.src = (matchMedia("(max-width:900px)").matches && s.dataset.srcMobile) || s.dataset.src;
+    vid.load();
+    var p = vid.play(); if (p && p.catch) p.catch(function () {});  /* site.js retries */
+  })();
+  </script>
 
   <div class="wrap hero-in">
     <div>
@@ -558,18 +605,22 @@
           <li><a href="/shop/?make=Ram">Ram 2500 / 3500</a></li>
         </ul>
       </div>
-      <!-- TODO: /shipping/ and /returns/ do not exist yet. Both are trust pages a
-           parts buyer looks for before a $1,000 freight order, and both are cited by
-           the PDP FAQ and the Product returnPolicy schema — build them, then point
-           these two links at them rather than leaving them as dead "#" anchors. -->
+      <!-- Shipping and Returns were dead "#" anchors waiting on pages that did not
+           exist. They now point into the Terms, which carries both as full sections.
+           A dedicated /shipping/ page is still worth building — a parts buyer looks
+           for one before a $1,000 freight order, and the PDP FAQ and the Product
+           returnPolicy schema both reference it — but a real section beats a link
+           that goes nowhere. -->
       <div>
         <h4>Resources</h4>
         <ul>
           <li><a href="#financing">Financing &amp; Approval</a></li>
           <li><a href="#request">Request a Part</a></li>
-          <li><a href="#">Shipping &amp; Freight</a></li>
-          <li><a href="#">Returns &amp; Fitment Guarantee</a></li>
+          <li><a href="/terms/#shipping">Shipping &amp; Freight</a></li>
+          <li><a href="/terms/#returns">Returns &amp; Fitment Guarantee</a></li>
           <li><a href="#yard">Contact the Yard</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms &amp; Conditions</a></li>
         </ul>
       </div>
     </div>
