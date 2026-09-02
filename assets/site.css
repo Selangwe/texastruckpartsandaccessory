@@ -15,9 +15,18 @@
   --chalk:#e9eaeb;
   --zinc:#8d949c;
   --zinc-dim:#666d74;
-  /* accents */
-  --oxide:#e8431a;          /* primary — American truck red/orange */
-  --oxide-hot:#ff5a2b;
+  /* accents.
+     --oxide is the logo orange, measured off assets/img/logo.png rather than
+     picked: that file is a palette PNG whose only opaque colour is #EE6400, so
+     the site now matches its own mark instead of sitting a hue away from it.
+     --oxide-rgb carries the same colour as bare channels because rgba() cannot
+     read a hex custom property. Every translucent brand tint on this site used
+     to be a hardcoded rgba() literal, which is exactly why they all drifted red
+     while the solid fills were tokenised; tints now say
+     rgba(var(--oxide-rgb),.18) and follow the accent wherever it goes. */
+  --oxide:#EE6400;          /* primary — the orange the logo is drawn in */
+  --oxide-hot:#FF7A24;      /* lifted hover variant, same relationship as before */
+  --oxide-rgb:238,100,0;    /* #EE6400 as channels, for rgba() tints */
   --hazard:#f2c200;         /* savings, urgency */
   --weld:#39c9b8;           /* verified / trust */
   /* lines */
@@ -140,7 +149,7 @@ header{position:sticky;top:0;z-index:80;background:rgba(11,12,13,.9);backdrop-fi
   font-family:var(--disp);font-weight:700;font-size:1.2rem;letter-spacing:.03em;text-transform:uppercase;
   padding:23px 42px 9px 12px;cursor:pointer;transition:border-color .2s,box-shadow .2s;
 }
-.field select:focus,.field input:focus{outline:none;border-color:var(--oxide);box-shadow:0 0 0 3px rgba(232,67,26,.18)}
+.field select:focus,.field input:focus{outline:none;border-color:var(--oxide);box-shadow:0 0 0 3px rgba(var(--oxide-rgb),.18)}
 .field select:disabled{opacity:.38;cursor:not-allowed}
 .field::after{content:"";position:absolute;right:15px;top:54%;width:8px;height:8px;border-right:2px solid var(--oxide);border-bottom:2px solid var(--oxide);rotate:45deg;translate:0 -50%;pointer-events:none}
 .field.no-caret::after{display:none}
@@ -390,8 +399,29 @@ footer h4{font-family:var(--mono);font-size:.53rem;letter-spacing:.2em;color:var
 footer li{list-style:none;margin-bottom:8px;color:var(--zinc);font-size:.9rem}
 footer li a:hover{color:var(--chalk)}
 footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12px}
+/* The payment marks are simple-icons glyphs, committed under assets/img/pay/ so
+   nothing in this footer depends on a third-party CDN staying up. They are a
+   single path with no fill attribute, i.e. black, and they arrive as <img> — so
+   CSS cannot reach the path and fill:currentColor is not on the table. invert()
+   is what makes them white; the brightness step settles them at the weight of
+   the type beside them, which is the point of choosing monochrome marks over
+   six full-colour brand logos on a dark ground.
+   box-sizing is restored to content-box against the global border-box reset so
+   the 22px glyph keeps its size and the padding builds the chip around it —
+   under border-box the padding would eat the glyph instead. */
 .paylogos{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
-.paylogos span{border:1px solid var(--line-hard);padding:6px 11px;font-family:var(--disp);font-weight:800;font-size:.95rem;letter-spacing:.05em;text-transform:uppercase;color:#bcc2c8}
+.paylogos img{box-sizing:content-box;width:22px;height:22px;padding:7px 12px;
+  border:1px solid var(--line-hard);filter:invert(1) brightness(.84);opacity:.88;
+  transition:opacity .2s,border-color .2s}
+.paylogos img:hover{opacity:1;border-color:var(--zinc-dim)}
+/* Snap, Acima and Progressive are lease-to-own partners, not things you tap at
+   checkout, and they read as checkout options while they sit in the same row as
+   Zelle and Apple Pay. Their own labelled row fixes that. They keep the text
+   chip the whole block used to use — partly because it draws the distinction,
+   partly because simple-icons carries no mark for any of the three. */
+.payfin{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:9px}
+.payfin b{font-family:var(--mono);font-weight:400;font-size:.5rem;letter-spacing:.16em;text-transform:uppercase;color:var(--zinc-dim);margin-right:3px}
+.payfin span{border:1px solid var(--line-hard);padding:6px 11px;font-family:var(--disp);font-weight:800;font-size:.95rem;letter-spacing:.05em;text-transform:uppercase;color:var(--zinc)}
 .wordmark{
   font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,12.4vw,11rem);
   line-height:.74;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.12);
@@ -536,7 +566,7 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
 /* the fitment failure — most important warning in the cart, so it gets a red
    card of its own, but stays a notice rather than an error-page red */
 .cl-warn{
-  margin-top:7px;border:1px solid rgba(232,67,26,.5);background:rgba(232,67,26,.07);
+  margin-top:7px;border:1px solid rgba(var(--oxide-rgb),.5);background:rgba(var(--oxide-rgb),.07);
   padding:6px 9px;font-size:.74rem;color:var(--oxide);line-height:1.4;
 }
 .cl-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px}

@@ -22,6 +22,10 @@ MANIFEST = os.path.join(ROOT, "assets", "img", "manifest.json")
 # into the store manifest's numeric keys would make both harder to reason about.
 RH_MANIFEST = os.path.join(ROOT, "assets", "img", "rh", "manifest.json")
 OUT = os.path.join(ROOT, "assets", "products.js")
+# The sitemap ships at the site root, and reads its origin from config.js (see
+# site_origin()) rather than repeating the domain here.
+CONFIG_JS = os.path.join(ROOT, "assets", "config.js")
+SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
 # Facebook products get ids in their own block so they can never collide with a
 # WordPress product id (those top out in the low five figures).
@@ -198,6 +202,43 @@ def jpeg_dims(path):
                 f.seek(struct.unpack(">H", ln)[0] - 2, 1)
     except Exception:
         return None
+
+
+def webp_dims(path):
+    """Intrinsic size straight off the WebP header — same no-Pillow rule as jpeg_dims.
+
+    Only needed because one category hero happens to be a .webp. All three WebP
+    flavours are covered: lossy (VP8 ), lossless (VP8L) and extended (VP8X).
+    """
+    try:
+        with open(path, "rb") as f:
+            head = f.read(30)
+        if head[:4] != b"RIFF" or head[8:12] != b"WEBP":
+            return None
+        fourcc = head[12:16]
+        if fourcc == b"VP8 ":
+            # frame header: 3-byte tag, 3-byte start code, then 14-bit w/h
+            w, h = struct.unpack("<HH", head[26:30])
+            return (w & 0x3FFF, h & 0x3FFF)
+        if fourcc == b"VP8L":
+            bits = struct.unpack("<I", head[21:25])[0]
+            return ((bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1)
+        if fourcc == b"VP8X":
+            # 24-bit little-endian canvas width-1 / height-1
+            w = head[24] | (head[25] << 8) | (head[26] << 16)
+            h = head[27] | (head[28] << 8) | (head[29] << 16)
+            return (w + 1, h + 1)
+    except Exception:
+        pass
+    return None
+
+
+def image_dims(path):
+    """Intrinsic (w, h) for any hero we ship, or None. JPEG or WebP; nothing else occurs."""
+    if not path:
+        return None
+    full = os.path.join(ROOT, path.replace("/", os.sep))
+    return webp_dims(full) if full.lower().endswith(".webp") else jpeg_dims(full)
 
 
 def facebook_products(start_index):
@@ -684,6 +725,109 @@ def assign_stock(products, rng):
     return target
 
 
+def site_origin():
+    """Read the production origin out of assets/config.js — never hardcode it.
+
+    config.js is the deliberate single source of truth for "what domain is this
+    site?"; canonicals, og:url and every JSON-LD @id already derive from it, and
+    a sitemap that disagreed with the canonicals would be worse than no sitemap
+    at all. It also carries a standing warning that texastruckparts.shop is a
+    THIRD-PARTY store we were seeded from and must never be emitted as one of
+    our own URLs — so the origin is taken from the one line that is allowed to
+    define it, and asserted, rather than typed in a second time here.
+    """
+    src = open(CONFIG_JS, encoding="utf-8").read()
+    m = re.search(r"""TTP\.SITE\s*=\s*["']([^"']+)["']""", src)
+    if not m:
+        sys.exit("could not find TTP.SITE in %s" % CONFIG_JS)
+    origin = m.group(1).rstrip("/")
+    if not origin.startswith("https://"):
+        sys.exit("TTP.SITE is not an https:// origin: %r" % origin)
+    return origin
+
+
+def write_sitemap(products, cats):
+    """Emit sitemap.xml for the home page, the shop, every category and every product.
+
+    Trailing slash on every URL, without exception. vercel.json sets
+    "trailingSlash": true, so an unslashed URL is a 308 to the slashed one —
+    a sitemap full of those spends half the crawl budget on redirects and asks
+    Google to discover each page twice.
+
+    URLs are built from the same slug + path shapes TTP.productPath() and
+    TTP.categoryPath() use in config.js, so what we submit is byte-identical to
+    what the pages declare canonical.
+    """
+    origin = site_origin()
+    urls = [origin + "/", origin + "/shop/"]
+    urls += [origin + "/product-category/" + c["slug"] + "/" for c in cats]
+    urls += [origin + "/product/" + p["slug"] + "/" for p in products]
+
+    with open(SITEMAP, "w", encoding="utf-8", newline="\n") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        for u in urls:
+            # Slugs are ASCII by construction (slugify strips everything else), but
+            # escape anyway — an & or < reaching the file unescaped makes the whole
+            # sitemap unparseable and silently drops all 555 URLs, not just one.
+            f.write("  <url><loc>%s</loc></url>\n" % html.escape(u, quote=False))
+        f.write("</urlset>\n")
+
+    print("wrote %s (%d urls, origin %s)" % (SITEMAP, len(urls), origin))
+    return urls
+
+
+def dedupe_slugs(products):
+    """Guarantee every product owns a slug nobody else does.
+
+    The slug IS the permalink: product.html resolves a page with
+    filter(x => x.slug === slug)[0], and TTP.productUrl() hands the same URL to
+    the canonical tag, the JSON-LD and every card in the grid. So when two
+    products share a slug only the FIRST one is reachable at all — the rest are
+    published, linked and sitemapped, but every one of those links lands on the
+    first product's page. Three sources feed this catalogue (the WooCommerce
+    store, the Facebook parse and the Ranch Hand import) and each slugifies from
+    the product name, so near-identical titles collided freely across the fold.
+
+    The safety property, and the reason this runs the way it does:
+
+      * The FIRST occurrence of a slug always keeps it, untouched. First means
+        first in `products`, which is the same array order product.html's
+        filter()[0] resolves against — so every URL that works today still
+        resolves to exactly the same product. Only the stranded duplicates,
+        which had no working URL of their own, get a new one.
+      * Later occurrences take -2, -3, ... in ascending order.
+      * A generated suffix is checked against every slug in the catalogue, not
+        just the ones handed out so far. Without that, a duplicate of "foo"
+        could be renamed to "foo-2" and quietly steal the permalink from a
+        product that legitimately arrived from the store already named "foo-2".
+
+    Must run after the last catalogue is folded in, so it sees every product,
+    and before merchandise() only because there is no reason to defer it.
+    """
+    reserved = {p["slug"] for p in products}
+    taken, renamed = set(), 0
+    for p in products:
+        base = p["slug"]
+        if base not in taken:
+            taken.add(base)
+            continue
+        n = 2
+        while True:
+            cand = "%s-%d" % (base, n)
+            if cand not in taken and cand not in reserved:
+                break
+            n += 1
+        p["slug"] = cand
+        reserved.add(cand)
+        taken.add(cand)
+        renamed += 1
+    if renamed:
+        print("  slugs: %d duplicate permalinks resolved (%d unique)"
+              % (renamed, len(taken)))
+    return renamed
+
+
 def merchandise(products):
     """Fill prices, then discount, then decide stock — in that order.
 
@@ -831,6 +975,11 @@ def main():
     if rh:
         print("  ranch hand: %d published, %d held" % (len(rh), rh_held))
 
+    # ---- permalinks: one slug, one product ----
+    # Runs here, after the last fold, so it sees the whole merged catalogue —
+    # most of the collisions were between sources, not inside one.
+    dedupe_slugs(products)
+
     # ---- merchandising: prices and availability ----
     # Must run before the block below. Categories derive minPrice/maxPrice/inStock
     # from these products, and would otherwise describe the imported catalogue
@@ -842,9 +991,27 @@ def main():
     for slug, nm, tag, blurb in CATEGORIES:
         items = [p for p in products if p["cat"] == slug]
         prices = [p["price"] for p in items if p["price"]]
+        hero = next((p["images"][0]["thumb"] for p in items if p["images"]), None)
+        # Measured, not assumed: the store derivatives are a square 300px tier but the
+        # Facebook imports are whatever size the CDN handed back. The homepage writes
+        # these onto the <img> so the tile has an aspect ratio before the file lands.
+        hero_wh = image_dims(hero) or (0, 0)
         cats.append({
             "slug": slug, "name": nm, "tagline": tag, "intro": blurb,
-            "hero": next((p["images"][0]["main"] for p in items if p["images"]), None),
+            # The thumb derivative, not the full-size shot. The homepage draws all
+            # 13 of these at once as a decorative tile background, cropped with
+            # object-fit:cover and greyscaled — nothing about that render can use
+            # the extra resolution, and the -main tier cost ~1.08 MB of the home
+            # page for it. Facebook imports have no separate derivative, so their
+            # "thumb" is the same file and this is a no-op for those three.
+            "hero": hero,
+            # Shipped so the <img> can carry width/height and reserve its box. The
+            # tile is absolutely positioned at inset:0, so these never size it —
+            # they only give the box an intrinsic ratio, which is what stops the
+            # grid reflowing as 13 lazy images land. 0 means "unmeasurable", and
+            # the homepage omits the attributes rather than writing a zero.
+            "heroW": hero_wh[0],
+            "heroH": hero_wh[1],
             "count": len(items),
             "inStock": len([p for p in items if p["inStock"]]),
             "minPrice": min(prices) if prices else 0,
@@ -862,6 +1029,26 @@ def main():
                     models_for(mk, p["models"]) or ["All models"])
     ymm = {y: {mk: sorted(ms) for mk, ms in mks.items()} for y, mks in sorted(ymm.items(), reverse=True)}
 
+    # "url" is the scraped permalink on the THIRD-PARTY site the feed came from.
+    # Nothing reads it — category.html and product.html both carry comments saying
+    # never to — and emitting it would be actively harmful if anything ever did,
+    # since it points at somebody else's domain. Dropped at the write step rather
+    # than in the three builders, so it stays available during generation.
+    shipped = [{k: v for k, v in p.items() if k != "url"} for p in products]
+
+    def dumps_lines(rows):
+        """Compact JSON, one row per line.
+
+        Full minification (the whole array on one line) saves about 9% raw, most
+        of which gzip recovers anyway — and it costs every future regeneration a
+        whole-file diff, which makes the generated data impossible to review. One
+        row per line gets the same bytes off and keeps a changed product to a
+        one-line diff.
+        """
+        return ("[\n" + ",\n".join(
+            json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in rows
+        ) + "\n]")
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("/* GENERATED by build/generate_products.py - do not edit by hand.\n")
@@ -869,11 +1056,17 @@ def main():
                 "ranchhand-products.json (%d products, %d categories) */\n"
                 % (len(products), len(cats)))
         f.write("window.TTP = window.TTP || {};\n")
-        f.write("TTP.products = " + json.dumps(products, ensure_ascii=False, indent=1) + ";\n")
-        f.write("TTP.categories = " + json.dumps(cats, ensure_ascii=False, indent=1) + ";\n")
-        f.write("TTP.ymm = " + json.dumps(ymm, ensure_ascii=False) + ";\n")
+        f.write("TTP.products = " + dumps_lines(shipped) + ";\n")
+        f.write("TTP.categories = " + dumps_lines(cats) + ";\n")
+        f.write("TTP.ymm = " + json.dumps(ymm, ensure_ascii=False, separators=(",", ":")) + ";\n")
 
-    print("wrote %s" % OUT)
+    print("wrote %s (%.0f KB)" % (OUT, os.path.getsize(OUT) / 1024))
+
+    # ---- sitemap ----
+    # Written from the same in-memory catalogue, so it can never drift out of
+    # step with what products.js publishes.
+    write_sitemap(products, cats)
+
     print("products: %d (%d store + %d facebook + %d ranch hand) | categories: %d | years: %d"
           % (len(products), len(products) - len(fb) - len(rh), len(fb), len(rh),
              len(cats), len(ymm)))

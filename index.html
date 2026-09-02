@@ -27,6 +27,12 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- The hero plate is this page's LCP element, and it is painted by a CSS
+     background-image inside the <style> block below. The preload scanner reads
+     markup, not stylesheets, so without this line the file is not even requested
+     until the CSS has been fetched and parsed. The reel that eventually replaces
+     the plate is deliberately NOT preloaded — see the note on the <video>. -->
+<link rel="preload" as="image" href="/assets/video/hero-poster.jpg" fetchpriority="high">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
@@ -39,7 +45,7 @@
      The grid reading over the footage is what makes this a monitored feed rather
      than a stock video with text on it. */
   .hero::before{content:"";position:absolute;z-index:1;left:50%;top:6%;width:1150px;height:600px;translate:-50% 0;
-    background:radial-gradient(ellipse at center,rgba(232,67,26,.20),transparent 66%);filter:blur(18px)}
+    background:radial-gradient(ellipse at center,rgba(var(--oxide-rgb),.20),transparent 66%);filter:blur(18px)}
   .hero::after{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;
     background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
     background-size:62px 62px;mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 72%)}
@@ -52,14 +58,23 @@
      the video starts at opacity 0, so a poster attribute would be invisible on every
      visit that never loads the file (mobile, save-data, reduced motion). */
   .hero-bg{position:absolute;z-index:0;inset:0;overflow:hidden;background:var(--asphalt)}
+  /* The grade used to be grayscale(.92) brightness(.58) at opacity .62, and under the
+     four layers stacked on top of it that left roughly a fifth of the source luminance
+     on screen — enough to see that something is there, not enough to see it MOVE. The
+     reel was paying its 2.9 MB and reading as a texture. Eased on all three axes; the
+     scrims below are untouched on desktop because they are what the headline was
+     contrast-checked against. */
   .hero-bg .plate,.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-    filter:grayscale(.92) contrast(1.14) brightness(.58) saturate(.9);
-    opacity:.62;transition:opacity 1.4s var(--ease)}
+    filter:grayscale(.82) contrast(1.12) brightness(.76) saturate(.92);
+    opacity:.7;transition:opacity 1.4s var(--ease)}
   .hero-bg .plate{background:url(/assets/video/hero-poster.jpg) center/cover no-repeat}
   .hero-bg video{opacity:0}
   /* cross-dissolve still -> motion. Both layers hold the same frame at the moment of
-     the swap, so the transition itself is invisible; what it hides is the pop. */
-  .hero-bg.ready video{opacity:.62}
+     the swap, so the transition itself is invisible; what it hides is the pop. The
+     reel settles a tenth above the plate rather than level with it — a still held at
+     full strength competes with the type, where the same level in motion reads as
+     motion — and .7 -> .8 across 1.4s is well under what the eye catches as a step. */
+  .hero-bg.ready video{opacity:.8}
   .hero-bg.ready .plate{opacity:0}
   .hero-bg::before{content:"";position:absolute;inset:0;background:var(--oxide);mix-blend-mode:color;opacity:.22}
   /* Scrims: a hard floor down the headline column, and a fade to solid asphalt at the
@@ -101,7 +116,7 @@
   .cat::before{content:attr(data-n);position:absolute;right:12px;top:2px;font-family:var(--disp);font-weight:900;
     font-size:5.4rem;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);transition:.45s var(--ease)}
   .cat:hover{background:#1c2024}
-  .cat:hover::before{-webkit-text-stroke-color:rgba(232,67,26,.5);transform:translateY(-4px)}
+  .cat:hover::before{-webkit-text-stroke-color:rgba(var(--oxide-rgb),.5);transform:translateY(-4px)}
   .cat svg.part{height:88px;width:auto;color:var(--zinc);transition:color .4s,transform .5s var(--ease);align-self:flex-start}
   .cat:hover svg.part{color:var(--oxide);transform:translateX(6px)}
   /* tiles backed by real product photography */
@@ -134,6 +149,12 @@
   .yard{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-hard)}
   .yard-map{position:relative;min-height:400px;background:var(--plate);overflow:hidden}
   .yard-map svg{position:absolute;inset:0;width:100%;height:100%}
+  /* The route and the lot are brand-tinted, and a presentation attribute cannot
+     read a custom property — var() only resolves inside a CSS declaration. So
+     the stroke and fill live here rather than on the elements, which is also the
+     only reason these two shapes carry a class at all. */
+  .yard-route{stroke:rgba(var(--oxide-rgb),.32)}
+  .yard-lot{fill:rgba(var(--oxide-rgb),.09);stroke:rgba(var(--oxide-rgb),.45)}
   .pin{position:absolute;left:52%;top:46%;translate:-50% -50%;text-align:center}
   .pin .ring{width:20px;height:20px;border:2px solid var(--oxide);border-radius:50%;margin:0 auto;position:relative}
   .pin .ring::after{content:"";position:absolute;inset:-13px;border:1px solid var(--oxide);border-radius:50%;animation:ping 2.4s var(--ease) infinite}
@@ -165,8 +186,15 @@
 
   @media(max-width:1120px){
     .hero-in{grid-template-columns:1fr;gap:36px;align-items:start}
+    /* One vertical scrim replaces the desktop pair, because with the hero stacked to a
+       single column the type runs the full width and there is no clear left column to
+       protect. The old mid-stops (.6 at 34%, .9 at 80%) took a reel that was already
+       dim down to nothing on a phone — 90% black over dark footage on a #0b0c0d page
+       is just the page. The ends keep their density, where the headline and the stat
+       rail actually sit; only the middle opens up, and the headline still clears 5:1
+       against the brightest frame in the reel. */
     .hero-bg::after{background:
-      linear-gradient(180deg,rgba(11,12,13,.74) 0%,rgba(11,12,13,.6) 34%,rgba(11,12,13,.9) 80%,var(--asphalt) 100%)}
+      linear-gradient(180deg,rgba(11,12,13,.76) 0%,rgba(11,12,13,.44) 38%,rgba(11,12,13,.86) 80%,var(--asphalt) 100%)}
     .cats{grid-template-columns:repeat(4,1fr)}
     .cat,.cat:nth-child(1),.cat:nth-child(6){grid-column:span 2}
     .fin,.yard{grid-template-columns:1fr}
@@ -456,9 +484,9 @@
         <svg viewBox="0 0 400 420" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1" aria-hidden="true">
           <path d="M0 60h400M0 140h400M0 220h400M0 300h400M0 380h400"/>
           <path d="M60 0v420M140 0v420M220 0v420M300 0v420M380 0v420"/>
-          <path d="M-20 300L200 80l240 240" stroke="rgba(232,67,26,.32)" stroke-width="3"/>
+          <path class="yard-route" d="M-20 300L200 80l240 240" stroke-width="3"/>
           <path d="M0 224h400" stroke="rgba(242,194,0,.22)" stroke-width="2" stroke-dasharray="14 10"/>
-          <rect x="152" y="168" width="112" height="72" fill="rgba(232,67,26,.09)" stroke="rgba(232,67,26,.45)"/>
+          <rect class="yard-lot" x="152" y="168" width="112" height="72"/>
         </svg>
         <div class="pin"><div class="ring"></div><span>The Yard</span></div>
       </div>
@@ -509,7 +537,8 @@
       <div class="fbrand">
         <h4>Texas Truck Parts</h4>
         <p>OEM factory take-offs and heavy-duty aftermarket steel for Ford, Chevy, GMC, Ram and Toyota trucks. Family-run out of Sugar Land, Texas.</p>
-        <div class="paylogos"><span>Zelle</span><span>Venmo</span><span>Apple Pay</span><span>Crypto</span><span>Bank</span><span>Snap</span><span>Acima</span><span>Progressive</span></div>
+        <div class="paylogos"><img src="/assets/img/pay/visa.svg" width="22" height="22" alt="Visa" loading="lazy" decoding="async"><img src="/assets/img/pay/mastercard.svg" width="22" height="22" alt="Mastercard" loading="lazy" decoding="async"><img src="/assets/img/pay/applepay.svg" width="22" height="22" alt="Apple Pay" loading="lazy" decoding="async"><img src="/assets/img/pay/googlepay.svg" width="22" height="22" alt="Google Pay" loading="lazy" decoding="async"><img src="/assets/img/pay/zelle.svg" width="22" height="22" alt="Zelle" loading="lazy" decoding="async"><img src="/assets/img/pay/bitcoin.svg" width="22" height="22" alt="Crypto" loading="lazy" decoding="async"></div>
+        <div class="payfin"><b>Financing</b><span>Snap</span><span>Acima</span><span>Progressive</span></div>
         <div class="social">
           <a href="https://www.facebook.com/people/Ranch-Hand-Bumpers/61585668963901/" target="_blank" rel="noopener" aria-label="Texas Truck Parts on Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
@@ -575,7 +604,7 @@
   "email":"Support.ranchhand@gmail.com",
   "priceRange":"$$",
   "currenciesAccepted":"USD",
-  "paymentAccepted":"Cash, Zelle, Venmo, Apple Pay, Cryptocurrency, Bank Transfer, Snap Finance, Acima, Progressive Leasing",
+  "paymentAccepted":"Visa, Mastercard, Apple Pay, Google Pay, Zelle, Cryptocurrency, Venmo, Cash, Bank Transfer, Snap Finance, Acima, Progressive Leasing",
   "foundingDate":"2019",
   "address":{"@type":"PostalAddress","streetAddress":"13618 Florence Rd, Ste D1","addressLocality":"Sugar Land","addressRegion":"TX","postalCode":"77498","addressCountry":"US"},
   "geo":{"@type":"GeoCoordinates","latitude":29.6197,"longitude":-95.6349},
@@ -631,8 +660,14 @@
   document.getElementById('cats').innerHTML = TTP.categories.map(function(c,i){
     return '<a class="cat'+(c.hero?' hasphoto':'')+'" href="'+TTP.categoryPath(c.slug)+'" '
       + 'data-n="'+String(i+1).padStart(2,'0')+'">'
+      /* width/height are written whenever the generator could measure the file. The
+         tile is absolutely positioned at inset:0 so they never size it — they give
+         the box an intrinsic ratio, which is what stops the grid shifting as these
+         13 lazy images arrive. A zero means unmeasurable, and then we write nothing
+         rather than an attribute the browser would read as a real dimension. */
       + (c.hero
-          ? '<img class="catbg" src="'+TTP.esc(TTP.asset(c.hero))+'" alt="" loading="lazy" decoding="async">'
+          ? '<img class="catbg" src="'+TTP.esc(TTP.asset(c.hero))+'" alt="" loading="lazy" decoding="async"'
+            + (c.heroW && c.heroH ? ' width="'+c.heroW+'" height="'+c.heroH+'"' : '')+'>'
           : TTP.art(c.slug))
       + '<div class="catcopy"><h3>'+c.name+'</h3><p>'+c.tagline+'</p>'
       /* cat.inStock, not cat.count — the sentence says "in stock", so it has to be

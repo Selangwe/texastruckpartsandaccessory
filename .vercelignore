@@ -21,3 +21,26 @@ data/
 #            so it deployed as a broken page that still exposed internal notes
 texas_truck_parts_v2_plan.html
 fb-review.html
+
+# Image-fetcher bookkeeping. Both are written by the download scripts to record
+# what has already been pulled, and nothing at runtime reads them — no <img>,
+# no fetch, no reference anywhere in assets/products.js. 267 KB of build state
+# that was being served to the public.
+assets/img/manifest.json
+assets/img/rh/manifest.json
+
+# NOTE on assets/img/_facebook/ — 224 of the 344 files in there (10.5 MB) are
+# orphans from earlier scrapes that no product references any more, and it is
+# tempting to list them here. Deliberately NOT doing that:
+#
+#   - The runtime saving is zero. Nobody requests a file no page links to, so
+#     excluding it speeds up no page view; it only trims the deploy bundle.
+#   - The risk is not zero. The used/orphaned split is decided by whatever
+#     assets/products.js currently references, and that changes every time the
+#     catalogue is regenerated. A hardcoded list of 224 filenames would go stale
+#     silently and start excluding images that HAD become live — which shows up
+#     as broken product photography in production, not as a warning.
+#
+# If the 10.5 MB is worth reclaiming, delete the orphans from the repo in a
+# deliberate pass (they are re-downloadable via `npm run fb:images`) rather than
+# hiding them behind an ignore list that has to be kept in sync by hand.
