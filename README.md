@@ -155,3 +155,33 @@ third copy.
   strip under the hero only appears once the video actually fires `playing` — it
   is the ground truth for "is the reel really running", since the fallback plate
   is a still of the same footage.
+
+## Re-encoding the hero reel
+
+There are two encodes. Script picks between them at `max-width:900px`, because a
+`<source media>` attribute is evaluated once at parse and is ignored on `<video>`
+by several browsers.
+
+| file | size | bytes |
+|---|---|---|
+| `assets/video/hero-reel.mp4` | 1600×900 | 2.8 MB |
+| `assets/video/hero-reel-mobile.mp4` | 960×540 | 740 KB |
+
+ffmpeg is **not** a dependency of this project — it was used once to produce the
+mobile encode, and pinning an ~80 MB binary into `npm install` for that is not a
+trade worth making. To regenerate it, use any ffmpeg:
+
+```bash
+ffmpeg -i assets/video/hero-reel.mp4 -an \
+  -vf "scale=960:540:flags=lanczos" \
+  -c:v libx264 -profile:v main -level 3.1 -preset slow -crf 33 \
+  -pix_fmt yuv420p -movflags +faststart \
+  assets/video/hero-reel-mobile.mp4
+```
+
+`-movflags +faststart` is not optional: it puts the `moov` atom before `mdat` so
+playback can begin before the file finishes downloading. `-an` because the source
+has no audio track and neither should the output. CRF 33 looks aggressive and is
+not — the reel is graded to near-monochrome at `brightness(.76)` and sits under a
+scrim at `opacity:.8`, so the detail a lower CRF would preserve is destroyed
+before it reaches the screen.
