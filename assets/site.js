@@ -337,6 +337,13 @@
       conn.saveData !== true;
     if (!afford) return;
 
+    /* A viewport gate is back, and this time it is the layout's decision rather than
+       a guess about the connection. Below 900px the hero does not contain a reel at
+       all: the bed is display:none and a still carries the frame instead. Fetching
+       and decoding a video inside a hidden element would be pure cost. This is not
+       the old /2g|3g/ gate it replaced — nothing here is inferred about the network. */
+    if (matchMedia("(max-width:900px)").matches) return;
+
     /* Every failure below used to be silent by construction: no error listener, and an
        empty catch on the play() rejection. A 404, a decode failure and a blocked
        autoplay all looked identical to success — and identical to each other — which is
@@ -360,7 +367,9 @@
        tear a running video down and start it again. So attach only if nobody has.
        Any page that ships the markup without that starter still works. */
     if (!src.src) {
-      src.src = (matchMedia("(max-width:900px)").matches && src.dataset.srcMobile) || src.dataset.src;
+      /* There is no longer a second, smaller encode to choose between: the only
+         viewport that wanted one is the one that no longer plays a reel at all. */
+      src.src = src.dataset.src;
       vid.load();
     } else if (vid.error) {
       /* An error that fired before the listeners above existed leaves no event to

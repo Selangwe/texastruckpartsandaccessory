@@ -1,0 +1,24 @@
+# ==========================================================================
+# AUTHORIZED DIGITAL SELLERS (IAB ads.txt)
+#
+# This file names who is allowed to sell ad space on this domain. An advertiser
+# that is offered our inventory checks it, and treats any seller not listed
+# here as counterfeit — so a missing or wrong ads.txt does not break the page,
+# it just suppresses what buyers are willing to pay for the slots.
+#
+# It must stay at the SERVED ROOT, i.e. /ads.txt, which is this directory:
+# vercel.json sets outputDirectory to ".", so the repo root is the web root
+# (the same reason robots.txt and sitemap.xml live here).
+#
+# Fields, in order:
+#   google.com         the ad system doing the selling
+#   pub-...            our AdSense publisher ID, matching the client= in the
+#                      loader tag in each page's <head>
+#   DIRECT             we deal with Google directly, not via a reseller
+#   f08c47fec0942fa0   Google's TAG ID, identical for every AdSense publisher
+#
+# Keep the publisher ID in sync with the loader tag. If they disagree, buyers
+# read the slots as unauthorized.
+# ==========================================================================
+
+google.com, pub-2154279844522890, DIRECT, f08c47fec0942fa0

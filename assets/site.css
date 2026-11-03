@@ -473,9 +473,16 @@ footer .fbrand p{color:var(--zinc);font-size:.9rem;max-width:34ch;margin-top:12p
      which crosses a narrow screen far sooner than a wide one and reads as much
      faster on a phone. site.js measures the strip and sets a duration that keeps
      the on-screen pace constant at every width. */
-  /* "Find My Part" sits beside the burger once the menu collapses; at desktop scale
-     it crowds the row. 48px tall keeps the tap target well over the 44px floor. */
-  .nav-right .btn{font-size:.92rem;padding:11px 16px}
+}
+/* The header's "Find My Part" button is retired on a phone rather than shrunk.
+   Beside the brand lockup, the cart and the burger it had about 35px of room left
+   at 390px, so it wrapped to three lines, pushed the nav row to 93px tall and
+   shoved the burger off the right edge — the page was 404px wide inside a 367px
+   viewport. Its destination is the fitment form, which on a phone is now the band
+   immediately under the hero, one scroll away and signposted by its own heading.
+   What is left is brand, cart, menu: three things, no overflow. */
+@media(max-width:720px){
+  .nav-right .btn{display:none}
 }
 @media(max-width:420px){
   .grid,.grid.g3{grid-template-columns:1fr}

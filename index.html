@@ -36,12 +36,18 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- The hero plate is this page's LCP element, and it is painted by a CSS
-     background-image inside the <style> block below. The preload scanner reads
-     markup, not stylesheets, so without this line the file is not even requested
-     until the CSS has been fetched and parsed. The reel that eventually replaces
-     the plate is deliberately NOT preloaded — see the note on the <video>. -->
-<link rel="preload" as="image" href="/assets/video/hero-poster.jpg" fetchpriority="high">
+<!-- Two different hero LCPs, so two preloads, each gated to the viewport that
+     actually paints it — without `media` every phone would also pull the 53 KB
+     desktop plate it never shows, and every desktop the product shot.
+     Desktop: the poster plate, painted by a CSS background-image in the <style>
+     block below. The preload scanner reads markup, not stylesheets, so without
+     this line the file is not requested until the CSS has been fetched and
+     parsed. The reel that replaces it is deliberately NOT preloaded — see the
+     note on the <video>.
+     Phone: the product shot in .hero-shot, which is an <img> the scanner can see
+     on its own; the preload is here to lift its priority, not to find it. -->
+<link rel="preload" as="image" href="/assets/video/hero-poster.jpg" media="(min-width:901px)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/img/rh/FBF201BLR/1-main.jpg" media="(max-width:900px)" fetchpriority="high">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Barlow:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
@@ -117,6 +123,11 @@
   .hero-cta{display:flex;flex-wrap:wrap;gap:12px;opacity:0;animation:fade .7s .62s var(--ease) forwards}
   @keyframes fade{to{opacity:1}}
   .finder{opacity:0;animation:fade .8s .35s var(--ease) forwards}
+  .hero-rail{margin-top:56px;position:relative;z-index:2}
+  /* The hero still is the phone's replacement for the reel; above 900px the reel
+     itself is playing behind the type and a second copy of its poster frame in
+     the flow would only repeat it. */
+  .hero-shot{display:none}
 
   .cats{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line)}
   .cat{background:var(--plate);padding:26px 22px 22px;position:relative;overflow:hidden;grid-column:span 2;
@@ -210,28 +221,87 @@
     .fin-r{border-left:none;border-top:1px solid var(--line-hard)}
     .revs{grid-template-columns:1fr}
   }
+
+  /* ======================================================================
+     PHONE HERO (<=900px)
+
+     The reel does not run here at all — see the note on the inline starter.
+     Everything in the desktop hero that exists to make moving footage safe
+     to read over goes with it: the bed, the colour pass, the two scrims, the
+     glow and the blueprint grid were all scaffolding for the video, and
+     stacked over a flat plate they only mud the type. What is left is the
+     composition itself — eyebrow, headline, one line of copy, one still,
+     two buttons — on plain asphalt.
+
+     The fitment form leaves the hero and becomes its own full-bleed band
+     directly underneath it: on a phone a three-select form inside the hero
+     pushed the headline and the price claim off the first screen, and the
+     form is the second thing someone does, not the first.
+     ====================================================================== */
+  @media(max-width:900px){
+    .hero-bg,.hero::before,.hero::after{display:none}
+    .hero{padding:28px 0 0;background:var(--asphalt);overflow:visible}
+    .hero-in{display:block}
+    .hero .eyebrow{margin-bottom:15px}
+    /* 13.5vw keeps the three lines on three lines from 320px up; the desktop
+       clamp tops out at 10vw, which on a narrow screen broke "Dealer quality."
+       onto a fourth line and lost the stacked-block shape of the lockup. */
+    .hero h1{font-size:clamp(2.85rem,13.5vw,4.6rem);line-height:.83}
+    .hero-sub{max-width:none;font-size:1rem;margin:18px 0 24px}
+
+    .sub-rest{display:none}
+
+    /* The product plate. White, because the shot's own background is white and
+       the point of the thing is that the part has nothing behind it. One white
+       block is also the only light surface on the page, which is most of why a
+       hero this plain still has somewhere for the eye to land. */
+    .hero-shot{display:block;position:relative;margin:0 0 22px;overflow:hidden;
+      background:#fff;border:1px solid var(--line-hard)}
+    /* The source is square with the part across its middle band and white above
+       and below, so `cover` crops away the empty half and lets the part run the
+       full width of the plate. 3:2 and not 16:9 — the wider box clipped the top
+       rail of the grille guard and left the bumper sitting on the tag bar. The
+       bottom padding is inside the object box, so it crops rather than squashes. */
+    .hero-shot picture{display:block}
+    .hero-shot img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center 46%;
+      padding:0 8px 16px}
+    .hero-shot-tag{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:8px;
+      padding:9px 13px;background:var(--asphalt);color:#b4bac0;
+      font-family:var(--mono);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase}
+    .hero-shot-tag .dot{width:6px;height:6px;background:var(--oxide);flex-shrink:0}
+    .hero-shot:active{border-color:var(--oxide)}
+
+    /* Two 50%-width buttons at this size land at roughly 150px each and read as
+       one split control rather than two choices. Stacked and full width, each is
+       an unambiguous target well over the 44px floor. */
+    .hero-cta{display:grid;gap:10px}
+    .hero-cta .btn{width:100%;padding:16px 20px}
+
+    /* ---- the fitment form, now a band of its own ----
+       Full-bleed past the 4vw .wrap gutter so it reads as a separate surface
+       the hero is sitting on top of, not as a card floating inside the hero.
+       calc(50% - 50vw) rather than the -4vw the gutter nominally is: .wrap is
+       min(1340px,92vw), so its gutter is only 4vw while 92vw is the narrower of
+       the two, and the pair stay in step on their own this way. The side borders
+       go with the inset — a border running off both edges of the screen is a seam,
+       not a frame. */
+    .finder{margin:32px 0 0;margin-inline:calc(50% - 50vw);
+      border-left:none;border-right:none;box-shadow:none}
+    .finder-head{padding:16px 4vw 13px}
+    .finder-body{padding:18px 4vw 22px;gap:10px}
+    .finder-out{padding-top:12px}
+    .hero-rail{margin-top:34px}
+  }
   @media(max-width:640px){
-    /* Hero spacing on a phone. The 64px desktop inset was written for a two-column
-       hero with the reel reading across the empty half; stacked into one column it
-       just pushed the headline down and gave the top of the frame to dead space.
-       Tightened here only — the desktop composition is unchanged. */
-    .hero{padding:26px 0 0}
-    .hero-in{gap:26px}
-    /* The reel is 16:9 and the hero on a phone is far taller than it is wide, so
-       object-fit:cover throws away most of the width and keeps a narrow vertical
-       slice. Centred, that slice is the middle of the frame, which in all three
-       shots is the empty ground between the truck and the horizon. Biasing up the
-       frame puts the actual subject in the part that survives the crop. */
-    .hero-bg .plate,.hero-bg video{object-position:center 38%}
-    /* The blueprint grid is sized for a desktop viewport; at 62px squares it reads
-       as a coarse checkerboard on a 390px screen rather than as a technical grid. */
-    .hero::after{background-size:38px 38px}
     .cats{grid-template-columns:1fr}
     .cat,.cat:nth-child(1),.cat:nth-child(6){grid-column:span 1}
     .fin-l,.fin-r,.yard-info,.cta-in{padding:30px 22px}
     .calc{font-size:3.6rem}
   }
 </style>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2154279844522890"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -295,8 +365,7 @@
   <div class="hero-bg" data-reel aria-hidden="true">
     <span class="plate"></span>
     <video muted loop playsinline preload="none">
-      <source data-src="/assets/video/hero-reel.mp4"
-              data-src-mobile="/assets/video/hero-reel-mobile.mp4" type="video/mp4">
+      <source data-src="/assets/video/hero-reel.mp4" type="video/mp4">
     </video>
   </div>
   <script>
@@ -319,11 +388,13 @@
     if (!vid || !s) return;
     var conn = navigator.connection || {};
     if (matchMedia("(prefers-reduced-motion:reduce)").matches || conn.saveData === true) return;
-    /* 900px is the same line the layout treats as "not a desktop any more". The mobile
-       encode is 960x540 against 1600x900 — 740 KB against 2.8 MB — which is invisible
-       under a grade this heavy and is the difference between the reel arriving during
-       the first scroll and arriving after it. */
-    s.src = (matchMedia("(max-width:900px)").matches && s.dataset.srcMobile) || s.dataset.src;
+    /* No reel on a phone. Even on the 740 KB mobile encode it was arriving late or not
+       at all on real connections, and autoplay refusals left the plate anyway — so the
+       reel was costing bytes for a result most phone visits never saw. Below 900px the
+       hero is a still instead (.hero-shot), and the whole reel bed is display:none, so
+       there is nothing here worth fetching. Same line site.js gates on. */
+    if (matchMedia("(max-width:900px)").matches) return;
+    s.src = s.dataset.src;
     vid.load();
     var p = vid.play(); if (p && p.catch) p.catch(function () {});  /* site.js retries */
   })();
@@ -337,7 +408,40 @@
         <span class="l"><span class="fill">Take-offs.</span></span>
         <span class="l"><span class="out">Dealer quality.</span></span>
       </h1>
-      <p class="hero-sub">Genuine OEM bumpers, beds, tailgates and lights pulled from low-mileage trucks — <b>40–60% below dealer pricing</b>, inspected on our floor, and matched to your VIN before we ship.</p>
+      <!-- The tail of this sentence is its own element so a phone can drop it. Four
+           lines of body copy under a three-line headline pushed the image and both
+           buttons off the first screen; the half that survives carries the offer,
+           and the half that goes is detail the trust row repeats below anyway. -->
+      <p class="hero-sub">Genuine OEM bumpers, beds, tailgates and lights at <b>40–60% below dealer pricing</b>.<span class="sub-rest"> Pulled from low-mileage trucks, inspected on our floor, and matched to your VIN before we ship.</span></p>
+
+      <!-- Phone-only hero shot; desktop keeps the reel running behind the type and
+           hides this. A studio cut-out rather than the reel's poster frame: at phone
+           size the poster was a dark shop interior with a black out-of-focus post
+           across a third of it, and nothing in it read as "truck parts". The plate
+           behind this one is pure #fff because the JPEG's own background is pure
+           #fff, so the two meet with no seam and the part reads as sitting on the
+           plate rather than as a photo pasted into a box.
+           It links to the product because a 200px-tall image is the easiest thing
+           on the screen to hit. If this SKU ever sells out the page still resolves
+           and shows it out of stock — it does not 404 — but the shot is worth
+           re-pointing at something in stock when that happens. -->
+      <a class="hero-shot" href="/product/ranch-hand-legend-front-bumper-with-grille-guard-fits-select-f-250-f-350-super-d/">
+        <picture>
+          <!-- Desktop hides .hero-shot, but display:none does not stop an <img>
+               fetching its src — it only stops it painting. Measured: every desktop
+               visit was pulling these 35 KB for an element nobody sees. A <source>
+               the browser declines IS skipped, so above 900px it resolves to a 1x1
+               transparent GIF that is already in the markup and never hits the
+               network. Below 900px no source matches and the <img> wins as normal. -->
+          <source media="(min-width:901px)"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+          <img src="/assets/img/rh/FBF201BLR/1-main.jpg" width="768" height="768"
+               alt="Ranch Hand Legend front bumper with grille guard for Ford F-250 and F-350 Super Duty."
+               fetchpriority="high" decoding="async">
+        </picture>
+        <span class="hero-shot-tag"><span class="dot"></span>Ranch Hand Legend · In stock</span>
+      </a>
+
       <div class="hero-cta">
         <a class="btn" href="/shop/"><span>Browse All Parts</span></a>
         <a class="btn ghost" href="tel:+19525293586"><span>Talk to a Parts Guy</span></a>
@@ -369,7 +473,7 @@
     </form>
   </div>
 
-  <div class="wrap" style="margin-top:56px;position:relative;z-index:2">
+  <div class="wrap hero-rail">
     <div class="hero-feed"><span class="dot"></span><span>Reel 01</span><span data-tc>00:00</span></div>
     <div class="rail">
       <div><b data-count="80" id="statParts">0</b><p>Parts in stock now</p></div>
